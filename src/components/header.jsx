@@ -36,14 +36,14 @@ const Header = () => {
                     />
                 </div>
                 <button
-                    className="text-2xl md:hidden p-4"
+                    className="text-4xl md:hidden p-4"
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
                 >
                     {menuOpen ? <FiX /> : <FiMenu />}
                 </button>
 
-                <div className=' hidden md:flex lg:w-3/4 w-2/3 bg-[#3c5551] font-playfair-display p-2 gap-12 ml-auto text-white'>
+                <div className=' hidden md:flex lg:w-3/4 w-2/3 bg-[#3c5551] font-playfair-display p-8 gap-12 ml-auto text-white'>
                     {
                         navItems.map((item) => (
                             <NavLink to={item.path}

@@ -111,7 +111,7 @@ const Services = () => {
 
                 <div className="w-full flex items-center justify-center p-6 ">
                     <img
-                        src="../public/images/services2.jpg"
+                        src="/Images/services2.jpg"
                         alt="Service Photo"
                         className="lg:w-1/2 lg:h-1/2 w-full h-full object-contain"
 

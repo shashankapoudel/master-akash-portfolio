@@ -14,9 +14,9 @@ const SchedueleMeeting = () => {
     return (
         <div className='m-8'>
 
-            <div className='flex w-full  tracking-wider font-playfair-display border-2 border-[#3c5551] p-2'>
+            <div className='flex flex-col lg:flex-row w-full  tracking-wider font-playfair-display border-2 border-[#3c5551] p-2'>
 
-                <div className='w-1/3  p-3 text-[#a7594d] font-medium'>
+                <div className='lg:w-1/3 w-full  p-3 text-[#a7594d] font-medium'>
                     <h1 className='flex justify-center  font-semibold text-3xl p-2'>Akash Banjara</h1>
 
                     <div className='flex items-center gap-1'>
@@ -33,7 +33,7 @@ const SchedueleMeeting = () => {
 
                 <div className="h-100 border-2 border-[#3c5551] m-4"></div>
 
-                <div className="w-2/3 p-3">
+                <div className="lg:w-2/3 w-full">
                     <MeetingForm />
                 </div>
 
