@@ -29,7 +29,7 @@ const Header = () => {
             <div className='flex justify-between  '>
                 <div className='w-1/4 flex items-center justify-center'>
                     <img
-                        src="../public/images/logo1.jpg"
+                        src="/images/logo1.jpg"
                         alt="Company Logo"
                         className="lg:w-auto h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply"
                     />
