@@ -34,7 +34,7 @@ const Home = () => {
 
             <div className="flex items-center justify-center w-full lg:w-1/3 order-none lg:order-1 py-4">
                 <img
-                    src="../public/images/homePhoto.jpg"
+                    src="/Images/homePhoto.jpg"
                     alt="HomePage photo"
                     className="w-auto h-full object-cover lg:rounded-none "
                 />
