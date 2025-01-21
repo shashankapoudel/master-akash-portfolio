@@ -30,7 +30,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div className="flex flex-col lg:flex-row mx-8 my-4 p-2">
+        <div className="flex flex-col lg:flex-row lg:mx-8 sm:mx-4 my-4 p-2">
 
             <div className="flex items-center justify-center w-full lg:w-1/3 order-none lg:order-1 py-4">
                 <img
