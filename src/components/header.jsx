@@ -43,7 +43,7 @@ const Header = () => {
                     {menuOpen ? <FiX /> : <FiMenu />}
                 </button>
 
-                <div className=' hidden md:flex lg:w-3/4 w-2/3 bg-[#3c5551] font-playfair-display p-8 gap-12 ml-auto text-white'>
+                <div className=' hidden md:flex lg:w-3/4 w-2/3 bg-[#3c5551] font-playfair-display p-4 gap-12 ml-auto text-white'>
                     {
                         navItems.map((item) => (
                             <NavLink to={item.path}

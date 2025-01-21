@@ -552,7 +552,7 @@ const MeetingForm = () => {
                                     <select
                                         {...field}
                                         id="purpose"
-                                        className={`py-2.5 rounded-lg lg:px-4 px-1 text-sm border ${errors.purpose ? "border-red-500" : "border-gray-300"
+                                        className={`py-2.5 rounded-lg lg:px-4 px-1  text-sm border ${errors.purpose ? "border-red-500" : "border-gray-300"
                                             } focus:outline-none w-full`}
                                     >
                                         <option value="">Select your purpose for call</option>

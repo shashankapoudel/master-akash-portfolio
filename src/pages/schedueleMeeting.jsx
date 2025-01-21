@@ -12,7 +12,7 @@ const SchedueleMeeting = () => {
     console.log(date)
 
     return (
-        <div className='m-8'>
+        <div className='lg:m-8 m-6'>
 
             <div className='flex flex-col lg:flex-row w-full  tracking-wider font-playfair-display border-2 border-[#3c5551] p-2'>
 
