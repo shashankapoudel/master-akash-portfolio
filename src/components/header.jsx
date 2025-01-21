@@ -24,14 +24,13 @@ const Header = () => {
         <div className='flex flex-col'>
 
             <div className='bg-[#a7594d] text-center p-2 '>
-                <p className='text-3xl font-marck-script text-white tracking-widest '>"Where you can feel the change"</p>
+                <p className='text-xl lg:text-3xl font-marck-script text-white tracking-widest '>"Where you can feel the change"</p>
             </div>
 
             <div className='flex justify-between  '>
-                <div className='w-1/4 flex items-center justify-center'>
+                <div className='lg:w-1/4 w-1/3 flex  justify-center'>
                     <img
                         src="/Images/logo1.jpg"
-                        // src={logo}
                         alt="Company Logo"
                         className="lg:w-auto h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply"
                     />
@@ -44,7 +43,7 @@ const Header = () => {
                     {menuOpen ? <FiX /> : <FiMenu />}
                 </button>
 
-                <div className=' hidden md:flex w-3/4 bg-[#3c5551] font-playfair-display p-4 gap-12 ml-auto text-white'>
+                <div className=' hidden md:flex lg:w-3/4 w-2/3 bg-[#3c5551] font-playfair-display p-2 gap-12 ml-auto text-white'>
                     {
                         navItems.map((item) => (
                             <NavLink to={item.path}
@@ -58,10 +57,12 @@ const Header = () => {
                         )
                     }
                 </div>
+
             </div>
+
             {
                 menuOpen && (
-                    <div className="md:hidden bg-[#F6F8FA]">
+                    <div className="md:hidden bg-[#F6F8FA] p-2">
                         <ul className="flex flex-col gap-4 p-4">
                             {navItems.map((item) => (
                                 <li key={item.name}>

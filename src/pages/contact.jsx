@@ -13,38 +13,42 @@ const Contact = () => {
     return (
         <div className="flex w-full  ">
 
-            <div className="flex flex-col lg:flex-row  lg:m-6 m-0 lg:border border-[#3c5551]  w-full  font-playfair-display h-full tracking-wider p-2">
+            <div className="flex flex-col lg:flex-row  lg:m-6 m-0 lg:border border-[#3c5551]  w-full  font-playfair-display h-full tracking-wider ">
 
-                <div className="flex flex-col items-center lg:w-1/2 w-full md:w-full text-white p-6 gap-2">
+                <div className="flex flex-col items-center lg:w-1/2 w-full md:w-full text-white p-4 gap-4">
                     <h1 className="align-text-top text-[#a7594d] font-bold text-4xl md:text-5xl">Akash Bagale</h1>
 
-                    <div className='flex  mr-auto items-center justify-center gap-1 text-xl md:text-2xl lg:text-xl'>
+                    {/* <div className='flex  mr-auto items-center justify-center gap-1 text-xl md:text-2xl lg:text-xl'>
                         <FaPhoneAlt className=' text-[#a7594d]' />
                         <p className='text-start mr-auto  font-medium text-[#a7594d]'><span className='font-semibold text-[#a7594d]' >Contact us at:</span></p>
-                    </div>
+                    </div> */}
 
                     <div className='flex items-center justify-center mr-auto text-xl gap-1'>
                         <CgMail className='text-[#a7594d] text-xl font-semibold' />
                         <p className='text-start mr-auto text-[#a7594d]'> <span className='font-semibold text-[#a7594d]'>Gmail: </span>akashbagale@gmail.com</p>
                     </div>
 
-                    <div className='mr-auto text-xl font-playfair-display'>
-                        <p className='text-xl font-semibold text-[#a7594d]'>Office contact:</p>
-                        <p className='text-left text-[#a7594d]'><span className='font-semibold text-[#a7594d]'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
-                        <p className='text-left text-[#a7594d]'><span className='font-semibold text-[#a7594d]'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
+                    <div className='mr-auto text-xl font-playfair-display '>
+                        <div className='flex items-center gap-1'>
+                            <FaPhoneAlt className=' text-[#a7594d] text-lg' />
+                            <p className='text-xl font-semibold text-[#a7594d]'>Office contact:</p>
+                        </div>
+                        <p className='text-left text-[#a7594d] text-lg'><span className='font-semibold text-lg text-[#a7594d]'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
+                        <p className='text-left text-[#a7594d] text-lg'><span className='font-semibold text-[#a7594d]text-xl'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
                     </div>
 
-                    <div className=' flex flex-col items-center justify-center'>
+                    {/* <div className=' flex flex-col items-center justify-center'>
                         <p className='text-3xl text-[#a7594d] font-semibold'>Youtube</p>
                         <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className=' text-6xl text-red-500' /></a>
-                    </div>
+                    </div> */}
 
                     <div className='flex flex-col  mt-4'>
                         <p className='text-2xl font-playfair-display text-start mr-auto font-semibold text-[#a7594d]'>Social media links:</p>
 
                         <div className='flex gap-8 items-center justify-center p-4'>
-                            <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className='text-2xl text-[#a7594d]' /></a>
-                            <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-2xl text-[#a7594d]' /></a>
+                            <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className='text-2xl text-[#1877F2]' /></a>
+                            <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-2xl text-[#E4405F]' /></a>
+                            <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className=' text-2xl text-[#FF0000]' /></a>
                         </div>
                     </div>
 

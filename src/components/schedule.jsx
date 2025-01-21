@@ -28,12 +28,12 @@ const Schedule = () => {
 
     return (
         <div className="flex  justify-center   bg-[#A8B391] text-black p-2">
-            <div className="">
+            <div className="w-full">
                 <h2 className="text-lg font-bold mb-2 text-[#a7594d]">Select a Date and Time</h2>
                 <Calendar
                     onChange={handleDateChange}
                     value={date}
-                    className="mb-4 p-4 custom-calendar"
+                    className="mb-4 p-10 custom-calendar"
                 />
                 <p className="text-[#a7594d]">Selected Date:   <span className='text-xl font-semibold'>{date.toDateString()}</span> </p>
 
@@ -45,6 +45,7 @@ const Schedule = () => {
                         Schedule Call
                     </button>
                 </div>
+
             </div>
 
         </div >
