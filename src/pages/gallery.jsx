@@ -54,7 +54,7 @@ const Gallery = () => {
     );
 
     return (
-        <div className="gallery-container m-8">
+        <div className="gallery-container m-8 h-screen">
             <h1 className="text-2xl font-bold text-center mb-6">Event Gallery</h1>
 
             <div className="mb-4 flex justify-center">

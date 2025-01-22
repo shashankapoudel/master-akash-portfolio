@@ -11,36 +11,38 @@ const Contact = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex w-full  ">
+        <div className="flex  w-full ">
 
-            <div className="flex flex-col lg:flex-row  lg:m-6 m-0 lg:border border-[#3c5551]  w-full  font-playfair-display h-full tracking-wider ">
+            <div className="flex flex-col lg:flex-row  lg:m-12 m-0 lg:border  w-full  font-playfair-display h-full lg:tracking-wider tracking-wide bg-white">
 
-                <div className="flex flex-col items-center lg:w-1/2 w-full md:w-full text-white p-4 gap-4">
-                    <h1 className="align-text-top text-[#a7594d] font-bold text-4xl md:text-5xl">Akash Bagale</h1>
+                <div className="flex flex-col items-center lg:w-1/2 w-full md:w-full  p-6 lg:p-12 gap-2 lg:gap-4">
 
-                    {/* <div className='flex  mr-auto items-center justify-center gap-1 text-xl md:text-2xl lg:text-xl'>
-                        <FaPhoneAlt className=' text-[#a7594d]' />
-                        <p className='text-start mr-auto  font-medium text-[#a7594d]'><span className='font-semibold text-[#a7594d]' >Contact us at:</span></p>
-                    </div> */}
+                    <img
+                        src='/Images/homePhoto.jpg'
+                        className='w-32 h-32 rounded-full object-cover'
+                    />
+                    <h1 className="align-text-top text-[#a7594d] font-bold text-3xl md:text-4xl lg:text-2xl">Akash Bagale</h1>
 
-                    <div className='flex items-center justify-center mr-auto text-xl gap-1'>
-                        <CgMail className='text-[#a7594d] text-xl font-semibold' />
-                        <p className='text-start mr-auto text-[#a7594d]'> <span className='font-semibold text-[#a7594d]'>Gmail: </span>akashbagale@gmail.com</p>
+
+
+                    <div className='flex items-center justify-center mr-auto lg:text-lg text-base gap-1'>
+                        <CgMail className='text-[#a7594d] text-lg font-semibold' />
+                        <p className='text-start mr-auto text-[#a7594d]'> <span className='font-semibold text-[#a7594d]'>Mail: </span>akashbagale@gmail.com</p>
                     </div>
 
-                    <div className='mr-auto text-xl font-playfair-display '>
-                        <div className='flex items-center gap-1'>
-                            <FaPhoneAlt className=' text-[#a7594d] text-lg' />
-                            <p className='text-xl font-semibold text-[#a7594d]'>Office contact:</p>
-                        </div>
-                        <p className='text-left text-[#a7594d] text-lg'><span className='font-semibold text-lg text-[#a7594d]'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
-                        <p className='text-left text-[#a7594d] text-lg'><span className='font-semibold text-[#a7594d]text-xl'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
+
+                    <div className='flex items-center justify-center mr-auto gap-2'>
+                        <FaPhoneAlt className=' text-[#a7594d] text-lg' />
+                        <p className='text-left text-[#a7594d] text-base lg:text-lg tracking-wide'><span className='font-semibold text-lg text-[#a7594d] tracking-wider'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
                     </div>
 
-                    {/* <div className=' flex flex-col items-center justify-center'>
-                        <p className='text-3xl text-[#a7594d] font-semibold'>Youtube</p>
-                        <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className=' text-6xl text-red-500' /></a>
-                    </div> */}
+                    <div className='flex items-center justify-center mr-auto gap-2'>
+                        <FaPhoneAlt className=' text-[#a7594d] lg:text-lg text-base' />
+                        <p className='text-left text-[#a7594d] text-base lg:text-lg tracking-normal'><span className='font-semibold text-[#a7594d]text-xl tracking-wider'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
+                    </div>
+
+
+
 
                     <div className='flex flex-col  mt-4'>
                         <p className='text-2xl font-playfair-display text-start mr-auto font-semibold text-[#a7594d]'>Social media links:</p>
@@ -54,7 +56,7 @@ const Contact = () => {
 
                 </div>
 
-                <div className="w-100 lg:border-2 border border-[#3c5551] lg:m-4 m-2"></div>
+                <div className="lg:border-2 border border-[#3c5551] lg:m-6 m-2"></div>
 
                 <div className='lg:w-1/2 w-full flex flex-col items-center p-4 text-white tracking-widest gap-4'>
 
@@ -62,6 +64,7 @@ const Contact = () => {
 
                     <Schedule />
                 </div>
+
             </div>
             {/* <SocialCard /> */}
         </div>
