@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='m-4 border tracking-wider p-2'>
+        <div className='m-4 tracking-wider p-2'>
             <div className='p-12 relative'>
                 <img
                     className='w-full h-auto object-contain'
