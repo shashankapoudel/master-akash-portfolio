@@ -21,31 +21,29 @@ const Contact = () => {
                         src='/Images/homePhoto.jpg'
                         className='w-32 h-32 rounded-full object-cover'
                     />
-                    <h1 className="align-text-top text-[#a7594d] font-bold text-3xl md:text-4xl lg:text-2xl">Akash Bagale</h1>
-
-
+                    <h1 className="align-text-top text-[#111111] font-bold text-3xl md:text-4xl lg:text-3xl">Akash Bagale</h1>
 
                     <div className='flex items-center justify-center mr-auto lg:text-lg text-base gap-1'>
-                        <CgMail className='text-[#a7594d] text-lg font-semibold' />
-                        <p className='text-start mr-auto text-[#a7594d]'> <span className='font-semibold text-[#a7594d]'>Mail: </span>akashbagale@gmail.com</p>
+                        <CgMail className='text-[#03385F] text-lg font-semibold' />
+                        <p className='text-start mr-auto text-[#666666]'> <span className='font-semibold text-[#03385F]'>Mail: </span>akashbagale@gmail.com</p>
                     </div>
 
 
                     <div className='flex items-center justify-center mr-auto gap-2'>
-                        <FaPhoneAlt className=' text-[#a7594d] text-lg' />
-                        <p className='text-left text-[#a7594d] text-base lg:text-lg tracking-wide'><span className='font-semibold text-lg text-[#a7594d] tracking-wider'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
+                        <FaPhoneAlt className=' text-[#03385F] text-base' />
+                        <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className='font-semibold text-lg text-[#03385F] tracking-wider'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
                     </div>
 
                     <div className='flex items-center justify-center mr-auto gap-2'>
-                        <FaPhoneAlt className=' text-[#a7594d] lg:text-lg text-base' />
-                        <p className='text-left text-[#a7594d] text-base lg:text-lg tracking-normal'><span className='font-semibold text-[#a7594d]text-xl tracking-wider'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
+                        <FaPhoneAlt className=' text-[#03385F]  text-base' />
+                        <p className='text-left text-[#666666] text-base lg:text-lg tracking-normal'><span className='font-semibold text-[#03385F] tracking-wider'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
                     </div>
 
 
 
 
                     <div className='flex flex-col  mt-4'>
-                        <p className='text-2xl font-playfair-display text-start mr-auto font-semibold text-[#a7594d]'>Social media links:</p>
+                        <p className='text-2xl font-playfair-display text-start mr-auto font-semibold text-[#03385F]'>Social media links:</p>
 
                         <div className='flex gap-8 items-center justify-center p-4'>
                             <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className='text-2xl text-[#1877F2]' /></a>
@@ -60,7 +58,7 @@ const Contact = () => {
 
                 <div className='lg:w-1/2 w-full flex flex-col items-center p-4 text-white tracking-widest gap-4'>
 
-                    <h1 className='font-semibold text-2xl text-[#a7594d]'>Make Call Appointment</h1>
+                    {/* <h1 className='font-semibold text-2xl text-[#a7594d]'>Make Call Appointment</h1> */}
 
                     <Schedule />
                 </div>

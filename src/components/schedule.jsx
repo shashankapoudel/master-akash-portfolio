@@ -100,13 +100,13 @@ const Schedule = () => {
 
     return (
         <div className="flex flex-col items-center text-black p-4">
-            <h2 className="text-lg font-bold mb-4 text-[#a7594d]">Select a Date and Time</h2>
+            <h2 className="text-lg font-bold mb-4 text-[#03385F] ">Select a Date and Time</h2>
             <Calendar
                 onChange={handleDateChange}
                 value={date}
                 className="mb-4 lg:p-10 p-4 custom-calendar"
             />
-            <p className="text-[#a7594d] mb-4">
+            <p className="text-[#03385F] ] mb-4">
                 Selected Date:{" "}
                 <span className="text-xl font-semibold">
                     {date ? date.toDateString() : "No date selected"}
