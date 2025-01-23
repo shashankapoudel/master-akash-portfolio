@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className='m-2 tracking-wider'>
 
-            <div className='p-8 relative border'>
+            <div className='p-8 relative'>
                 <img
                     className='w-full h-auto object-contain'
                     src='/Images/homePhoto.jpg'
