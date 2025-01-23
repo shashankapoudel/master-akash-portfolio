@@ -47,7 +47,7 @@ const Header = () => {
                     {menuOpen ? <FiX /> : <FiMenu />}
                 </button>
 
-                <div className='hidden lg:flex  font-poppins gap-8  text-xl tracking-wider '>
+                <div className='hidden lg:flex  font-poppins gap-8  text-lg tracking-wider '>
                     {
                         navItems.map((item) => (
                             <NavLink to={item.path}
