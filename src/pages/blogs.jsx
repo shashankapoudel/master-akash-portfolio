@@ -7,21 +7,21 @@ const blogs = [
         id: 1,
         title: "Lorem ipsum dolor sit amet consectetur.",
         content:
-            "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...",
-        image: "/Images/homePhoto.jpg", // Replace with your actual image
+            "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing..",
+        image: "/Images/homePhoto.jpg",
     },
     {
         id: 2,
         title: "Lorem ipsum dolor sit amet consectetur.",
         content:
-            "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...",
+            "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing",
         image: "/Images/homePhoto.jpg",
     },
     {
         id: 3,
         title: "Lorem ipsum dolor sit amet consectetur.",
         content:
-            "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...",
+            "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing",
         image: "/Images/homePhoto.jpg",
     },
     {
@@ -37,10 +37,10 @@ const blogs = [
 const BlogPage = () => {
     const [selectedBlog, setSelectedBlog] = useState(null)
     return (
-        <div className="p-12 min-h-screen">
+        <div className="p-12 min-h-screen m-4">
             {
                 selectedBlog ? (
-                    <div className="w-1/2  mx-auto shadow-md rounded-lg p-6">
+                    <div className="w-1/2  mx-auto  rounded-lg p-6">
                         <button
                             onClick={() => setSelectedBlog(null)}
                             className="text-blue-500 mb-4 hover:underline"
@@ -58,7 +58,7 @@ const BlogPage = () => {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                        <div className="bg-white rounded-lg shadow-md p-4">
+                        <div className=" rounded-lg  p-4">
                             <img
                                 src={blogs[0].image}
                                 alt={blogs[0].title}
@@ -73,11 +73,11 @@ const BlogPage = () => {
                         </div>
 
 
-                        <div className="grid gap-4">
+                        <div className="grid gap-2">
                             {blogs.slice(1).map((blog) => (
                                 <div
                                     key={blog.id}
-                                    className="flex  bg-white rounded-lg shadow-md p-4 items-start"
+                                    className="flex rounded-lg p-4 items-start"
                                 >
                                     <img
                                         src={blog.image}

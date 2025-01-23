@@ -54,16 +54,16 @@ const Gallery = () => {
     );
 
     return (
-        <div className=" m-8">
-            <h1 className="text-2xl font-bold text-center mb-6">Event Gallery</h1>
+        <div className=" m-8 min-h-screen p-6 ">
+            <h1 className="text-2xl font-semibold text-center mb-4 text-[#111111]">Event Gallery</h1>
 
-            <div className="mb-4 flex justify-center">
+            <div className="mb-8 flex justify-center">
                 <input
                     type="text"
                     placeholder="Search for an event..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="px-4 py-2 border rounded-lg w-1/2"
+                    className="px-4 py-2 border rounded-lg w-1/3"
                 />
             </div>
 
@@ -72,18 +72,18 @@ const Gallery = () => {
             )}
 
             {filteredEvents.map((event) => (
-                <div key={event.id} className=" mb-6">
+                <div key={event.id} className=" mb-4">
                     <div
                         className="flex justify-between items-center cursor-pointer"
                         onClick={() => toggleEventImages(event.id)}
                     >
-                        <h2 className="text-xl font-bold text-[#a7594d]">{event.name}</h2>
+                        <h2 className="text-xl font-semibold text-[#323232]">{event.name}</h2>
                         <span className="text-lg">{openedEvent === event.id ? '▲' : '▼'}</span>
                     </div>
 
 
                     {openedEvent === event.id && (
-                        <div className="event-images grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                        <div className="event-images grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                             {event.images.map((image, index) => (
                                 <div key={index} className="image-card">
                                     <img

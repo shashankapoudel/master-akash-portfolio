@@ -13,7 +13,7 @@ const Contact = () => {
     return (
         <div className="flex  w-full ">
 
-            <div className="flex flex-col lg:flex-row  lg:m-12 m-0 lg:border  w-full  font-playfair-display h-full lg:tracking-wider tracking-wide bg-white">
+            <div className="flex flex-col lg:flex-row  lg:m-12 m-0 lg:border  w-full  font-playfair-display h-full lg:tracking-wider tracking-wide bg-[#FFFFFF]">
 
                 <div className="flex flex-col items-center lg:w-1/2 w-full md:w-full  p-6 lg:p-12 gap-2 lg:gap-4">
 

@@ -17,7 +17,8 @@ export default {
     extend: {
       fontFamily: {
         'marck-script': ['Marck Script', 'cursive'],
-        'playfair-display':['Playfair Script']
+        'playfair-display': ['Playfair Script'],
+        'poppins': ['Poppins'],
       },
     },
   },

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi';
 // import logo from './public/Images/logo1.jpg'
 
 const Header = () => {
+    const navigate = useNavigate();
 
     const navItems = [
         { name: 'Home', path: '/' },
@@ -13,6 +14,7 @@ const Header = () => {
         { name: 'About', path: '/about' },
         { name: 'Contact', path: '/contact' }
     ]
+    const location = useLocation()
     const [menuOpen, setMenuOpen] = useState(false);
     const [active, setActive] = useState(location.pathname);
 
@@ -27,29 +29,30 @@ const Header = () => {
                 <p className='text-xl lg:text-3xl font-marck-script text-white tracking-widest '>"Where you can feel the change"</p>
             </div>
 
-            <div className='flex justify-between  '>
-                <div className='lg:w-1/4 w-1/3 flex  justify-center'>
+            <div className='flex justify-between items-center bg-gray-100 text-[#606060] lg:py-4 lg:px-4 mx-8'>
+
+                <div className='flex  justify-center'>
                     <img
                         src="/Images/logo1.jpg"
                         alt="Company Logo"
                         className="lg:w-auto h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply"
                     />
                 </div>
+
                 <button
-                    className="text-4xl md:hidden p-4"
+                    className="text-4xl lg:hidden p-4"
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle menu"
                 >
                     {menuOpen ? <FiX /> : <FiMenu />}
                 </button>
 
-                <div className=' hidden md:flex lg:w-3/4 w-2/3 bg-[#3c5551] font-playfair-display p-4 gap-12 ml-auto text-white'>
+                <div className='hidden lg:flex  font-poppins gap-8  text-xl tracking-wider '>
                     {
                         navItems.map((item) => (
                             <NavLink to={item.path}
                                 key={item.name}
-                                // className={active === item.path ? 'text-[#3F7A4C] font-semibold' : 'text-[#E2897F] hover:text-[#539C68]'}
-                                className="text-2xl font-semibold tracking-widest hover:text-[#a7594d]"
+                                className={active === item.path ? 'text-[#a7594d] font-semibold' : 'text-[#606060] hover:text-[#a7594d]'}
                             >
                                 {item.name}
                             </NavLink>
@@ -58,11 +61,17 @@ const Header = () => {
                     }
                 </div>
 
+                <button
+                    onClick={() => navigate('/contact')}
+                    className='border px-1  lg:px-8 py-3  bg-[#044F86] text-white text-sm'>
+                    Book Appointment
+                </button>
+
             </div>
 
             {
                 menuOpen && (
-                    <div className="md:hidden bg-[#F6F8FA] p-2">
+                    <div className="lg:hidden md:flex bg-[#F6F8FA] p-2">
                         <ul className="flex flex-col gap-4 p-4">
                             {navItems.map((item) => (
                                 <li key={item.name}>
