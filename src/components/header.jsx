@@ -10,7 +10,7 @@ const Header = () => {
         { name: 'Services', path: '/services' },
         { name: 'Blogs', path: '/blogs' },
         { name: 'Gallery', path: '/gallery' },
-        { name: 'Testimonials', path: '/testimonials' },
+        { name: 'About', path: '/about' },
         { name: 'Contact', path: '/contact' }
     ]
     const [menuOpen, setMenuOpen] = useState(false);
