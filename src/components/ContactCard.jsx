@@ -1,19 +1,18 @@
 import React from 'react'
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
-// import { FaPhoneAlt } from "react-icons/cg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 const ContactCard = () => {
     const navigate = useNavigate()
     return (
-        <div className="flex p-12 w-full justify-between border gap-8">
+        <div className="flex p-12 w-full justify-between gap-8">
 
             <div className='w-1/2'>
                 <img
                     src='/Images/homePhoto.jpg'
-                    className='object-cover'
+                    className='object-cover rounded-lg'
                 />
             </div>
 

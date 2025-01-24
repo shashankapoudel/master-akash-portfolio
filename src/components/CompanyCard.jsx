@@ -3,9 +3,9 @@ import React from 'react'
 const CompanyCard = () => {
     return (
         <div className='flex flex-col gap-4 mt-4 '>
-            <h1 className='text-center text-[#022B4A] text-2xl font-semibold'>Companies</h1>
+            <h1 className='text-center text-[#022B4A] text-3xl font-bold'>Companies</h1>
 
-            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 mt-2'>
 
                 <div className='flex flex-col items-center justify-center p-4'>
                     <img

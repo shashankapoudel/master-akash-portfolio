@@ -3,7 +3,7 @@ import React from 'react'
 const Quotes = () => {
     return (
         <div className='mt-2'>
-            <h1 className='text-[#022B4A] font-semibold text-2xl  text-center'>My Quotes</h1>
+            <h1 className='text-[#022B4A] font-bold text-3xl  text-center'>My Quotes</h1>
 
             <div className='grid grid-cols-2 mt-5'>
 
@@ -12,7 +12,7 @@ const Quotes = () => {
                         src='/Images/homePhoto.jpg'
                         className='w-64 h-64 rounded-custom object-cover'
                     />
-                    <div className=' p-8 bg-[#FFFFFF] rounded-lg text-[#666666]'>
+                    <div className=' p-4 bg-[#FFFFFF] rounded-lg text-[#666666]'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam corrupti debitis maiores assumenda asperiores doloribus neque dolore maxime veritatis ducimus, necessitatibus, magnam laudantium modi numquam error aliquam provident obcaecati.</p>
                     </div>
 
@@ -24,7 +24,7 @@ const Quotes = () => {
                         className='w-64 h-64 rounded-custom object-cover '
                     />
 
-                    <div className='p-8 bg-[#FFFFFF] rounded-lg text-[#666666]'>
+                    <div className='p-4 bg-[#FFFFFF] rounded-lg text-[#666666]'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam corrupti debitis maiores assumenda asperiores doloribus neque dolore maxime veritatis ducimus, necessitatibus, magnam laudantium modi numquam error aliquam provident obcaecati.</p>
                     </div>
 
