@@ -9,7 +9,7 @@ const ServiceCard = () => {
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-2'>
 
-                <div className='p-8 border border-[#E6E7F3] bg-[#FFFFFF]'>
+                <div className=' flex flex-col items-center p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
                     <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                     <img
                         className='w-full rounded-md mb-4'
@@ -18,13 +18,13 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className='w-full bg-[#044F86] rounded-md p-2 text-white mt-2'
+                        className='w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2 '
                     >
                         Book my session
                     </button>
                 </div>
 
-                <div className='p-8 border border-[#E6E7F3] bg-[#FFFFFF]'>
+                <div className='flex flex-col items-center p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
                     <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                     <img
                         className='w-full rounded-md mb-4'
@@ -33,13 +33,13 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className='w-full bg-[#044F86] rounded-md p-2 text-white mt-2'
+                        className=' w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2'
                     >
                         Book my session
                     </button>
                 </div>
 
-                <div className='p-8 border border-[#E6E7F3] bg-[#FFFFFF]'>
+                <div className='flex flex-col items-center p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
                     <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                     <img
                         className='w-full rounded-md mb-4'
@@ -48,13 +48,13 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className='w-full bg-[#044F86] rounded-md p-2 text-white mt-2'
+                        className='w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2'
                     >
                         Book my session
                     </button>
                 </div>
 
-                <div className='p-8 border border-[#E6E7F3] bg-[#FFFFFF]'>
+                <div className=' flex flex-col items-center p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
                     <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                     <img
                         className='w-full rounded-md mb-4'
@@ -63,7 +63,7 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className='w-full bg-[#044F86] rounded-md p-2 text-white mt-2'
+                        className='w-full lg:w-1/3 flex items-center justify-center bg-[#044F86] rounded-md p-2 text-white mt-2'
                     >
                         Book my session
                     </button>
