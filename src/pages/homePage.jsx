@@ -36,7 +36,7 @@ const Home = () => {
 
             <div className="flex flex-col lg:flex-row justify-between p-4 gap-4">
 
-                <div className="flex items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-8">
+                <div className="flex items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6">
                     <img
                         src="/Images/homePhoto.jpg"
                         alt="HomePage photo"
