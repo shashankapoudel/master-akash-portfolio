@@ -50,7 +50,7 @@ const Home = () => {
                         Akash Bagale
                     </p>
 
-                    <p className="text-[#666666] font-medium lg:text-lg text-sm font-poppins lg:tracking-wider tracking-normal text-justify max-w-4xl py-4">
+                    <p className="text-[#666666] font-medium lg:text-lg text-sm font-poppins lg:tracking-wide tracking-normal text-justify max-w-4xl py-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus recusandae, saepe vitae corrupti officiis veniam illum? Non eius laboriosam, fugiat fugit tenetur eaque incidunt deleniti repellendus atque recusandae alias.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, praesentium? Dolore numquam vitae, ratione iusto consequatur impedit eius obcaecati reprehenderit pariatur, nihil repellat aspernatur esse, blanditiis nostrum excepturi similique aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquam voluptates est deleniti. Blanditiis, ipsa molestias fugit nam eos inventore debitis beatae exercitationem non culpa ad doloremque alias corporis sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique velit eaque incidunt adipisci repellat asperiores? Maiores necessitatibus maxime ratione nisi amet, vel modi dolorum et quam cupiditate inventore eaque sit?
                     </p>
                 </div>
