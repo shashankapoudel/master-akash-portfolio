@@ -9,9 +9,9 @@ const Header = () => {
     const navItems = [
         { name: 'Home', path: '/' },
         { name: 'Services', path: '/services' },
+        { name: 'About', path: '/about' },
         { name: 'Blogs', path: '/blogs' },
         { name: 'Gallery', path: '/gallery' },
-        { name: 'About', path: '/about' },
         { name: 'Contact', path: '/contact' }
     ]
     const location = useLocation()

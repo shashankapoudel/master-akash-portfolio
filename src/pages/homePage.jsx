@@ -26,30 +26,40 @@
 
 
 import React from 'react';
+import ServiceCard from '../components/ServiceCard';
+import GalleryCard from '../components/GalleryCard';
 
 
 const Home = () => {
     return (
-        <div className="flex flex-col lg:flex-row m-4 lg:mx-6  p-2">
+        <div className='m-4 lg:mx-6'>
 
-            <div className="flex items-center justify-center w-full lg:w-1/3 order-none lg:order-1 px-4">
-                <img
-                    src="/Images/homePhoto.jpg"
-                    alt="HomePage photo"
-                    className="w-auto h-full object-cover lg:rounded-none"
-                />
+            <div className="flex flex-col lg:flex-row   p-2">
+
+                <div className="flex items-center justify-center w-full lg:w-1/3 order-none lg:order-1 px-4">
+                    <img
+                        src="/Images/homePhoto.jpg"
+                        alt="HomePage photo"
+                        className="w-auto h-full object-cover lg:rounded-none"
+                    />
+                </div>
+
+                <div className="w-full lg:w-2/3 flex flex-col items-center  text-start ">
+
+                    <p className="flex items-start justify-start text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins py-4 text-start">
+                        Akash Bagale
+                    </p>
+
+                    <p className="text-[#666666] font-medium lg:text-lg text-sm font-poppins lg:tracking-wider tracking-normal text-justify max-w-4xl py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus recusandae, saepe vitae corrupti officiis veniam illum? Non eius laboriosam, fugiat fugit tenetur eaque incidunt deleniti repellendus atque recusandae alias.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, praesentium? Dolore numquam vitae, ratione iusto consequatur impedit eius obcaecati reprehenderit pariatur, nihil repellat aspernatur esse, blanditiis nostrum excepturi similique aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquam voluptates est deleniti. Blanditiis, ipsa molestias fugit nam eos inventore debitis beatae exercitationem non culpa ad doloremque alias corporis sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique velit eaque incidunt adipisci repellat asperiores? Maiores necessitatibus maxime ratione nisi amet, vel modi dolorum et quam cupiditate inventore eaque sit?
+                    </p>
+                </div>
             </div>
-
-            <div className="w-full lg:w-2/3 flex flex-col items-center  text-start ">
-
-                <p className="flex items-start justify-start text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins py-4 text-start">
-                    Akash Bagale
-                </p>
-
-                <p className="text-[#666666] font-medium lg:text-lg text-sm font-poppins lg:tracking-wider tracking-normal text-justify max-w-4xl py-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus recusandae, saepe vitae corrupti officiis veniam illum? Non eius laboriosam, fugiat fugit tenetur eaque incidunt deleniti repellendus atque recusandae alias.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, praesentium? Dolore numquam vitae, ratione iusto consequatur impedit eius obcaecati reprehenderit pariatur, nihil repellat aspernatur esse, blanditiis nostrum excepturi similique aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquam voluptates est deleniti. Blanditiis, ipsa molestias fugit nam eos inventore debitis beatae exercitationem non culpa ad doloremque alias corporis sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique velit eaque incidunt adipisci repellat asperiores? Maiores necessitatibus maxime ratione nisi amet, vel modi dolorum et quam cupiditate inventore eaque sit?
-                </p>
-
+            <div className='px-8'>
+                <ServiceCard />
+            </div>
+            <div className='px-8'>
+                <GalleryCard />
             </div>
         </div>
     );

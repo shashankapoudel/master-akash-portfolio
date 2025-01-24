@@ -6,7 +6,7 @@ import MeetingForm from '../components/meetingForm';
 
 const SchedueleMeeting = () => {
     const location = useLocation();
-    const meetingData = location.state?.meetingData || {};
+    const meetingData = location.state || {};
     console.log(meetingData)
 
     const date = meetingData.date;
