@@ -5,16 +5,16 @@ import ContactCard from '../components/ContactCard'
 
 const About = () => {
     return (
-        <div className='m-4 tracking-wider'>
+        <div className='m-2 lg:m-4 tracking-wider'>
 
-            <div className='p-8 relative'>
+            <div className='p-4 lg:p-8 relative'>
                 <img
                     className='w-full h-auto object-contain'
                     src='/Images/homePhoto.jpg'
                 />
             </div>
 
-            <div className='p-12 flex flex-col gap-4'>
+            <div className='p-4 lg:p-12 flex flex-col gap-4'>
 
                 <div className='py-4'>
                     <h2 className="text-3xl font-bold text-[#022B4A] mb-2">About me</h2>
@@ -66,8 +66,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col p-12 gap-4 relative '>
-
+            <div className='flex flex-col p-4 lg:p-12 gap-4 relative '>
                 <div>
                     <h1 className='text-center text-3xl font-bold text-[#022B4A]'>My Services</h1>
                     <p></p>
@@ -101,13 +100,13 @@ const About = () => {
             </div>
 
 
-            <div className='p-12'>
+            <div className='p-4 lg:p-12'>
                 <CompanyCard />
             </div>
-            <div className='p-12'>
+            <div className='p-4 lg:p-12'>
                 <Quotes />
             </div>
-            <div className='p-12'>
+            <div className='p-4 lg:p-12'>
                 <ContactCard />
             </div>
 

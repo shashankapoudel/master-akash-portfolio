@@ -5,9 +5,9 @@ const Quotes = () => {
         <div className='mt-2'>
             <h1 className='text-[#022B4A] font-bold text-3xl  text-center'>My Quotes</h1>
 
-            <div className='grid grid-cols-2 mt-5'>
+            <div className=' grid grid-cols-1 lg:grid-cols-2 mt-5'>
 
-                <div className='flex justify-center items-center p-4 '>
+                <div className='flex flex-col lg:flex-row md:flex-row justify-center items-center p-4 '>
                     <img
                         src='/Images/homePhoto.jpg'
                         className='w-64 h-64 rounded-custom object-cover'
@@ -18,7 +18,7 @@ const Quotes = () => {
 
                 </div>
 
-                <div className='flex justify-center items-center p-4'>
+                <div className='flex flex-col lg:flex-row md:flex-row justify-center items-center p-4'>
                     <img
                         src='/Images/homePhoto.jpg'
                         className='w-64 h-64 rounded-custom object-cover '
