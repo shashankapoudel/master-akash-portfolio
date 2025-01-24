@@ -1,8 +1,11 @@
 import React from 'react'
+import CompanyCard from '../components/CompanyCard'
+import Quotes from '../components/Quotes'
+import ContactCard from '../components/ContactCard'
 
 const About = () => {
     return (
-        <div className='m-2 tracking-wider'>
+        <div className='m-4 tracking-wider'>
 
             <div className='p-8 relative'>
                 <img
@@ -63,7 +66,8 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col p-12 gap-4  relative'>
+            <div className='flex flex-col p-12 gap-4 relative '>
+
                 <div>
                     <h1 className='text-center text-3xl font-bold text-[#022B4A]'>My Services</h1>
                     <p></p>
@@ -94,6 +98,17 @@ const About = () => {
                         href='/services'>Learn more
                     </button>
                 </div>
+            </div>
+
+
+            <div className='p-12'>
+                <CompanyCard />
+            </div>
+            <div className='p-12'>
+                <Quotes />
+            </div>
+            <div className='p-12'>
+                <ContactCard />
             </div>
 
         </div>

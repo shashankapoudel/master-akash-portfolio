@@ -32,11 +32,11 @@ import GalleryCard from '../components/GalleryCard';
 
 const Home = () => {
     return (
-        <div className='m-4 lg:mx-6'>
+        <div className=' m-2 lg:m-8'>
 
-            <div className="flex flex-col lg:flex-row   p-2">
+            <div className="flex flex-col lg:flex-row justify-between p-4 gap-4">
 
-                <div className="flex items-center justify-center w-full lg:w-1/3 order-none lg:order-1 px-4">
+                <div className="flex items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-8">
                     <img
                         src="/Images/homePhoto.jpg"
                         alt="HomePage photo"
@@ -44,9 +44,9 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="w-full lg:w-2/3 flex flex-col items-center  text-start ">
+                <div className="w-full lg:w-1/2 flex flex-col items-center p-0 lg:p-8">
 
-                    <p className="flex items-start justify-start text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins py-4 text-start">
+                    <p className="flex items-start justify-start text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins  text-start">
                         Akash Bagale
                     </p>
 
@@ -54,11 +54,13 @@ const Home = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus recusandae, saepe vitae corrupti officiis veniam illum? Non eius laboriosam, fugiat fugit tenetur eaque incidunt deleniti repellendus atque recusandae alias.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, praesentium? Dolore numquam vitae, ratione iusto consequatur impedit eius obcaecati reprehenderit pariatur, nihil repellat aspernatur esse, blanditiis nostrum excepturi similique aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquam voluptates est deleniti. Blanditiis, ipsa molestias fugit nam eos inventore debitis beatae exercitationem non culpa ad doloremque alias corporis sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique velit eaque incidunt adipisci repellat asperiores? Maiores necessitatibus maxime ratione nisi amet, vel modi dolorum et quam cupiditate inventore eaque sit?
                     </p>
                 </div>
+
             </div>
-            <div className='px-8'>
+
+            <div className='p-0 lg:p-8'>
                 <ServiceCard />
             </div>
-            <div className='px-8'>
+            <div className='p-0 lg:p-8'>
                 <GalleryCard />
             </div>
         </div>

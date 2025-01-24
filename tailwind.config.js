@@ -20,6 +20,9 @@ export default {
         'playfair-display': ['Playfair Script'],
         'poppins': ['Poppins'],
       },
+      borderRadius: {
+        'custom': '10px 10px 10px 100px',
+      },
     },
   },
   plugins: [],

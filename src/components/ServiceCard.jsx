@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceCard = () => {
     return (
-        <div className='flex flex-col p-8 gap-2 relative mt-4'>
+        <div className='flex flex-col gap-2 relative mt-4 p-4'>
 
             <h1 className='text-center text-3xl font-semibold text-[#111111]'>Services</h1>
 
