@@ -44,7 +44,7 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="w-full lg:w-1/2 flex flex-col items-center p-0 lg:p-8">
+                <div className="w-full lg:w-1/2 flex flex-col items-center p-0 lg:p-8 py-4">
 
                     <p className="flex items-start justify-start text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins  text-start">
                         Akash Bagale
