@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -14,15 +15,56 @@ const Footer = () => {
 
 
 
-            <div className='flex  text-white gap-6 text-x'>
-                <a className='hover:text-[#3c5551]' href='/'>Home</a>
-                <a className='hover:text-[#3c5551]' href='/services'>Services</a>
-                <a className='hover:text-[#3c5551]' href='/about'>About</a>
-                <a className='hover:text-[#3c5551]' href='/contact'>Contact</a>
-                <a className='hover:text-[#3c5551]' href='/gallery'>Gallery</a>
-                <a className='hover:text-[#3c5551]' href='/blogs'>Blogs</a>
+            <div className='flex text-white gap-6 text-x'>
+                <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Home
+                </NavLink>
+                <NavLink
+                    to="/services"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Services
+                </NavLink>
+                <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    About
+                </NavLink>
+                <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Contact
+                </NavLink>
+                <NavLink
+                    to="/gallery"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Gallery
+                </NavLink>
+                <NavLink
+                    to="/blogs"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Blogs
+                </NavLink>
             </div>
-
             <div className='flex gap-12'>
 
                 <div>
