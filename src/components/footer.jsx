@@ -17,10 +17,10 @@ const Footer = () => {
             <div className='flex  text-white gap-6 text-x'>
                 <a className='hover:text-[#3c5551]' href='/'>Home</a>
                 <a className='hover:text-[#3c5551]' href='/services'>Services</a>
+                <a className='hover:text-[#3c5551]' href='/about'>About</a>
                 <a className='hover:text-[#3c5551]' href='/contact'>Contact</a>
                 <a className='hover:text-[#3c5551]' href='/gallery'>Gallery</a>
                 <a className='hover:text-[#3c5551]' href='/blogs'>Blogs</a>
-                <a className='hover:text-[#3c5551]' href='/testimonials'>Testimonials</a>
             </div>
 
             <div className='flex gap-12'>
