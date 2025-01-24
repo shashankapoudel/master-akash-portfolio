@@ -32,7 +32,7 @@ import GalleryCard from '../components/GalleryCard';
 
 const Home = () => {
     return (
-        <div className=' m-2 lg:m-8'>
+        <div className=' m-2 lg:m-6'>
 
             <div className="flex flex-col lg:flex-row justify-between p-4 gap-4">
 
