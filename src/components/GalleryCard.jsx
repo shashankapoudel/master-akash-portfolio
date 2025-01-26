@@ -92,7 +92,7 @@ const GalleryCard = () => {
             <h1 className='text-center text-3xl font-semibold text-[#111111]'>Gallery</h1>
             <div className='flex items-center justify-center mt-4'>
                 <button
-                    className='text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-70 transition'
+                    className='text-white bg-black bg-opacity-50 p-1 rounded-full hover:bg-opacity-70 transition'
                     onClick={prevSlide}
                 >
                     <GrFormPrevious />
@@ -119,7 +119,7 @@ const GalleryCard = () => {
                 </div>
 
                 <button
-                    className='text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-70 transition'
+                    className='text-white bg-black bg-opacity-50 p-1 rounded-full hover:bg-opacity-70 transition'
                     onClick={nextSlide}
                 >
                     <GrFormNext />

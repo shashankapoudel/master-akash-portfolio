@@ -139,14 +139,14 @@ const Home = () => {
     return (
         <div className='m-2 lg:m-6'>
             <div className="flex flex-col lg:flex-row justify-between p-4 gap-4">
-                <div className="flex items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6">
+                <div className="flex items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-8">
                     <AnimatePresence mode='wait'>
                         <motion.div
                             key={currentImageIndex}
                             initial={{ opacity: 0, x: -30, scale: 0.9 }}
                             animate={{ opacity: 1, x: 0, scale: 0.95 }}
                             exit={{ opacity: 0, x: 50, scale: 0.9 }}
-                            transition={{ duration: 0.8, ease: 'easeInOut' }}
+                            transition={{ duration: 0.9, ease: 'easeInOut' }}
                             className="relative overflow-hidden shadow-xl rounded-lg"
                         >
                             <img
