@@ -50,12 +50,12 @@ const Contact = () => {
                             Office Contact:</h1>
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4 '>
                             <FaPhoneAlt className=' text-[#03385F] text-base' />
-                            <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className='font-semibold text-lg text-[#03385F] tracking-wider'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
+                            <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className='font-semibold text-lg text-[#03385F] tracking-wider'>Nepal office(Kapil): </span>+977- 9849779890</p>
                         </div>
 
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4'>
                             <FaPhoneAlt className=' text-[#03385F]  text-base' />
-                            <p className='text-left text-[#666666] text-base lg:text-lg tracking-normal'><span className='font-semibold text-[#03385F] tracking-wider'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
+                            <p className='text-left text-[#666666] text-base lg:text-lg tracking-normal'><span className='font-semibold text-[#03385F] tracking-wider'>Hongkong office(Cathrine):  </span>+852 9416 9123</p>
                         </div>
                     </div>
 
