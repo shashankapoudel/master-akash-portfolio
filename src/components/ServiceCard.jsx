@@ -18,7 +18,7 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className='w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2 '
+                        className='w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2  bg-gradient-to-r from-[#044F86] to-[#0A6EB5]  '
                     >
                         Book my session
                     </button>
@@ -33,7 +33,7 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className=' w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2'
+                        className=' w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2  bg-gradient-to-r from-[#044F86] to-[#0A6EB5] '
                     >
                         Book my session
                     </button>
@@ -48,7 +48,7 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className='w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2'
+                        className='w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2  bg-gradient-to-r from-[#044F86] to-[#0A6EB5] '
                     >
                         Book my session
                     </button>
@@ -63,7 +63,7 @@ const ServiceCard = () => {
                     <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
 
                     <button
-                        className='w-full lg:w-1/3 flex items-center justify-center bg-[#044F86] rounded-md p-2 text-white mt-2'
+                        className='w-full lg:w-1/3 flex items-center justify-center bg-[#044F86] rounded-md p-2 text-white mt-2  bg-gradient-to-r from-[#044F86] to-[#0A6EB5] '
                     >
                         Book my session
                     </button>
