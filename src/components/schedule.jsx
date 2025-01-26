@@ -120,7 +120,7 @@ const Schedule = () => {
                         {Timings.map((timing) => (
                             <button
                                 key={timing}
-                                className={`px-4 py-2 rounded bg-[#3c5551] text-white hover:bg-[#2a3f3e] ${time === timing ? "ring-2 ring-[#a7594d]" : ""
+                                className={`px-4 py-2 rounded bg-[#03385F] text-white hover:bg-[#2a3f3e] ${time === timing ? "ring-2 ring-[#a7594d]" : ""
                                     }`}
                                 onClick={() => setTime(timing)}
                             >
@@ -140,7 +140,7 @@ const Schedule = () => {
             {date && time && (
                 <div className="flex items-center justify-center">
                     <button
-                        className="px-4 py-2 bg-[#3c5551] text-white rounded mt-2"
+                        className="px-4 py-2 bg-[#03385F] text-white rounded mt-2"
                         onClick={handleScheduleCall}
                     >
                         Schedule Call

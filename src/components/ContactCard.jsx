@@ -25,7 +25,7 @@ const ContactCard = () => {
 
                     <div className='flex items-center justify-center mr-auto lg:text-lg text-base gap-1'>
                         <CgMail className='text-[#03385F] text-lg font-semibold' />
-                        <p className='text-start mr-auto text-[#666666]'> <span className='font-semibold text-[#03385F]'>Mail: </span>akashbagale@gmail.com</p>
+                        <p className='text-start mr-auto text-[#666666]'> <span className='font-semibold text-[#03385F]'>Mail: </span>akashbanjara@gmail.com</p>
                     </div>
 
 

@@ -12,8 +12,8 @@ const Quotes = () => {
                         src='/Images/homePhoto.jpg'
                         className='w-64 h-64 rounded-custom object-cover'
                     />
-                    <div className=' p-4 bg-[#FFFFFF] rounded-lg text-[#666666]'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam corrupti debitis maiores assumenda asperiores doloribus neque dolore maxime veritatis ducimus, necessitatibus, magnam laudantium modi numquam error aliquam provident obcaecati.</p>
+                    <div className=' p-6 bg-[#FFFFFF] rounded-lg text-[#666666]'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam corrupti debitis maiores assumenda asperiores doloribus neque dolore maxime veritatis ducimus.</p>
                     </div>
 
                 </div>
@@ -24,8 +24,8 @@ const Quotes = () => {
                         className='w-64 h-64 rounded-custom object-cover '
                     />
 
-                    <div className='p-4 bg-[#FFFFFF] rounded-lg text-[#666666]'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam corrupti debitis maiores assumenda asperiores doloribus neque dolore maxime veritatis ducimus, necessitatibus, magnam laudantium modi numquam error aliquam provident obcaecati.</p>
+                    <div className='p-6 bg-[#FFFFFF] rounded-lg text-[#666666]'>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam corrupti debitis maiores assumenda asperiores doloribus neque dolore maxime veritatis ducimus, necessitatibus, magnam .</p>
                     </div>
 
                 </div>

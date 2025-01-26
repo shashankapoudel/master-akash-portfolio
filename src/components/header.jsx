@@ -47,12 +47,12 @@ const Header = () => {
                     {menuOpen ? <FiX /> : <FiMenu />}
                 </button>
 
-                <div className='hidden lg:flex  font-poppins gap-8  text-lg tracking-wider '>
+                <div className='hidden lg:flex  font-poppins gap-10  text-lg tracking-wider '>
                     {
                         navItems.map((item) => (
                             <NavLink to={item.path}
                                 key={item.name}
-                                className={active === item.path ? 'text-[#a7594d] font-semibold' : 'text-[#606060] hover:text-[#a7594d]'}
+                                className={active === item.path ? 'text-[#a7594d] font-semibold hover:-translate-y-1' : 'text-[#606060] hover:text-[#a7594d] hover:-translate-y-1'}
                             >
                                 {item.name}
                             </NavLink>
