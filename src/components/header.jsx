@@ -63,7 +63,7 @@ const Header = () => {
 
                 <button
                     onClick={() => navigate('/contact')}
-                    className='border px-1  lg:px-8 py-3  bg-[#044F86] text-white text-sm'>
+                    className='border px-1  lg:px-8 py-3  bg-[#044F86] text-white text-sm bg-gradient-to-r from-[#044F86] to-[#0A6EB5]    shadow-lg hover:shadow-xl transform transition-all duration-300  ease-out hover:-translate-y-1 active:translate-y-0 active:scale-105'>
                     Book Appointment
                 </button>
 
