@@ -15,7 +15,7 @@ const Footer = () => {
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
-                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                        isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
                     }
                 >
                     Home
@@ -24,7 +24,7 @@ const Footer = () => {
                 <NavLink
                     to="/services"
                     className={({ isActive }) =>
-                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                        isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
                     }
                 >
                     Services
@@ -32,7 +32,7 @@ const Footer = () => {
                 <NavLink
                     to="/about"
                     className={({ isActive }) =>
-                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                        isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
                     }
                 >
                     About
@@ -40,7 +40,7 @@ const Footer = () => {
                 <NavLink
                     to="/contact"
                     className={({ isActive }) =>
-                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                        isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
                     }
                 >
                     Contact
@@ -48,7 +48,7 @@ const Footer = () => {
                 <NavLink
                     to="/gallery"
                     className={({ isActive }) =>
-                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                        isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
                     }
                 >
                     Gallery
