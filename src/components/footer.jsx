@@ -15,7 +15,7 @@ const Footer = () => {
 
 
 
-            <div className='flex  text-white gap-6 text-x'>
+            <div className='flex  text-white gap-2 md:gap-4 lg:gap-6 text-x'>
                 <NavLink
                     to="/"
                     className={({ isActive }) =>

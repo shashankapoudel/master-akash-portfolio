@@ -91,11 +91,12 @@ const GalleryCard = () => {
     };
 
     return (
-        <div className='p-8'>
+        <div className=' p-4 lg:p-8'>
             <h1 className='text-center text-3xl font-semibold text-[#111111]'>Gallery</h1>
             <div className='flex items-center justify-center mt-4'>
+
                 <button
-                    className='text-white bg-black bg-opacity-50 p-1 rounded-full hover:bg-opacity-70 transition'
+                    className='text-white bg-black bg-opacity-50  p-0 lg:p-1 rounded-full hover:bg-opacity-70 transition'
                     onClick={prevSlide}
                 >
                     <GrFormPrevious />
@@ -107,7 +108,7 @@ const GalleryCard = () => {
                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                     >
                         {chunks.map((chunk, index) => (
-                            <div key={index} className='w-full flex-shrink-0 grid grid-cols-4 gap-4 px-2'>
+                            <div key={index} className='w-full flex-shrink-0 grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 px-0 lg:px-2'>
                                 {chunk.map((image, idx) => (
                                     <img
                                         key={idx}
@@ -122,7 +123,7 @@ const GalleryCard = () => {
                 </div>
 
                 <button
-                    className='text-white bg-black bg-opacity-50 p-1 rounded-full hover:bg-opacity-70 transition'
+                    className='text-white bg-black bg-opacity-50 p-0 lg:p-1 rounded-full hover:bg-opacity-70 transition'
                     onClick={nextSlide}
                 >
                     <GrFormNext />
