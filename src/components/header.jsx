@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { FiMenu, FiX } from 'react-icons/fi';
-// import logo from './public/Images/logo1.jpg'
+
 
 const Header = () => {
     const navigate = useNavigate();

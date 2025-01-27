@@ -70,7 +70,7 @@ const Home = () => {
                     </p>
 
                     <p className="text-[#666666] font-medium lg:text-lg text-sm font-poppins lg:tracking-wide tracking-normal text-justify max-w-4xl py-4">
-                        Akash Banjara is a soulful sound healer, meditation guide, and yoga expert devoted to helping others find peace and purpose. Rooted in Nepal’s spiritual heritage and inspired by Hong Kong’s vibrant energy, Akash weaves ancient wisdom with modern insights to create transformative experiences. Through his retreats, workshops, and personal sessions, he has guided countless individuals toward inner harmony, emotional balance, and holistic wellness. Akash’s journey is one of connection and healing, inspiring a global community to embrace joy, clarity, and the beauty of mindful living.
+                        Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness.His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
                     </p>
                 </div>
             </div>

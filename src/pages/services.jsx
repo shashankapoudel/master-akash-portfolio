@@ -95,7 +95,7 @@ const ServiceCard = ({ service }) => {
             <p className="text-gray-600">
                 <strong>Location:</strong> {service.location}
             </p>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            <button className="bg-gradient-to-r from-[#044F86] to-[#0A6EB5]  text-white px-4 py-2 rounded hover:bg-blue-400">
                 {service.cta}
             </button>
         </div>
