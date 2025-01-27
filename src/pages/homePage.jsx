@@ -44,7 +44,7 @@ const Home = () => {
                         <img
                             src={images[currentImageIndex]}
                             alt={`HomePage photo ${currentImageIndex + 1}`}
-                            className="w-full lg:w-auto lg:h-full  object-cover lg:rounded-none px-0 lg:px-7"
+                            className="w-full h-auto object-contain px-0 lg:px-7"
                         />
                     </motion.div>
 
