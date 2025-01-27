@@ -66,7 +66,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col p-4 lg:p-12 gap-4 relative '>
+            <div className='flex flex-col p-5 lg:p-12 gap-4 relative border-t border-b '>
                 <div>
                     <h1 className='text-center text-3xl font-bold text-[#022B4A]'>My Services</h1>
                     <p></p>
@@ -92,8 +92,9 @@ const About = () => {
                         <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                         <p className='text-[#666666]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.</p>
                     </div>
+
                     <button
-                        className='hover:text-[#3c5551] rounded-md absolute bottom-2 right-4'
+                        className='hover:text-[#3c5551] rounded-md lg:absolute bottom-1 right-6'
                         href='/services'>Learn more
                     </button>
                 </div>

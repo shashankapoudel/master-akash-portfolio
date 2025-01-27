@@ -29,13 +29,13 @@ const Header = () => {
                 <p className='text-xl lg:text-3xl font-marck-script text-white tracking-widest '>"Where you can feel the change"</p>
             </div>
 
-            <div className='flex justify-between items-center bg-gray-100 text-[#606060] py-2 px-2 lg:py-4 lg:px-8  mx-2 lg:mx-8'>
+            <div className='flex justify-between items-center bg-gray-100 text-[#606060] py-2 px-4 lg:py-4 lg:px-8  mx-2 lg:mx-8'>
 
                 <div className='flex justify-center'>
                     <img
                         src="/Images/LogoName.png"
                         alt="Company Logo"
-                        className="lg:w-auto md:w-auto h-16 w-50 transition-transform duration-300 hover:scale-105 mix-blend-multiply"
+                        className="lg:w-auto md:w-auto h-8 lg:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply"
                     />
                 </div>
 

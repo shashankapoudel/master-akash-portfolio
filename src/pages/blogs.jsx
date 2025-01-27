@@ -37,10 +37,10 @@ const blogs = [
 const BlogPage = () => {
     const [selectedBlog, setSelectedBlog] = useState(null)
     return (
-        <div className="p-12 min-h-screen m-4">
+        <div className="p-4 lg:p-12 min-h-screen m-2 lg:m-4">
             {
                 selectedBlog ? (
-                    <div className="w-1/2  mx-auto  rounded-lg p-6">
+                    <div className=" w-full lg:w-1/2  mx-auto rounded-lg  p-3 lg:p-6">
                         <button
                             onClick={() => setSelectedBlog(null)}
                             className="text-blue-500 mb-4 hover:underline"
@@ -58,7 +58,7 @@ const BlogPage = () => {
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                        <div className=" rounded-lg  p-4">
+                        <div className=" rounded-lg p-3 lg:p-4">
                             <img
                                 src={blogs[0].image}
                                 alt={blogs[0].title}
@@ -77,12 +77,12 @@ const BlogPage = () => {
                             {blogs.slice(1).map((blog) => (
                                 <div
                                     key={blog.id}
-                                    className="flex rounded-lg p-4 items-start"
+                                    className="flex flex-col lg:flex rounded-lg p-4 items-start"
                                 >
                                     <img
                                         src={blog.image}
                                         alt={blog.title}
-                                        className="w-1/3 rounded-md mr-4"
+                                        className=" w-full lg:w-1/3 rounded-md mr-4 object-cover"
                                     />
                                     <div>
                                         <h3

@@ -64,10 +64,13 @@ const services = [
 
 const ServiceCard = ({ service }) => {
     return (
-        <div className="bg-white shadow-md rounded-lg p-8 space-y-4">
+        <div className="bg-white shadow-md rounded-lg p-3 lg:p-8 space-y-4">
+
             <h3 className="text-xl font-bold text-gray-800">{service.title}</h3>
+
             <img src={service.image} />
             <p className="text-gray-600">{service.description}</p>
+
             <div>
                 <h4 className="font-semibold text-gray-800">What's Included:</h4>
                 <ul className="list-disc list-inside text-gray-600">
@@ -76,6 +79,7 @@ const ServiceCard = ({ service }) => {
                     ))}
                 </ul>
             </div>
+
             <div>
                 <h4 className="font-semibold text-gray-800">Benefits:</h4>
                 <ul className="list-disc list-inside text-gray-600">
@@ -84,6 +88,7 @@ const ServiceCard = ({ service }) => {
                     ))}
                 </ul>
             </div>
+
             <p className="text-gray-600">
                 <strong>Duration:</strong> {service.duration}
             </p>
@@ -99,7 +104,7 @@ const ServiceCard = ({ service }) => {
 
 const ServicesPage = () => {
     return (
-        <div className="flex flex-col bg-gray-100 min-h-screen p-14 leading-[1.3125rem] tracking-wider ">
+        <div className="flex flex-col bg-gray-100 min-h-screen p-3 lg:p-14 leading-[1.3125rem] tracking-wider ">
             <div className="relative bg-gray-100 py-2 px-8">
                 <div className=" mx-auto flex flex-wrap justify-between items-center relative ">
 
@@ -161,11 +166,13 @@ const ServicesPage = () => {
             </div>
 
             <div className="max-w-8xl mx-auto lg:mx-2 space-y-12  mt-12 p-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
                     {services.map((service, index) => (
                         <ServiceCard key={index} service={service} />
                     ))}
                 </div>
+
             </div>
         </div>
     );

@@ -4,18 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='bg-[#a7594d] w-full p-4 lg:p-8 flex flex-col lg:flex-row items-center justify-center lg:justify-between bottom-0 gap-2'>
-
+        <div className='bg-[#a7594d] w-full p-3 lg:p-8 flex flex-col lg:flex-row items-center justify-center lg:justify-between bottom-0 gap-4 lg:gap-0'>
 
             <div>
-                <img className='lg:w-auto h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply'
-                    src='/Images/logo1.jpg' />
+                <img className='lg:w-auto h-8 lg:h-16 md:h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply'
+                    src='/Images/LogoName.png' />
             </div>
 
-
-
-
-            <div className='flex  text-white gap-2 md:gap-4 lg:gap-6 text-x'>
+            <div className='flex  text-white gap-3 md:gap-4 lg:gap-6 text-sm lg:text-xl'>
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
@@ -67,18 +63,18 @@ const Footer = () => {
                 </NavLink>
             </div>
 
-            <div className='flex gap-12'>
+            <div className='flex gap-6 lg:gap-12 '>
 
                 <div>
-                    <a href=''><FaYoutube className='text-3xl text-white' /></a>
+                    <a href=''><FaYoutube className=' text-xl md:text-2xl lg:text-3xl text-white' /></a>
                 </div>
 
                 <div>
-                    <a href=''><FaFacebook className='text-3xl text-white' /></a>
+                    <a href=''><FaFacebook className='text-xl md:text-2xl lg:text-3xl text-white' /></a>
                 </div>
 
                 <div>
-                    <a href=''><FaInstagram className='text-3xl text-white' /></a>
+                    <a href=''><FaInstagram className='text-xl md:text-2xl lg:text-3xl text-white' /></a>
                 </div>
 
             </div>
