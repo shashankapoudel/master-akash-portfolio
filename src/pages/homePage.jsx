@@ -33,7 +33,7 @@ const Home = () => {
         <div className='m-2 lg:m-6'>
             <div className="flex flex-col lg:flex-row md:flex-col justify-between p-4 gap-4">
 
-                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-4">
+                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-3">
                     <motion.div
                         key={images[currentImageIndex]}
                         initial={{ opacity: 0, x: -50 }}
@@ -44,20 +44,20 @@ const Home = () => {
                         <img
                             src={images[currentImageIndex]}
                             alt={`HomePage photo ${currentImageIndex + 1}`}
-                            className="w-auto h-full object-cover lg:rounded-none px-0 lg:px-8"
+                            className="w-auto h-full object-cover lg:rounded-none px-0 lg:px-7"
                         />
                     </motion.div>
 
                     <div className="flex bottom-0 left-1/2 mt-2 w-full items-center justify-center gap-2">
                         <button
                             onClick={handlePrevious}
-                            className="text-white bg-black bg-opacity-50 p-1 rounded-full hover:bg-opacity-70 transition"
+                            className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
                         >
                             <GrFormPrevious />
                         </button>
                         <button
                             onClick={handleNext}
-                            className="text-white bg-black bg-opacity-50 p-1 rounded-full hover:bg-opacity-70 transition"
+                            className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
                         >
                             <GrFormNext />
                         </button>
