@@ -15,7 +15,7 @@ const Footer = () => {
 
 
 
-            <div className='flex text-white gap-6 text-x'>
+            <div className='flex flex-col lg:flex-row text-white gap-6 text-x'>
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
@@ -66,6 +66,7 @@ const Footer = () => {
                     Blogs
                 </NavLink>
             </div>
+
             <div className='flex gap-12'>
 
                 <div>

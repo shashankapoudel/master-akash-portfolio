@@ -33,9 +33,9 @@ const Header = () => {
 
                 <div className='flex justify-center'>
                     <img
-                        src="/Images/logo1.jpg"
+                        src="/Images/LogoName.png"
                         alt="Company Logo"
-                        className="lg:w-auto h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply"
+                        className="lg:w-auto h-16 w-50 transition-transform duration-300 hover:scale-105 mix-blend-multiply"
                     />
                 </div>
 

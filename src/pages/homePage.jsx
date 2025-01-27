@@ -31,8 +31,8 @@ const Home = () => {
 
     return (
         <div className='m-2 lg:m-6'>
-            <div className="flex flex-col lg:flex-row justify-between p-4 gap-4">
-                <div className="relative flex items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-4">
+            <div className="flex flex-col lg:flex-row md:flex-col justify-between p-4 gap-4">
+                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-4">
                     <motion.div
                         key={images[currentImageIndex]}
                         initial={{ opacity: 0, x: -50 }}
@@ -47,7 +47,7 @@ const Home = () => {
                         />
                     </motion.div>
 
-                    <div className="flex  absolute top-1/2 justify-between  px-0 lg:px-6 w-full">
+                    <div className="flex bottom-0 left-1/2 mt-2 w-full items-center justify-center gap-2">
                         <button
                             onClick={handlePrevious}
                             className="text-white bg-black bg-opacity-50 p-1 rounded-full hover:bg-opacity-70 transition"

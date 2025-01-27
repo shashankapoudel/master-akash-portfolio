@@ -3,9 +3,9 @@ import React from 'react';
 
 const services = [
     {
-        title: 'Meditation and Sound Healing',
+        title: 'Meditation Guidelines',
         image: '/Images/homePhoto.jpg',
-        description: ' Meditation and sound healing Rebalance Your Mind, Body, and Spirit Immerse yourself in the transformative power of meditation and sound healing. Our sessions guide you to a state of deep relaxation, inner peace, and heightened awareness, using ancient techniques and healing sounds.',
+        description: 'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquilityWhether you are new to meditation or an experienced practitioner, Yogi Akash’s step-by-step guidance is designed to deepen your practice. Learn powerful techniques such as mindful breathing, mantra repetition, and visualization to unlock your potential for self-awareness.Through Yogi Akash’s guidance, you will experience a profound shift in your mental and emotional well-being. From reducing stress to fostering emotional resilience, his teachings are a gateway to a healthier, happier you',
         whatIncluded: [
             'Guided meditation and breathing exercises',
             'Sound healing session with singing bowls',
@@ -17,15 +17,17 @@ const services = [
         cta: 'Book my session!',
     },
     {
-        title: 'Singing Bowl and Handicrafts',
+        title: 'Sound Healing classes',
         image: '/Images/homePhoto.jpg',
-        description: 'Learn the art of using singing bowls for relaxation and healing, along with crafting your own bowl.',
+        description: 'Sound has the power to heal, uplift, and rejuvenate. Yogi Akash’s Sound Healing Classes are designed to harness the vibrational energy of sound to balance your body, mind, and spirit. Discover a profound sense of harmony through the ancient art of sound therapy.In these classes, you will explore the mystical vibrations of singing bowls, the grounding resonance of gongs, and the calming tones of Tingsha cymbals. Learn how these powerful tools can realign your energy, reduce stress, and promote deep relaxation.',
         whatIncluded: [
-            'Introduction to singing bowls and their history',
-            'Hands-on session with singing bowls',
-            'Guidance on crafting and customizing bowls'
+            'Introduction to sound healing and its benefits',
+            'Practical sessions using instruments like singing bowls, gongs, and Tingsha cymbals',
+            'Learning how to use sound to release emotional blockages',
+            'Techniques for self-healing and healing others',
+
         ],
-        benefits: ['Cultural learning', 'Stress relief', 'Therapeutic experience'],
+        benefits: ['Relieves stress, anxiety, and tension', 'Promotes better sleep and relaxation', 'Balances energy centers (chakras)', 'Facilitates emotional release and spiritual awakening'],
         duration: '2 hours',
         location: 'Workshop studio',
         cta: 'Book a workshop now!',
