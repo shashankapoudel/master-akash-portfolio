@@ -15,7 +15,7 @@ const ServiceCard = () => {
                         className='w-full rounded-md mb-4'
                         src='/Images/homePhoto.jpg'
                     />
-                    <p className='text-[#666666] text-lg font-poppins'>In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility.</p>
+                    <p className='text-[#666666]  font-poppins'>In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility.</p>
 
                     <button
                         className='w-full lg:w-1/3 bg-[#044F86] rounded-md p-2 text-white mt-2  bg-gradient-to-r from-[#044F86] to-[#0A6EB5]  '

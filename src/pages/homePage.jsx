@@ -38,7 +38,7 @@ const Home = () => {
         <div className='m-2 lg:m-6'>
             <div className="flex flex-col lg:flex-row md:flex-col justify-between p-4 gap-4">
 
-                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-3">
+                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6">
                     <motion.div
                         key={images[currentImageIndex]}
                         initial={{ opacity: 0, x: -50 }}
