@@ -77,7 +77,7 @@ const BlogPage = () => {
                             {blogs.slice(1).map((blog) => (
                                 <div
                                     key={blog.id}
-                                    className="flex flex-col lg:flex rounded-lg p-4 items-start"
+                                    className="flex flex-col lg:flex-row rounded-lg p-4 items-start"
                                 >
                                     <img
                                         src={blog.image}
