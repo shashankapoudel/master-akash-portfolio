@@ -140,7 +140,7 @@ const Schedule = () => {
             {date && time && (
                 <div className="flex items-center justify-center">
                     <button
-                        className="px-4 py-2 bg-[#03385F] text-white rounded mt-2"
+                        className="px-4 py-2 bg-[#03385F] text-white rounded mt-2 transition-transform duration-300  ease-out  hover:scale-105"
                         onClick={handleScheduleCall}
                     >
                         Schedule Call

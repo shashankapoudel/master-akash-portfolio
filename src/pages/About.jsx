@@ -165,7 +165,7 @@ import ContactCard from '../components/ContactCard';
 import { motion } from 'framer-motion';
 import { FaUser, FaHistory, FaTrophy } from 'react-icons/fa';
 import { FaHandsHelping } from 'react-icons/fa';
-import { FaBuilding } from 'react-icons/fa';
+import { WiDirectionRight } from "react-icons/wi";
 
 
 
@@ -225,19 +225,32 @@ const About = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
+                        className='flex flex-col lg:flex-row gap-8 items-center'
                     >
-                        <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
-                            My Background <FaHistory className="text-xl lg:text-2xl" />
-                        </h2>
-                        <p className="text-[#666666] leading-relaxed font-poppins">
-                            Born in the sacred Himalayas of Gorkha, Nepal, my spiritual journey began at a young age. I was deeply inspired by the rich cultural and spiritual heritage of my homeland, which led me to study with revered sages and scholars in monasteries and temples across Nepal and India. My formal training in sound healing, yoga, meditation, and energy transformation took place in the monastic regions of northern India, where I learned under the guidance of renowned Himalayan yoga masters.
-                            <br /><br />
-                            My expertise spans a wide range of healing practices, including yoga, sound therapy, Reiki, meditation, mantra chanting, and energy transformation. I have combined these traditional methods with modern scientific research to develop innovative sound therapy techniques that address chronic conditions such as cancer, stroke, migraines, and arthritis. I have also created specialized treatments for pregnant women and immunity enhancement, achieving clinically proven results.
-                            <br /><br />
-                            As a certified sound healer and meditation teacher, I have conducted workshops, retreats, and personalized sessions for diverse audiences worldwide. My ability to adapt my teachings to different cultures and individuals has made my services highly sought-after across the globe.
-                        </p>
+                        <div className='w-full lg:w-1/2'>
+                            <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
+                                My Background <FaHistory className="text-xl lg:text-2xl" />
+                            </h2>
+                            <p className="text-[#666666] leading-relaxed font-poppins">
+                                Born in the sacred Himalayas of Gorkha, Nepal, my spiritual journey began at a young age. I was deeply inspired by the rich cultural and spiritual heritage of my homeland, which led me to study with revered sages and scholars in monasteries and temples across Nepal and India. My formal training in sound healing, yoga, meditation, and energy transformation took place in the monastic regions of northern India, where I learned under the guidance of renowned Himalayan yoga masters.
+                                <br /><br />
+                                My expertise spans a wide range of healing practices, including yoga, sound therapy, Reiki, meditation, mantra chanting, and energy transformation. I have combined these traditional methods with modern scientific research to develop innovative sound therapy techniques that address chronic conditions such as cancer, stroke, migraines, and arthritis. I have also created specialized treatments for pregnant women and immunity enhancement, achieving clinically proven results.
+                                <br /><br />
+                                As a certified sound healer and meditation teacher, I have conducted workshops, retreats, and personalized sessions for diverse audiences worldwide. My ability to adapt my teachings to different cultures and individuals has made my services highly sought-after across the globe.
+                            </p>
+                        </div>
+
+                        <div className='w-full lg:w-1/2 h-full'>
+                            <img
+                                src='/Images/homePhoto.jpg'
+                                alt='About Me'
+                                className='rounded-lg shadow-lg w-full h-full object-cover'
+                            />
+                        </div>
+
                     </motion.div>
                 </div>
+
 
 
                 <div className='py-4'>
@@ -295,10 +308,11 @@ const About = () => {
                         </div>
 
                         <button
-                            className='hover:text-[#3c5551] rounded-md lg:absolute bottom-1 right-6'
+                            className='flex items-center hover:text-[#3c5551] rounded-md lg:absolute bottom-1 right-6 transition-transform duration-300  ease-out  hover:scale-105'
                             href='/services'
                         >
-                            Learn more
+                            Learn more<WiDirectionRight className='text-3xl' />
+
                         </button>
                     </div>
                 </motion.div>
