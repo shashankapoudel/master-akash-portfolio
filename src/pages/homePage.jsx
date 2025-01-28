@@ -4,6 +4,7 @@ import GalleryCard from '../components/GalleryCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const images = [
@@ -13,7 +14,7 @@ const Home = () => {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false)
-
+   
 
     useEffect(() => {
         let interval;

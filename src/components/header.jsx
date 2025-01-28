@@ -33,9 +33,10 @@ const Header = () => {
 
                 <div className='flex justify-center'>
                     <img
+                        onClick={() => navigate('/')}
                         src="/Images/LogoName.png"
                         alt="Company Logo"
-                        className="lg:w-48 md:w-auto h-8 lg:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply"
+                        className="lg:w-48 md:w-auto h-8 lg:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply cursor-pointer"
                     />
                 </div>
 
