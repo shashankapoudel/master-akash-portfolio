@@ -184,10 +184,13 @@ const About = () => {
             </div> */}
 
 
-            <div className='p-3 lg:p-9 flex flex-col gap-5'>
+            <div className='p-3 lg:p-9 flex flex-col gap-5 items-center'>
 
-
+                <h2 className="flex gap-1 items-center lg:justify-normal text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
+                    About me <FaUser className="text-2xl" />
+                </h2>
                 <div className=''>
+
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -205,9 +208,6 @@ const About = () => {
 
 
                         <div className='w-full lg:w-1/2'>
-                            <h2 className="flex gap-1 items-center justify-center lg:justify-normal text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2">
-                                About me <FaUser className="text-2xl" />
-                            </h2>
                             <p className="text-[#666666] leading-relaxed font-poppins">
                                 I am Master Akash Banjara, a Senior Nepalese Singing Bowl Healing Master, deeply rooted in the spiritual traditions of the Himalayas. My journey into sound healing began in the tranquil mountains of Gorkha, Nepal, where I was captivated by the soothing vibrations of traditional singing bowls. Drawn to their ability to calm the mind and heal the body, I immersed myself in the study of sound frequencies and their profound effects on human consciousness.
                                 <br /><br />
@@ -221,16 +221,16 @@ const About = () => {
 
 
                 <div className='py-8'>
+                    <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
+                        My Background <FaHistory className="text-xl lg:text-2xl" />
+                    </h2>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className='flex flex-col lg:flex-row gap-8 items-center'
+                        className='flex flex-col-reverse lg:flex-row gap-8 items-center'
                     >
                         <div className='w-full lg:w-1/2'>
-                            <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
-                                My Background <FaHistory className="text-xl lg:text-2xl" />
-                            </h2>
                             <p className="text-[#666666] leading-relaxed font-poppins">
                                 Born in the sacred Himalayas of Gorkha, Nepal, my spiritual journey began at a young age. I was deeply inspired by the rich cultural and spiritual heritage of my homeland, which led me to study with revered sages and scholars in monasteries and temples across Nepal and India. My formal training in sound healing, yoga, meditation, and energy transformation took place in the monastic regions of northern India, where I learned under the guidance of renowned Himalayan yoga masters.
                                 <br /><br />
