@@ -9,7 +9,7 @@ const ContactCard = () => {
     const navigate = useNavigate()
     return (
         <div>
-            <h1 className='flex items-center justify-center text-[#022B4A] text-center text-2xl lg:text-3xl font-bold gap-1'>Let's get in touch <FaEnvelope className=' text-xl lg:text-2xl' /> </h1>
+            <h1 className='flex items-center justify-center text-[#022B4A] text-center text-2xl lg:text-3xl font-bold gap-2'>Let's get in touch <FaEnvelope className=' text-xl lg:text-2xl' /> </h1>
             <div className="flex flex-col lg:flex-row  p-4 lg:p-12 w-full justify-between gap-5 lg:gap-8">
                 <div className=' w-full lg:w-1/2'>
                     <img
