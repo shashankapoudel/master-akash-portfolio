@@ -41,15 +41,15 @@ const ContactCard = () => {
 
                     <button
                         onClick={() => navigate('/contact')}
-                        className='flex items-start justify-center bg-[#044F86] w-full lg:w-1/3 text-white p-2 text-center'>
+                        className='flex items-start justify-center bg-[#044F86] w-full lg:w-1/2 text-white p-2 text-center'>
                         Book an appointment
                     </button>
 
                     <div className='flex flex-col mt-4 justify-center items-center'>
                         <div className='flex gap-8 items-center justify-center p-4'>
-                            <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className='text-3xl text-[#1877F2]' /></a>
-                            <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-3xl text-[#E4405F]' /></a>
-                            <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className=' text-3xl text-[#FF0000]' /></a>
+                            <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className=' text-xl md:text-2xl lg:text-3xl text-[#1877F2]' /></a>
+                            <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-2xl lg:text-3xl text-[#E4405F]' /></a>
+                            <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className='text-xl md:text-2xl lg:text-3xl text-[#FF0000]' /></a>
                         </div>
 
                     </div>

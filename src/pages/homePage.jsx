@@ -12,14 +12,19 @@ const Home = () => {
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isHovered, setIsHovered] = useState(false)
+
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 4000);
+        let interval;
+        if (!isHovered) {
+            interval = setInterval(() => {
+                setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+            }, 4000);
+        }
 
         return () => clearInterval(interval);
-    }, []);
+    }, [isHovered]);
 
     const handleNext = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -40,6 +45,8 @@ const Home = () => {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: 50 }}
                         transition={{ duration: 0.8 }}
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
                     >
                         <img
                             src={images[currentImageIndex]}
