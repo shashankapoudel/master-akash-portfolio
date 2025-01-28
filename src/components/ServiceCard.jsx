@@ -4,11 +4,11 @@ const ServiceCard = () => {
     return (
         <div className='flex flex-col gap-2 relative mt-4 p-4 font-poppins'>
 
-            <h1 className='text-center text-3xl font-semibold text-[#111111]'>Meditation Guidelines</h1>
+            <h1 className='text-center text-3xl font-semibold text-[#111111]'>Services</h1>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 mt-2'>
 
-                <div className=' flex flex-col items-center p-4 lg:p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
+                <div className=' flex flex-col items-center p-4 lg:p-12 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
 
                     <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                     <img
@@ -25,7 +25,7 @@ const ServiceCard = () => {
 
                 </div>
 
-                <div className='flex flex-col items-center p-4 lg:p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
+                <div className='flex flex-col items-center p-4 lg:p-12 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
 
                     <h1 className='text-[#022B4A] font-bold'>Sound Healing classes</h1>
                     <img
@@ -42,7 +42,7 @@ const ServiceCard = () => {
 
                 </div>
 
-                <div className='flex flex-col items-center p-4 lg:p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
+                <div className='flex flex-col items-center p-4 lg:p-12 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
 
                     <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                     <img
@@ -59,7 +59,7 @@ const ServiceCard = () => {
 
                 </div>
 
-                <div className=' flex flex-col items-center p-4 lg:p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
+                <div className=' flex flex-col items-center p-4 lg:p-12 border border-[#E6E7F3] bg-[#FFFFFF] rounded-lg'>
 
                     <h1 className='text-[#022B4A] font-bold'>Service name</h1>
                     <img
