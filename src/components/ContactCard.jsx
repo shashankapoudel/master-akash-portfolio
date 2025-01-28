@@ -42,7 +42,7 @@ const ContactCard = () => {
 
                     <button
                         onClick={() => navigate('/contact')}
-                        className='flex items-start justify-center bg-[#044F86] w-full lg:w-1/2 text-white p-2 text-center'>
+                        className='flex items-start justify-center bg-[#044F86] w-full lg:w-1/2 text-white p-2 text-center bg-gradient-to-r from-[#044F86] to-[#0A6EB5] '>
                         Book an appointment
                     </button>
 
