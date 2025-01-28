@@ -1,9 +1,10 @@
 import React from 'react'
+import { FaBuilding } from 'react-icons/fa';
 
 const CompanyCard = () => {
     return (
         <div className='flex flex-col gap-4 mt-4 '>
-            <h1 className='text-center text-[#022B4A] text-2xl lg:text-3xl font-bold'>Companies</h1>
+            <h1 className='flex items-center justify-center text-[#022B4A] text-2xl lg:text-3xl font-bold'>Companies <FaBuilding className=' text-xl lg:text-2xl' /> </h1>
 
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-6 mt-2'>
 

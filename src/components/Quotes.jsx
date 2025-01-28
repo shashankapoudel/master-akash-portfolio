@@ -1,9 +1,9 @@
 import React from 'react'
-
+import { FaLightbulb } from 'react-icons/fa';
 const Quotes = () => {
     return (
         <div className='mt-2'>
-            <h1 className='text-[#022B4A] font-bold text-2xl lg:text-3xl  text-center'>My Quotes</h1>
+            <h1 className='flex items-center justify-center text-[#022B4A] font-bold text-2xl lg:text-3xl gap-1'>My Quotes <FaLightbulb className='lg:text-2xl' /> </h1>
 
             <div className=' grid grid-cols-1 lg:grid-cols-2 mt-3'>
 

@@ -165,6 +165,7 @@ import ContactCard from '../components/ContactCard';
 import { motion } from 'framer-motion';
 import { FaUser, FaHistory, FaTrophy } from 'react-icons/fa';
 import { FaHandsHelping } from 'react-icons/fa';
+import { FaBuilding } from 'react-icons/fa';
 
 
 

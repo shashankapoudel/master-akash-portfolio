@@ -3,12 +3,13 @@ import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import { FaEnvelope } from 'react-icons/fa';
 
 const ContactCard = () => {
     const navigate = useNavigate()
     return (
         <div>
-            <h1 className='text-[#022B4A] text-center text-2xl lg:text-3xl font-bold'>Let's get in touch</h1>
+            <h1 className='flex items-center justify-center text-[#022B4A] text-center text-2xl lg:text-3xl font-bold gap-1'>Let's get in touch <FaEnvelope className=' text-xl lg:text-2xl' /> </h1>
             <div className="flex flex-col lg:flex-row  p-4 lg:p-12 w-full justify-between gap-5 lg:gap-8">
                 <div className=' w-full lg:w-1/2'>
                     <img
