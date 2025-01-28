@@ -65,16 +65,18 @@ const Footer = () => {
 
             <div className='flex gap-6 lg:gap-12 '>
 
+
                 <div>
-                    <a href=''><FaYoutube className=' text-xl md:text-2xl lg:text-3xl text-white' /></a>
+                    <a href='https://www.facebook.com/soundhealinginstructor'><FaFacebook className='text-xl md:text-2xl lg:text-2xl text-white' /></a>
+                </div>
+
+
+                <div>
+                    <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-2xl lg:text-2xl text-white' /></a>
                 </div>
 
                 <div>
-                    <a href=''><FaFacebook className='text-xl md:text-2xl lg:text-3xl text-white' /></a>
-                </div>
-
-                <div>
-                    <a href=''><FaInstagram className='text-xl md:text-2xl lg:text-3xl text-white' /></a>
+                    <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className=' text-xl md:text-2xl lg:text-2xl text-white' /></a>
                 </div>
 
             </div>
