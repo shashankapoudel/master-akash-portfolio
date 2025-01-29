@@ -210,9 +210,9 @@ const About = () => {
                         <div className='w-full lg:w-1/2'>
                             <p className="text-[#666666] leading-relaxed font-poppins">
                                 I am Master Akash Banjara, a Senior Nepalese Singing Bowl Healing Master, deeply rooted in the spiritual traditions of the Himalayas. My journey into sound healing began in the tranquil mountains of Gorkha, Nepal, where I was captivated by the soothing vibrations of traditional singing bowls. Drawn to their ability to calm the mind and heal the body, I immersed myself in the study of sound frequencies and their profound effects on human consciousness.
-                                <br /><br />
+                                <br />
                                 What started as a personal quest for balance and inner peace soon evolved into a lifelong mission to share the transformative power of sound healing with the world. Over the years, I have honed my craft, blending ancient wisdom with modern scientific knowledge to create unique and deeply healing experiences. My work is driven by a passion to help others achieve mental clarity, emotional balance, and physical well-being through the universal language of music and sound.
-                                <br /><br />
+                                <br />
                                 I am also a skilled musician, proficient in playing a variety of traditional and modern instruments, including singing bowls, gongs, conches, handbells, flutes, and handpans. My compositions and music productions reflect my dedication to merging therapeutic soundscapes with artistic expression.
                             </p>
                         </div>
