@@ -184,7 +184,7 @@ const About = () => {
             </div> */}
 
 
-            <div className='p-3 lg:p-9 flex flex-col gap-8 items-center'>
+            <div className='p-3 lg:p-10 flex flex-col gap-8 items-center'>
 
                 <h2 className="flex gap-1 items-center lg:justify-normal text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
                     About me <FaUser className="text-2xl" />
