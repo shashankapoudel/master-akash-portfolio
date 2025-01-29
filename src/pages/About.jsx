@@ -233,9 +233,9 @@ const About = () => {
                         <div className='w-full lg:w-1/2'>
                             <p className="text-[#666666] leading-relaxed font-poppins">
                                 Born in the sacred Himalayas of Gorkha, Nepal, my spiritual journey began at a young age. I was deeply inspired by the rich cultural and spiritual heritage of my homeland, which led me to study with revered sages and scholars in monasteries and temples across Nepal and India. My formal training in sound healing, yoga, meditation, and energy transformation took place in the monastic regions of northern India, where I learned under the guidance of renowned Himalayan yoga masters.
-                                <br /><br />
+                                <br />
                                 My expertise spans a wide range of healing practices, including yoga, sound therapy, Reiki, meditation, mantra chanting, and energy transformation. I have combined these traditional methods with modern scientific research to develop innovative sound therapy techniques that address chronic conditions such as cancer, stroke, migraines, and arthritis. I have also created specialized treatments for pregnant women and immunity enhancement, achieving clinically proven results.
-                                <br /><br />
+                                <br />
                                 As a certified sound healer and meditation teacher, I have conducted workshops, retreats, and personalized sessions for diverse audiences worldwide. My ability to adapt my teachings to different cultures and individuals has made my services highly sought-after across the globe.
                             </p>
                         </div>
