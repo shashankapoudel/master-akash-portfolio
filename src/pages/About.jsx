@@ -184,7 +184,7 @@ const About = () => {
             </div> */}
 
 
-            <div className='p-3 lg:p-9 flex flex-col gap-5 items-center'>
+            <div className='p-3 lg:p-9 flex flex-col gap-8 items-center'>
 
                 <h2 className="flex gap-1 items-center lg:justify-normal text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
                     About me <FaUser className="text-2xl" />
@@ -220,7 +220,7 @@ const About = () => {
                 </div>
 
 
-                <div className='py-8'>
+                <div className=' flex flex-col items-center justify-center py-8'>
                     <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
                         My Background <FaHistory className="text-xl lg:text-2xl" />
                     </h2>
@@ -350,6 +350,7 @@ const About = () => {
                     <ContactCard />
                 </motion.div>
             </div>
+
         </div>
     );
 };
