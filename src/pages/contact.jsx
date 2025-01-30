@@ -76,7 +76,7 @@ const Contact = () => {
                             </a>
                         </div>
 
-                    </div>
+                    </div> 
 
                     <div className='flex flex-col  mt-4'>
                         <p className='text-2xl font-playfair-display text-start mr-auto font-semibold text-[#03385F]'>Social media links:</p>
@@ -86,7 +86,7 @@ const Contact = () => {
                             <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-2xl text-[#E4405F]' /></a>
                             <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className=' text-2xl text-[#FF0000]' /></a>
                         </div>
-                        
+
                     </div>
 
                 </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                 </div>
 
             </div>
-            {/* <SocialCard /> */}
+          
         </div>
 
     );
