@@ -24,10 +24,21 @@ const ContactCard = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nesciunt dolores ipsa nostrum non dolorum corrupti rem pariatur nisi, ad labore officia eius eum impedit dolor quasi explicabo quis consectetur.
                     </p>
 
-                    <div className='flex items-center justify-center mr-auto lg:text-lg text-base gap-1'>
+                    {/* <div className='flex items-center justify-center mr-auto lg:text-lg text-base gap-1'>
                         <CgMail className='text-[#03385F] text-lg font-semibold' />
                         <p className='text-start mr-auto text-[#666666]'> <span className='font-semibold text-[#03385F]'>Mail: </span>akashbanjara@gmail.com</p>
+                    </div> */}
+
+                    <div className='flex items-center justify-center mr-auto lg:text-lg text-base gap-1'>
+                        <CgMail className='text-[#03385F] text-lg font-semibold' />
+                        <a
+                            href="mailto:akashbanjara@gmail.com"
+                            className='text-start mr-auto text-[#666666] hover:underline'>
+                            <span className='font-semibold text-[#03385F]'>Mail: </span>
+                            akashbanjara@gmail.com
+                        </a>
                     </div>
+
 
 
                     <div className='flex items-center justify-center mr-auto gap-2'>

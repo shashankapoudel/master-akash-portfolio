@@ -186,6 +186,7 @@ const CompanyCard = () => {
                                 Sound Healing Hongkong
                                 <br />
                                 <br />
+
                             </h1>
                         </div>
                     </a>
