@@ -82,32 +82,34 @@
 
 
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { GrFormPrevious } from "react-icons/gr";
+import { GrFormNext } from "react-icons/gr";
 
 const services = [
     {
-        title: '1. Meditation and Mindfulness',
+        title: ' Meditation and Mindfulness',
         description:
-            'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility.',
+            'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
         image: '/Images/homePhoto.jpg',
     },
     {
-        title: '2. Sound Baths and Relaxation',
+        title: 'Sound Baths and Relaxation',
         description:
-            'With years of experience in sound therapy and a deep understanding of vibrational healing, Yogi Akash brings a unique blend of ancient wisdom and modern insights to his classes. Whether you are a curious beginner or an experienced practitioner.',
+            'With years of experience in sound therapy and a deep understanding of vibrational healing, Yogi Akash brings a unique blend of ancient wisdom and modern insights to his classes. Whether you are a curious beginner or an experienced practitioner.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
         image: '/Images/homePhoto.jpg',
     },
     {
-        title: '3. Sound Healing Therapy',
+        title: ' Sound Healing Therapy',
         description:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
         image: '/Images/homePhoto.jpg',
     },
     {
-        title: '4. Yoga and Energy Awakening',
+        title: 'Yoga and Energy Awakening',
         description:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
         image: '/Images/homePhoto.jpg',
     },
 ];
@@ -116,16 +118,66 @@ const ServiceCard = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false)
 
+    // useEffect(() => {
+    //     let interval;
+    //     if (!isHovered) {
+    //         interval = setInterval(() => {
+    //             setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
+    //         }, 3000);
+    //     }
+
+    //     return () => clearInterval(interval);
+    // }, [isHovered]);
+
+    // const handlePrevious = () => {
+    //     setCurrentIndex((prev) => (prev - 1 + services.length) % services.length)
+    // }
+    // const handleNext = () => {
+    //     setCurrentIndex((prev) => (prev === services.length - 1 ? 0 : prev + 1));
+    // };
+
+
+
+    const [isVisible, setIsVisible] = useState(true);
+    const componentRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsVisible(entry.isIntersecting);
+            },
+            { threshold: 0.1 }
+        );
+
+        if (componentRef.current) {
+            observer.observe(componentRef.current);
+        }
+
+        return () => {
+            if (componentRef.current) {
+                observer.unobserve(componentRef.current);
+            }
+        };
+    }, []);
+
     useEffect(() => {
         let interval;
-        if (!isHovered) {
+        if (!isHovered && isVisible) {  // Only auto-change when visible
             interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
-            }, 3000); // Change service every 5 seconds
+            }, 3000);
         }
 
         return () => clearInterval(interval);
-    }, [isHovered]);
+    }, [isHovered, isVisible]);
+
+    const handlePrevious = () => {
+        setCurrentIndex((prev) => (prev - 1 + services.length) % services.length)
+    }
+    const handleNext = () => {
+        setCurrentIndex((prev) => (prev === services.length - 1 ? 0 : prev + 1));
+    };
+
 
     return (
         <div className='flex flex-col gap-2 relative mt-4 p-4 font-poppins'>
@@ -139,7 +191,7 @@ const ServiceCard = () => {
                         animate={{ opacity: 1, x: 0 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.4 }}
+                        transition={{ duration: 0.3 }}
                         viewport={{ once: true }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
@@ -172,6 +224,19 @@ const ServiceCard = () => {
                                     Book my session
                                 </button>
                             </div>
+                        </div>
+
+                        <div className='flex items-center justify-center gap-3'>
+                            <button
+                                className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
+                                onClick={handlePrevious}>
+                                <GrFormPrevious />
+                            </button>
+                            <button
+                                className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
+                                onClick={handleNext}>
+                                <GrFormNext />
+                            </button>
                         </div>
                     </motion.div>
                 </AnimatePresence>
