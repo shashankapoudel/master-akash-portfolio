@@ -76,7 +76,7 @@ const Contact = () => {
                             </a>
                         </div>
 
-                    </div> 
+                    </div>
 
                     <div className='flex flex-col  mt-4'>
                         <p className='text-2xl font-playfair-display text-start mr-auto font-semibold text-[#03385F]'>Social media links:</p>
@@ -98,7 +98,7 @@ const Contact = () => {
                 </div>
 
             </div>
-          
+
         </div>
 
     );
