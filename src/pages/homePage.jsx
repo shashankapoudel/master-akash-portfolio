@@ -88,6 +88,7 @@ const Home = () => {
             <div className='p-0 md:p-4 lg:p-8'>
                 <ServiceCard />
             </div>
+
             <div className='p-0 md:p-4 lg:p-8'>
                 <GalleryCard />
             </div>

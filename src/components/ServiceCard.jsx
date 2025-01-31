@@ -145,7 +145,7 @@ const ServiceCard = () => {
                         onMouseLeave={() => setIsHovered(false)}
                         aria-live='polite'
                         aria-atomic='true'
-                        className='flex flex-col gap-4 w-full p-5 lg:p-8 border border-[#E6E7F3]  bg-[#FFFFFF]  rounded-3xl lg:rounded-custom'
+                        className='flex flex-col gap-4 w-full p-5 lg:p-8 border border-[#E6E7F3]  bg-[#FFFFFF]  rounded-3xl lg:rounded-card-custom'
                     >
                         <h1 className='text-[#022B4A] font-bold text-xl text-center'>
                             {services[currentIndex].title}

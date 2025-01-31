@@ -22,7 +22,8 @@ export default {
       },
       borderRadius: {
         'custom': '10px 10px 10px 100px',
-        'home-custom': '360px 10px 100px 100px'
+        'home-custom': '360px 10px 100px 100px',
+        'card-custom': '120px 120px 120px 120px'
       },
     },
   },

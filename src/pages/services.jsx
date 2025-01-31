@@ -470,34 +470,35 @@ const ServicesPage = () => {
             <div className="p-8 items-center justify-center">
                 <div className="flex items-center relative font-poppins" ref={ref}>
                     {/* Animated Elements */}
+
                     <motion.div
                         initial={{ y: -100, opacity: 0 }}
                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="absolute top-0 left-20 flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-md shadow-md w-1/3 items-center justify-center"
+                        className="absolute top-0 left-20 flex flex-col gap-2 bg-[#A7594D] text-white p-2  shadow-md w-1/3 items-center justify-center rounded-custom"
                     >
                         <h3 className="font-bold text-lg">Meditation and Mindfulness</h3>
-                        <p className="flex items-center justify-center">Calm your mind and find peace through meditation techniques.</p>
+                        <p className="flex items-center justify-center text-center">Calm your mind and find peace through meditation techniques.</p>
                     </motion.div>
 
                     <motion.div
                         initial={{ y: 100, opacity: 0 }}
                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="absolute flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-md shadow-md w-1/3"
+                        className="absolute flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom shadow-md w-1/3"
                     >
                         <h3 className="font-bold text-lg">Sound Healing Therapy</h3>
-                        <p>Calm your mind and find peace through meditation techniques.</p>
+                        <p className='text-center'>Calm your mind and find peace through meditation techniques.</p>
                     </motion.div>
 
                     <motion.div
                         initial={{ y: 100, opacity: 0 }}
                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="absolute bottom-0 left-10 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-md shadow-md w-1/3"
+                        className="absolute bottom-0 left-10 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom shadow-md w-1/3"
                     >
                         <h3 className="font-bold text-lg">Spiritual Events and Retreats</h3>
-                        <p>Take a break from daily life to recharge and reconnect with yourself.</p>
+                        <p className='text-center'>Take a break from daily life to recharge and reconnect with yourself.</p>
                     </motion.div>
 
                     <div className="w-full flex justify-center items-center">
@@ -512,30 +513,30 @@ const ServicesPage = () => {
                         initial={{ y: -100, opacity: 0 }}
                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.8, delay: 0.8 }}
-                        className="absolute top-0 right-28 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-md shadow-md w-1/3"
+                        className="absolute top-0 right-28 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-custom shadow-md w-1/3"
                     >
                         <h3 className="font-bold text-lg">Sound Baths and Relaxation</h3>
-                        <p>Enjoy soothing sounds that melt away stress and bring deep relaxation.</p>
+                        <p className='text-center'>Enjoy soothing sounds that melt away stress and bring deep relaxation.</p>
                     </motion.div>
 
                     <motion.div
                         initial={{ y: 100, opacity: 0 }}
                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.8, delay: 1.0 }}
-                        className="absolute right-10 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-md shadow-md w-1/3"
+                        className="absolute right-10 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-custom shadow-md w-1/3"
                     >
                         <h3 className="font-bold text-lg">Yoga and Energy Awakening</h3>
-                        <p>Move, breathe, and connect with your inner energy through yoga.</p>
+                        <p className='text-center'>Move, breathe, and connect with your inner energy through yoga.</p>
                     </motion.div>
 
                     <motion.div
                         initial={{ y: 100, opacity: 0 }}
                         animate={isInView ? { y: 0, opacity: 1 } : {}}
                         transition={{ duration: 0.8, delay: 1.2 }}
-                        className="absolute bottom-0 right-16 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-md shadow-md w-1/3"
+                        className="absolute bottom-0 right-16 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom shadow-md w-1/3"
                     >
                         <h3 className="font-bold text-lg">Healing & Wellness Workshops</h3>
-                        <p>Healing workshops that help you heal, grow, and feel better.</p>
+                        <p className='text-center'>Healing workshops that help you heal, grow, and feel better.</p>
                     </motion.div>
                 </div>
             </div>
