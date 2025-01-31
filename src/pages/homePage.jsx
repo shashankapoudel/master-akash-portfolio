@@ -14,7 +14,7 @@ const Home = () => {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false)
-   
+
 
     useEffect(() => {
         let interval;
@@ -36,7 +36,7 @@ const Home = () => {
     };
 
     return (
-        <div className='m-2 lg:m-6'>
+        <div className='m-2 md:m-4 lg:m-6'>
             <div className="flex flex-col lg:flex-row md:flex-col justify-between p-4 gap-4">
 
                 <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6">
@@ -72,7 +72,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-0 lg:p-8 py-4">
+                <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-0 md:p-4 lg:p-8 py-4">
                     <p className="flex items-start justify-start text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins text-start">
                         Akash Banjara
                     </p>
@@ -85,10 +85,10 @@ const Home = () => {
 
 
 
-            <div className='p-0 lg:p-8'>
+            <div className='p-0 md:p-4 lg:p-8'>
                 <ServiceCard />
             </div>
-            <div className='p-0 lg:p-8'>
+            <div className='p-0 md:p-4 lg:p-8'>
                 <GalleryCard />
             </div>
         </div>

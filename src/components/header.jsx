@@ -51,7 +51,7 @@ const Header = () => {
                 <div className='hidden lg:flex  font-poppins gap-7 text-lg tracking-normal '>
                     {
                         navItems.map((item) => (
-                            <NavLink to={item.path}
+                            < NavLink to={item.path}
                                 key={item.name}
                                 className={active === item.path ? 'text-[#a7594d] font-semibold hover:-translate-y-1' : 'text-[#606060] hover:text-[#a7594d] hover:-translate-y-1'}
                             >
