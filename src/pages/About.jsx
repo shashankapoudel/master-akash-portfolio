@@ -184,7 +184,7 @@ const About = () => {
             </div> */}
 
 
-            <div className='p-3 lg:p-10 flex flex-col gap-8 items-center'>
+            <div className='p-3 md:p-5 lg:p-10 flex flex-col gap-8 items-center'>
 
                 <h2 className="flex gap-1 items-center lg:justify-normal text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
                     About me <FaUser className="text-2xl" />
@@ -275,7 +275,7 @@ const About = () => {
             </div>
 
 
-            <div className='flex flex-col p-4 lg:p-8 gap-4 relative border-t border-b'>
+            <div className='flex flex-col p-4 md:p-5 lg:p-8 gap-4 relative border-t border-b'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -318,7 +318,7 @@ const About = () => {
             </div>
 
 
-            <div className='p-4 lg:p-12 font-poppins'>
+            <div className='p-4 md:p-5  lg:p-12 font-poppins'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -329,7 +329,7 @@ const About = () => {
             </div>
 
 
-            <div className='p-4 lg:p-12 font-poppins'>
+            <div className='p-4 md:p-5 lg:p-12 font-poppins'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -340,7 +340,7 @@ const About = () => {
             </div>
 
 
-            <div className='p-4 lg:p-12 font-poppins'>
+            <div className='p-4 md:p-5 lg:p-12 font-poppins'>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
