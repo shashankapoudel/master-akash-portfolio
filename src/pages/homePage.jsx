@@ -42,9 +42,9 @@ const Home = () => {
                 <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6">
                     <motion.div
                         key={images[currentImageIndex]}
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: 50 }}
+                        exit={{ opacity: 0, x: 0 }}
                         transition={{ duration: 0.8 }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}

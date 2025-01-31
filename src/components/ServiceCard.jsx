@@ -121,7 +121,7 @@ const ServiceCard = () => {
         if (!isHovered) {
             interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
-            }, 5000); // Change service every 5 seconds
+            }, 3000); // Change service every 5 seconds
         }
 
         return () => clearInterval(interval);
@@ -137,14 +137,15 @@ const ServiceCard = () => {
                         key={currentIndex}
                         initial={{ opacity: 0, x: 100 }}
                         animate={{ opacity: 1, x: 0 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.4 }}
+                        viewport={{ once: true }}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={() => setIsHovered(false)}
                         aria-live='polite'
                         aria-atomic='true'
                         className='flex flex-col gap-4 w-full p-5 lg:p-8 border border-[#E6E7F3]  bg-[#FFFFFF]  rounded-3xl lg:rounded-custom'
-                    // style={{ height: '500px' }}
                     >
                         <h1 className='text-[#022B4A] font-bold text-xl text-center'>
                             {services[currentIndex].title}
@@ -158,10 +159,10 @@ const ServiceCard = () => {
                                     alt={services[currentIndex].title}
                                 />
                             </div>
-                            
+
                             <div className='w-full md:w-full lg:w-1/2 flex flex-col items-start justify-start p-0 lg:p-4 gap-4'>
 
-                                <p className='text-[#666666]'>
+                                <p className='text-[#666666] p-0 lg:p-2'>
                                     {services[currentIndex].description}
                                 </p>
 
