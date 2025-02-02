@@ -11,13 +11,15 @@ const SchedueleMeeting = () => {
 
     const date = meetingData.date;
     const time = meetingData.time;
+    const callTime = meetingData.callTime;
+    const timeZone = meetingData.timezone;
     console.log(date)
 
     return (
         <div className="lg:m-8 m-6">
             <div className="flex flex-col lg:flex-row w-full tracking-wider font-playfair-display border-2 border-[#3c5551] p-4">
 
-                <div className="lg:w-1/3 w-full p-3 text-[#a7594d] font-medium">
+                <div className="lg:w-1/3 w-full p-3 text-[#a7594d] font-medium gap-2">
                     <h1 className="flex justify-center font-semibold text-3xl mb-4">Akash Banjara</h1>
 
                     <div className="flex items-center gap-2 mb-2">
@@ -27,12 +29,28 @@ const SchedueleMeeting = () => {
                         </p>
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 mb-2">
                         <CiClock2 className="text-xl" />
                         <p>
                             <span className="font-semibold text-xl">Time:</span> {time || "Not Selected"}
                         </p>
                     </div>
+
+                    <div className="flex items-center gap-2 mb-2">
+                        <CiClock2 className="text-xl" />
+                        <p>
+                            <span className="font-semibold text-xl">Minutes:</span> {callTime || "Not Selected"} minutes
+                        </p>
+                    </div>
+
+                    <div className="flex items-center gap-2 mb-2">
+                        <CiClock2 className="text-xl" />
+                        <p>
+                            <span className="font-semibold text-xl">TimeZone:</span> {timeZone || "Not Selected"}
+                        </p>
+                    </div>
+
+
                 </div>
 
                 <div className="h-100 border-2 border-[#3c5551] m-4"></div>

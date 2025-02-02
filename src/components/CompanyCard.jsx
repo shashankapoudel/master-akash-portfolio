@@ -79,6 +79,7 @@ import { motion } from 'framer-motion';
 
 const CompanyCard = () => {
 
+
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
