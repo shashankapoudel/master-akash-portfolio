@@ -89,11 +89,13 @@ const About = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className='flex flex-col md:flex-col lg:flex-row gap-8 items-stretch w-full'
                     >
-                        <div className='w-full lg:w-1/2 h-full flex items-center'>
+                        <div className=' relative w-full lg:w-1/2 h-full flex items-center'>
+
+                            <div className="absolute top-2 left-2 w-full h-full bg-teal-900 rounded-lg -rotate-2"></div>
                             <img
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
-                                className='rounded-lg shadow-lg w-full h-auto object-cover'
+                                className=' relative rounded-lg shadow-lg w-full h-auto object-cover'
                             />
                         </div>
 

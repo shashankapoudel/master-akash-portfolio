@@ -56,12 +56,13 @@ const Schedule = () => {
     };
 
     return (
-        <div className="flex flex-col items-center text-black p-4 gap-2">
-            <h2 className="text-xl font-semibold mb-4 text-white bg-[#a7594d] p-3 rounded-xl font-poppins">
+        <div className="flex flex-col items-center text-black p-2 lg:p-4 gap-2 w-full">
+
+            <h2 className=" text-lg lg:text-xl font-semibold mb-4 text-white bg-[#a7594d] p-3 rounded-xl font-poppins">
                 Schedule Call with Akash
             </h2>
 
-            <div className="mb-4 w-full max-w-md">
+            <div className="mb-4 w-full">
                 <label className="block text-sm font-medium text-[#03385F] mb-2">
                     Select Your Timezone
                 </label>
@@ -76,7 +77,7 @@ const Schedule = () => {
                 onChange={handleDateChange}
                 value={date}
                 minDate={new Date()}
-                className="mb-4 lg:p-10 p-4 custom-calendar"
+                className="lg:p-10 p-2 "
             />
 
 
@@ -88,7 +89,7 @@ const Schedule = () => {
             </p>
 
             {date && (
-                <div className="w-full mb-3">
+                <div className="w-full mb-3 p-4">
                     <select
                         className="p-2 border border-[#03385F] w-full"
                         onChange={(e) => {

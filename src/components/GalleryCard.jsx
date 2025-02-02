@@ -222,8 +222,8 @@ import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 const GalleryCard = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false); 
-    const [selectedImage, setSelectedImage] = useState(''); 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
 
     const images = [
         '/Images/Gallery/Image1.jpg',
@@ -245,7 +245,7 @@ const GalleryCard = () => {
         return () => clearInterval(interval);
     }, [isHovered, imagesPerPage, images.length]);
 
-   
+
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex >= images.length - imagesPerPage ? 0 : prevIndex + 1
@@ -258,7 +258,7 @@ const GalleryCard = () => {
         );
     };
 
-  
+
     const openModal = (image) => {
         setSelectedImage(image);
         setIsModalOpen(true);
@@ -293,7 +293,7 @@ const GalleryCard = () => {
         <div className='p-4 relative'>
             <h1 className='text-center text-3xl font-semibold text-[#111111]'>Gallery</h1>
 
-            <div className='flex flex-col lg:flex-row items-center justify-center mt-4 bg-[#FFFFFF] p-4 border rounded-custom'>
+            <div className='flex flex-col lg:flex-row items-center justify-center mt-4 bg-[#FFFFFF] p-2 lg:p-4 border rounded-custom'>
                 <button
                     className='text-white bg-black bg-opacity-50 p-0 lg:p-1 rounded-full hover:bg-opacity-70 transition'
                     onClick={prevSlide}
@@ -317,7 +317,7 @@ const GalleryCard = () => {
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => setIsHovered(false)}
                                     onClick={() => handleImageClick(idx)} // Handle image click
-                                    className='object-cover rounded-md shadow-lg w-full hover:scale-105 cursor-pointer lg:h-96 h-full'
+                                    className='object-cover rounded-md shadow-lg w-full hover:scale-105 cursor-pointer lg:h-96 h-44'
                                     src={image}
                                     alt={`Gallery image ${idx + 1}`}
                                 />

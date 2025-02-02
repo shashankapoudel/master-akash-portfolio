@@ -54,7 +54,7 @@ const Gallery = () => {
     );
 
     return (
-        <div className=" m-8 min-h-screen p-6 ">
+        <div className=" m-8 min-h-screen p-3 lg:p-6 ">
             <h1 className="text-2xl font-semibold text-center mb-4 text-[#111111]">Event Gallery</h1>
 
             <div className="mb-8 flex justify-center">
@@ -63,7 +63,7 @@ const Gallery = () => {
                     placeholder="Search for an event..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="px-4 py-2 border rounded-lg w-1/3"
+                    className="px-4 py-2 border rounded-lg w-full lg:w-1/3"
                 />
             </div>
 

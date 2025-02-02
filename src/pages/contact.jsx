@@ -13,11 +13,11 @@ const Contact = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex  w-full  ">
+        <div className="flex w-full p-4">
 
-            <div className="flex flex-col lg:flex-row lg:m-8 m-0 lg:border  w-full  font-playfair-display h-full lg:tracking-wider tracking-wide bg-[#FFFFFF]">
+            <div className="flex flex-col lg:flex-row lg:m-8 m-0  lg:border w-full font-playfair-displays h-full lg:tracking-wider tracking-wide bg-[#FFFFFF]">
 
-                <div className="flex flex-col items-center lg:w-1/2 w-full md:w-full  p-6 lg:p-10 gap-2 lg:gap-2">
+                <div className="flex flex-col items-center lg:w-1/2 w-full md:w-full p-4 lg:p-10 gap-2 lg:gap-2">
 
                     <img
                         src='/Images/homePhoto.jpg'
@@ -26,7 +26,7 @@ const Contact = () => {
                     <h1 className="align-text-top text-[#111111] font-semibold text-3xl md:text-4xl lg:text-3xl">Akash Banjara</h1>
 
                     <div className='flex items-center justify-center mr-auto lg:text-lg text-base gap-1'>
-                        <CgMail className='text-[#03385F] text-lg font-semibold' />
+                        <CgMail className='text-[#03385F] text-sm lg:text-lg font-semibold' />
                         <a
                             href="mailto:akashbanjara@gmail.com"
                             className='text-start mr-auto text-[#666666] hover:underline'>
@@ -40,17 +40,26 @@ const Contact = () => {
                         <h1 className='flex text-start text-[#03385F] gap-1 text-base lg:text-lg  items-center'><MdPersonalInjury />Personal Contact:</h1>
 
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4 '>
-                            <FaPhoneAlt className='text-[#03385F] text-base' />
+                            <FaPhoneAlt className='text-[#03385F] text-sm lg:text-base' />
                             <a href="tel:+9779851013923" className='text-left text-[#666666] text-base lg:text-lg tracking-wide hover:underline'>
-                                <span className='text-lg text-[#03385F] tracking-wider'>Nepal: </span> +977-9851013923
+                                <span className='text-lg text-[#03385F] tracking-wider'>Nepal: </span>
+
+                                <span className='hover:underline'>
+                                    +977-9851013923
+                                </span>
                             </a>
                         </div>
 
 
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4'>
-                            <FaPhoneAlt className=' text-[#03385F]  text-base' />
-                            <a href='tel: +85251126782' className='hover:underline'>
-                                <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className=' text-[#03385F] tracking-wider'>Hongkong:  </span>+852 - 5112 6782</p>
+                            <FaPhoneAlt className=' text-[#03385F] text-sm lg:text-base' />
+                            <a href='tel: +85251126782' className=''>
+                                <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className=' text-[#03385F] tracking-wider'>Hongkong:  </span>
+                                    <span className='hover:underline'>
+                                        +852 - 5112 6782
+                                    </span>
+
+                                </p>
                             </a>
                         </div>
 
@@ -63,16 +72,25 @@ const Contact = () => {
 
 
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4 '>
-                            <FaPhoneAlt className='text-[#03385F] text-base' />
-                            <a href="tel:+9779849779890" className='text-left text-[#666666] text-base lg:text-lg tracking-wide hover:underline'>
-                                <span className='text-lg text-[#03385F] tracking-wider'>Nepal office(Kapil): </span> +977-9849779890
+                            <FaPhoneAlt className='text-[#03385F] text-sm lg:text-base' />
+                            <a href="tel:+9779849779890" className=''>
+                                <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'> <span className='text-lg text-[#03385F] tracking-wider'>Nepal office(Kapil): </span>
+                                    <span className='hover:underline'>
+                                        +977-9849779890
+                                    </span>
+
+                                </p>
                             </a>
                         </div>
 
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4'>
-                            <FaPhoneAlt className=' text-[#03385F]  text-base' />
-                            <a href='tel: +85294169123' className='hover:underline'>
-                                <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className=' text-[#03385F] tracking-wider'>Hongkong office(Catherine):  </span>+852 - 9416 9123</p>
+                            <FaPhoneAlt className=' text-[#03385F]  lg:text-2xl text-sm' />
+                            <a href='tel: +85294169123' className=''>
+                                <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className='text-lg text-[#03385F] tracking-wider'>Hongkong office(Catherine): </span>
+                                    <span className='hover:underline'>
+                                        +852 - 9416 9123
+                                    </span>
+                                </p>
                             </a>
                         </div>
 
@@ -99,7 +117,7 @@ const Contact = () => {
 
             </div>
 
-        </div>
+        </div >
 
     );
 };
