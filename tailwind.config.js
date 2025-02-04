@@ -21,6 +21,7 @@ export default {
         'poppins': ['Poppins'],
       },
       borderRadius: {
+        'custom': '10px 10px 10px 100px',
         'custom-1': '10px 10px 100px 10px',
         'custom-2': '10px 100px 100px 10px',
         'custom-3': '10px 100px 10px 10px',

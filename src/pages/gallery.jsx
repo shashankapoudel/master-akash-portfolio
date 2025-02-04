@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 const eventsData = [
     {
         id: 1,
-        name: 'Yoga Retreat',
+        name: 'Meditation and Mindfulness',
         images: [
             'homePhoto.jpg',
             'homePhoto.jpg',
@@ -19,7 +19,7 @@ const eventsData = [
     },
     {
         id: 2,
-        name: 'Sound Healing',
+        name: 'Sound Healing Therapy',
         images: [
             'homePhoto.jpg',
             'homePhoto.jpg',
@@ -30,7 +30,40 @@ const eventsData = [
     },
     {
         id: 3,
-        name: 'Meditation Workshop',
+        name: 'Spiritual Events and Retreats',
+        images: [
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+        ],
+    },
+    {
+        id: 4,
+        name: 'Sound Baths and Relaxation',
+        images: [
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+        ],
+    },
+    {
+        id: 5,
+        name: 'Yoga and Energy Awakening',
+        images: [
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+            'homePhoto.jpg',
+        ],
+    },
+    {
+        id: 6,
+        name: 'Healing and welness workshops',
         images: [
             'homePhoto.jpg',
             'homePhoto.jpg',

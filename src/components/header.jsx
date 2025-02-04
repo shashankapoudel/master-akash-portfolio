@@ -36,7 +36,7 @@ const Header = () => {
                         onClick={() => navigate('/')}
                         src="/Images/LogoName.png"
                         alt="Company Logo"
-                        className="lg:w-48 md:w-auto h-8 lg:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply cursor-pointer"
+                        className="lg:w-48 md:w-48 h-8 lg:h-16 md:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply cursor-pointer"
                     />
                 </div>
 
@@ -73,7 +73,7 @@ const Header = () => {
             {
                 menuOpen && (
                     <div className="lg:hidden md:flex bg-[#F6F8FA] p-2">
-                        <ul className="flex flex-col gap-4 p-4">
+                        <ul className="flex flex-col gap-4 p-4 text-lg">
                             {navItems.map((item) => (
                                 <li key={item.name}>
                                     <NavLink

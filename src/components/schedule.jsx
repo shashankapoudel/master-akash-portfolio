@@ -62,7 +62,7 @@ const Schedule = () => {
                 Schedule Call with Akash
             </h2>
 
-            <div className="mb-4 w-full">
+            <div className="mb-4 w-full lg:w-1/2">
                 <label className="block text-sm font-medium text-[#03385F] mb-2">
                     Select Your Timezone
                 </label>
@@ -89,7 +89,7 @@ const Schedule = () => {
             </p>
 
             {date && (
-                <div className="w-full mb-3 p-4">
+                <div className="w-full lg:w-1/2 mb-3 p-4">
                     <select
                         className="p-2 border border-[#03385F] w-full"
                         onChange={(e) => {

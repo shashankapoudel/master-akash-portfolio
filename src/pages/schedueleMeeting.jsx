@@ -17,36 +17,48 @@ const SchedueleMeeting = () => {
 
     return (
         <div className="lg:m-8 m-6">
-            <div className="flex flex-col lg:flex-row w-full tracking-wider font-playfair-display border-2 border-[#3c5551] p-4">
+            <div className="flex flex-col lg:flex-row w-full tracking-wider font-poppins border-2 border-[#3c5551] p-4">
 
                 <div className="lg:w-1/3 w-full p-3 text-[#a7594d] font-medium gap-2">
-                    <h1 className="flex justify-center font-semibold text-3xl mb-4">Akash Banjara</h1>
+                    <h1 className="flex justify-center font-semibold text-2xl lg:text-3xl mb-4">Akash Banjara</h1>
 
                     <div className="flex items-center gap-2 mb-2">
                         <CiCalendarDate className="text-xl" />
                         <p>
-                            <span className="font-semibold text-xl">Date:</span> {date || "Not Selected"}
+                            <span className="font-normal text-base lg:text-lg">Date: </span>
+                            <span className='text-[#666666] text-sm'>
+                                {date || "Not Selected"}
+                            </span>
                         </p>
                     </div>
 
                     <div className="flex items-center gap-2 mb-2">
                         <CiClock2 className="text-xl" />
                         <p>
-                            <span className="font-semibold text-xl">Time:</span> {time || "Not Selected"}
+                            <span className="font-normal text-base lg:text-lg">Time: </span>
+                            <span className='text-[#666666] text-sm'>
+                                {time || "Not Selected"}
+                            </span>
                         </p>
                     </div>
 
                     <div className="flex items-center gap-2 mb-2">
                         <CiClock2 className="text-xl" />
                         <p>
-                            <span className="font-semibold text-xl">Minutes:</span> {callTime || "Not Selected"} minutes
+                            <span className="font-normal  text-base lg:text-lg">Minutes: </span>
+                            <span className='text-[#666666] text-sm'>
+                                {callTime || "Not Selected"} minutes
+                            </span>
                         </p>
                     </div>
 
                     <div className="flex items-center gap-2 mb-2">
                         <CiClock2 className="text-xl" />
                         <p>
-                            <span className="font-semibold text-xl">TimeZone:</span> {timeZone || "Not Selected"}
+                            <span className="font-normal text-base lg:text-lg">TimeZone: </span>
+                            <span className='text-[#666666] text-sm'>
+                                {timeZone || "Not Selected"}
+                            </span>
                         </p>
                     </div>
 

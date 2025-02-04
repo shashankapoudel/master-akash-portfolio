@@ -1,11 +1,18 @@
 
-import React from 'react';
+
+import React, { useEffect } from 'react';
 import { Controller, useForm, useWatch } from "react-hook-form";
+import { getCode, getNames } from 'country-list';
+import { getCountryCallingCode } from "libphonenumber-js";
+import emailjs from 'emailjs-com';
+import toast, { Toaster } from 'react-hot-toast';
 
 const MeetingForm = () => {
     const {
         control,
+        setValue,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm({
         defaultValues: {
@@ -22,25 +29,51 @@ const MeetingForm = () => {
 
     const selectedCountry = useWatch({ control, name: "country" });
 
+    useEffect(() => {
+        setValue("countryCode", getCountryCode(selectedCountry));
+    }, [selectedCountry, setValue]);
+
+    const getCountryCode = (country) => {
+        const countryCode = getCode(country); // Get ISO Alpha-2 code
+        return countryCode ? ` +${getCountryCallingCode(countryCode)}` : "";
+    };
+
+    const countries = getNames().map(name => ({
+        code: getCode(name),
+        name,
+    }));
+
     const platforms = ["WhatsApp", "Zoom", "Google Meet", "Phone Call"];
 
     const onSubmit = (data) => {
         console.log(data);
-    };
+        emailjs.send(
+            '123456789',
+            'template_lj947kw',
+            {
+                to_email: data.email,
+                to_name: data.name,
+                from_name: "Yogi Akash",
+                message: "Welcome to Yogi Akash! We are excited to have you on board.",
+            },
+            'IlwIIMWZ-GKN6nZgT'
+        )
+            .then((response) => {
+                console.log('Welcome email sent successfully!', response.status, response.text);
+                // alert('Thank you for submitting the form. A welcome email has been sent to your email address.');
+                toast.success('Email sent successfully!');
+                reset();
+            })
 
-    const getCountryCode = (country) => {
-        switch (country) {
-            case "Nepal":
-                return "+977";
-            case "Hongkong":
-                return "+852";
-            default:
-                return "";
-        }
+            .catch((error) => {
+                console.error('Failed to send welcome email:', error);
+                alert('Failed to send the welcome email. Please try again.');
+            });
     };
 
     return (
-        <div className="p-2 gap-2">
+        <div className="p-2 gap-2 font-poppins">
+            <Toaster position="top-center" reverseOrder={false} />
             <form onSubmit={handleSubmit(onSubmit)} className="lg:space-y-6 space-y-2 w-full lg:p-12 p-2">
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 p-4 ">
                     <div>
@@ -55,7 +88,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="lg:text-lg text-sm text-[#a7594d] " htmlFor="name">
+                                    <label className=" text-sm  text-[#a7594d] " htmlFor="name">
                                         Your name
                                     </label>
                                     <input
@@ -86,7 +119,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="lg:text-lg text-sm text-[#a7594d] " htmlFor="email">
+                                    <label className="text-sm text-[#a7594d] " htmlFor="email">
                                         Email
                                     </label>
                                     <input
@@ -117,18 +150,21 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="lg:text-lg text-sm text-[#a7594d] " htmlFor="country">
+                                    <label className=" text-sm text-[#a7594d] " htmlFor="country">
                                         Country
                                     </label>
                                     <select
                                         {...field}
                                         id="country"
-                                        className={`py-2.5 rounded-lg px-4 border ${errors.country ? "border-red-500" : "border-gray-300"
+                                        className={`text-sm py-2.5 rounded-lg px-4 border ${errors.country ? "border-red-500" : "border-gray-300"
                                             } focus:outline-none w-full`}
                                     >
                                         <option value="">Select your country</option>
-                                        <option value="Nepal">Nepal</option>
-                                        <option value="Hongkong">Hongkong</option>
+                                        {countries.map((country) => (
+                                            <option key={country.code} value={country.name}>
+                                                {country.name}
+                                            </option>
+                                        ))}
                                     </select>
                                     {errors.country && (
                                         <p className="text-red-500 mt-1">{errors.country.message}</p>
@@ -145,7 +181,7 @@ const MeetingForm = () => {
                             defaultValue={getCountryCode(selectedCountry)}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="lg:text-lg text-sm text-[#a7594d] " htmlFor="countryCode">
+                                    <label className="text-sm text-[#a7594d] " htmlFor="countryCode">
                                         Country Code
                                     </label>
                                     <input
@@ -175,7 +211,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col flex-grow">
-                                    <label className="lg:text-lg text-sm text-[#a7594d] " htmlFor="phoneNumber">
+                                    <label className=" text-sm text-[#a7594d] " htmlFor="phoneNumber">
                                         Phone Number
                                     </label>
                                     <input
@@ -208,13 +244,13 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="lg:text-lg text-sm text-[#a7594d] " htmlFor="purpose">
+                                    <label className=" text-sm text-[#a7594d] " htmlFor="purpose">
                                         Purpose
                                     </label>
                                     <select
                                         {...field}
                                         id="purpose"
-                                        className={`py-2.5 rounded-lg lg:px-4 px-1  text-sm border ${errors.purpose ? "border-red-500" : "border-gray-300"
+                                        className={`py-2.5  rounded-lg lg:px-4 px-1  text-sm border ${errors.purpose ? "border-red-500" : "border-gray-300"
                                             } focus:outline-none w-full`}
                                     >
                                         <option value="">Select your purpose for call</option>
@@ -243,7 +279,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="lg:text-lg text-sm text-[#a7594d] " htmlFor="message">
+                                    <label className=" text-sm text-[#a7594d] " htmlFor="message">
                                         Message
                                     </label>
                                     <textarea
@@ -271,7 +307,7 @@ const MeetingForm = () => {
                                 }}
                                 render={({ field }) => (
                                     <div className="flex flex-col">
-                                        <label className="lg:text-lg text-sm text-[#a7594d] mb-2">
+                                        <label className=" text-sm text-[#a7594d] mb-2">
                                             Preferred Platform for Call
                                         </label>
                                         <div className="grid grid-cols-2 gap-2">
@@ -300,7 +336,7 @@ const MeetingForm = () => {
                                                         }}
                                                         className="rounded border-gray-300"
                                                     />
-                                                    <span>{platform}</span>
+                                                    <span className='text-sm'>{platform}</span>
                                                 </label>
                                             ))}
                                         </div>

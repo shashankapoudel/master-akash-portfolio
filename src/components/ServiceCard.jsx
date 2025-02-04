@@ -207,7 +207,7 @@ const ServiceCard = () => {
 
     useEffect(() => {
         let interval;
-        if (!isHovered && isVisible) {  // Only auto-change when visible
+        if (!isHovered && isVisible) {
             interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
             }, 6000);
@@ -222,11 +222,9 @@ const ServiceCard = () => {
     const handleNext = () => {
         setCurrentIndex((prev) => (prev === services.length - 1 ? 0 : prev + 1));
     };
-
-
     return (
         <div className='flex flex-col gap-2 relative mt-4 p-4 font-poppins min-h-200vh'>
-            <h1 className='text-center text-3xl font-semibold text-[#111111]'>Services</h1>
+            <h1 className='text-center text-3xl font-semibold text-[#111111] '>Services</h1>
 
             <div
                 onMouseEnter={() => setIsHovered(true)}
@@ -234,8 +232,8 @@ const ServiceCard = () => {
                 className='grid place-items-center mt-2'
             >
 
-                <div className='flex flex-col gap-4 w-full p-5 lg:p-8 border border-[#E6E7F3]  bg-[#FFFFFF]  rounded-3xl lg:rounded-card-custom'>
-                    <h1 className='text-[#022B4A] font-bold text-lg lg:text-xl text-center'>
+                <div className='flex flex-col gap-4 w-full p-5 lg:p-8 border border-[#E6E7F3]  bg-[#FFFFFF]  rounded-3xl lg:rounded-card-custom shadow-sm'>
+                    <h1 className='text-[#022B4A] font-bold text-lg md:text-xl lg:text-xl text-center '>
                         {services[currentIndex].title}
                     </h1>
                     <div className='flex flex-col lg:flex-row md:flex-col gap-4 lg:gap-8'>
@@ -250,7 +248,7 @@ const ServiceCard = () => {
 
                         <div className='w-full md:w-full lg:w-1/2 flex flex-col items-start justify-start p-0 lg:p-4 gap-4'>
 
-                            <p className='text-[#666666] p-0 lg:p-2 text-sm lg:text-lg '>
+                            <p className='text-[#666666] p-0 lg:p-2 text-sm lg:text-lg md:text-lg '>
                                 {services[currentIndex].description}
                             </p>
 
