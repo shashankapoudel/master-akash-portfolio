@@ -3,10 +3,10 @@ import React from 'react'
 const PhotoModal = ({ closeModal, selectedImage }) => {
     return (
         <div
-            className='fixed inset-0 z-50 flex items-center bg-black bg-opacity-0'
+            className='fixed inset-0 z-50 flex items-center bg-black bg-opacity-0 w-2xl'
             onClick={closeModal}
         >
-            <div className='relative max-w-3xl w-full p-4'>
+            <div className='relative max-w-2xl p-4'>
 
                 <img
                     className='w-full h-auto max-h-[80vh] object-contain rounded-lg'
