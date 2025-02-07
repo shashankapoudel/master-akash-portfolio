@@ -388,6 +388,7 @@
 
 import React, { useRef } from 'react';
 import { motion, useInView, stagger, delay } from 'framer-motion';
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const services = [
     {
@@ -601,6 +602,9 @@ const ServicesPage = () => {
                     </a>
 
                 </motion.div>
+            </div>
+            <div className='flex items-center justify-center'>
+                <FaAngleDoubleDown className='text-3xl cursor-pointer' />
             </div>
 
             <div className="w-full space-y-12 mt-12 p-4 lg:p-16 flex items-center justify-center">

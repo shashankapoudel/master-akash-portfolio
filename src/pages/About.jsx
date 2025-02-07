@@ -17,7 +17,7 @@ const About = () => {
 
                 <div className='w-full'>
                     <h2 className="flex gap-1 items-center justify-center text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
-                        About me <FaUser className="text-2xl" />
+                        About me
                     </h2>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -27,12 +27,12 @@ const About = () => {
                     >
 
                         <div className='relative w-full lg:w-1/2 h-full flex items-center'>
-                            <div className="absolute top-2 left-2 w-full h-full bg-teal-900 rounded-lg -rotate-2"></div>
-                            <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div>
+                            <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-2"></div>
+                            {/* <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div> */}
                             <img
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
-                                className='relative rounded-lg shadow-lg w-full h-auto object-cover rotate-1'
+                                className='relative rounded-lg shadow-lg w-full h-auto object-cover'
                             />
                         </div>
 
@@ -50,7 +50,7 @@ const About = () => {
 
                 <div className='flex flex-col items-center justify-center py-8 w-full'>
                     <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
-                        My Background <FaHistory className="text-xl lg:text-2xl" />
+                        My Background
                     </h2>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -69,12 +69,12 @@ const About = () => {
                         </div>
 
                         <div className='relative w-full lg:w-1/2 h-full flex items-center'>
-                            <div className="absolute top-2 left-2 w-full h-full bg-teal-900 rounded-lg -rotate-2"></div>
-                            <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div>
+                            <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-2"></div>
+                            {/* <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div> */}
                             <img
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
-                                className='relative rounded-lg shadow-lg w-full h-auto object-cover rotate-1'
+                                className='relative rounded-lg shadow-lg w-full h-auto object-cover'
                             />
                         </div>
 
@@ -84,7 +84,7 @@ const About = () => {
 
                 <div className='flex flex-col items-center justify-center py-8 w-full'>
                     <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
-                        My Achievements <FaTrophy className="text-xl lg:text-2xl" />
+                        My Achievements
                     </h2>
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -94,8 +94,8 @@ const About = () => {
                     >
                         <div className=' relative w-full lg:w-1/2 h-full flex items-center'>
 
-                            <div className="absolute top-2 left-2 w-full h-full bg-teal-900 rounded-lg -rotate-2"></div>
-                            <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div>
+                            <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-2"></div>
+                            {/* <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div> */}
                             <img
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
