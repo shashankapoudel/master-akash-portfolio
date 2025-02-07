@@ -43,16 +43,19 @@ const StatsCounter = () => {
             <div className="container mx-auto text-center">
                 <h2 className="text-4xl font-semibold mb-8">Our Impact</h2>
                 <div className="grid md:grid-cols-3 gap-8">
-                    <div className="stat-item">
-                        <h3 className="text-5xl font-semibold text-[#a7594d] ">{count1}+ </h3>
+
+                    <div className="">
+                        <h3 className="text-2xl lg:text-5xl font-semibold text-[#a7594d] ">{count1}+ </h3>
                         <p className="text-xl text-[#a7594d] ">Happy Students</p>
                     </div>
-                    <div className="stat-item">
-                        <h3 className="text-5xl font-semibold text-[#a7594d] ">{count2}+ </h3>
+
+                    <div className="">
+                        <h3 className="text-2xl lg:text-5xl font-semibold text-[#a7594d] ">{count2}+ </h3>
                         <p className="text-xl text-[#a7594d] ">Yoga Sessions</p>
                     </div>
-                    <div className="stat-item">
-                        <h3 className="text-5xl font-semibold text-[#a7594d] ">{count3}+ </h3>
+
+                    <div className="">
+                        <h3 className="text-2xl lg:text-5xl font-semibold text-[#a7594d] ">{count3}+ </h3>
                         <p className="text-xl text-[#a7594d] ">Countries Visited</p>
                     </div>
                 </div>

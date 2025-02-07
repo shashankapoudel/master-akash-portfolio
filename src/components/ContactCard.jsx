@@ -55,12 +55,12 @@ const ContactCard = () => {
                     </button>
 
 
-                    <div className='flex gap-8 p-2'>
-                        <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className=' text-xl md:text-2xl lg:text-3xl text-[#1877F2] transition-transform duration-300  ease-out  hover:scale-125' /></a>
+                    <div className='flex gap-8 p-2 justify-center lg:justify-start'>
+                        <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className=' text-xl md:text-3xl lg:text-3xl text-[#1877F2] transition-transform duration-300  ease-out  hover:scale-125' /></a>
 
-                        <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-2xl lg:text-3xl text-[#E4405F] transition-transform duration-300  ease-out  hover:scale-125' /></a>
+                        <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-3xl lg:text-3xl text-[#E4405F] transition-transform duration-300  ease-out  hover:scale-125' /></a>
 
-                        <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className='text-xl md:text-2xl lg:text-3xl text-[#FF0000] transition-transform duration-300  ease-out  hover:scale-125' /></a>
+                        <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className='text-xl md:text-3xl lg:text-3xl text-[#FF0000] transition-transform duration-300  ease-out  hover:scale-125' /></a>
                     </div>
 
 

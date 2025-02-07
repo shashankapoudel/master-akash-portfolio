@@ -11,11 +11,18 @@ const SocialCard = () => {
 
             <div className='flex gap-8 text-3xl text-white'>
                 <div className='flex gap-8 items-center justify-center p-4'>
-                    <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className=' text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' /></a>
 
-                    <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' /></a>
+                    <a href='https://www.facebook.com/soundhealinginstructor' target="_blank" rel="noopener noreferrer">
+                        <FaFacebook className=' text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' />
+                    </a>
 
-                    <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className='text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' /></a>
+                    <a href='https://www.instagram.com/soundhealing.hk/' target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className='text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' />
+                    </a>
+
+                    <a href='https://www.youtube.com/@Yogi_akash/featured' target="_blank" rel="noopener noreferrer">
+                        <FaYoutube className='text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' />
+                    </a>
                 </div>
             </div>
         </div>

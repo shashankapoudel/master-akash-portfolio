@@ -12,6 +12,7 @@ const Footer = () => {
             </div>
 
             <div className='flex  text-white gap-3 md:gap-4 lg:gap-6 text-sm lg:text-xl'>
+
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
@@ -67,16 +68,22 @@ const Footer = () => {
 
 
                 <div>
-                    <a href='https://www.facebook.com/soundhealinginstructor'><FaFacebook className='text-xl md:text-2xl lg:text-2xl text-white' /></a>
+                    <a href='https://www.facebook.com/soundhealinginstructor' target="_blank" rel="noopener noreferrer" >
+                        <FaFacebook className='text-xl md:text-2xl lg:text-2xl text-white hover:scale-125' />
+                    </a>
                 </div>
 
 
                 <div>
-                    <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-2xl lg:text-2xl text-white' /></a>
+                    <a href='https://www.instagram.com/soundhealing.hk/' target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className='text-xl md:text-2xl lg:text-2xl text-white hover:scale-125' />
+                    </a>
                 </div>
 
                 <div>
-                    <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className=' text-xl md:text-2xl lg:text-2xl text-white' /></a>
+                    <a href='https://www.youtube.com/@Yogi_akash/featured' target="_blank" rel="noopener noreferrer">
+                        <FaYoutube className=' text-xl md:text-2xl lg:text-2xl text-white hover:scale-125' />
+                    </a>
                 </div>
 
             </div>

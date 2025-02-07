@@ -7,6 +7,7 @@ const PhotoModal = ({ closeModal, selectedImage }) => {
             onClick={closeModal}
         >
             <div className='relative max-w-3xl w-full p-4'>
+
                 <img
                     className='w-full h-auto max-h-[80vh] object-contain rounded-lg'
                     src={selectedImage}
@@ -18,7 +19,7 @@ const PhotoModal = ({ closeModal, selectedImage }) => {
                 >
                     &times;
                 </button>
-                
+
             </div>
         </div>
     )
