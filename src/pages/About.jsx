@@ -135,7 +135,7 @@ const About = () => {
                                             key={index}
                                             src={img}
                                             alt='About Me'
-                                            className='rounded-lg shadow-lg w-full h-[240px] object-cover cursor-pointer hover:scale-105'
+                                            className='rounded-lg shadow-lg w-full lg:h-[240px] h-[140px] md:h-[240px] object-cover cursor-pointer hover:scale-105'
                                         />
                                     ))
                                 }

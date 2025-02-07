@@ -11,15 +11,16 @@ const ContactCard = () => {
         <div>
             <h1 className='flex items-center font-poppins justify-center text-[#022B4A] text-center text-2xl lg:text-3xl font-bold gap-2'>Let's get in touch</h1>
 
-            <div className="flex flex-col lg:flex-row  p-4 lg:p-10 w-full justify-between gap-5 lg:gap-8">
+            <div className="flex flex-col lg:flex-row p-4 lg:p-10 w-full justify-between gap-5 lg:gap-8">
+
                 <div className=' w-full lg:w-1/2'>
                     <img
-                        src='/Images/homePhoto.jpg'
-                        className='object-cover rounded-lg'
+                        src='/Images/Get in touch.jpg'
+                        className='object-contain rounded-lg w-full h-auto'
                     />
                 </div>
 
-                <div className='w-full lg:w-1/2 flex flex-col gap-3 lg:gap-5'>
+                <div className='w-full lg:w-1/2 flex flex-col gap-3 lg:gap-5 lg:mt-8 mt-2'>
 
                     <p className='text-[#666666] text-sm md:text-lg lg:text-lg'>
                         We’d love to hear from you! Whether you have questions, need guidance, or want to explore sound healing and yoga, our team is here to help. Reach out to us and take the first step toward a transformative experience.

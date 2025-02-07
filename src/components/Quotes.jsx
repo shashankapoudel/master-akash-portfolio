@@ -58,13 +58,9 @@ const Quotes = () => {
             text: 'Singing Bowl is a medicine for thousands of diseases',
         },
         {
-            image: '/Images/Quotes/Quote1.jpg',
-            text: 'Healing vibrations are the bridge between mind and spirit',
+            image: '/Images/Quotes/Quote3.jpg',
+            text: 'Healing vibrations are the bridge between body, mind and spirit',
         },
-        {
-            image: '/Images/Quotes/Quote1.jpg',
-            text: 'Harmony in sound creates harmony in life',
-        }
     ];
 
     const [index, setIndex] = useState(0);
@@ -96,6 +92,7 @@ const Quotes = () => {
                 >
                     <GrFormPrevious />
                 </button>
+
                 <div className='grid grid-cols-1 lg:grid-cols-2 mt-3'>
                     {[0, 1].map(offset => {
                         const quoteIndex = (index + offset) % quotesData.length;
@@ -105,7 +102,7 @@ const Quotes = () => {
                             <div key={quoteIndex} className='flex flex-col lg:flex-row md:flex-row justify-center items-center p-4 cursor-pointer hover:scale-95'>
                                 <img
                                     src={quote.image}
-                                    className='w-64 h-64 rounded-custom object-cover'
+                                    className='lg:w-72 lg:h-72 w-64 h-64 rounded-custom object-cover'
                                     alt="Quote"
                                 />
 
