@@ -9,7 +9,7 @@ const ContactCard = () => {
     const navigate = useNavigate()
     return (
         <div>
-            <h1 className='flex items-center font-poppins justify-center text-[#022B4A] text-center text-2xl lg:text-3xl font-bold gap-2'>Let's get in touch <FaEnvelope className=' text-xl lg:text-2xl' /> </h1>
+            <h1 className='flex items-center font-poppins justify-center text-[#022B4A] text-center text-2xl lg:text-3xl font-bold gap-2'>Let's get in touch</h1>
 
             <div className="flex flex-col lg:flex-row  p-4 lg:p-10 w-full justify-between gap-5 lg:gap-8">
                 <div className=' w-full lg:w-1/2'>
@@ -53,16 +53,16 @@ const ContactCard = () => {
                         Book an appointment
                     </button>
 
-                    <div className='flex flex-col mt-4 justify-center items-center'>
-                        <div className='flex gap-8 items-center justify-center p-4'>
-                            <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className=' text-xl md:text-2xl lg:text-3xl text-[#1877F2] transition-transform duration-300  ease-out  hover:scale-125' /></a>
 
-                            <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-2xl lg:text-3xl text-[#E4405F] transition-transform duration-300  ease-out  hover:scale-125' /></a>
+                    <div className='flex gap-8 p-2'>
+                        <a href='https://www.facebook.com/soundhealinginstructor '><FaFacebook className=' text-xl md:text-2xl lg:text-3xl text-[#1877F2] transition-transform duration-300  ease-out  hover:scale-125' /></a>
 
-                            <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className='text-xl md:text-2xl lg:text-3xl text-[#FF0000] transition-transform duration-300  ease-out  hover:scale-125' /></a>
-                        </div>
+                        <a href='https://www.instagram.com/soundhealing.hk/'><FaInstagram className='text-xl md:text-2xl lg:text-3xl text-[#E4405F] transition-transform duration-300  ease-out  hover:scale-125' /></a>
 
+                        <a href='https://www.youtube.com/@Yogi_akash/featured '><FaYoutube className='text-xl md:text-2xl lg:text-3xl text-[#FF0000] transition-transform duration-300  ease-out  hover:scale-125' /></a>
                     </div>
+
+
                 </div>
             </div>
 
