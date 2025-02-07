@@ -57,7 +57,7 @@ const StatsCounter = () => {
                     </div>
                 </div>
             </div>
-            <Chatbot />
+            {/* <Chatbot /> */}
         </section>
     );
 };
