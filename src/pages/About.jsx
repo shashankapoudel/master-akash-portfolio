@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import CompanyCard from '../components/CompanyCard';
 import Quotes from '../components/Quotes';
