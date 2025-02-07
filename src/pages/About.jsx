@@ -26,7 +26,7 @@ const About = () => {
                         className='flex flex-col md:flex-col lg:flex-row gap-8 '
                     >
 
-                        <div className='relative w-full lg:w-1/2 h-full flex items-center'>
+                        <div className='relative w-full lg:w-1/2 h-full flex items-center mt-2'>
                             <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -57,19 +57,18 @@ const About = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className='flex flex-col-reverse md:flex-col-reverse lg:flex-row gap-8 items-stretch w-full'
                     >
-                        <div className='w-full lg:w-1/2 flex items-center'>
-                            <p className="text-[#666666] leading-relaxed font-poppins text-sm lg:text-base md:text-lg">
+                        <div className='w-full lg:w-1/2 flex items-center mt-2'>
+                            <p className="text-[#666666] leading-relaxed font-poppins text-sm lg:text-base md:text-lg tracking-wider">
                                 Born in the sacred Himalayas of Gorkha, Nepal, my spiritual journey began at a young age. I was deeply inspired by the rich cultural and spiritual heritage of my homeland, which led me to study with revered sages and scholars in monasteries and temples across Nepal and India. My formal training in sound healing, yoga, meditation, and energy transformation took place in the monastic regions of northern India, where I learned under the guidance of renowned Himalayan yoga masters.
                                 <br />
                                 My expertise spans a wide range of healing practices, including yoga, sound therapy, Reiki, meditation, mantra chanting, and energy transformation. I have combined these traditional methods with modern scientific research to develop innovative sound therapy techniques that address chronic conditions such as cancer, stroke, migraines, and arthritis. I have also created specialized treatments for pregnant women and immunity enhancement, achieving clinically proven results.
                                 <br />
-                                As a certified sound healer and meditation teacher, I have conducted workshops, retreats, and personalized sessions for diverse audiences worldwide. My ability to adapt my teachings to different cultures and individuals has made my services highly sought-after across the globe.
+                                As a certified sound healer and meditation teacher, I have conducted workshops, retreats, and other various personalized sessions for my diverse  audiences around the world. My ability to adapt my teachings to different cultures and individuals has made my services highly sought-after across the globe.
                             </p>
                         </div>
 
                         <div className='relative w-full lg:w-1/2 h-full flex items-center'>
                             <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div>
-                            {/* <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div> */}
                             <img
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
@@ -91,10 +90,9 @@ const About = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className='flex flex-col md:flex-col lg:flex-row gap-8 items-stretch w-full'
                     >
-                        <div className=' relative w-full lg:w-1/2 h-full flex items-center'>
+                        <div className=' relative w-full lg:w-1/2 h-full flex items-center mt-2'>
 
                             <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div>
-                            {/* <div className="absolute top-1 left-1 w-full h-full bg-purple-900 rounded-lg rotate-1"></div> */}
                             <img
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
