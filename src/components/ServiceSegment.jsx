@@ -86,11 +86,11 @@ const ServiceSegment = () => {
 
 
 
-                            
+
                         </h1>
 
                         <p className='text-center text-[#022B4A] font-semibold text-lg lg:text-xl md:text-xl'>
-                            {service.name}<span className='font-normal text-xl'>:</span>
+                            {service.name}<span className='font-normal text-xl'></span>
                         </p>
 
                         <p className='text-center text-base lg:text-lg md:text-lg text-[#666666]'>{service.description}</p>

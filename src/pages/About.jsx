@@ -1,15 +1,49 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import CompanyCard from '../components/CompanyCard';
 import Quotes from '../components/Quotes';
 import ContactCard from '../components/ContactCard';
 import { motion } from 'framer-motion';
-import { FaUser, FaHistory, FaTrophy } from 'react-icons/fa';
-import { FaHandsHelping } from 'react-icons/fa';
-import { WiDirectionRight } from "react-icons/wi";
+// import { FaUser, FaHistory, FaTrophy } from 'react-icons/fa';
+// import { FaHandsHelping } from 'react-icons/fa';
+// import { WiDirectionRight } from "react-icons/wi";
 import ServiceSegment from '../components/ServiceSegment';
+import PhotoModal from '../components/PhotoModal';
 
 const About = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const [selectedImage, setSelectedImage] = useState("")
+
+    const openModal = (image) => {
+        setSelectedImage(image)
+        setIsModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setSelectedImage("")
+        setIsModalOpen(false)
+    }
+
+
+    const handleClick = (index) => {
+        setIsModalOpen(true)
+        openModal(Images[index])
+    }
+
+    const Images = [
+        '/Images/Gallery/Image1.jpg',
+        '/Images/Gallery/Image2.jpg',
+        '/Images/Gallery/Image3.jpg',
+        '/Images/Gallery/Image4.jpg',
+        '/Images/Gallery/Image5.jpg',
+        '/Images/Gallery/Image3.jpg',
+        '/Images/Gallery/Image4.jpg',
+        '/Images/Gallery/Image5.jpg',
+    ];
+
+
+
+
     return (
         <div className='m-2 lg:m-4 tracking-wide'>
 
@@ -23,9 +57,8 @@ const About = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
-                        className='flex flex-col md:flex-col lg:flex-row gap-8 '
+                        className='flex flex-col md:flex-col lg:flex-row gap-8'
                     >
-
                         <div className='relative w-full lg:w-1/2 h-full flex items-center mt-2 gap-2'>
                             <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div>
                             <img
@@ -80,25 +113,40 @@ const About = () => {
                 </div>
 
 
-                <div className='flex flex-col items-center justify-center py-8 w-full'>
+                <div className='flex flex-col items-center justify-center py-8 w-full h-auto'>
                     <h2 className="flex items-center justify-center gap-1 text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">
                         My Achievements
                     </h2>
+
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className='flex flex-col md:flex-col lg:flex-row gap-8 items-stretch w-full'
                     >
-                        <div className=' relative w-full lg:w-1/2 h-full flex items-center mt-2 gap-2'>
+                        <div className=' w-full lg:w-1/2 h-full flex items-center mt-2 gap-2'>
 
-                            <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div>
-                            <img
-                                src='/Images/homePhoto.jpg'
-                                alt='About Me'
-                                className=' relative rounded-lg shadow-lg w-full h-auto object-cover'
-                            />
+                            {/* <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div> */}
+                            <div className='grid grid-cols-2 lg:grid-cols-4 justify-center w-full gap-2'>
+                                {
+                                    Images.map((img, index) => (
+                                        <img
+                                            onClick={() => handleClick(index)}
+                                            key={index}
+                                            src={img}
+                                            alt='About Me'
+                                            className='rounded-lg shadow-lg w-full h-[240px] object-cover cursor-pointer hover:scale-105'
+                                        />
+                                    ))
+                                }
+                            </div>
                         </div>
+                        {isModalOpen && (
+                            <PhotoModal
+                                closeModal={closeModal}
+                                selectedImage={selectedImage}
+                            />
+                        )}
 
                         <div className='w-full lg:w-1/2 flex items-center'>
                             <p className="text-[#666666] leading-relaxed font-poppins text-sm lg:text-base md:text-lg tracking-wider">
@@ -158,6 +206,9 @@ const About = () => {
                     <ContactCard />
                 </motion.div>
             </div>
+
+
+
 
         </div >
     );
