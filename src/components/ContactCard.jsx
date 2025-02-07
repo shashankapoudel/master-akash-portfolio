@@ -28,11 +28,14 @@ const ContactCard = () => {
 
                     <div className='flex items-center justify-center mr-auto lg:text-lg md:text-lg text-sm gap-1'>
                         <CgMail className='text-[#03385F] text-base md:text-lg lgtext-lg font-semibold' />
+
                         <a
                             href="mailto:akashbanjara@gmail.com"
-                            className='text-start mr-auto text-[#666666] hover:underline'>
-                            <span className='font-semibold text-[#03385F]'>Mail: </span>
-                            akashbanjara@gmail.com
+                            className='text-start mr-auto text-[#666666] '>
+                            <span className='font-semibold text-[#03385F] hover:none'>Mail: </span>
+                            <span className='hover:underline'>
+                                akashbanjara@gmail.com
+                            </span>
                         </a>
                     </div>
 
@@ -40,12 +43,27 @@ const ContactCard = () => {
 
                     <div className='flex items-center justify-center mr-auto gap-2'>
                         <FaPhoneAlt className=' text-[#03385F] text-base' />
-                        <p className='text-left text-[#666666] text-sm md:text-base lg:text-lg tracking-wide'><span className='font-semibold text-sm md:text-lg lg:text-lg text-[#03385F] tracking-wider'>Nepal office: </span> +977- 9851013923, +977- 9849779890</p>
+                        <a
+                            href="tel:+9779851013923"
+                            className='text-left text-[#666666] text-sm md:text-base lg:text-lg tracking-wide'><span className='font-semibold text-sm md:text-lg lg:text-lg text-[#03385F] tracking-wider'>Nepal:</span>
+                            <span className='hover:underline'>
+                                +977- 9851013923,
+                            </span>
+                        </a>
+
                     </div>
 
                     <div className='flex items-center justify-center mr-auto gap-2'>
                         <FaPhoneAlt className=' text-[#03385F]  text-base' />
-                        <p className='text-left text-[#666666] text-sm md:text-lg lg:text-lg tracking-normal'><span className='font-semibold text-[#03385F] tracking-wider'>Hongkong office:  </span>+852 - 5112 6782,  +852 9416 9123</p>
+
+                        <a
+                            href="tel:+852 9416 9123"
+                            className='text-left text-[#666666] text-sm md:text-lg lg:text-lg tracking-normal'><span className='font-semibold text-[#03385F] tracking-wider'>Hongkong:  </span>
+                            <span className='hover:underline'>
+                                +852 - 5112 6782
+                            </span>
+                        </a>
+
                     </div>
 
                     <button
