@@ -58,7 +58,7 @@ const Schedule = () => {
     return (
         <div className="flex flex-col items-center text-black p-2 lg:p-4 gap-2 w-full">
 
-            <h2 className=" text-lg lg:text-xl font-semibold mb-4 text-white bg-[#a7594d] p-3 rounded-xl font-poppins">
+            <h2 className=" text-lg lg:text-xl font-semibold mb-4 text-white bg-gradient-to-br from-[#a7594d] to-[#f4c2a1] p-2 rounded-xl font-playfair-display">
                 Schedule Call with Akash
             </h2>
 

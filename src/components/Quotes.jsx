@@ -33,7 +33,6 @@ const Quotes = () => {
                         <p> <span className='font-extrabold text-4xl'> " </span> When sound resonates with your soul, healing becomes effortless
 
                         </p>
-
                     </div>
 
                 </div>

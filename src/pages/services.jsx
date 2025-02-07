@@ -603,10 +603,12 @@ const ServicesPage = () => {
                 </motion.div>
             </div>
 
-            <div className="space-y-12 mt-12 p-16 flex items-center justify-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
+            <div className="w-full space-y-12 mt-12 p-4 lg:p-16 flex items-center justify-center">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 ">
                     {services.map((service, index) => (
-                        <ServiceCard key={index} service={service} />
+                        <ServiceCard
+                            className='w-full'
+                            key={index} service={service} />
                     ))}
                 </div>
             </div>

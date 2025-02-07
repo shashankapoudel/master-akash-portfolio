@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import ChatbotGuru from './flower';
+import Chatbot from './flower';
+
 
 const StatsCounter = () => {
     const [count1, setCount1] = useState(0);
@@ -54,6 +57,7 @@ const StatsCounter = () => {
                     </div>
                 </div>
             </div>
+            <Chatbot />
         </section>
     );
 };
