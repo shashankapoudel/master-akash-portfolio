@@ -101,7 +101,7 @@ const About = () => {
                         </div>
 
                         <div className='w-full lg:w-1/2 flex items-center'>
-                            <p className="text-[#666666] leading-relaxed font-poppins text-sm lg:text-base md:text-lg">
+                            <p className="text-[#666666] leading-relaxed font-poppins text-sm lg:text-base md:text-lg tracking-wider">
                                 With over a decade of experience in sound therapy and teaching, I have touched the lives of thousands of individuals worldwide. I have healed tens of thousands through my transformative sound therapy sessions and trained countless students in the art of natural healing. My work has been recognized by the Nepalese government, making me the first sound therapist to receive official qualifications in this field.
                                 <br />
                                 I founded the International School of Natural Sound Healing, which has established healing centers and branches in multiple countries. My teachings and techniques have reached a global audience, and I have been invited to share my wisdom in countries such as Germany, Vietnam, Taiwan, Malaysia, Thailand, and Italy.
