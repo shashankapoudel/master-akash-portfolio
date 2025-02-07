@@ -10,11 +10,11 @@ const Quotes = () => {
                 <div className='flex flex-col lg:flex-row md:flex-row justify-center items-center p-4 '>
                     <img
                         src='/Images/homePhoto.jpg'
-                        className='w-64 h-64 rounded-custom object-cover rotate-2'
+                        className='w-64 h-64 rounded-custom object-cover'
                     />
 
                     <div className=' flex p-2 md:p-8 lg:p-8 bg-[#FFFFFF] rounded-2xl text-[#022B4A] font-semibold text-2xl
-                    rotate-2 font-marck-script'>
+                 font-marck-script'>
                         <p> <span className='font-extrabold text-4xl'> " </span> When sound resonates with your soul, healing becomes effortless
 
                         </p>
@@ -25,11 +25,11 @@ const Quotes = () => {
                 <div className='flex flex-col lg:flex-row md:flex-row justify-center items-center p-2 lg:p-4'>
                     <img
                         src='/Images/homePhoto.jpg'
-                        className='w-64 h-64 rounded-custom object-cover -rotate-2 '
+                        className='w-64 h-64 rounded-custom object-cover'
                     />
 
                     <div className=' flex p-2 md:p-8 lg:p-8 bg-[#FFFFFF] rounded-2xl text-[#022B4A] font-semibold text-2xl
-                    -rotate-2 font-marck-script'>
+                    font-marck-script'>
                         <p> <span className='font-extrabold text-4xl'> " </span> When sound resonates with your soul, healing becomes effortless
 
                         </p>
