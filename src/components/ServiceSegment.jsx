@@ -62,7 +62,7 @@ const ServiceSegment = () => {
 
     return (
         <div className='flex items-center flex-col gap-4 p-0 lg:p-2'>
-            <h1 className='text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center'>My Services</h1>
+            <h1 className='text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center'>Services</h1>
 
             <motion.div
                 variants={containerVariants}
@@ -83,10 +83,6 @@ const ServiceSegment = () => {
 
                         <h1 className='text-center text-[#022B4A] font-bold text-4xl'>
                             {service.SN}
-
-
-
-
                         </h1>
 
                         <p className='text-center text-[#022B4A] font-semibold text-lg lg:text-xl md:text-xl'>
