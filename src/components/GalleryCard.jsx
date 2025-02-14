@@ -1,8 +1,7 @@
 
-
-
 import React, { useState, useEffect } from 'react';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
+import { useNavigate } from 'react-router-dom';
 
 const GalleryCard = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -16,6 +15,17 @@ const GalleryCard = () => {
         '/Images/Gallery/Image3.jpg',
         '/Images/Gallery/Image4.jpg',
         '/Images/Gallery/Image5.jpg',
+        '/Images/Gallery/Meditation_Mindfulness/1.JPG',
+        '/Images/Gallery/Meditation_Mindfulness/2.JPG',
+        '/Images/Gallery/Meditation_Mindfulness/3.JPG',
+        '/Images/Gallery/Sound_Healing/4.JPG',
+        '/Images/Gallery/Sound_Healing/5.JPG',
+        '/Images/Gallery/Sound_Healing/6.JPG',
+        '/Images/Gallery/Sound_Healing/7.JPG',
+        '/Images/Gallery/Spiritual_Events/4.JPG',
+        '/Images/Gallery/Spiritual_Events/5.JPG',
+        '/Images/Gallery/Spiritual_Events/6.JPG',
+
     ];
 
     const imagesPerPage = 3;
@@ -70,11 +80,14 @@ const GalleryCard = () => {
         }
     };
 
+    const navigate = useNavigate()
+
     return (
         <div className='p-4 relative'>
             <h1 className='text-center text-3xl font-semibold text-[#111111]'>Gallery</h1>
 
             <div className='flex flex-col lg:flex-row items-center justify-center mt-4 bg-[#FFFFFF] p-2 lg:p-4 border rounded-xl'>
+
                 <button
                     className='text-white bg-black bg-opacity-50 p-0 lg:p-1 rounded-full hover:bg-opacity-70 transition'
                     onClick={prevSlide}
@@ -83,6 +96,7 @@ const GalleryCard = () => {
                 </button>
 
                 <div className='overflow-hidden w-full'>
+
                     <div
                         className='flex transition-transform duration-500 ease-in-out'
                         style={{ transform: `translateX(-${currentIndex * (100 / imagesPerPage)}%)` }}
@@ -114,6 +128,13 @@ const GalleryCard = () => {
                     <GrFormNext />
                 </button>
             </div>
+            <div className='flex items-end justify-end'>
+                <button
+                    onClick={() => navigate('/gallery')}
+                >
+                    See more
+                </button>
+            </div>
 
             {isModalOpen && (
                 <div
@@ -135,6 +156,7 @@ const GalleryCard = () => {
                     </div>
                 </div>
             )}
+
         </div>
     );
 };

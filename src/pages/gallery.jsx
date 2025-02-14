@@ -1,3 +1,180 @@
+
+// import React, { useState } from 'react';
+
+// const eventsData = [
+//     {
+//         id: 1,
+//         name: 'Meditation and Mindfulness',
+//         images: [
+//             '/Images/Gallery/Meditation_Mindfulness/1.JPG',
+//             '/Images/Gallery/Meditation_Mindfulness/2.JPG',
+//             '/Images/Gallery/Meditation_Mindfulness/3.JPG',
+//             '/Images/Gallery/Meditation_Mindfulness/4.JPG',
+//             '/Images/Gallery/Meditation_Mindfulness/5.JPG',
+//             '/Images/Gallery/Meditation_Mindfulness/6.JPG',
+//         ],
+//     },
+//     {
+//         id: 2,
+//         name: 'Sound Healing Therapy',
+//         images: [
+// '/Images/Gallery/Sound_Healing/1.JPG',
+// '/Images/Gallery/Sound_Healing/2.JPG',
+// '/Images/Gallery/Sound_Healing/3.JPG',
+// '/Images/Gallery/Sound_Healing/4.JPG',
+// '/Images/Gallery/Sound_Healing/5.JPG',
+// '/Images/Gallery/Sound_Healing/6.JPG',
+// '/Images/Gallery/Sound_Healing/7.JPG',
+// '/Images/Gallery/Sound_Healing/8.JPG',
+// '/Images/Gallery/Sound_Healing/9.JPG',
+//         ],
+//     },
+// {
+//     id: 3,
+//     name: 'Spiritual Events and Retreats',
+//     images: [
+//         '/Images/Gallery/Spiritual_Events/1.JPG',
+//         '/Images/Gallery/Spiritual_Events/2.JPG',
+//         '/Images/Gallery/Spiritual_Events/3.JPG',
+//         '/Images/Gallery/Spiritual_Events/4.JPG',
+//         '/Images/Gallery/Spiritual_Events/5.JPG',
+//         '/Images/Gallery/Spiritual_Events/6.JPG',
+//         '/Images/Gallery/Spiritual_Events/7.JPG',
+//     ],
+// },
+// {
+//     id: 4,
+//     name: 'Sound Baths and Relaxation',
+//     images: [
+//         '/Images/homePhoto.jpg',
+//         '/Images/homePhoto.jpg',
+//         '/Images/homePhoto.jpg',
+//         '/Images/homePhoto.jpg',
+//         '/Images/homePhoto.jpg',
+//         '/Images/homePhoto.jpg',
+//     ],
+// },
+// {
+//     id: 5,
+//     name: 'Yoga and Energy Awakening',
+//     images: [
+//         '/Images/Gallery/Yoga/1.jpg',
+//     ],
+// },
+// {
+//     id: 6,
+//     name: 'Healing and welness workshops',
+//     images: [
+//         '/Images/Gallery/Healing_Wellness/1.JPG',
+
+//     ],
+// },
+// ];
+
+// const Gallery = () => {
+//     const [openedEvents, setOpenedEvents] = useState([]);
+//     const [searchQuery, setSearchQuery] = useState('');
+//     const [isOpen, setIsOpen] = useState(false);
+//     const [selectedImage, setSelectedImage] = useState('');
+
+//     const toggleEventImages = (eventId) => {
+//         setOpenedEvents((prev) =>
+//             prev.includes(eventId) ? prev.filter((id) => id !== eventId) : [...prev, eventId]
+//         );
+//     };
+
+//     const filteredEvents = eventsData.filter((event) =>
+//         event.name.toLowerCase().includes(searchQuery.toLowerCase())
+//     );
+
+//     const openModal = (img) => {
+//         setSelectedImage(img);
+//         setIsOpen(true);
+//     };
+
+//     const closeModal = () => {
+//         setSelectedImage('');
+//         setIsOpen(false);
+//     };
+
+//     return (
+//         <div className="m-8 min-h-screen p-3 lg:p-6">
+//             <h1 className="text-2xl font-semibold text-center mb-4 text-[#111111]">Event Gallery</h1>
+
+//             <div className="mb-8 flex justify-center">
+//                 <input
+//                     type="text"
+//                     placeholder="Search for an event..."
+//                     value={searchQuery}
+//                     onChange={(e) => setSearchQuery(e.target.value)}
+//                     className="px-4 py-2 border rounded-lg w-full lg:w-1/3"
+//                 />
+//             </div>
+
+//             {filteredEvents.length === 0 && (
+//                 <p className="text-center text-lg text-red-500">No events found</p>
+//             )}
+
+//             {filteredEvents.map((event) => (
+//                 <div key={event.id} className="mb-4">
+//                     <div
+//                         className="flex justify-between items-center cursor-pointer"
+//                         onClick={() => toggleEventImages(event.id)}
+//                     >
+//                         <h2 className="text-xl font-semibold text-[#323232]">{event.name}</h2>
+//                         <span className="text-lg">{openedEvents.includes(event.id) ? '▲' : '▼'}</span>
+//                     </div>
+
+//                     {openedEvents.includes(event.id) && (
+//                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+//                             {event.images.map((image, index) => (
+//                                 <div key={index} className="image-card">
+//                                     <img
+//                                         src={image}
+//                                         alt={`${event.name} event ${index + 1}`}
+//                                         className="rounded-lg cursor-pointer w-full lg:h-80 h-40 md:h-64 object-cover"
+//                                         loading="lazy"
+//                                         onClick={() => openModal(image)}
+//                                     />
+//                                 </div>
+//                             ))}
+//                         </div>
+//                     )}
+//                 </div>
+//             ))}
+
+//             {isOpen && (
+//                 <div
+//                     className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+//                     onClick={closeModal}
+//                 >
+//                     <div className="relative max-w-2xl p-4">
+//                         <img
+//                             className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+//                             src={selectedImage}
+//                             alt="Enlarged gallery image"
+//                         />
+//                         <button
+//                             className="absolute top-4 right-4 text-white bg-black bg-opacity-50 p-2 rounded-xl hover:bg-opacity-70 transition text-4xl w-16"
+//                             onClick={closeModal}
+//                         >
+//                             &times;
+//                         </button>
+//                     </div>
+//                 </div>
+//             )}
+//         </div>
+//     );
+// };
+
+// export default Gallery;
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 
 const eventsData = [
@@ -5,42 +182,42 @@ const eventsData = [
         id: 1,
         name: 'Meditation and Mindfulness',
         images: [
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-
+            '/Images/Gallery/Meditation_Mindfulness/1.JPG',
+            '/Images/Gallery/Meditation_Mindfulness/2.JPG',
+            '/Images/Gallery/Meditation_Mindfulness/3.JPG',
+            '/Images/Gallery/Meditation_Mindfulness/4.JPG',
+            '/Images/Gallery/Meditation_Mindfulness/5.JPG',
+            '/Images/Gallery/Meditation_Mindfulness/6.JPG',
         ],
     },
-
     {
         id: 2,
         name: 'Sound Healing Therapy',
         images: [
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
+            '/Images/Gallery/Sound_Healing/1.JPG',
+            '/Images/Gallery/Sound_Healing/2.JPG',
+            '/Images/Gallery/Sound_Healing/3.JPG',
+            '/Images/Gallery/Sound_Healing/4.JPG',
+            '/Images/Gallery/Sound_Healing/5.JPG',
+            '/Images/Gallery/Sound_Healing/6.JPG',
+            '/Images/Gallery/Sound_Healing/7.JPG',
+            '/Images/Gallery/Sound_Healing/8.JPG',
+            '/Images/Gallery/Sound_Healing/9.JPG',
         ],
     },
-
     {
         id: 3,
         name: 'Spiritual Events and Retreats',
         images: [
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
+            '/Images/Gallery/Spiritual_Events/1.JPG',
+            '/Images/Gallery/Spiritual_Events/2.JPG',
+            '/Images/Gallery/Spiritual_Events/3.JPG',
+            '/Images/Gallery/Spiritual_Events/4.JPG',
+            '/Images/Gallery/Spiritual_Events/5.JPG',
+            '/Images/Gallery/Spiritual_Events/6.JPG',
+            '/Images/Gallery/Spiritual_Events/7.JPG',
         ],
     },
-
     {
         id: 4,
         name: 'Sound Baths and Relaxation',
@@ -57,62 +234,49 @@ const eventsData = [
         id: 5,
         name: 'Yoga and Energy Awakening',
         images: [
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
+            '/Images/Gallery/Yoga/1.jpg',
         ],
     },
     {
         id: 6,
         name: 'Healing and welness workshops',
         images: [
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/Service1.png',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
+            '/Images/Gallery/Healing_Wellness/1.JPG',
+
         ],
     },
+
 ];
 
 const Gallery = () => {
-    const [openedEvent, setOpenedEvent] = useState(null);
+    const [openedEvents, setOpenedEvents] = useState(new Set()); // Track which events are opened
     const [searchQuery, setSearchQuery] = useState('');
-    const [isOpen, setIsOpen] = useState(false)
-    const [selectedImage, setSelectedImage] = useState("")
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [expandedImages, setExpandedImages] = useState(new Set()); // Track expanded image sets
 
     const toggleEventImages = (eventId) => {
-        setOpenedEvent(openedEvent === eventId ? null : eventId);
+        setOpenedEvents((prev) => {
+            const newOpened = new Set(prev);
+            newOpened.has(eventId) ? newOpened.delete(eventId) : newOpened.add(eventId);
+            return newOpened;
+        });
+    };
+
+    const toggleLoadMore = (eventId) => {
+        setExpandedImages((prev) => {
+            const newExpanded = new Set(prev);
+            newExpanded.has(eventId) ? newExpanded.delete(eventId) : newExpanded.add(eventId);
+            return newExpanded;
+        });
     };
 
     const filteredEvents = eventsData.filter((event) =>
         event.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-
-    const handleClick = (image) => {
-        setIsOpen(true)
-        openModal(image)
-
-    }
-
-    const openModal = (img) => {
-        setSelectedImage(img)
-        setIsOpen(true)
-    }
-
-    const closeModal = () => {
-        setSelectedImage("")
-        setIsOpen(false)
-    }
-
     return (
-        <div className=" m-8 min-h-screen p-3 lg:p-6 ">
-            <h1 className="text-2xl font-semibold text-center mb-4 text-[#111111]">Event Gallery</h1>
+        <div className="m-8 min-h-screen p-3 lg:p-6">
+            <h1 className="lg:text-3xl md:text-3xl text-2xl font-semibold text-center mb-4 text-[#111111]">Event Gallery</h1>
 
             <div className="mb-8 flex justify-center">
                 <input
@@ -128,62 +292,70 @@ const Gallery = () => {
                 <p className="text-center text-lg text-red-500">No events found</p>
             )}
 
-            {filteredEvents.map((event) => (
-                <div key={event.id} className=" mb-4">
-                    <div
-                        className="flex justify-between items-center cursor-pointer"
-                        onClick={() => toggleEventImages(event.id)}
-                    >
-                        <h2 className="text-xl font-semibold text-[#323232]">{event.name}</h2>
-                        <span className="text-lg">{openedEvent === event.id ? '▲' : '▼'}</span>
-                    </div>
+            {filteredEvents.map((event) => {
+                const isExpanded = expandedImages.has(event.id);
+                const displayedImages = isExpanded ? event.images : event.images.slice(0, 3);
 
-
-                    {openedEvent === event.id && (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-                            {event.images.map((image, index) => (
-                                <div key={index} className="image-card">
-                                    <img
-                                        src={image}
-                                        alt={`${event.name} event ${index + 1}`}
-                                        className="rounded-lg w-full cursor-pointer"
-                                        onClick={() => handleClick(image)}
-                                    />
-                                </div>
-                            ))}
+                return (
+                    <div key={event.id} className="mb-4">
+                        <div
+                            className="flex justify-between items-center cursor-pointer"
+                            onClick={() => toggleEventImages(event.id)}
+                        >
+                            <h2 className="lg:text-xl md:text-2xl text-lg font-semibold text-[#323232]">{event.name}</h2>
+                            <span className="text-lg">{openedEvents.has(event.id) ? '▲' : '▼'}</span>
                         </div>
-                    )}
-                </div>
-            ))}
-            {
-                isOpen && (
-                    <div
-                        className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-0'
-                        onClick={closeModal}
-                    >
-                        <div className='relative max-w-2xl p-4'>
 
-                            <img
-                                className='w-full h-auto max-h-[80vh] object-contain rounded-lg'
-                                src={selectedImage}
-                                alt='Enlarged gallery image'
-                            />
+                        {openedEvents.has(event.id) && (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                                {displayedImages.map((image, index) => (
+                                    <div key={index} className="image-card">
+                                        <img
+                                            src={image}
+                                            alt={`${event.name} event ${index + 1}`}
+                                            className="rounded-lg cursor-pointer w-full lg:h-80 h-40 md:h-72 object-cover"
+                                            loading="lazy"
+                                            onClick={() => setSelectedImage(image)}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
+                        {event.images.length > 3 && openedEvents.has(event.id) && (
                             <button
-                                className='absolute top-4 right-4 text-white bg-black bg-opacity-50 p-2 rounded-xl hover:bg-opacity-70 transition text-4xl w-16'
-                                onClick={closeModal}
+                                onClick={() => toggleLoadMore(event.id)}
+                                className="mt-4 text-blue-600 hover:underline"
                             >
-                                &times;
+                                {isExpanded ? 'Show Less' : 'Load More'}
                             </button>
-
-                        </div>
+                        )}
                     </div>
+                );
+            })}
 
-                )
-            }
+            {selectedImage && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <div className="relative max-w-2xl p-4">
+                        <img
+                            className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+                            src={selectedImage}
+                            alt="Enlarged gallery image"
+                        />
+                        <button
+                            className="absolute top-4 right-4 text-white bg-black bg-opacity-50 p-2 rounded-xl hover:bg-opacity-70 transition text-4xl w-16"
+                            onClick={() => setSelectedImage(null)}
+                        >
+                            &times;
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
-
     );
 };
 
 export default Gallery;
-

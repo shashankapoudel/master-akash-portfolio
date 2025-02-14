@@ -12,6 +12,7 @@ const Home = () => {
     const images = [
         '/Images/homePhoto.jpg',
         '/Images/services.jpg',
+        // '/Images/homePhoto2.JPG'
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);

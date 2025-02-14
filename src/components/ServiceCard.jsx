@@ -155,30 +155,31 @@ import { GrFormNext } from "react-icons/gr";
 
 const services = [
     {
-        title: ' Meditation and Mindfulness',
+        title: 'Meditation and Mindfulness',
         description:
-            'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
+            'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Through carefully designed techniques, including breath awareness, visualization, and mantra meditation, these sessions allow you to release stress, enhance focus, and develop emotional resilience. Whether you are a beginner or someone looking to deepen your practice, Yogi Akash provides expert support to help you integrate meditation into your daily life and unlock its profound benefits.',
         image: '/Images/homePhoto.jpg',
     },
     {
         title: 'Sound Baths and Relaxation',
         description:
-            'With years of experience in sound therapy and a deep understanding of vibrational healing, Yogi Akash brings a unique blend of ancient wisdom and modern insights to his classes. Whether you are a curious beginner or an experienced practitioner.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
+            'With years of experience in sound therapy and a deep understanding of vibrational healing, Yogi Akash brings a unique blend of ancient wisdom and modern insights to his classes. Whether you are a curious beginner or an experienced practitioner, these sessions use the soothing frequencies of singing bowls, gongs, and other sound instruments to guide you into deep relaxation. The vibrations help in reducing stress, releasing emotional blockages, and promoting a sense of harmony and well-being. Attendees often report feeling lighter, more centered, and deeply rejuvenated after each session, making it a powerful tool for relaxation and holistic healing.',
         image: '/Images/homePhoto.jpg',
     },
     {
-        title: ' Sound Healing Therapy',
+        title: 'Sound Healing Therapy',
         description:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
+            'Sound healing therapy is a transformative experience that utilizes the power of sound vibrations to promote deep relaxation, emotional balance, and physical healing. Yogi Akash integrates the ancient practice of singing bowl therapy with modern sound healing techniques to create a personalized approach tailored to each individual’s needs. The resonant frequencies work to release energy blockages, harmonize the mind and body, and restore inner balance. Whether you seek relief from stress, anxiety, or simply wish to experience the rejuvenating effects of sound therapy, these sessions provide a peaceful and deeply immersive healing journey.',
         image: '/Images/homePhoto.jpg',
     },
     {
         title: 'Yoga and Energy Awakening',
         description:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veritatis amet fugiat sunt aliquid inventore laboriosam obcaecati perferendis quasi quam? Vitae hic delectus mollitia vel nesciunt expedita dicta consequatur dolor.',
+            'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
         image: '/Images/homePhoto.jpg',
     },
 ];
+
 
 const ServiceCard = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

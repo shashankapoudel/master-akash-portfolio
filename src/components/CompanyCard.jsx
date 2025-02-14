@@ -116,7 +116,7 @@ const CompanyCard = () => {
                         <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover p-2'
-                                src='/Images/NSHIS.png'
+                                src='/Images/CompanyLogo/NSHIS.png'
                                 alt='Natural Sound Healing International School'
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
@@ -131,7 +131,7 @@ const CompanyCard = () => {
                         <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover'
-                                src='/Images/honghandmade.png'
+                                src='/Images/CompanyLogo/honghandmade.png'
                                 alt='Hongkong Handmade Singing Bowl Expert'
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
@@ -146,7 +146,7 @@ const CompanyCard = () => {
                         <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover'
-                                src='/Images/HCN.png'
+                                src='/Images/CompanyLogo/HCN.png'
                                 alt='Himalayas Craft Nepal'
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
@@ -163,7 +163,7 @@ const CompanyCard = () => {
                         <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover p-2'
-                                src='/Images/SYS.png'
+                                src='/Images/CompanyLogo/SYS.png'
                                 alt='Sakti Yoga School'
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
@@ -180,7 +180,7 @@ const CompanyCard = () => {
                         <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover p-2'
-                                src='/Images/SHHK.png'
+                                src='/Images/CompanyLogo/SHHK.png'
                                 alt='Sound Healing Hongkong'
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
