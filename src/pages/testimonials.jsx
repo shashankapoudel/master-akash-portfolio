@@ -123,7 +123,6 @@ const Testimonials = () => {
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -131,12 +130,12 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                     </motion.div>
 
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -144,12 +143,12 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                     </motion.div>
 
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -157,12 +156,12 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                     </motion.div>
 
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -170,12 +169,12 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                     </motion.div>
 
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -183,13 +182,13 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
 
                     </motion.div>
 
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -197,12 +196,12 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                     </motion.div>
 
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -210,12 +209,12 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                     </motion.div>
 
                     <motion.div
                         variants={cardVariants}
                         className='p-6 shadow-lg rounded-lg bg-white flex flex-col gap-4 transform transition-all hover:shadow-xl'>
-                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                         <div className='flex items-center gap-2'>
                             <img
                                 src='/Images/homePhoto.jpg'
@@ -223,6 +222,7 @@ const Testimonials = () => {
                             />
                             <h1 className='text-[#666666] text-lg font-bold font-marck-script'>Joe lingten</h1>
                         </div>
+                        <p className='text-[#666666] font-medium font-playfair-display italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui vitae maiores consequatur ullam. Qui, labore laborum iure facilis illo voluptates quisquam ullam, at architecto cumque error numquam laboriosam recusandae.</p>
                     </motion.div>
 
 
