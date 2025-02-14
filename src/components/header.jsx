@@ -80,7 +80,6 @@ const Header = () => {
                                     <NavLink
                                         className={active === item.path ? 'text-[#a7594d] font-semibold md:text-xl text-lg hover:-translate-y-1' : 'text-[#606060] hover:text-[#a7594d] hover:-translate-y-1 md:text-xl text-lg'}
                                         to={item.path}
-
                                     >
                                         {item.name}
                                     </NavLink>
