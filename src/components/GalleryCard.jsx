@@ -73,8 +73,6 @@ const GalleryCard = () => {
         } else {
             setCurrentIndex(newCurrentIndex);
         }
-
-        // Only open modal if the clicked image is the middle one
         if (index === currentIndex + middleIndex) {
             openModal(images[index]);
         }

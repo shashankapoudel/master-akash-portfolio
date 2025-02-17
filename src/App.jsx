@@ -13,6 +13,7 @@ import Contact from './pages/contact';
 import SchedueleMeeting from './pages/schedueleMeeting';
 import BlogPage from './pages/blogs';
 import About from './pages/About';
+import Chatbot from './components/ChatBot';
 
 function App() {
   return (
@@ -31,7 +32,9 @@ function App() {
             <Route path="/contact/schedule-meeting" element={<SchedueleMeeting />} />
           </Routes>
         </main>
+        <Chatbot />
         <Footer />
+
       </BrowserRouter>
     </div>
   );
