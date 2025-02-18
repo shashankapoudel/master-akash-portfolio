@@ -202,94 +202,96 @@ const Chatbot = () => {
     return (
         <div className="w-full p-4">
 
-            <div
-                className="fixed bottom-6 right-6 bg-[#a7594d] p-5 rounded-full cursor-pointer shadow-lg text-white"
+            <button
+                className="fixed bottom-20 right-6 bg-purple-500 p-5 rounded-full cursor-pointer shadow-2xl text-white border-purple-300"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <div className="absolute inset-0 w-full h-full  opacity-50 rounded-full blur-lg"></div>
+                {/* <div className="absolute inset-0 w-full h-full  opacity-50 rounded-full blur-lg"></div> */}
                 <IoMdChatbubbles className="text-2xl relative" />
-            </div>
+            </button>
 
 
-            {isOpen && (
-                <div className="fixed bottom-20 right-6 lg:w-1/4 md:w-1/2  bg-gray-200 rounded-xl shadow-lg border border-gray-200 text-white flex flex-col max-h-[70vh] min-h-[40vh]">
+            {
+                isOpen && (
+                    <div className="fixed bottom-20 right-6 lg:w-1/4 md:w-1/2  bg-gray-200 rounded-xl shadow-lg border border-gray-200 text-white flex flex-col max-h-[70vh] min-h-[40vh]">
 
 
-                    <div className="flex p-2 justify-between items-center bg-[#a7594d] rounded-t-lg">
-                        <div className="flex gap-3 items-center">
-                            <img
-                                src="/Images/homePhoto.jpg"
-                                className="w-11 h-11 rounded-full object-cover"
-                                alt="Yogi Akash"
-                            />
-                            <h3 className="text-base font-semibold">Yogi Akash</h3>
-                        </div>
-                        <div className="flex items-center gap-4">
+                        <div className="flex p-2 justify-between items-center bg-[#a7594d] rounded-t-lg">
+                            <div className="flex gap-3 items-center">
+                                <img
+                                    src="/Images/homePhoto.jpg"
+                                    className="w-11 h-11 rounded-full object-cover"
+                                    alt="Yogi Akash"
+                                />
+                                <h3 className="text-base font-semibold">Yogi Akash</h3>
+                            </div>
+                            <div className="flex items-center gap-4">
 
-                            <button
-                                onClick={handleCall}
-                            >
-                                <FaPhoneAlt className="text-white text-base" />
-                            </button>
-
-                            <button className="text-3xl mb-2" onClick={handleCross}>
-                                &times;
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="flex-1 overflow-y-auto p-4 space-y-2">
-
-                        <div className="flex flex-col justify-center items-center ">
-
-                            <div>
-                                <select
-                                    className="w-full p-3 bg-white text-[#666666] rounded-2xl cursor-pointer outline-none"
-                                    onChange={handleSelectChange}
-                                    value={selectedQuestion}
-                                    defaultValue=""
+                                <button
+                                    onClick={handleCall}
                                 >
-                                    <option value="" disabled>Select a question...</option>
-                                    {questions.map((item, index) => (
-                                        <option key={index} value={item.answer}>
-                                            {item.question}
-                                        </option>
-                                    ))}
-                                </select>
+                                    <FaPhoneAlt className="text-white text-base" />
+                                </button>
+
+                                <button className="text-3xl mb-2" onClick={handleCross}>
+                                    &times;
+                                </button>
                             </div>
                         </div>
 
-                        {chatHistory.map((message, index) => (
-                            <div
-                                key={index}
-                                className={`w-2/3 p-3 rounded-2xl text-white ${message.type === "user" || message.type === "question" ? "bg-[#a7594d] self-end ml-auto" : "bg-gray-500 shadow-lg"}`}
-                            >
-                                {message.text}
+                        <div className="flex-1 overflow-y-auto p-4 space-y-2">
+
+                            <div className="flex flex-col justify-center items-center ">
+
+                                <div>
+                                    <select
+                                        className="w-full p-3 bg-white text-[#666666] rounded-2xl cursor-pointer outline-none"
+                                        onChange={handleSelectChange}
+                                        value={selectedQuestion}
+                                        defaultValue=""
+                                    >
+                                        <option value="" disabled>Select a question...</option>
+                                        {questions.map((item, index) => (
+                                            <option key={index} value={item.answer}>
+                                                {item.question}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
                             </div>
-                        ))}
+
+                            {chatHistory.map((message, index) => (
+                                <div
+                                    key={index}
+                                    className={`w-2/3 p-3 rounded-2xl text-white ${message.type === "user" || message.type === "question" ? "bg-[#a7594d] self-end ml-auto" : "bg-gray-500 shadow-lg"}`}
+                                >
+                                    {message.text}
+                                </div>
+                            ))}
+                        </div>
+
+
+                        <div className="p-2  rounded-b-lg flex items-center ">
+
+                            <textarea
+                                className="flex-1 p-1 bg-gray-100 text-[#666666] rounded-lg resize-none outline-none"
+                                placeholder="Type your message..."
+                                value={userMessage}
+                                onChange={(e) => setUserMessage(e.target.value)}
+                            />
+                            <button
+                                className="ml-2 px-4 py-2 rounded-lg text-[#666666] hover:bg-gray-200 cursor-pointer text-2xl"
+                                onClick={handleSendMessage}
+                            >
+                                <FiSend />
+
+                            </button>
+
+                        </div>
                     </div>
-
-
-                    <div className="p-2  rounded-b-lg flex items-center ">
-
-                        <textarea
-                            className="flex-1 p-1 bg-gray-100 text-[#666666] rounded-lg resize-none outline-none"
-                            placeholder="Type your message..."
-                            value={userMessage}
-                            onChange={(e) => setUserMessage(e.target.value)}
-                        />
-                        <button
-                            className="ml-2 px-4 py-2 rounded-lg text-[#666666] hover:bg-gray-200 cursor-pointer text-2xl"
-                            onClick={handleSendMessage}
-                        >
-                            <FiSend />
-
-                        </button>
-
-                    </div>
-                </div>
-            )}
-        </div>
+                )
+            }
+        </div >
     );
 };
 
