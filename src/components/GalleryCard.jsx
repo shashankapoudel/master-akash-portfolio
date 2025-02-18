@@ -128,6 +128,7 @@ const GalleryCard = () => {
             </div>
             <div className='flex items-end justify-end'>
                 <button
+                    className='underline'
                     onClick={() => navigate('/gallery')}
                 >
                     See more
@@ -149,7 +150,7 @@ const GalleryCard = () => {
                             className='absolute top-4 right-4 text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-70 transition'
                             onClick={closeModal}
                         >
-                            &times; {/* Close icon */}
+                            &times;
                         </button>
                     </div>
                 </div>

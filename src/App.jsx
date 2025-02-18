@@ -14,6 +14,7 @@ import SchedueleMeeting from './pages/schedueleMeeting';
 import BlogPage from './pages/blogs';
 import About from './pages/About';
 import Chatbot from './components/ChatBot';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           </Routes>
         </main>
         <Chatbot />
+        <ScrollToTop />
         <Footer />
 
       </BrowserRouter>
