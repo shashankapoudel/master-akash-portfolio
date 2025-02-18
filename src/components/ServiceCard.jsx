@@ -237,7 +237,7 @@ const ServiceCard = () => {
                     <h1 className='text-[#022B4A] font-bold text-lg md:text-xl lg:text-xl text-center '>
                         {services[currentIndex].title}
                     </h1>
-                    <div className='flex flex-col lg:flex-row md:flex-col gap-4 lg:gap-8'>
+                    <div className='flex flex-col lg:flex-row md:flex-col gap-4 lg:gap-8 '>
 
                         <div className='w-full md:w-full lg:w-1/2 p-0 lg:p-4'>
                             <img
