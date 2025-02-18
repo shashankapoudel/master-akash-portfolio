@@ -176,6 +176,7 @@
 
 
 import React, { useState } from 'react';
+import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
 const eventsData = [
     {
@@ -216,6 +217,9 @@ const eventsData = [
             '/Images/Gallery/Spiritual_Events/5.JPG',
             '/Images/Gallery/Spiritual_Events/6.JPG',
             '/Images/Gallery/Spiritual_Events/7.JPG',
+            '/Images/Gallery/Spiritual_Events/7.JPG',
+            '/Images/Gallery/Spiritual_Events/7.JPG',
+
         ],
     },
     {
@@ -251,8 +255,14 @@ const eventsData = [
 const Gallery = () => {
     const [openedEvents, setOpenedEvents] = useState(new Set()); // Track which events are opened
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedImage, setSelectedImage] = useState({ image: null, index: -1, eventId: null });
     const [expandedImages, setExpandedImages] = useState(new Set()); // Track expanded image sets
+
+
+    const handleImageClick = (image, index, eventId) => {
+        setSelectedImage({ image, index, eventId })
+
+    }
 
     const toggleEventImages = (eventId) => {
         setOpenedEvents((prev) => {
@@ -274,6 +284,22 @@ const Gallery = () => {
         event.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    const previous = () => {
+        const event = eventsData.find((e) => e.id === selectedImage.eventId)
+        if (event) {
+            const newIndex = (selectedImage.index - 1 + event.images.length) % event.images.length;
+            setSelectedImage({ image: event.images[newIndex], index: newIndex, eventId: selectedImage.eventId })
+        }
+    }
+
+    const next = () => {
+        const event = eventsData.find((e) => e.id === selectedImage.eventId);
+        if (event) {
+            const newIndex = (selectedImage.index + 1) % event.images.length;
+            setSelectedImage({ image: event.images[newIndex], index: newIndex, eventId: selectedImage.eventId });
+        }
+    }
+
     return (
         <div className="m-8 min-h-screen p-3 lg:p-6">
             <h1 className="lg:text-3xl md:text-3xl text-2xl font-semibold text-center mb-4 text-[#111111]">Event Gallery</h1>
@@ -294,7 +320,7 @@ const Gallery = () => {
 
             {filteredEvents.map((event) => {
                 const isExpanded = expandedImages.has(event.id);
-                const displayedImages = isExpanded ? event.images : event.images.slice(0, 3);
+                const displayedImages = isExpanded ? event.images : event.images.slice(0, 5);
 
                 return (
                     <div key={event.id} className="mb-4">
@@ -307,19 +333,33 @@ const Gallery = () => {
                         </div>
 
                         {openedEvents.has(event.id) && (
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                            // <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                            //     {displayedImages.map((image, index) => (
+                            //         <div key={index} className="flex">
+                            //             <img
+                            //                 src={image}
+                            //                 alt={`${event.name} event ${index + 1}`}
+                            //                 className="rounded-lg cursor-pointer w-full lg:h-80 h-40 md:h-72 object-cover"
+                            //                 loading="lazy"
+                            //                 onClick={() => setSelectedImage(image)}
+                            //             />
+                            //         </div>
+                            //     ))}
+                            // </div>
+
+                            <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-1">
                                 {displayedImages.map((image, index) => (
-                                    <div key={index} className="image-card">
-                                        <img
-                                            src={image}
-                                            alt={`${event.name} event ${index + 1}`}
-                                            className="rounded-lg cursor-pointer w-full lg:h-80 h-40 md:h-72 object-cover"
-                                            loading="lazy"
-                                            onClick={() => setSelectedImage(image)}
-                                        />
-                                    </div>
+                                    <img
+                                        key={index}
+                                        src={image}
+                                        alt={`${event.name} event ${index + 1}`}
+                                        className="mb-0 w-full rounded-lg p-1"
+                                        loading="lazy"
+                                        onClick={() => handleImageClick(image, index, event.id)}
+                                    />
                                 ))}
                             </div>
+
                         )}
 
                         {event.images.length > 3 && openedEvents.has(event.id) && (
@@ -334,24 +374,49 @@ const Gallery = () => {
                 );
             })}
 
-            {selectedImage && (
+            {selectedImage.image && (
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-                    onClick={() => setSelectedImage(null)}
+                    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70"
+                // onClick={() => setSelectedImage(null)}
                 >
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            previous();
+                        }}
+                        className='text-white bg-black bg-opacity-50 p-0 lg:p-2 rounded-full hover:bg-opacity-70 transition'
+
+                    >
+                        <GrFormPrevious className='text-2xl' />
+                    </button>
+
                     <div className="relative max-w-2xl p-4">
                         <img
                             className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
-                            src={selectedImage}
+                            src={selectedImage.image}
                             alt="Enlarged gallery image"
                         />
+
                         <button
                             className="absolute top-4 right-4 text-white bg-black bg-opacity-50 p-2 rounded-xl hover:bg-opacity-70 transition text-4xl w-16"
-                            onClick={() => setSelectedImage(null)}
+                            onClick={() => setSelectedImage({ image: null, index: -1, eventId: null })}
                         >
                             &times;
                         </button>
+
+
                     </div>
+                    <button
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            next();
+                        }}
+                        className='text-white bg-black bg-opacity-50 p-0 lg:p-2 rounded-full hover:bg-opacity-70 transition'
+
+                    >
+                        <GrFormNext className='text-2xl' />
+                    </button>
+
                 </div>
             )}
         </div>

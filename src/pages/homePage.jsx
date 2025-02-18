@@ -78,13 +78,13 @@ const Home = () => {
                     <div className="flex bottom-0 left-1/2 mt-2 w-full items-center justify-center gap-2">
                         <button
                             onClick={handlePrevious}
-                            className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
+                            className="bg-black bg-opacity-50 bg-transparent text-gray-800 rounded-full hover:bg-opacity-70 transition text-xl"
                         >
                             <GrFormPrevious />
                         </button>
                         <button
                             onClick={handleNext}
-                            className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
+                            className="text-gray-800 bg-black bg-opacity-50 bg-transparent text-xl  rounded-full hover:bg-opacity-70 transition"
                         >
                             <GrFormNext />
                         </button>

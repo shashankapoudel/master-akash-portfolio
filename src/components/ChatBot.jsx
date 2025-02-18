@@ -143,6 +143,7 @@ import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdChatbubbles } from "react-icons/io";
 import { FiSend } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const Chatbot = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -191,7 +192,12 @@ const Chatbot = () => {
     };
 
     console.log(chatHistory)
+    const navigate = useNavigate()
 
+    const handleCall = () => {
+        navigate('/contact')
+        setIsOpen(false)
+    }
 
     return (
         <div className="w-full p-4">
@@ -219,9 +225,13 @@ const Chatbot = () => {
                             <h3 className="text-base font-semibold">Yogi Akash</h3>
                         </div>
                         <div className="flex items-center gap-4">
-                            <button>
+
+                            <button
+                                onClick={handleCall}
+                            >
                                 <FaPhoneAlt className="text-white text-base" />
                             </button>
+
                             <button className="text-3xl mb-2" onClick={handleCross}>
                                 &times;
                             </button>
