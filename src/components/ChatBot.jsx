@@ -142,6 +142,7 @@
 import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdChatbubbles } from "react-icons/io";
+import { FiSend } from "react-icons/fi";
 
 const Chatbot = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -259,19 +260,20 @@ const Chatbot = () => {
                     </div>
 
 
-                    <div className="p-2 bg-[#a7594d] rounded-b-lg flex items-center">
+                    <div className="p-2  rounded-b-lg flex items-center ">
 
                         <textarea
-                            className="flex-1 p-1 bg-gray-200 text-[#666666] rounded-lg resize-none outline-none"
+                            className="flex-1 p-1 bg-gray-100 text-[#666666] rounded-lg resize-none outline-none"
                             placeholder="Type your message..."
                             value={userMessage}
                             onChange={(e) => setUserMessage(e.target.value)}
                         />
                         <button
-                            className="ml-2 bg-gray-100 px-4 py-2 rounded-lg text-[#666666] hover:bg-gray-200"
+                            className="ml-2 px-4 py-2 rounded-lg text-[#666666] hover:bg-gray-200 cursor-pointer text-2xl"
                             onClick={handleSendMessage}
                         >
-                            Send
+                            <FiSend />
+
                         </button>
 
                     </div>
