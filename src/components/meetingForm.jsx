@@ -1,5 +1,4 @@
 
-
 import React, { useEffect } from 'react';
 import { Controller, useForm, useWatch } from "react-hook-form";
 import { getCode, getNames } from 'country-list';
@@ -34,7 +33,7 @@ const MeetingForm = () => {
     }, [selectedCountry, setValue]);
 
     const getCountryCode = (country) => {
-        const countryCode = getCode(country); // Get ISO Alpha-2 code
+        const countryCode = getCode(country);
         return countryCode ? ` +${getCountryCallingCode(countryCode)}` : "";
     };
 
@@ -48,19 +47,22 @@ const MeetingForm = () => {
     const onSubmit = (data) => {
         console.log(data);
         emailjs.send(
-            '123456789',
-            'template_lj947kw',
+            // '123456789',
+            import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+            import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+            // 'template_lj947kw',
             {
                 to_email: data.email,
                 to_name: data.name,
                 from_name: "Yogi Akash",
                 message: "Welcome to Yogi Akash! We are excited to have you on board.",
             },
-            'IlwIIMWZ-GKN6nZgT'
+            // 'IlwIIMWZ-GKN6nZgT'
+            import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
         )
             .then((response) => {
                 console.log('Welcome email sent successfully!', response.status, response.text);
-                // alert('Thank you for submitting the form. A welcome email has been sent to your email address.');
+
                 toast.success('Email sent successfully!');
                 reset();
             })
