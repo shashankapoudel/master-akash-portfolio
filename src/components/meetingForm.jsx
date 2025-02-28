@@ -75,7 +75,7 @@ const MeetingForm = () => {
         <div className="p-2 gap-2 font-poppins">
             <Toaster position="top-center" reverseOrder={false} />
             <form onSubmit={handleSubmit(onSubmit)} className="lg:space-y-6 space-y-2 w-full lg:p-12 p-2">
-                <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 p-4 ">
+                <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 p-4  text-sm md:text-lg lg:text-sm">
                     <div>
                         <Controller
                             name="name"
@@ -88,7 +88,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className=" text-sm  text-[#a7594d] " htmlFor="name">
+                                    <label className=" text-sm md:text-lg lg:text-sm  text-[#a7594d] " htmlFor="name">
                                         Your name
                                     </label>
                                     <input
@@ -119,7 +119,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="text-sm text-[#a7594d] " htmlFor="email">
+                                    <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="email">
                                         Email
                                     </label>
                                     <input
@@ -150,7 +150,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className=" text-sm text-[#a7594d] " htmlFor="country">
+                                    <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="country">
                                         Country
                                     </label>
                                     <select
@@ -181,7 +181,7 @@ const MeetingForm = () => {
                             defaultValue={getCountryCode(selectedCountry)}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className="text-sm text-[#a7594d] " htmlFor="countryCode">
+                                    <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="countryCode">
                                         Country Code
                                     </label>
                                     <input
@@ -211,7 +211,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col flex-grow">
-                                    <label className=" text-sm text-[#a7594d] " htmlFor="phoneNumber">
+                                    <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="phoneNumber">
                                         Phone Number
                                     </label>
                                     <input
@@ -244,7 +244,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className=" text-sm text-[#a7594d] " htmlFor="purpose">
+                                    <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="purpose">
                                         Purpose
                                     </label>
                                     <select
@@ -279,7 +279,7 @@ const MeetingForm = () => {
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
-                                    <label className=" text-sm text-[#a7594d] " htmlFor="message">
+                                    <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="message">
                                         Message
                                     </label>
                                     <textarea
@@ -307,7 +307,7 @@ const MeetingForm = () => {
                                 }}
                                 render={({ field }) => (
                                     <div className="flex flex-col">
-                                        <label className=" text-sm text-[#a7594d] mb-2">
+                                        <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] mb-2">
                                             Preferred Platform for Call
                                         </label>
                                         <div className="grid grid-cols-2 gap-2">

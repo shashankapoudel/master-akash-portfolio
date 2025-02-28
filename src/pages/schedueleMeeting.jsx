@@ -19,14 +19,14 @@ const SchedueleMeeting = () => {
         <div className="lg:m-8 m-6">
             <div className="flex flex-col lg:flex-row w-full tracking-wider font-poppins border-2 border-[#3c5551] p-4">
 
-                <div className="lg:w-1/3 w-full p-3 text-[#a7594d] font-medium gap-2">
+                <div className="lg:w-1/3 w-full p-3 text-[#a7594d] font-medium gap-2 md:text-xl">
                     <h1 className="flex justify-center font-semibold text-2xl lg:text-3xl mb-4">Akash Banjara</h1>
 
-                    <div className="flex items-center gap-2 mb-2">
+                    <div className="flex items-center gap-2 mb-2 text-xl ">
                         <CiCalendarDate className="text-xl" />
                         <p>
-                            <span className="font-normal text-base lg:text-lg">Date: </span>
-                            <span className='text-[#666666] text-sm'>
+                            <span className="font-normal text-base lg:text-lg md:text-lg">Date: </span>
+                            <span className='text-[#666666] text-sm md:text-base'>
                                 {date || "Not Selected"}
                             </span>
                         </p>
@@ -35,8 +35,8 @@ const SchedueleMeeting = () => {
                     <div className="flex items-center gap-2 mb-2">
                         <CiClock2 className="text-xl" />
                         <p>
-                            <span className="font-normal text-base lg:text-lg">Time: </span>
-                            <span className='text-[#666666] text-sm'>
+                            <span className="font-normal text-base lg:text-lg md:text-lg">Time: </span>
+                            <span className='text-[#666666] text-sm md:text-base'>
                                 {time || "Not Selected"}
                             </span>
                         </p>
@@ -45,8 +45,8 @@ const SchedueleMeeting = () => {
                     <div className="flex items-center gap-2 mb-2">
                         <CiClock2 className="text-xl" />
                         <p>
-                            <span className="font-normal  text-base lg:text-lg">Minutes: </span>
-                            <span className='text-[#666666] text-sm'>
+                            <span className="font-normal  text-base lg:text-lg md:text-lg">Minutes: </span>
+                            <span className='text-[#666666] text-sm md:text-base'>
                                 {callTime || "Not Selected"} minutes
                             </span>
                         </p>
@@ -55,8 +55,8 @@ const SchedueleMeeting = () => {
                     <div className="flex items-center gap-2 mb-2">
                         <CiClock2 className="text-xl" />
                         <p>
-                            <span className="font-normal text-base lg:text-lg">TimeZone: </span>
-                            <span className='text-[#666666] text-sm'>
+                            <span className="font-normal text-base lg:text-lg md:text-lg">TimeZone: </span>
+                            <span className='text-[#666666] text-sm md:text-base'>
                                 {timeZone || "Not Selected"}
                             </span>
                         </p>
