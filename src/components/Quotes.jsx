@@ -8,10 +8,10 @@ const Quotes = () => {
             image: '/Images/Quotes/Quote2.jpg',
             text: 'Meditation can be like a battle with yourself, your thoughts, your body',
         },
-        {
-            image: '/Images/Quotes/Quote1.jpg',
-            text: 'Singing Bowl is a medicine for thousands of diseases',
-        },
+        // {
+        //     image: '/Images/Quotes/Quote1.jpg',
+        //     text: 'Singing Bowl is a medicine for thousands of diseases',
+        // },
         {
             image: '/Images/Quotes/Quote3.jpg',
             text: 'Healing vibrations are the bridge between body, mind and spirit',

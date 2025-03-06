@@ -74,7 +74,7 @@ const Contact = () => {
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4 '>
                             <FaPhoneAlt className='text-[#03385F] text-sm lg:text-base md:text-base' />
                             <a href="tel:+9779849779890" className=''>
-                                <p className='text-left text-[#666666] text-base lg:text-lg md:text-lg tracking-wide'> <span className='text-lg text-[#03385F] tracking-wider'>Nepal office(Kapil): </span>
+                                <p className='text-left text-[#666666] text-base lg:text-lg md:text-lg tracking-wide'> <span className='text-lg text-[#03385F] tracking-wider'>Nepal manager(Kapil): </span>
                                     <span className='hover:underline'>
                                         +977-9849779890
                                     </span>
@@ -86,7 +86,7 @@ const Contact = () => {
                         <div className='flex items-center justify-center mr-auto gap-2 px-2 lg:px-4'>
                             <FaPhoneAlt className=' text-[#03385F]  lg:text-base md:text-base text-sm' />
                             <a href='tel: +85294169123' className=''>
-                                <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className='text-lg text-[#03385F] tracking-wider'>Hongkong office(Catherine): </span>
+                                <p className='text-left text-[#666666] text-base lg:text-lg tracking-wide'><span className='text-lg text-[#03385F] tracking-wider'>Hongkong manager(Catherine): </span>
                                     <span className='hover:underline'>
                                         +852 - 9416 9123
                                     </span>

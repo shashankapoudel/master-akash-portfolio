@@ -97,23 +97,23 @@ const CompanyCard = () => {
     };
 
     return (
-        <div className='flex flex-col gap-4 mt-4'>
+        <div className='flex flex-col gap-4 mt-4 items-center justify-center'>
             <h1 className='flex items-center justify-center text-[#022B4A] text-2xl lg:text-3xl font-bold'>
                 Companies
             </h1>
 
             <motion.div
-                className='grid grid-cols-1 lg:grid-cols-5 md:grid-cols-2 gap-4 lg:gap-6 mt-2'
+                className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 lg:gap-6 mt-2 '
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
                 exit="hidden"
-                viewport={{ amount: 0.2 }} // Re-animates when 20% is visible
+                viewport={{ amount: 0.2 }}
             >
 
                 <motion.div variants={cardVariants}>
                     <a href='https://www.singingbowlsmaster.com/en/' target="_blank" rel="noopener noreferrer">
-                        <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
+                        <div className='flex flex-col items-center justify-center p-3 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover p-2'
                                 src='/Images/CompanyLogo/NSHIS.png'
@@ -126,7 +126,7 @@ const CompanyCard = () => {
                     </a>
                 </motion.div>
 
-                <motion.div variants={cardVariants}>
+                {/* <motion.div variants={cardVariants}>
                     <a href='https://www.soundhealinghk.com/' target="_blank" rel="noopener noreferrer">
                         <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
@@ -139,8 +139,8 @@ const CompanyCard = () => {
                             </h1>
                         </div>
                     </a>
-                </motion.div>
-
+                </motion.div> */}
+                {/* 
                 <motion.div variants={cardVariants}>
                     <a href='https://www.himalayascraftnepal.com/' target="_blank" rel="noopener noreferrer">
                         <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
@@ -156,11 +156,11 @@ const CompanyCard = () => {
                             </h1>
                         </div>
                     </a>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div variants={cardVariants}>
                     <a href='https://saktiyogaschool.com/' target="_blank" rel="noopener noreferrer">
-                        <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
+                        <div className='flex flex-col items-center justify-center  gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover p-2'
                                 src='/Images/CompanyLogo/SYS.png'
@@ -177,7 +177,7 @@ const CompanyCard = () => {
 
                 <motion.div variants={cardVariants}>
                     <a href='https://www.soundhealinghk.com/' target="_blank" rel="noopener noreferrer">
-                        <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
+                        <div className='flex flex-col items-center justify-center gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
                             <img
                                 className='rounded-full w-64 h-64 object-cover p-2'
                                 src='/Images/CompanyLogo/SHHK.png'

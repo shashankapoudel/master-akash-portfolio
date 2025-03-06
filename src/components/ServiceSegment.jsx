@@ -15,11 +15,11 @@ const services = [
         name: 'Meditation and Mindfulness',
         description: 'Connect and explore the world of Meditation Connect and explore the world ofn'
     },
-    {
-        SN: <PiUserSoundBold />,
-        name: 'Sound Healing Therapy',
-        description: 'Immerse yourself in the soothing vibrations of singing bowls and ancient sound healing techniques.'
-    },
+    // {
+    //     SN: <PiUserSoundBold />,
+    //     name: 'Sound Healing Therapy',
+    //     description: 'Immerse yourself in the soothing vibrations of singing bowls and ancient sound healing techniques.'
+    // },
     {
         SN: <GiHiveMind />,
         name: 'Spiritual Events and Retreat',
@@ -61,7 +61,7 @@ const ServiceSegment = () => {
     };
 
     return (
-        <div className='flex items-center flex-col gap-4 p-0 lg:p-2'>
+        <div className='flex items-center justify-center flex-col gap-4 p-0 lg:p-2'>
             <h1 className='text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center'>Services</h1>
 
             <motion.div
@@ -69,17 +69,16 @@ const ServiceSegment = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: 0.2 }}
-                className='grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-16'
+                className='grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-16 justify-center'
             >
-                {services.map((service) => (
+                {services.map((service, index) => (
                     <motion.div
                         key={service.SN}
                         variants={cardVariants}
                         className='font-poppins flex flex-col items-center justify-center'
+                    // className={`font-poppins flex flex-col items-center justify-center ${services.length % 3 !== 0 && index >= 3 ? "md:col-span-2 lg:col-span-1" : ""
+                    //     }`}
                     >
-                        {/* <h1 className='text-center text-[#022B4A] font-bold text-3xl'>
-                            {service.SN}<span className='text-[#022B4A] font-semibold text-3xl'>.</span>
-                        </h1> */}
 
                         <h1 className='text-center text-[#022B4A] font-bold text-4xl'>
                             {service.SN}
@@ -89,7 +88,10 @@ const ServiceSegment = () => {
                             {service.name}<span className='font-normal text-xl'></span>
                         </p>
 
-                        <p className='text-center text-base lg:text-lg md:text-lg text-[#666666]'>{service.description}</p>
+                        <p className='text-center text-base lg:text-lg md:text-lg text-[#666666]'>
+                            {service.description}
+                        </p>
+
                     </motion.div>
                 ))}
             </motion.div>

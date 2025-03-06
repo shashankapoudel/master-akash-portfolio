@@ -109,7 +109,7 @@ const GalleryCard = () => {
                                 <img
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => setIsHovered(false)}
-                                    onClick={() => handleImageClick(idx)} // Handle image click
+                                    onClick={() => handleImageClick(idx)}
                                     className='object-cover rounded-md shadow-lg w-full hover:scale-105 cursor-pointer lg:h-96 h-40 md:h-64'
                                     src={image}
                                     alt={`Gallery image ${idx + 1}`}
