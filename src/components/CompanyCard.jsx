@@ -193,6 +193,7 @@ const CompanyCard = () => {
                     </a>
                 </motion.div>
 
+
             </motion.div>
         </div>
     );
