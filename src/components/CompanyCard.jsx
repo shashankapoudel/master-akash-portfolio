@@ -118,6 +118,7 @@ const CompanyCard = () => {
                                 className='rounded-full w-64 h-64 object-cover p-2'
                                 src='/Images/CompanyLogo/NSHIS.png'
                                 alt='Natural Sound Healing International School'
+                                loading="lazy"
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
                                 Natural Sound Healing International School
@@ -165,6 +166,7 @@ const CompanyCard = () => {
                                 className='rounded-full w-64 h-64 object-cover p-2'
                                 src='/Images/CompanyLogo/SYS.png'
                                 alt='Sakti Yoga School'
+                                loading="lazy"
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
                                 Sakti Yoga School
@@ -182,6 +184,7 @@ const CompanyCard = () => {
                                 className='rounded-full w-64 h-64 object-cover p-2'
                                 src='/Images/CompanyLogo/SHHK.png'
                                 alt='Sound Healing Hongkong'
+                                loading="lazy"
                             />
                             <h1 className='text-[#03385F] font-semibold text-center'>
                                 Sound Healing Hongkong

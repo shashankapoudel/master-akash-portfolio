@@ -244,6 +244,7 @@ const ServiceCard = () => {
                                 className='w-full object-cover rounded-home-custom-sm lg:rounded-home-custom mb-4'
                                 src={services[currentIndex].image}
                                 alt={services[currentIndex].title}
+                                loading="lazy"
                             />
                         </div>
 

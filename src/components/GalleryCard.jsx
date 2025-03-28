@@ -113,6 +113,7 @@ const GalleryCard = () => {
                                     className='object-cover rounded-md shadow-lg w-full hover:scale-105 cursor-pointer lg:h-96 h-40 md:h-64'
                                     src={image}
                                     alt={`Gallery image ${idx + 1}`}
+                                    loading="lazy"
                                 />
                             </div>
                         ))}

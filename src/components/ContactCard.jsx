@@ -17,6 +17,7 @@ const ContactCard = () => {
                     <img
                         src='/Images/Get in touch.jpg'
                         className='object-contain rounded-lg w-full h-auto'
+                        loading="lazy"
                     />
                 </div>
 

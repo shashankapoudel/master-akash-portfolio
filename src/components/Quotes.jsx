@@ -72,6 +72,7 @@ const Quotes = () => {
                                     src={quote.image}
                                     className='lg:w-72 lg:h-72 w-64 h-64 rounded-custom object-cover'
                                     alt="Quote"
+                                    loading="lazy"
                                 />
 
                                 <div className='flex p-2 md:p-6 lg:p-7 bg-[#FFFFFF] rounded-2xl text-[#022B4A] font-medium text-2xl font-marck-script'>
