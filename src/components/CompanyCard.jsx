@@ -125,6 +125,7 @@ const CompanyCard = () => {
                             </h1>
                         </div>
                     </a>
+
                 </motion.div>
 
                 {/* <motion.div variants={cardVariants}>
