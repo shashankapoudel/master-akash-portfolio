@@ -24,7 +24,7 @@ const Header = () => {
     }, [location])
 
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col sticky top-0 z-50'>
 
             <div className='bg-[#a7594d] text-center p-2 '>
                 <p className='text-xl lg:text-3xl font-marck-script text-white tracking-widest '>"Where you can feel the change"</p>
