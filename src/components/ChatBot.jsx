@@ -1,149 +1,11 @@
 
-// import React, { useState } from "react";
-// import { FaPhoneAlt } from "react-icons/fa";
-// import { IoMdChatbubbles } from "react-icons/io";
-// import { Controller, useForm, useWatch } from "react-hook-form";
-
-// const Chatbot = () => {
-//     const [isOpen, setIsOpen] = useState(false);
-//     const [activeAnswer, setActiveAnswer] = useState("");
-
-//     const questions = [
-//         {
-//             question: "Who is Yogi Akash?",
-//             answer: "Yogi Akash is a spiritual guide and life coach.",
-//         },
-//         {
-//             question: "Who is Yogi Akash?",
-//             answer: "Yogi Akash is a spiritual guide and life coach.",
-//         },
-//         {
-//             question: "Who is Yogi Akash?",
-//             answer: "Yogi Akash is a spiritual guide and life coach.",
-//         },
-//         {
-//             question: "Who is Yogi Akash?",
-//             answer: "Yogi Akash is a spiritual guide and life coach.",
-//         },
-//         {
-//             question: "Who is Yogi Akash?",
-//             answer: "Yogi Akash is a spiritual guide and life coach.",
-//         },
-//         {
-//             question: "Who is Yogi Akash?",
-//             answer: "Yogi Akash is a spiritual guide and life coach.",
-//         },
-//         {
-//             question: "How can I book a session?",
-//             answer: "You can book a session through the 'Book Now' page. You can book a session through the 'Book Now' page. You can book a session through the 'Book Now' page. You can book a session through the 'Book Now' page. You can book a session through the 'Book Now' page. You can book a session through the 'Book Now' page. You can book a session through the ",
-//         },
-//         {
-//             question: "What does Yogi Akash specialize in?",
-//             answer: "Yogi Akash specializes in meditation, yoga, and life coaching.",
-//         },
-//     ];
-
-//     const handleQuestionClick = (answer) => {
-//         setActiveAnswer(answer);
-//     };
-
-//     const handleCross = () => {
-//         setIsOpen(false);
-//         setActiveAnswer("");
-//     };
-//     const handleSelectChange = (e) => {
-//         const selectedValue = e.target.value;
-//         setActiveAnswer(selectedValue)
-
-
-//     }
-
-//     return (
-//         <div>
-
-//             <div
-//                 className="fixed bottom-6 right-6 bg-blue-500 p-6 rounded-full cursor-pointer shadow-lg text-white"
-//                 onClick={() => setIsOpen(!isOpen)}
-//             >
-//                 <IoMdChatbubbles
-//                     className="text-2xl"
-//                 />
-//             </div>
-
-
-//             {isOpen && (
-//                 <div className="fixed bottom-20 right-6 w-1/3 bg-black rounded-lg shadow-lg border border-gray-200 text-white flex flex-col max-h-[70vh]">
-
-//                     <div className="flex p-2 justify-between items-center rounded-t-lg">
-
-//                         <div className="flex gap-3 items-center">
-//                             <img
-//                                 src="/Images/homePhoto.jpg"
-//                                 className="w-11 h-11 rounded-full object-cover"
-//                                 alt="Yogi Akash"
-//                             />
-//                             <h3 className="text-base font-semibold">Yogi Akash</h3>
-//                         </div>
-
-//                         <div className="flex items-center justify-center gap-4">
-
-//                             <button>
-//                                 <FaPhoneAlt className='text-white  text-base' />
-//                             </button>
-
-//                             <button
-//                                 className="text-3xl mb-2"
-//                                 onClick={handleCross}
-//                             >
-//                                 &times;
-//                             </button>
-
-//                         </div>
-//                     </div>
-
-
-//                     <div className="flex-1 overflow-y-auto p-4">
-
-//                         <div className="flex flex-col justify-end items-end ">
-
-//                             <div>
-//                                 <select
-//                                     className="w-full p-3 bg-blue-600 text-white rounded-2xl cursor-pointer outline-none"
-//                                     onChange={handleSelectChange}
-//                                     defaultValue=""
-//                                 >
-//                                     <option value="" disabled>Select a question...</option>
-//                                     {questions.map((item, index) => (
-//                                         <option key={index} value={item.answer}>
-//                                             {item.question}
-//                                         </option>
-//                                     ))}
-//                                 </select>
-//                             </div>
-//                         </div>
-
-//                         <div className="flex justify-start mt-4">
-//                             {activeAnswer && (
-//                                 <div className="w-2/3 p-3 bg-gray-600 rounded-2xl text-white">
-//                                     {activeAnswer}
-//                                 </div>
-//                             )}
-//                         </div>
-//                     </div>
-//                 </div>
-//             )}
-//         </div >
-//     );
-// };
-
-// export default Chatbot;
-
 
 import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdChatbubbles } from "react-icons/io";
 import { FiSend } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Chatbot = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -241,7 +103,7 @@ const Chatbot = () => {
 
                         <div className="flex-1 overflow-y-auto p-4 space-y-2">
 
-                            <div className="flex flex-col justify-center items-center ">
+                            <div className="flex flex-col justify-center items-center gap-2">
 
                                 <div>
                                     <select
@@ -258,6 +120,18 @@ const Chatbot = () => {
                                         ))}
                                     </select>
                                 </div>
+
+                                <div className="w-full px-6">
+                                    <a
+                                        href="https://wa.me/9779849779322?text=Hello%20Himalayas%20Craft%20Nepal!"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-full flex bg-white rounded-xl  text-[#666666] p-3  items-center justify-center outline-none gap-1"
+                                    >
+                                        <p>Chat with us on Whatsapp</p> <FaWhatsapp size={28} className="bg-green-500 text-white rounded-xl" />
+                                    </a>
+                                </div>
+
                             </div>
 
                             {chatHistory.map((message, index) => (

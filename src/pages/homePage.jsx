@@ -44,9 +44,9 @@ const Home = () => {
 
     return (
         <div className='m-2 md:m-5 lg:m-6'>
-            <div className="flex flex-col lg:flex-row md:flex-col justify-between p-4 gap-4">
+            <div className="flex flex-col lg:flex-row md:flex-col justify-between p-4 gap-4 shadow-lg">
 
-                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6">
+                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6 ">
 
                     <div className="w-full">
 

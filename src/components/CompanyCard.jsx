@@ -128,38 +128,6 @@ const CompanyCard = () => {
 
                 </motion.div>
 
-                {/* <motion.div variants={cardVariants}>
-                    <a href='https://www.soundhealinghk.com/' target="_blank" rel="noopener noreferrer">
-                        <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
-                            <img
-                                className='rounded-full w-64 h-64 object-cover'
-                                src='/Images/CompanyLogo/honghandmade.png'
-                                alt='Hongkong Handmade Singing Bowl Expert'
-                            />
-                            <h1 className='text-[#03385F] font-semibold text-center'>
-                                Hongkong Handmade Singing Bowl Expert
-                            </h1>
-                        </div>
-                    </a>
-                </motion.div> */}
-                {/* 
-                <motion.div variants={cardVariants}>
-                    <a href='https://www.himalayascraftnepal.com/' target="_blank" rel="noopener noreferrer">
-                        <div className='flex flex-col items-center justify-center p-2 gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
-                            <img
-                                className='rounded-full w-64 h-64 object-cover'
-                                src='/Images/CompanyLogo/HCN.png'
-                                alt='Himalayas Craft Nepal'
-                            />
-                            <h1 className='text-[#03385F] font-semibold text-center'>
-                                Himalayas Craft Nepal
-                                <br />
-                                <br />
-                            </h1>
-                        </div>
-                    </a>
-                </motion.div> */}
-
                 <motion.div variants={cardVariants}>
                     <a href='https://saktiyogaschool.com/' target="_blank" rel="noopener noreferrer">
                         <div className='flex flex-col items-center justify-center  gap-2 border shadow-md cursor-pointer transition-transform duration-300 ease-out hover:scale-105'>
