@@ -8,7 +8,7 @@ const Footer = () => {
 
             <div>
                 <img className='lg:w-auto h-8 lg:h-16 md:h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply'
-                    src='/Images/LogoName.png' />
+                    src='/Images/Logo_Footer.png' />
             </div>
 
             <div className='flex  text-white gap-3 md:gap-4 lg:gap-6 text-sm lg:text-xl'>

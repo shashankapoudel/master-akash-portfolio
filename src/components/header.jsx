@@ -37,7 +37,7 @@ const Header = () => {
                         onClick={() => navigate('/')}
                         src="/Images/Logo_Icon.png"
                         alt="Company Logo"
-                        className="lg:w-52 md:w-48 h-8 lg:h-16 md:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply cursor-pointer"
+                        className="lg:w-60 md:w-48 h-8 lg:h-16 md:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply cursor-pointer"
                     />
                 </div>
 

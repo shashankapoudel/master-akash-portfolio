@@ -95,6 +95,7 @@ const ServiceCard = ({ service }) => {
             <img src={service.image}
                 alt={service.title}
                 className="w-full h-auto p-4 object-cover rounded-lg"
+                loading='lazy'
             />
             <p className="text-gray-600">{service.description}</p>
             <div>
@@ -137,7 +138,7 @@ const ServicesPage = () => {
     };
 
 
-   
+
 
     return (
         <div className="flex flex-col p-4 lg:p-8 tracking-normal w-full gap-10 border mt-4">
@@ -187,6 +188,7 @@ const ServicesPage = () => {
                                 src="/Images/Service2.png"
                                 alt="Sound Healing"
                                 className="w-full lg:w-1/3 pr-4 object-cover mix-blend-multiply"
+                                loading='lazy'
                             />
                         </div>
 

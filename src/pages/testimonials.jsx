@@ -91,6 +91,7 @@ const Testimonials = () => {
                     <img
                         src="/Images/Get in touch.jpg"
                         className="object-cover w-full lg:h-[500px]  h-auto"
+                        loading='lazy'
                     />
 
 
@@ -154,6 +155,7 @@ const Testimonials = () => {
                                 <img
                                     src="/Images/user.jpg"
                                     className='object-cover w-8 h-8 rounded-md'
+                                    loading='lazy'
                                 />
                                 <h1 className='text-[#666666] text-xl font-bold font-marck-script'>{test.name}</h1>
                             </div>

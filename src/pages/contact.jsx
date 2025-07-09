@@ -22,6 +22,7 @@ const Contact = () => {
                     <img
                         src='/Images/homePhoto.jpg'
                         className='w-32 h-32 rounded-full object-cover'
+                        loading='lazy'
                     />
                     <h1 className="align-text-top text-[#111111] font-semibold text-3xl md:text-4xl lg:text-3xl">Akash Banjara</h1>
 

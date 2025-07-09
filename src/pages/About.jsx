@@ -65,6 +65,7 @@ const About = () => {
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
                                 className='relative rounded-lg shadow-lg w-full h-auto object-cover'
+                                loading='lazy'
                             />
                         </div>
 
@@ -106,6 +107,7 @@ const About = () => {
                                 src='/Images/homePhoto.jpg'
                                 alt='About Me'
                                 className='relative rounded-lg shadow-lg w-full h-auto object-cover'
+                                loading='lazy'
                             />
                         </div>
 
@@ -136,6 +138,7 @@ const About = () => {
                                             src={img}
                                             alt='About Me'
                                             className='rounded-lg shadow-lg w-full lg:h-[240px] h-[140px] md:h-[240px] object-cover cursor-pointer hover:scale-105'
+                                            loading='lazy'
                                         />
                                     ))
                                 }

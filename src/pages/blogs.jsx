@@ -83,6 +83,7 @@ const BlogPage = () => {
                                         src={blog.image}
                                         alt={blog.title}
                                         className=" w-full lg:w-1/3 rounded-md mr-4 object-cover"
+                                        loading="lazy"
                                     />
                                     <div>
                                         <h3
