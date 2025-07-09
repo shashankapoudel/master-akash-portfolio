@@ -52,6 +52,7 @@ const BlogPage = () => {
                             src={selectedBlog.image}
                             alt={selectedBlog.title}
                             className="w-full rounded-md mb-4 object-contain"
+                            loading="lazy"
                         />
                         <p className="text-gray-700">{selectedBlog.content}</p>
                     </div>
@@ -63,6 +64,7 @@ const BlogPage = () => {
                                 src={blogs[0].image}
                                 alt={blogs[0].title}
                                 className="w-full rounded-md mb-4"
+                                loading="lazy"
                             />
                             <h2
                                 onClick={() => setSelectedBlog(blogs[0])}

@@ -15,6 +15,12 @@ import BlogPage from './pages/blogs';
 import About from './pages/About';
 import Chatbot from './components/ChatBot';
 import ScrollToTop from './components/ScrollToTop';
+import MeditationAndMindfulness from './pages/MeditationAndMindfulness';
+import SoundHealingTherapy from './pages/SoundHealingTherapy';
+import SpiritualEvents from './pages/SpiritualEvents';
+import YogaAndEnergy from './pages/YogaAndEnergy';
+import HealingAndWelness from './pages/HealingAndWelness';
+import SoundBaths from './pages/SoundBaths';
 
 function App() {
   return (
@@ -25,6 +31,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/meditation&mindfulness" element={<MeditationAndMindfulness />} />
+            <Route path="/services/soundhealingtherapy" element={<SoundHealingTherapy />} />
+            <Route path="/services/spiritualevents" element={<SpiritualEvents />} />
+            <Route path="/services/yoga&energy" element={<YogaAndEnergy />} />
+            <Route path="/services/healing&welness" element={<HealingAndWelness />} />
+            <Route path="/services/soundbaths" element={<SoundBaths />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />

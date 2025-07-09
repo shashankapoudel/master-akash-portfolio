@@ -7,11 +7,14 @@ const Footer = () => {
         <div className='bg-[#a7594d] w-full p-3 lg:p-8 flex flex-col lg:flex-row items-center justify-center lg:justify-between bottom-0 gap-4 lg:gap-0'>
 
             <div>
-                <img className='lg:w-auto h-8 lg:h-16 md:h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply'
+                <img
+                    className='lg:w-auto h-8 lg:h-16 md:h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply'
+                    loading='lazy'
+                    alt='footer-image'
                     src='/Images/Logo_Footer.png' />
             </div>
 
-            <div className='flex  text-white gap-3 md:gap-4 lg:gap-6 text-sm lg:text-xl'>
+            <div className='flex  text-white gap-3 md:gap-4 lg:gap-6 text-sm md:text-xl lg:text-xl'>
 
                 <NavLink
                     to="/"

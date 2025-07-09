@@ -255,6 +255,11 @@
 
 // export default Gallery;
 
+
+
+
+
+
 import React, { useEffect, useState } from 'react';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 

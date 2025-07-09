@@ -250,7 +250,7 @@ const ServiceCard = () => {
 
                         <div className='w-full md:w-full lg:w-1/2 flex flex-col items-start justify-start p-0 lg:p-4 gap-4'>
 
-                            <p className='text-[#666666] p-0 lg:p-2 text-sm lg:text-lg md:text-lg '>
+                            <p className='text-[#666666] p-0 lg:p-2 text-sm lg:text-lg md:text-xl '>
                                 {services[currentIndex].description}
                             </p>
 

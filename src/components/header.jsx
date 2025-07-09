@@ -30,7 +30,7 @@ const Header = () => {
                 <p className='text-xl lg:text-3xl font-marck-script text-white tracking-widest '>"Where you can feel the change"</p>
             </div>
 
-            <div className='flex justify-between items-center bg-gray-100 text-[#606060] py-2 px-4 lg:py-4 lg:px-9  mx-2 lg:mx-8'>
+            <div className='flex justify-between items-center bg-gray-100 text-[#606060] py-1 px-4 lg:py-4 lg:px-9  mx-2 lg:mx-8'>
 
                 <div className='flex justify-center'>
                     <img
@@ -78,6 +78,7 @@ const Header = () => {
                             {navItems.map((item) => (
                                 <li key={item.name}>
                                     <NavLink
+                                        onClick={() => setMenuOpen(false)}
                                         className={active === item.path ? 'text-[#a7594d] font-semibold md:text-xl text-lg hover:-translate-y-1' : 'text-[#606060] hover:text-[#a7594d] hover:-translate-y-1 md:text-xl text-lg'}
                                         to={item.path}
                                     >

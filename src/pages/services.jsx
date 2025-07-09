@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 
 const services = [
@@ -137,7 +138,7 @@ const ServicesPage = () => {
         setShowNewContent(!showNewContent);
     };
 
-
+    const navigate = useNavigate()
 
 
     return (
@@ -153,17 +154,24 @@ const ServicesPage = () => {
                         viewport={{ amount: 0.2 }}
                     >
                         {/* Existing Content */}
-                        <a href='https://www.soundhealinghk.com/soundservices' target="_blank" rel="noopener noreferrer">
+                        <div
+                            onClick={() => navigate('/services/meditation&mindfulness')}
+                            className='cursor-pointer'
+
+                        >
                             <motion.div
                                 variants={itemVariants}
-                                className="lg:absolute lg:top-0 lg:left-20 flex flex-col gap-2 bg-[#A7594D] text-white p-2 shadow-md w-full lg:w-1/3 items-center justify-center rounded-custom-1-sm lg:rounded-custom-1 py-2 px-4 md:p-3 lg:p-2 cursor-pointer"
+                                className="lg:absolute lg:top-0 lg:left-20 flex flex-col gap-2 bg-[#A7594D] text-white p-2 shadow-md w-full lg:w-1/3 items-center justify-center rounded-custom-1-sm lg:rounded-custom-1 py-2 px-4 md:p-3 lg:p-2 "
                             >
                                 <h3 className="font-semibold text-base md:text-xl lg:text-xl text-center">Meditation and Mindfulness</h3>
                                 <p className="flex items-center justify-center text-center text-sm md:text-xl lg:text-sm">Calm your mind and find peace through meditation techniques.</p>
                             </motion.div>
-                        </a>
+                        </div>
 
-                        <a href='https://www.soundhealinghk.com/soundservices' target="_blank" rel="noopener noreferrer">
+                        <div
+                            className='cursor-pointer'
+                            onClick={() => navigate('/services/soundhealingtherapy')}
+                        >
                             <motion.div
                                 variants={itemVariants}
                                 className="lg:absolute bottom-32 left-10 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom-2-sm lg:rounded-custom-2 shadow-md w-full lg:w-1/3 py-2 px-4 lg:py-2 lg:px-4 md:p-3"
@@ -171,9 +179,12 @@ const ServicesPage = () => {
                                 <h3 className="font-semibold text-base md:text-xl lg:text-xl text-center">Sound Healing Therapy</h3>
                                 <p className='text-center text-sm md:text-xl lg:text-sm'>Calm your mind and find peace through meditation techniques.</p>
                             </motion.div>
-                        </a>
+                        </div>
 
-                        <a href='https://www.soundhealinghk.com/soundservices' target="_blank" rel="noopener noreferrer">
+                        <div
+                            onClick={() => navigate('/services/spiritualevents')}
+                            className='cursor-pointer'
+                        >
                             <motion.div
                                 variants={itemVariants}
                                 className="lg:absolute bottom-0 left-10 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white py-2 lg:px-4 px-3 rounded-custom-3-sm lg:rounded-custom-3 shadow-md w-full lg:w-1/3"
@@ -181,7 +192,7 @@ const ServicesPage = () => {
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Spiritual Events and Retreats</h3>
                                 <p className='text-center text-sm md:text-xl lg:text-sm'>Take a break from daily life to recharge and reconnect with yourself.</p>
                             </motion.div>
-                        </a>
+                        </div>
 
                         <div className="w-full flex justify-center items-center">
                             <img
@@ -192,7 +203,10 @@ const ServicesPage = () => {
                             />
                         </div>
 
-                        <a href='https://www.soundhealinghk.com/soundservices' target="_blank" rel="noopener noreferrer">
+                        <div
+                            className='cursor-pointer'
+                            onClick={() => navigate('/services/souundbaths')}
+                        >
                             <motion.div
                                 variants={item1Variants}
                                 className="lg:absolute top-0 right-20 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white py-2 px-4 rounded-custom-4-sm lg:rounded-custom-4 shadow-md w-full md:w-3/4 lg:w-1/3"
@@ -200,9 +214,13 @@ const ServicesPage = () => {
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Sound Baths and Relaxation</h3>
                                 <p className='flex justify-center items-center text-center text-sm md:text-xl lg:text-sm'>Enjoy soothing sounds that melt away stress and bring deep relaxation.</p>
                             </motion.div>
-                        </a>
+                        </div>
 
-                        <a href='https://www.soundhealinghk.com/soundservices' target="_blank" rel="noopener noreferrer">
+                        <div
+                            onClick={() => navigate('/services/yoga&energy')}
+                            className='cursor-pointer'
+
+                        >
                             <motion.div
                                 variants={item1Variants}
                                 className="lg:absolute bottom-32 right-10 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-custom-5-sm lg:rounded-custom-5 shadow-md w-full lg:w-1/3 py-2 px-4"
@@ -210,9 +228,12 @@ const ServicesPage = () => {
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Yoga and Energy Awakening</h3>
                                 <p className='text-center text-sm'>Move, breathe, and connect with your inner energy through yoga.</p>
                             </motion.div>
-                        </a>
+                        </div>
 
-                        <a href='https://www.soundhealinghk.com/soundservices' target="_blank" rel="noopener noreferrer">
+                        <div
+                            className='cursor-pointer'
+                            onClick={() => navigate('/services/healing&welness')}
+                        >
                             <motion.div
                                 variants={item1Variants}
                                 className="lg:absolute bottom-0 right-16 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom-6-sm lg:rounded-custom-6 shadow-md w-full lg:w-1/3 py-2 px-4"
@@ -220,7 +241,7 @@ const ServicesPage = () => {
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Healing & Wellness Workshops</h3>
                                 <p className='text-center text-sm'>Healing workshops that help you heal, grow, and feel better.</p>
                             </motion.div>
-                        </a>
+                        </div>
                     </motion.div>
                     {/* <div ref={scrollTriggerRef} className="h-20"></div> */}
                 </div>

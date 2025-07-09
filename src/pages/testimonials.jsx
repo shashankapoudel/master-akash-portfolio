@@ -90,6 +90,7 @@ const Testimonials = () => {
                 <div className="lg:relative md:relative w-full">
                     <img
                         src="/Images/Get in touch.jpg"
+                        alt='testimonial image'
                         className="object-cover w-full lg:h-[500px]  h-auto"
                         loading='lazy'
                     />
