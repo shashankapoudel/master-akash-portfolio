@@ -25,13 +25,11 @@ const Schedule = () => {
 
 
     const TimingsNPT = [
-        "09:00",
-        "09:15",
-        "09:30",
-        "10:30",
-        "11:30",
-        "11:45",
-        "12:15",
+        "6:00",
+        "7:00",
+        "19:00",
+        "20:00",
+
     ];
 
 
@@ -97,10 +95,10 @@ const Schedule = () => {
                         }}
                     >
                         <option value="">Select call minutes</option>
-                        <option value="15">15 minutes</option>
-                        <option value="30">30 minutes</option>
-                        <option value="45">45 minutes</option>
-                        <option value="60">60 minutes</option>
+                        <option value="15">2 minutes</option>
+                        <option value="30">5 minutes</option>
+                        <option value="45">10 minutes</option>
+                        <option value="60">15 minutes</option>
                     </select>
                 </div>
             )}
@@ -110,7 +108,8 @@ const Schedule = () => {
                     <h3 className="text-md font-semibold text-[#3c5551] mb-2">
                         Select a Time ({selectedTimezone})
                     </h3>
-                    <div className="grid grid-cols-3 gap-2">
+                    <div className="grid grid-cols-2 gap-2">
+
                         {Timings.map((timing) => (
                             <button
                                 key={timing}
@@ -121,6 +120,7 @@ const Schedule = () => {
                                 {timing}
                             </button>
                         ))}
+
                     </div>
                     {time && (
                         <p className="mt-2 text-[#a7594d]">
