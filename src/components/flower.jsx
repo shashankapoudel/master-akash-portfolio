@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { PaperPlaneIcon, Loader2 } from "lucide-react"; // Icons
 import OpenAI from "openai";
 
 const ChatbotGuru = () => {
@@ -9,7 +8,7 @@ const ChatbotGuru = () => {
 
     const openai = new OpenAI({
         apiKey: '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', // Secure API Key
-        dangerouslyAllowBrowser: true, // Allows frontend API call
+        dangerouslyAllowBrowser: true,
     });
 
     const sendMessage = async () => {
@@ -22,7 +21,7 @@ const ChatbotGuru = () => {
 
         try {
             const response = await openai.chat.completions.create({
-                model: "gpt-3.5-turbo", // Change to "gpt-3.5-turbo" if needed
+                model: "gpt-3.5-turbo",
                 messages: [
                     { role: "system", content: "You are a spiritual guru guiding meditation and healing." },
                     ...messages,

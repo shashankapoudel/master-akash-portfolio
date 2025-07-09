@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
@@ -139,7 +138,7 @@ const GalleryCard = () => {
             {isModalOpen && (
                 <div
                     className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75'
-                    onClick={closeModal} // Close modal when clicking outside
+                    onClick={closeModal}
                 >
                     <div className='relative max-w-4xl w-full p-4'>
                         <img

@@ -72,7 +72,6 @@ const Chatbot = () => {
                 <IoMdChatbubbles className="text-2xl relative" />
             </button>
 
-
             {
                 isOpen && (
                     <div className="fixed bottom-20 right-6 lg:w-1/4 md:w-1/2  bg-gray-200 rounded-xl shadow-lg border border-gray-200 text-white flex flex-col max-h-[70vh] min-h-[40vh]">

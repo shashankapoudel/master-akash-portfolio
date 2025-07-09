@@ -85,7 +85,7 @@ const CompanyCard = () => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.3, // Stagger animation for cards
+                staggerChildren: 0.3,
             },
         },
     };
@@ -93,7 +93,7 @@ const CompanyCard = () => {
     const cardVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-        exit: "hidden", // Reset animation when out of view
+        exit: "hidden",
     };
 
     return (
