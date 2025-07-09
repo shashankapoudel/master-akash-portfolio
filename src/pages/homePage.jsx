@@ -84,10 +84,13 @@ const Home = () => {
 
                 </div>
 
-                <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-0 md:p-4 lg:p-8 py-4">
-                    <p className="flex items-start justify-start text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins text-start">
-                        Akash Banjara
-                    </p>
+                <div className="w-full lg:w-1/2 flex flex-col justify-center p-0 md:p-4 lg:p-8 py-4">
+
+                    <div className='flex items-end justify-end '>
+                        <p className="flex text-end text-3xl font-semibold tracking-widest text-[#3c5551] font-poppins">
+                            Himalayas master Akash Banjara
+                        </p>
+                    </div>
 
                     <p className="text-[#666666] font-medium lg:text-lg text-sm md:text-lg font-poppins lg:tracking-wide tracking-normal text-justify max-w-4xl py-4">
                         Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness.His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.

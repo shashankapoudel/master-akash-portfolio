@@ -65,7 +65,7 @@ const Chatbot = () => {
         <div className="w-full p-4">
 
             <button
-                className="fixed bottom-20 right-6 bg-purple-500 p-5 rounded-full cursor-pointer shadow-2xl text-white border-purple-300"
+                className="fixed bottom-20 right-6 bg-white p-5 rounded-full cursor-pointer shadow-lg text-[#044F86] border-purple-300"
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {/* <div className="absolute inset-0 w-full h-full  opacity-50 rounded-full blur-lg"></div> */}
@@ -123,7 +123,7 @@ const Chatbot = () => {
 
                                 <div className="w-full px-6">
                                     <a
-                                        href="https://wa.me/9779849779322?text=Hello%20Himalayas%20Craft%20Nepal!"
+                                        href="https://wa.me/+85251126782?text=Hello%20Himalayas%20Craft%20Nepal!"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-full flex bg-white rounded-xl  text-[#666666] p-3  items-center justify-center outline-none gap-1"

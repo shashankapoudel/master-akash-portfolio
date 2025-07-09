@@ -24,7 +24,7 @@ const Header = () => {
     }, [location])
 
     return (
-        <div className='flex flex-col sticky top-0 z-50'>
+        <div className='flex flex-col sticky top-0 z-50 shadow-md'>
 
             <div className='bg-[#a7594d] text-center p-2 '>
                 <p className='text-xl lg:text-3xl font-marck-script text-white tracking-widest '>"Where you can feel the change"</p>
@@ -35,9 +35,9 @@ const Header = () => {
                 <div className='flex justify-center'>
                     <img
                         onClick={() => navigate('/')}
-                        src="/Images/LogoName.png"
+                        src="/Images/Logo_Icon.png"
                         alt="Company Logo"
-                        className="lg:w-48 md:w-48 h-8 lg:h-16 md:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply cursor-pointer"
+                        className="lg:w-52 md:w-48 h-8 lg:h-16 md:h-16 w-24  transition-transform duration-300 hover:scale-105 mix-blend-multiply cursor-pointer"
                     />
                 </div>
 
