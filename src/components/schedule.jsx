@@ -97,8 +97,8 @@ const Schedule = () => {
                         <option value="">Select call minutes</option>
                         <option value="15">2 minutes</option>
                         <option value="30">5 minutes</option>
-                        <option value="45">10 minutes</option>
-                        <option value="60">15 minutes</option>
+                        <option value="45" disabled>10 minutes(disabled)</option>
+                        <option value="60" disabled>15 minutes(disabled)</option>
                     </select>
                 </div>
             )}

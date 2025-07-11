@@ -1,12 +1,11 @@
 
-
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
-
 const services = [
+
     {
         title: 'Meditation and Mindfulness',
         image: '/Images/homePhoto.jpg',
@@ -21,6 +20,7 @@ const services = [
         location: 'Outdoor or private studio',
         cta: 'Book my session!',
     },
+
     {
         title: 'Sound Healing classes',
         image: '/Images/homePhoto.jpg',
@@ -36,6 +36,8 @@ const services = [
         location: 'Workshop studio',
         cta: 'Book a workshop now!',
     },
+
+
     {
         title: 'Retreat Centers',
         image: '/Images/homePhoto.jpg',
@@ -50,6 +52,8 @@ const services = [
         location: 'Various serene retreat locations',
         cta: 'Explore Retreats',
     },
+
+
     {
         title: 'Spiritual and Mental Growth Activities',
         image: '/Images/homePhoto.jpg',
@@ -64,7 +68,9 @@ const services = [
         location: 'Local studio or virtual options',
         cta: 'Join a session today!',
     },
+
 ];
+
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -77,10 +83,12 @@ const containerVariants = {
     },
 };
 
+
 const itemVariants = {
     hidden: { x: -100, opacity: 0 },
     visible: { x: 0, opacity: 1, transition: { duration: 0.8 } },
 };
+
 
 const item1Variants = {
     hidden: { x: 100, opacity: 0 },
@@ -89,6 +97,7 @@ const item1Variants = {
 
 
 const ServiceCard = ({ service }) => {
+
     return (
         <div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4">
             <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
@@ -98,7 +107,9 @@ const ServiceCard = ({ service }) => {
                 className="w-full h-auto p-4 object-cover rounded-lg"
                 loading='lazy'
             />
+
             <p className="text-gray-600">{service.description}</p>
+
             <div>
                 <h4 className="font-semibold text-gray-800">What's Included:</h4>
                 <ul className="list-disc list-inside text-gray-600">
@@ -107,6 +118,7 @@ const ServiceCard = ({ service }) => {
                     ))}
                 </ul>
             </div>
+
             <div>
                 <h4 className="font-semibold text-gray-800">Benefits:</h4>
                 <ul className="list-disc list-inside text-gray-600">
@@ -115,15 +127,19 @@ const ServiceCard = ({ service }) => {
                     ))}
                 </ul>
             </div>
+
             <p className="text-gray-600">
                 <strong>Duration:</strong> {service.duration}
             </p>
+
             <p className="text-gray-600">
                 <strong>Location:</strong> {service.location}
             </p>
+
             <button className="bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400 transition-transform duration-300 ease-out hover:scale-105">
                 {service.cta}
             </button>
+
         </div>
     );
 };
@@ -140,9 +156,9 @@ const ServicesPage = () => {
 
     const navigate = useNavigate()
 
-
     return (
         <div className="flex flex-col p-4 lg:p-8 tracking-normal w-full gap-10 border mt-4">
+
             {!showNewContent ? (
                 <div className="p-4 md:p-4 lg:p-8 items-center w-full mt-4">
                     <motion.div
@@ -153,11 +169,10 @@ const ServicesPage = () => {
                         animate={isInView ? "visible" : "hidden"}
                         viewport={{ amount: 0.2 }}
                     >
-                        {/* Existing Content */}
+
                         <div
                             onClick={() => navigate('/services/meditation&mindfulness')}
                             className='cursor-pointer'
-
                         >
                             <motion.div
                                 variants={itemVariants}
@@ -219,10 +234,10 @@ const ServicesPage = () => {
                         <div
                             onClick={() => navigate('/services/yoga&energy')}
                             className='cursor-pointer'
-
                         >
                             <motion.div
                                 variants={item1Variants}
+
                                 className="lg:absolute bottom-32 right-10 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-custom-5-sm lg:rounded-custom-5 shadow-md w-full lg:w-1/3 py-2 px-4"
                             >
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Yoga and Energy Awakening</h3>
@@ -242,11 +257,13 @@ const ServicesPage = () => {
                                 <p className='text-center text-sm'>Healing workshops that help you heal, grow, and feel better.</p>
                             </motion.div>
                         </div>
+
                     </motion.div>
-                    {/* <div ref={scrollTriggerRef} className="h-20"></div> */}
+
                 </div>
             ) : (
                 <div className="p-4 md:p-4 lg:p-8 items-center w-full mt-4">
+
                     <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 ">
                         {services.map((service, index) => (
                             <ServiceCard
@@ -254,24 +271,28 @@ const ServicesPage = () => {
                                 key={index} service={service} />
                         ))}
                     </div>
+
                 </div>
             )}
 
             <div className='flex items-center justify-center'>
-                {!showNewContent ? (
+
+                {
+                    !showNewContent ? (
 
 
-                    <FaAngleDoubleDown
-                        className='text-3xl cursor-pointer text-[#044F86]'
-                        onClick={handleButtonClick}
-                    />
-                ) : (
-                    <FaAngleDoubleUp
-                        className='text-3xl cursor-pointer text-[#044F86]'
-                        onClick={handleButtonClick}
-                    />
-                )
+                        <FaAngleDoubleDown
+                            className='text-3xl cursor-pointer text-[#044F86]'
+                            onClick={handleButtonClick}
+                        />
+                    ) : (
+                        <FaAngleDoubleUp
+                            className='text-3xl cursor-pointer text-[#044F86]'
+                            onClick={handleButtonClick}
+                        />
+                    )
                 }
+
             </div>
         </div>
     );
