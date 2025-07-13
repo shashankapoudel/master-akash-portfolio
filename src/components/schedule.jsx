@@ -23,13 +23,11 @@ const Schedule = () => {
         setTime("");
     };
 
-
     const TimingsNPT = [
         "6:00",
         "7:00",
         "19:00",
         "20:00",
-
     ];
 
 
@@ -78,7 +76,6 @@ const Schedule = () => {
                 className="lg:p-10 p-2 "
             />
 
-
             <p className="text-[#03385F] mb-4">
                 Selected Date:{" "}
                 <span className="text-xl font-semibold">
@@ -103,34 +100,37 @@ const Schedule = () => {
                 </div>
             )}
 
-            {callTime && (
-                <div className="mb-2">
-                    <h3 className="text-md font-semibold text-[#3c5551] mb-2">
-                        Select a Time ({selectedTimezone})
-                    </h3>
-                    <div className="grid grid-cols-2 gap-2">
 
-                        {Timings.map((timing) => (
-                            <button
-                                key={timing}
-                                className={`px-4 py-2 rounded bg-[#03385F] text-white hover:bg-[#2a3f3e] ${time === timing ? "ring-2 ring-[#a7594d]" : ""
-                                    }`}
-                                onClick={() => setTime(timing)}
-                            >
-                                {timing}
-                            </button>
-                        ))}
+            {
+                callTime && (
+                    <div className="mb-2">
+
+                        <h3 className="text-md font-semibold text-[#3c5551] mb-2">
+                            Select a Time ({selectedTimezone})
+                        </h3>
+
+                        <div className="grid grid-cols-2 gap-2">
+                            {Timings.map((timing) => (
+                                <button
+                                    key={timing}
+                                    className={`px-4 py-2 rounded bg-[#03385F] text-white hover:bg-[#2a3f3e] ${time === timing ? "ring-2 ring-[#a7594d]" : ""
+                                        }`}
+                                    onClick={() => setTime(timing)}
+                                >
+                                    {timing}
+                                </button>
+                            ))}
+                        </div>
+
+                        {time && (
+                            <p className="mt-2 text-[#a7594d]">
+                                Selected Time:{" "}
+                                <span className="font-semibold">{time}</span>
+                            </p>
+                        )}
 
                     </div>
-                    {time && (
-                        <p className="mt-2 text-[#a7594d]">
-                            Selected Time:{" "}
-                            <span className="font-semibold">{time}</span>
-                        </p>
-                    )}
-                </div>
-            )}
-
+                )}
 
             {date && time && (
                 <div className="flex items-center justify-center">
@@ -142,6 +142,7 @@ const Schedule = () => {
                     </button>
                 </div>
             )}
+
         </div>
     );
 };

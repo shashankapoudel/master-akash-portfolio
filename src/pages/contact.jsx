@@ -25,6 +25,7 @@ const Contact = () => {
                         className='w-32 h-32 rounded-full object-cover'
                         loading='lazy'
                     />
+
                     <h1 className="align-text-top text-[#111111] font-semibold text-3xl md:text-4xl lg:text-3xl">Akash Banjara</h1>
 
                     <div className='flex items-center justify-center mr-auto lg:text-lg text-base md:text-lg gap-1'>
@@ -33,7 +34,7 @@ const Contact = () => {
                             href="mailto:akashbanjara@gmail.com"
                             className='text-start mr-auto text-[#666666] hover:underline'>
                             <span className=' text-[#03385F]'>Mail: </span>
-                            akashbanjara@gmail.com
+                            akash_ewr@gmail.com
                         </a>
                     </div>
 

@@ -136,9 +136,13 @@ const ServiceCard = ({ service }) => {
                 <strong>Location:</strong> {service.location}
             </p>
 
-            <button className="bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400 transition-transform duration-300 ease-out hover:scale-105">
+            <a
+                href='https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit'
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400 transition-transform duration-300 ease-out hover:scale-105">
                 {service.cta}
-            </button>
+            </a>
 
         </div>
     );

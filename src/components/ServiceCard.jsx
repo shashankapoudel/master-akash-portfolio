@@ -254,11 +254,15 @@ const ServiceCard = () => {
                                 {services[currentIndex].description}
                             </p>
 
-                            <button
-                                className=' w-full lg:w-1/2 bg-[#044F86] rounded-md p-2 text-white mt-2 bg-gradient-to-r from-[#044F86] to-[#0A6EB5] transition-transform duration-300 ease-out hover:scale-105'
+                            <a
+                                href="https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full lg:w-1/2 bg-[#044F86] rounded-md p-2 text-white mt-2 bg-gradient-to-r from-[#044F86] to-[#0A6EB5] transition-transform duration-300 ease-out hover:scale-105"
                             >
                                 Book my session
-                            </button>
+                            </a>
+
                         </div>
                     </div>
 

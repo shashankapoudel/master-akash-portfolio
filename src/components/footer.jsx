@@ -69,9 +69,8 @@ const Footer = () => {
 
             <div className='flex gap-6 lg:gap-12 '>
 
-
                 <div>
-                    <a href='https://www.facebook.com/soundhealinginstructor' target="_blank" rel="noopener noreferrer" >
+                    <a href='https://www.facebook.com/healingmasterakash' target="_blank" rel="noopener noreferrer" >
                         <FaFacebook className='text-xl md:text-2xl lg:text-2xl text-white hover:scale-125' />
                     </a>
                 </div>
