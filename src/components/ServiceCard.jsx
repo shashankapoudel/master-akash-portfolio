@@ -242,12 +242,14 @@ const ServiceCard = () => {
                     <div className='flex flex-col lg:flex-row md:flex-col gap-4 lg:gap-8 '>
 
                         <div className='w-full md:w-full lg:w-1/2 p-0 lg:p-4'>
+
                             <img
                                 className='w-full h-96 object-cover rounded-home-custom-sm lg:rounded-home-custom mb-4'
                                 src={services[currentIndex].image}
                                 alt={services[currentIndex].title}
                                 loading="lazy"
                             />
+
                         </div>
 
                         <div className='w-full md:w-full lg:w-1/2 flex flex-col items-start justify-start p-0 lg:p-4 gap-4'>
@@ -264,21 +266,25 @@ const ServiceCard = () => {
                             >
                                 Book my session
                             </a>
+
                         </div>
-                        
+
                     </div>
 
                     <div className='flex items-center justify-center gap-3'>
+
                         <button
                             className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
                             onClick={handlePrevious}>
                             <GrFormPrevious />
                         </button>
+
                         <button
                             className="text-white bg-black bg-opacity-50  rounded-full hover:bg-opacity-70 transition"
                             onClick={handleNext}>
                             <GrFormNext />
                         </button>
+
                     </div>
                 </div>
             </div >

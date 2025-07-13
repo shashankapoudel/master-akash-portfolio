@@ -36,8 +36,28 @@ const blogs = [
 
 const BlogPage = () => {
     const [selectedBlog, setSelectedBlog] = useState(null)
+    const [active, setActive] = useState('Sound Healing')
+
+    const categories = ['Sound Healing', 'Spiritual Guides', 'Living & self-Transformation']
+
+
     return (
         <div className="p-4 lg:p-12 min-h-screen m-2 lg:m-4">
+            <div className="flex gap-4 items-center justify-center">
+                {categories.map((cat) => (
+                    <button
+                        key={cat}
+                        onClick={() => setActive(cat)}
+                        className={'pb-1 relative font-semibold capitalize text-sm md:text-base transition'}
+                    >
+                        {cat}
+                        {active === cat && (
+                            <div className='absolute bottom-0 left-0 w-full h-[3px] bg-[#bb2821] rounded-full' />
+                        )}
+                    </button>
+                ))}
+            </div>
+
             {
                 selectedBlog ? (
                     <div className=" w-full lg:w-1/2  mx-auto rounded-lg  p-3 lg:p-6">
