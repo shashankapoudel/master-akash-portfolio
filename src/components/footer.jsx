@@ -65,6 +65,15 @@ const Footer = () => {
                 >
                     Blogs
                 </NavLink>
+
+                <NavLink
+                    to="/faq"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Faq
+                </NavLink>
             </div>
 
             <div className='flex gap-6 lg:gap-12 '>
@@ -83,7 +92,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <a href='https://www.youtube.com/@Yogi_akash/featured' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.youtube.com/@Gongmaster_Akash/videos' target="_blank" rel="noopener noreferrer">
                         <FaYoutube className=' text-xl md:text-2xl lg:text-2xl text-white hover:scale-125' />
                     </a>
                 </div>

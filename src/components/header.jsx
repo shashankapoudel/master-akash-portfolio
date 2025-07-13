@@ -13,7 +13,8 @@ const Header = () => {
         { name: 'Blogs', path: '/blogs' },
         { name: 'Testimonials', path: '/testimonials' },
         { name: 'Gallery', path: '/gallery' },
-        { name: 'Contact', path: '/contact' }
+        { name: 'Contact', path: '/contact' },
+        // { name: 'Faq', path: '/faq' }
     ]
     const location = useLocation()
     const [menuOpen, setMenuOpen] = useState(false);

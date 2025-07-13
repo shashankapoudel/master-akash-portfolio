@@ -21,6 +21,7 @@ import SpiritualEvents from './pages/SpiritualEvents';
 import YogaAndEnergy from './pages/YogaAndEnergy';
 import HealingAndWelness from './pages/HealingAndWelness';
 import SoundBaths from './pages/SoundBaths';
+import FAQ from './pages/FAQ';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/services/soundbaths" element={<SoundBaths />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blogs" element={<BlogPage />} />
             <Route path="/testimonials" element={<Testimonials />} />
