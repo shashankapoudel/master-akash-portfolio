@@ -158,7 +158,7 @@ const services = [
         title: 'Meditation and Mindfulness',
         description:
             'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Through carefully designed techniques, including breath awareness, visualization, and mantra meditation, these sessions allow you to release stress, enhance focus, and develop emotional resilience. Whether you are a beginner or someone looking to deepen your practice, Yogi Akash provides expert support to help you integrate meditation into your daily life and unlock its profound benefits.',
-        image: '/Images/homePhoto.jpg',
+        image: '/Images/Gallery/Meditation_Mindfulness/1.JPG',
     },
     {
         title: 'Sound Baths and Relaxation',
@@ -170,13 +170,13 @@ const services = [
         title: 'Sound Healing Therapy',
         description:
             'Sound healing therapy is a transformative experience that utilizes the power of sound vibrations to promote deep relaxation, emotional balance, and physical healing. Yogi Akash integrates the ancient practice of singing bowl therapy with modern sound healing techniques to create a personalized approach tailored to each individual’s needs. The resonant frequencies work to release energy blockages, harmonize the mind and body, and restore inner balance. Whether you seek relief from stress, anxiety, or simply wish to experience the rejuvenating effects of sound therapy, these sessions provide a peaceful and deeply immersive healing journey.',
-        image: '/Images/homePhoto.jpg',
+        image: '/Images/Gallery/Sound_Healing/2.JPG',
     },
     {
         title: 'Yoga and Energy Awakening',
         description:
             'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
-        image: '/Images/homePhoto.jpg',
+        image: '/Images/Gallery/Yoga/1.jpg',
     },
 ];
 
@@ -233,15 +233,17 @@ const ServiceCard = () => {
                 className='grid place-items-center mt-2'
             >
 
-                <div className='flex flex-col gap-4 w-full p-5 lg:p-8 border border-[#E6E7F3]  bg-[#FFFFFF]  rounded-3xl lg:rounded-card-custom shadow-sm'>
+                <div className='flex flex-col gap-4 w-full p-5 lg:p-8 border border-[#E6E7F3] bg-[#FFFFFF] rounded-3xl lg:rounded-card-custom shadow-sm'>
+
                     <h1 className='text-[#022B4A] font-bold text-lg md:text-xl lg:text-xl text-center '>
                         {services[currentIndex].title}
                     </h1>
+
                     <div className='flex flex-col lg:flex-row md:flex-col gap-4 lg:gap-8 '>
 
                         <div className='w-full md:w-full lg:w-1/2 p-0 lg:p-4'>
                             <img
-                                className='w-full object-cover rounded-home-custom-sm lg:rounded-home-custom mb-4'
+                                className='w-full h-96 object-cover rounded-home-custom-sm lg:rounded-home-custom mb-4'
                                 src={services[currentIndex].image}
                                 alt={services[currentIndex].title}
                                 loading="lazy"
@@ -262,8 +264,8 @@ const ServiceCard = () => {
                             >
                                 Book my session
                             </a>
-
                         </div>
+                        
                     </div>
 
                     <div className='flex items-center justify-center gap-3'>

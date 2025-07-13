@@ -22,12 +22,14 @@ import YogaAndEnergy from './pages/YogaAndEnergy';
 import HealingAndWelness from './pages/HealingAndWelness';
 import SoundBaths from './pages/SoundBaths';
 import FAQ from './pages/FAQ';
+import MoveToTop from './components/MoveToTop';
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <BrowserRouter>
         <Header />
+        <MoveToTop />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
