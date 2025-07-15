@@ -10,11 +10,13 @@ const services = [
         title: 'Meditation and Mindfulness',
         image: '/Images/homePhoto.jpg',
         description: 'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Whether you are new to meditation or an experienced practitioner, Yogi Akash’s step-by-step guidance is designed to deepen your practice. Learn powerful techniques such as mindful breathing, mantra repetition, and visualization to unlock your potential for self-awareness. Through Yogi Akash’s guidance, you will experience a profound shift in your mental and emotional well-being. From reducing stress to fostering emotional resilience, his teachings are a gateway to a healthier, happier you.',
+
         whatIncluded: [
             'Guided meditation and breathing exercises',
             'Sound healing session with singing bowls',
             'Relaxation techniques to reduce stress'
         ],
+
         benefits: ['Enhanced focus', 'Stress relief', 'Emotional balance'],
         duration: '45 mins',
         location: 'Outdoor or private studio',
@@ -283,7 +285,6 @@ const ServicesPage = () => {
 
                 {
                     !showNewContent ? (
-
 
                         <FaAngleDoubleDown
                             className='text-3xl cursor-pointer text-[#044F86]'

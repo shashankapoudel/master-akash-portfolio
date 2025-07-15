@@ -10,6 +10,7 @@ const blogs = [
             "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing..",
         image: "/Images/homePhoto.jpg",
     },
+
     {
         id: 2,
         title: "Lorem ipsum dolor sit amet consectetur.",
@@ -17,6 +18,7 @@ const blogs = [
             "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing",
         image: "/Images/homePhoto.jpg",
     },
+
     {
         id: 3,
         title: "Lorem ipsum dolor sit amet consectetur.",
@@ -24,6 +26,7 @@ const blogs = [
             "Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing...Lorem ipsum dolor sit amet consectetur. Consequat fringilla adipiscing",
         image: "/Images/homePhoto.jpg",
     },
+
     {
         id: 4,
         title: "Lorem ipsum dolor sit amet consectetur.",
@@ -36,14 +39,15 @@ const blogs = [
 
 const BlogPage = () => {
     const [selectedBlog, setSelectedBlog] = useState(null)
-    const [active, setActive] = useState('Sound Healing')
+    const [active, setActive] = useState('All')
 
-    const categories = ['Sound Healing', 'Spiritual Guides', 'Living & self-Transformation']
+    const categories = ['All', 'Sound Healing', 'Spiritual Guides', 'Living & self-Transformation']
 
 
     return (
         <div className="p-4 lg:p-12 min-h-screen m-2 lg:m-4">
-            <div className="flex gap-4 items-center justify-center">
+
+            <div className="flex gap-8 items-center justify-center">
                 {categories.map((cat) => (
                     <button
                         key={cat}
@@ -57,6 +61,7 @@ const BlogPage = () => {
                     </button>
                 ))}
             </div>
+
 
             {
                 selectedBlog ? (
