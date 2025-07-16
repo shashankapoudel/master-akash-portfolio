@@ -1,4 +1,3 @@
-
 // import React, { useEffect, useState } from 'react';
 // import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
@@ -258,87 +257,85 @@
 
 
 
-
-
 import React, { useEffect, useState } from 'react';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
 const eventsData = [
+
     {
         id: 1,
-        name: 'Meditation and Mindfulness',
-        images: [
-            '/Images/Gallery/Meditation_Mindfulness/1.JPG',
-            '/Images/Gallery/Meditation_Mindfulness/2.JPG',
-            '/Images/Gallery/Meditation_Mindfulness/3.JPG',
-            '/Images/Gallery/Meditation_Mindfulness/4.JPG',
-            '/Images/Gallery/Meditation_Mindfulness/5.JPG',
-            '/Images/Gallery/Meditation_Mindfulness/6.JPG',
-        ],
-    },
-    {
-        id: 2,
-        name: 'Sound Healing Therapy',
-        images: [
-            '/Images/Gallery/Sound_Healing/1.JPG',
-            '/Images/Gallery/Sound_Healing/2.JPG',
-            '/Images/Gallery/Sound_Healing/3.JPG',
-            '/Images/Gallery/Sound_Healing/4.JPG',
-            '/Images/Gallery/Sound_Healing/5.JPG',
-            '/Images/Gallery/Sound_Healing/6.JPG',
-            '/Images/Gallery/Sound_Healing/7.JPG',
-            '/Images/Gallery/Sound_Healing/8.JPG',
-            '/Images/Gallery/Sound_Healing/9.JPG',
-        ],
-    },
-    {
-        id: 3,
-        name: 'Spiritual Events and Retreats',
-        images: [
-            '/Images/Gallery/Spiritual_Events/1.JPG',
-            '/Images/Gallery/Spiritual_Events/2.JPG',
-            '/Images/Gallery/Spiritual_Events/3.JPG',
-            '/Images/Gallery/Spiritual_Events/4.JPG',
-            '/Images/Gallery/Spiritual_Events/5.JPG',
-            '/Images/Gallery/Spiritual_Events/6.JPG',
-            '/Images/Gallery/Spiritual_Events/7.JPG',
-            '/Images/Gallery/Spiritual_Events/7.JPG',
-            '/Images/Gallery/Spiritual_Events/7.JPG',
-        ],
-    },
-    {
-        id: 4,
-        name: 'Sound Baths and Relaxation',
-        images: [
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-            '/Images/homePhoto.jpg',
-        ],
-    },
-    {
-        id: 5,
         name: 'Yoga and Energy Awakening',
         images: [
-            '/Images/Gallery/Yoga/1.jpg',
+
         ],
     },
+
+
     {
-        id: 6,
-        name: 'Healing and welness workshops',
+        id: 2,
+        name: 'Certification',
         images: [
-            '/Images/Gallery/Healing_Wellness/1.JPG',
+
         ],
     },
+
+
+    {
+        id: 3,
+        name: 'Sound Baths and Relaxation',
+        images: [
+
+        ],
+    },
+
+
+    {
+        id: 4,
+        name: 'Sound Healing Workshops',
+        images: [
+            '/Images/Sound_healing_workshop/1.jpg',
+            '/Images/Sound_healing_workshop/2.jpg',
+            '/Images/Sound_healing_workshop/3.jpg',
+            '/Images/Sound_healing_workshop/4.jpg',
+            '/Images/Sound_healing_workshop/5.jpg',
+            '/Images/Sound_healing_workshop/6.jpeg',
+            '/Images/Sound_healing_workshop/7.jpeg',
+            '/Images/Sound_healing_workshop/8.jpeg',
+            '/Images/Sound_healing_workshop/9.jpeg',
+        ],
+    },
+
+
+    {
+        id: 5,
+        name: 'Spiritual Events and Retreats',
+        images: [
+            '/Images/Spiritual_Event_Retreats/1.jpg',
+            '/Images/Spiritual_Event_Retreats/2.JPG',
+            '/Images/Spiritual_Event_Retreats/3.JPG',
+            '/Images/Spiritual_Event_Retreats/4.JPG',
+            '/Images/Spiritual_Event_Retreats/5.JPG',
+            '/Images/Spiritual_Event_Retreats/7.JPG',
+            '/Images/Spiritual_Event_Retreats/8.JPG',
+            '/Images/Spiritual_Event_Retreats/9.JPG',
+            '/Images/Spiritual_Event_Retreats/10.JPG',
+            '/Images/Spiritual_Event_Retreats/11.JPG',
+            '/Images/Spiritual_Event_Retreats/12.JPG',
+            '/Images/Spiritual_Event_Retreats/13.JPG',
+            '/Images/Spiritual_Event_Retreats/14.JPG',
+            '/Images/Spiritual_Event_Retreats/15.JPG',
+            '/Images/Spiritual_Event_Retreats/16.JPG',
+            '/Images/Spiritual_Event_Retreats/17.JPG',
+        ],
+    },
+
 ];
 
 const Gallery = () => {
     const [selectedEvent, setSelectedEvent] = useState("All");
     const [selectedImage, setSelectedImage] = useState({ image: null, index: -1, eventId: null });
 
-    const events = ['Meditation and Mindfulness', 'Yoga and Energy Awakening', 'Healing and welness workshops', 'Sound Baths and Relaxation', 'Spiritual Events and Retreats', 'Sound Healing Therapy'];
+    const events = ['Yoga and Energy Awakening', 'Sound Baths and Relaxation', 'Certification', 'Sound Healing Workshops', 'Spiritual Events and Retreats'];
 
     const filteredEvents =
         selectedEvent === "All"
@@ -404,11 +401,14 @@ const Gallery = () => {
             </div>
 
             {selectedEvent === "All" ? (
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                <div
+                    onContextMenu={(e) => e.preventDefault()}
+                    className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
                     {eventsData.flatMap((event) =>
                         event.images.map((image, index) => (
                             <img
                                 key={`${event.id}-${index}`}
+                                draggable={false}
                                 src={image}
                                 alt={`${event.name} event ${index + 1}`}
                                 className="w-full h-full object-cover cursor-pointer"
@@ -424,10 +424,13 @@ const Gallery = () => {
                         <h2 className="lg:text-xl md:text-2xl text-lg font-semibold text-[#323232] mb-2">
                             {event.name}
                         </h2>
-                        <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-1">
+                        <div
+                            onContextMenu={(e) => e.preventDefault()}
+                            className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 gap-1">
                             {event.images.map((image, index) => (
                                 <img
                                     key={index}
+                                    draggable={false}
                                     src={image}
                                     alt={`${event.name} event ${index + 1}`}
                                     className="mb-0 w-full rounded-lg p-1 cursor-pointer"
