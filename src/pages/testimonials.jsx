@@ -63,6 +63,46 @@ const Testimonials = () => {
             text: "Great place to buy quality singing bowls and other sound healing items. Master Akash and Catherine were very knowledgeable and didn’t push the sale which made the shopping experience enjoyable since there is so much hard selling in HK.",
             image: "/Images/user6.jpg"
         },
+        {
+            name: "June Paris",
+            text: "A very good experience in singing bowls learning，they will also organize sound healing field trip, don’t miss it",
+            image: "/Images/user6.jpg"
+        },
+        {
+            name: "Ellie Ta",
+            text: "Highly recommended! I bought a singing bowl set. They were very patient for me to explain the set and how each ones are different.",
+            image: "/Images/user6.jpg"
+        },
+        {
+            name: "Jason Ta",
+            text: "Great real singing bowls, it's really hard to find 7 metal bowls here and the Master is from Nepal",
+            image: "/Images/user6.jpg"
+        },
+        {
+            name: "Katie Lo",
+            text: "Good quality of singing bowls!",
+            image: "/Images/user6.jpg"
+        },
+        {
+            name: "Anita Chan",
+            text: "Professional and good trainer",
+            image: "/Images/user6.jpg"
+        },
+        {
+            name: "lii edith",
+            text: "Teacher Catherine's teaching is easy to understand and learn. Their selfless teaching touched my heart. I am grateful to have met the teacher.",
+            image: "/Images/user6.jpg"
+        },
+        {
+            name: "Anke Tang",
+            text: "Very good, Angel Bowl ",
+            image: "/Images/user6.jpg"
+        },
+        {
+            name: "Wayne Hui",
+            text: "Very attentive teacher",
+            image: "/Images/user6.jpg"
+        },
     ];
 
     const containerVariants = {
