@@ -257,6 +257,12 @@
 
 
 
+
+
+
+
+
+
 import React, { useEffect, useState } from 'react';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
@@ -287,7 +293,6 @@ const eventsData = [
 
         ],
     },
-
 
     {
         id: 4,
@@ -401,6 +406,7 @@ const Gallery = () => {
             </div>
 
             {selectedEvent === "All" ? (
+
                 <div
                     onContextMenu={(e) => e.preventDefault()}
                     className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
@@ -418,6 +424,7 @@ const Gallery = () => {
                         ))
                     )}
                 </div>
+
             ) : (
                 filteredEvents.map((event) => (
                     <div key={event.id} className="mb-4">
@@ -456,12 +463,16 @@ const Gallery = () => {
                     </button>
 
                     <div className="flex items-center justify-center bg-opacity-70">
-                        <div className="relative max-w-2xl p-4">
+                        <div
+                            onContextMenu={(e) => e.preventDefault()}
+                            className="relative max-w-2xl p-4">
+
                             <img
                                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
                                 src={selectedImage.image}
                                 alt="Enlarged gallery"
                                 loading='lazy'
+                                draggable={false}
                             />
                             <button
                                 className="absolute top-4 right-4 text-white bg-black bg-opacity-50 p-2 rounded-xl hover:bg-opacity-70 transition text-4xl w-16"

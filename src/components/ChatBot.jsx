@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdChatbubbles } from "react-icons/io";
@@ -15,18 +14,22 @@ const Chatbot = () => {
     const [selectedQuestion, setSelectedQuestion] = useState("")
 
     const questions = [
+
         {
             question: "Who is Yogi Akash?",
             answer: "Yogi Akash is a spiritual guide and life coach.",
         },
+
         {
             question: "How can I book a session?",
             answer: "You can book a session through the 'Book Now' page on the website.",
         },
+
         {
             question: "What does Yogi Akash specialize in?",
             answer: "Yogi Akash specializes in meditation, yoga, and life coaching.",
         },
+
     ];
 
     const handleSelectChange = (event) => {
@@ -68,7 +71,7 @@ const Chatbot = () => {
                 className="fixed bottom-20 right-6 bg-white p-5 rounded-full cursor-pointer shadow-lg text-[#044F86] border-purple-300"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                {/* <div className="absolute inset-0 w-full h-full  opacity-50 rounded-full blur-lg"></div> */}
+
                 <IoMdChatbubbles className="text-2xl relative" />
             </button>
 
