@@ -8,13 +8,26 @@ const Quotes = () => {
             image: '/Images/Quotes/Quote2.jpg',
             text: 'Meditation can be like a battle with yourself, your thoughts, your body',
         },
-        // {
-        //     image: '/Images/Quotes/Quote1.jpg',
-        //     text: 'Singing Bowl is a medicine for thousands of diseases',
-        // },
+        {
+            image: '/Images/Quotes/Quote2.jpg',
+            text: 'Peace is the result of retraining your mind to process life as it is, rather than as you think it should be',
+        },
+        {
+            image: '/Images/Quotes/Quote2.jpg',
+            text: 'Meditation is silence, energising and fulfilling. Silent is the eloquent expression of the inexpressible.',
+        },
+        {
+            image: '/Images/Quotes/Quote2.jpg',
+            text: 'Happiness comes, not by helplessly wishing for it, but by dreaming, thinking and living it in all circumstances.',
+        },
+
         {
             image: '/Images/Quotes/Quote3.jpg',
             text: 'Healing vibrations are the bridge between body, mind and spirit',
+        },
+        {
+            image: '/Images/Quotes/Quote3.jpg',
+            text: 'Open the portals of calmness and you will find the bright sun of joy within yourself.',
         },
     ];
 

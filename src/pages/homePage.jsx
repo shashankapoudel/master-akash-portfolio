@@ -10,8 +10,8 @@ import StatsCounter from '../components/StatsCounter';
 
 const Home = () => {
     const images = [
+        '/Images/home1.jpeg',
         '/Images/homePhoto.jpg',
-        '/Images/services.jpg',
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -40,17 +40,18 @@ const Home = () => {
     };
 
     return (
-        <div className='m-2 md:m-5 lg:m-6'>
-            <div className="flex flex-col lg:flex-row md:flex-col justify-between p-4 gap-4 shadow-lg">
+        <div className='p-2 md:p-5 lg:p-6'>
 
-                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-0 lg:p-6 ">
+            <div className="flex flex-col lg:flex-row md:flex-col justify-between gap-4 shadow-lg p-2">
+
+                <div className="flex flex-col items-center justify-center w-full lg:w-1/2 order-none lg:order-1 p-4 ">
 
                     <div className="w-full">
 
                         <img
                             src={images[currentImageIndex]}
                             alt={`HomePage photo ${currentImageIndex + 1}`}
-                            className=" w-full h-auto object-contain px-0 lg:px-6 md:px-4"
+                            className=" w-full h-[250px] md:h-[500px] object-contain px-0 lg:px-6 md:px-4"
                             loading="lazy"
                         />
 
