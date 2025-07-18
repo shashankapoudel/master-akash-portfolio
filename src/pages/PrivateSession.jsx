@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SoundHealingTherapy = () => {
+const PrivateSession = () => {
     return (
         <div className='min-h-screen p-8 flex items-center justify-center w-full text-[#111111]'>
 
@@ -137,4 +137,4 @@ const SoundHealingTherapy = () => {
     )
 }
 
-export default SoundHealingTherapy
+export default PrivateSession;

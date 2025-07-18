@@ -167,9 +167,9 @@ const services = [
         image: '/Images/homePhoto.jpg',
     },
     {
-        title: 'Sound Healing Therapy',
+        title: 'Private Sound healing session',
         description:
-            'Sound healing therapy is a transformative experience that utilizes the power of sound vibrations to promote deep relaxation, emotional balance, and physical healing. Yogi Akash integrates the ancient practice of singing bowl therapy with modern sound healing techniques to create a personalized approach tailored to each individual’s needs. The resonant frequencies work to release energy blockages, harmonize the mind and body, and restore inner balance. Whether you seek relief from stress, anxiety, or simply wish to experience the rejuvenating effects of sound therapy, these sessions provide a peaceful and deeply immersive healing journey.',
+            'Discover a uniquely personal journey of healing through sound. Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.Stepping away from group environments, a private session provides an unparalleled sanctuary for open expression, fostering deep energetic balance and a more profound inner connection.If you are looking to manage stress, gain clarity, or simply cultivate a deeper relationship with yourself, this session offers a gentle, supportive space for personalized healing on your terms.',
         image: '/Images/Gallery/Sound_Healing/2.JPG',
     },
     {
@@ -258,14 +258,22 @@ const ServiceCard = () => {
                                 {services[currentIndex].description}
                             </p>
 
-                            <a
-                                href="https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-full lg:w-1/2 bg-[#044F86] rounded-md p-2 text-white mt-2 bg-gradient-to-r from-[#044F86] to-[#0A6EB5] transition-transform duration-300 ease-out hover:scale-105"
-                            >
-                                Book my session
-                            </a>
+                            <div className='w-full flex justify-between'>
+                                <a
+                                    href="https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full lg:w-1/2 bg-[#044F86] rounded-md p-2 text-white mt-2 bg-gradient-to-r from-[#044F86] to-[#0A6EB5] transition-transform duration-300 ease-out hover:scale-105 items-center text-center"
+                                >
+                                    Book my session
+                                </a>
+
+                                <a
+                                    className='cursor-pointer text-[#044F86]'
+                                >
+                                    Read more...
+                                </a>
+                            </div>
 
                         </div>
 

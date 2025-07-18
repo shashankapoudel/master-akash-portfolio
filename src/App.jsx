@@ -16,13 +16,14 @@ import About from './pages/About';
 import Chatbot from './components/ChatBot';
 import ScrollToTop from './components/ScrollToTop';
 import MeditationAndMindfulness from './pages/MeditationAndMindfulness';
-import SoundHealingTherapy from './pages/SoundHealingTherapy';
+// import SoundHealingTherapy from './pages/PrivateSession';
 import SpiritualEvents from './pages/SpiritualEvents';
 import YogaAndEnergy from './pages/YogaAndEnergy';
 import HealingAndWelness from './pages/HealingAndWelness';
 import SoundBaths from './pages/SoundBaths';
 import FAQ from './pages/FAQ';
 import MoveToTop from './components/MoveToTop';
+import PrivateSession from './pages/PrivateSession';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/meditation&mindfulness" element={<MeditationAndMindfulness />} />
-            <Route path="/services/soundhealingtherapy" element={<SoundHealingTherapy />} />
+            <Route path="/services/private-session" element={<PrivateSession />} />
             <Route path="/services/spiritualevents" element={<SpiritualEvents />} />
             <Route path="/services/yoga&energy" element={<YogaAndEnergy />} />
             <Route path="/services/healing&welness" element={<HealingAndWelness />} />
