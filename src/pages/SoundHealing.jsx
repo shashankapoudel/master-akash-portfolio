@@ -1,12 +1,12 @@
 import React from 'react'
 
-const SoundBaths = () => {
+const SoundHealing = () => {
 
     const Services =
         [
 
             {
-                title: ' Private Sound Healing - One-to-One Sound Healing Experience',
+                title: ' Pain Relief Therapy',
                 image: '/Images/homePhoto.jpg',
                 description: ' Discover a uniquely personal journey of healing through sound.Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.',
                 whatIncluded: [
@@ -18,12 +18,25 @@ const SoundBaths = () => {
                 duration: '2 hours',
                 location: 'Local studio or virtual options',
                 cta: 'Join a session today!',
-                link: '/services/privatesession'
             },
 
 
             {
-                title: 'Group Sound Bath and Healing',
+                title: 'Head Therapy ',
+                image: '/Images/homePhoto.jpg',
+                description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+                whatIncluded: [
+                    'Workshops on mindfulness and personal growth',
+                    'Interactive group sessions',
+                    'Personalized coaching sessions'
+                ],
+                benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+                duration: '2 hours',
+                location: 'Local studio or virtual options',
+                cta: 'Book a session today!',
+            },
+            {
+                title: 'Seven Chakra Therapy ',
                 image: '/Images/homePhoto.jpg',
                 description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
                 whatIncluded: [
@@ -41,19 +54,19 @@ const SoundBaths = () => {
 
 
     return (
-        <div className='min-h-screen p-12'>
+        <div className='min-h-screen p-8'>
 
             <div className='flex gap-12 '>
 
                 {Services.map((service) => (
 
-                    < div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4">
+                    < div className="bg-white shadow-md rounded-lg p-3 lg:p-5 space-y-4">
 
                         <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
 
                         <img src={service.image}
                             alt={service.title}
-                            className="w-full h-auto p-4 object-cover rounded-lg"
+                            className="w-full h-auto p-1 object-cover rounded-lg"
                             loading='lazy'
                         />
 
@@ -105,4 +118,4 @@ const SoundBaths = () => {
     )
 }
 
-export default SoundBaths
+export default SoundHealing

@@ -24,6 +24,8 @@ import SoundBaths from './pages/SoundBaths';
 import FAQ from './pages/FAQ';
 import MoveToTop from './components/MoveToTop';
 import PrivateSession from './pages/PrivateSession';
+import SoundHealing from './pages/SoundHealing';
+import SoundHealingWorkshop from './pages/SoundHealingWorkshop';
 
 function App() {
   return (
@@ -37,10 +39,14 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/services/meditation&mindfulness" element={<MeditationAndMindfulness />} />
             <Route path="/services/private-session" element={<PrivateSession />} />
+
             <Route path="/services/spiritualevents" element={<SpiritualEvents />} />
             <Route path="/services/yoga&energy" element={<YogaAndEnergy />} />
-            <Route path="/services/healing&welness" element={<HealingAndWelness />} />
+
+            <Route path="/services/healingworkshop" element={<SoundHealingWorkshop />} />
+
             <Route path="/services/soundbaths" element={<SoundBaths />} />
+            <Route path="/services/soundhealing" element={<SoundHealing />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/faq" element={<FAQ />} />

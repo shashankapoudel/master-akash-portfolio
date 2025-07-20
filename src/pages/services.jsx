@@ -189,7 +189,7 @@ const ServicesPage = () => {
                             </motion.div>
                         </div>
 
-                        <a href='/services/soundhealingtherapy' target="_blank" rel="noopener noreferrer">
+                        <a href='/services/soundhealing' target="_blank" rel="noopener noreferrer">
                             <motion.div
                                 variants={itemVariants}
                                 className="lg:absolute bottom-32 left-10 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom-2-sm lg:rounded-custom-2 shadow-md w-full lg:w-1/3 py-2 px-4 lg:py-2 lg:px-4 md:p-3"
@@ -223,7 +223,7 @@ const ServicesPage = () => {
 
                         <div
                             className='cursor-pointer'
-                            onClick={() => navigate('/services/souundbaths')}
+                            onClick={() => navigate('/services/soundbaths')}
                         >
                             <motion.div
                                 variants={item1Variants}
@@ -250,13 +250,13 @@ const ServicesPage = () => {
 
                         <div
                             className='cursor-pointer'
-                            onClick={() => navigate('/services/healing&welness')}
+                            onClick={() => navigate('/services/healingworkshop')}
                         >
                             <motion.div
                                 variants={item1Variants}
                                 className="lg:absolute bottom-0 right-16 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom-6-sm lg:rounded-custom-6 shadow-md w-full lg:w-1/3 py-2 px-4"
                             >
-                                <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Healing & Wellness Workshops</h3>
+                                <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Sound Healing Workshops</h3>
                                 <p className='text-center text-sm'>Healing workshops that help you heal, grow, and feel better.</p>
                             </motion.div>
                         </div>
