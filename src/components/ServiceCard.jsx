@@ -147,7 +147,6 @@
 
 
 
-
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GrFormPrevious } from "react-icons/gr";
@@ -158,7 +157,7 @@ const services = [
         title: 'Meditation and Mindfulness',
         description:
             'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Through carefully designed techniques, including breath awareness, visualization, and mantra meditation, these sessions allow you to release stress, enhance focus, and develop emotional resilience. Whether you are a beginner or someone looking to deepen your practice, Yogi Akash provides expert support to help you integrate meditation into your daily life and unlock its profound benefits.',
-        image: '/Images/Gallery/Meditation_Mindfulness/1.JPG',
+        image: '/Images/meditation_mindfulness.jpg',
         route: '/services/meditation&mindfulness'
     },
 
@@ -166,14 +165,14 @@ const services = [
         title: 'Sound Healing Therapy',
         description:
             'With years of experience in sound therapy and a deep understanding of vibrational healing, Yogi Akash brings a unique blend of ancient wisdom and modern insights to his classes. Whether you are a curious beginner or an experienced practitioner, these sessions use the soothing frequencies of singing bowls, gongs, and other sound instruments to guide you into deep relaxation. The vibrations help in reducing stress, releasing emotional blockages, and promoting a sense of harmony and well-being. Attendees often report feeling lighter, more centered, and deeply rejuvenated after each session, making it a powerful tool for relaxation and holistic healing.',
-        image: '/Images/homePhoto.jpg',
+        image: '/Images/sound_healing_therapy.jpg',
         route: '/services/soundhealing'
     },
     {
         title: 'Sound Baths and Relaxation',
         description:
             'Discover a uniquely personal journey of healing through sound. Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.Stepping away from group environments, a private session provides an unparalleled sanctuary for open expression, fostering deep energetic balance and a more profound inner connection.If you are looking to manage stress, gain clarity, or simply cultivate a deeper relationship with yourself, this session offers a gentle, supportive space for personalized healing on your terms.',
-        image: '/Images/Gallery/Sound_Healing/2.JPG',
+        image: '/Images/sound_bath_relaxation.jpg',
         route: '/services/soundbaths'
     },
 
