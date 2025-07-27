@@ -24,16 +24,17 @@ const SoundHealingWorkshop = () => {
             {
                 title: 'Advanced Sound Healer - Certificate Course',
                 image: '/Images/homePhoto.jpg',
-                description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+                description: 'This Master Level Sound Healing course is designed to provide students with a comprehensive understanding of sound healing principles, techniques, and practices.',
                 whatIncluded: [
-                    'Workshops on mindfulness and personal growth',
-                    'Interactive group sessions',
-                    'Personalized coaching sessions'
+                    'Advanced Training with Sound Healing Instruments',
+                    'Comprehensive Theory and Practical Application',
+                    'Guided Self-Healing and Facilitator Techniques'
                 ],
-                benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+                benefits: ['Enhanced Healing Abilities', 'Deepened Spiritual Connection', 'Professional Certification and Confidence'],
                 duration: '2 hours',
                 location: 'Local studio or virtual options',
                 cta: 'Book a session today!',
+                link: '/services/advsoundhealingcourse'
             },
 
         ]
@@ -91,6 +92,13 @@ const SoundHealingWorkshop = () => {
                                 rel="noopener noreferrer"
                                 className="bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400">
                                 {service.cta}
+                            </a>
+
+                            <a
+                                href={service.link}
+                                className=''
+                            >
+                                Read more..
                             </a>
                         </button>
 

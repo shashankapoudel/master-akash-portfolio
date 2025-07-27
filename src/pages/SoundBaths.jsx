@@ -18,7 +18,7 @@ const SoundBaths = () => {
                 duration: '2 hours',
                 location: 'Local studio or virtual options',
                 cta: 'Join a session today!',
-                link: '/services/privatesession'
+                link: '/services/private-session'
             },
 
 
@@ -35,6 +35,7 @@ const SoundBaths = () => {
                 duration: '2 hours',
                 location: 'Local studio or virtual options',
                 cta: 'Book a session today!',
+                link: '/services/privatesession'
             },
 
         ]
@@ -47,7 +48,7 @@ const SoundBaths = () => {
 
                 {Services.map((service) => (
 
-                    < div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4">
+                    < div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4 relative">
 
                         <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
 
@@ -60,7 +61,9 @@ const SoundBaths = () => {
                         <p className="text-gray-600">{service.description}</p>
 
                         <div>
-                            <h4 className="font-semibold text-gray-800">What's Included:</h4>
+                            <h4 className="font-semibold text-gray-800">
+                                What's Included:
+                            </h4>
                             <ul className="list-disc list-inside text-gray-600">
                                 {service.whatIncluded.map((item, index) => (
                                     <li key={index}>{item}</li>
@@ -85,15 +88,25 @@ const SoundBaths = () => {
                             <strong>Location:</strong> {service.location}
                         </p>
 
-                        <button>
+                        <div className='flex w-full justify-between mt-8'>
+
+                            <button>
+                                <a
+                                    href='https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit'
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400">
+                                    {service.cta}
+                                </a>
+                            </button>
+
                             <a
-                                href='https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit'
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400">
-                                {service.cta}
+                                className='absolute bottom-4 right-4 text-[#044F86] font-semibold'
+                                href={service.link}>
+                                Read more..
                             </a>
-                        </button>
+
+                        </div>
 
                     </div>
                 ))
