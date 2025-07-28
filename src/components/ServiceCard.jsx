@@ -153,6 +153,7 @@ import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
 
 const services = [
+
     {
         title: 'Meditation and Mindfulness',
         description:
@@ -168,6 +169,7 @@ const services = [
         image: '/Images/sound_healing_therapy.jpg',
         route: '/services/soundhealing'
     },
+
     {
         title: 'Sound Baths and Relaxation',
         description:
@@ -202,7 +204,6 @@ const services = [
 
 
 ];
-
 
 const ServiceCard = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
