@@ -42,75 +42,101 @@ const SoundBaths = () => {
 
 
     return (
-        <div className='min-h-screen p-12'>
+        <div className='min-h-screen p-4 lg:p-8'>
 
-            <div className='flex gap-12 '>
 
-                {Services.map((service) => (
+            <div className='flex flex-col gap-8'>
 
-                    < div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4 relative">
 
-                        <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
+                <div className='flex flex-col-reverse xl:flex-row w-full'>
+                    <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-10 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
+                        <p className=' tracking-wider text-[#666666]'>
+                            A Sound Bath and Relaxation session is a deeply immersive and restorative experience designed to help you unwind, de-stress, and enter a state of profound relaxation. Unlike a typical "bath," you remain fully clothed and comfortably lie down while being bathed in a symphony of resonant sounds.<br />
+                            <br />
+                            During a session, a practitioner plays a variety of therapeutic sound instruments like singing bowls, gongs, and chimes, creating a continuous wave of harmonious vibrations. These sounds are specifically chosen for their ability to slow down brainwave activity, transitioning you from a beta (awake, alert) to an alpha or even theta state (relaxed, meditative, dream-like). This gentle shift in brain activity helps to calm the nervous system, release tension, and promote deep cellular relaxation.<br />
+                            <br />
+                            The experience is often described as feeling deeply peaceful, rejuvenating, and even transformative. It can lead to reduced stress and anxiety, improved sleep quality, heightened clarity, and a profound sense of inner calm, allowing your mind and body to reset and recharge.
 
-                        <img src={service.image}
-                            alt={service.title}
-                            className="w-full h-auto p-4 object-cover rounded-lg"
+                        </p>
+                    </div>
+
+                    <div className='w-full xl:w-1/2 p-3 md:p-6 lg:p-10'>
+                        <img
+                            src='/Images/sound_bath_relaxation.jpg'
+                            className=' rounded-lg w-full'
                             loading='lazy'
                         />
+                    </div>
+                </div>
 
-                        <p className="text-gray-600">{service.description}</p>
 
-                        <div>
-                            <h4 className="font-semibold text-gray-800">
-                                What's Included:
-                            </h4>
-                            <ul className="list-disc list-inside text-gray-600">
-                                {service.whatIncluded.map((item, index) => (
-                                    <li key={index}>{item}</li>
-                                ))}
-                            </ul>
-                        </div>
 
-                        <div>
-                            <h4 className="font-semibold text-gray-800">Benefits:</h4>
-                            <ul className="list-disc list-inside text-gray-600">
-                                {service.benefits.map((item, index) => (
-                                    <li key={index}>{item}</li>
-                                ))}
-                            </ul>
-                        </div>
 
-                        <p className="text-gray-600">
-                            <strong>Duration:</strong> {service.duration}
-                        </p>
+                <div className='flex flex-col lg:flex-row gap-12 '>
 
-                        <p className="text-gray-600">
-                            <strong>Location:</strong> {service.location}
-                        </p>
+                    {Services.map((service) => (
 
-                        <div className='flex w-full justify-between mt-8'>
+                        < div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4 relative">
 
-                            <button>
+                            <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
+
+                            <img src={service.image}
+                                alt={service.title}
+                                className="w-full h-auto  object-cover rounded-lg"
+                                loading='lazy'
+                            />
+
+                            <p className="text-gray-600">{service.description}</p>
+
+                            <div>
+                                <h4 className="font-semibold text-gray-800">
+                                    What's Included:
+                                </h4>
+                                <ul className="list-disc list-inside text-gray-600">
+                                    {service.whatIncluded.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h4 className="font-semibold text-gray-800">Benefits:</h4>
+                                <ul className="list-disc list-inside text-gray-600">
+                                    {service.benefits.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <p className="text-gray-600">
+                                <strong>Duration:</strong> {service.duration}
+                            </p>
+
+                            <p className="text-gray-600">
+                                <strong>Location:</strong> {service.location}
+                            </p>
+
+                            <div className='w-full flex flex-col md:flex-row justify-normal lg:justify-between items-center gap-2 lg:gap-8'>
                                 <a
                                     href='https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit'
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400">
+                                    className="text-center w-full bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400">
                                     {service.cta}
                                 </a>
-                            </button>
 
-                            <a
-                                className='absolute bottom-4 right-4 text-[#044F86] font-semibold'
-                                href={service.link}>
-                                Read more..
-                            </a>
+                                <a
+                                    href={service.link}
+                                    className='text-center w-full bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400'
+                                >
+                                    Read more..
+                                </a>
+                            </div>
 
                         </div>
-
-                    </div>
-                ))
-                }
+                    ))
+                    }
+                </div>
             </div>
 
 

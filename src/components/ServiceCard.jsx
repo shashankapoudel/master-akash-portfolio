@@ -35,7 +35,7 @@ const services = [
         title: 'Sound Healing Workshops',
         description:
             'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
-        image: '/Images/Gallery/Yoga/1.jpg',
+        image: '/Images/sound_healing_workshop.jpg',
         route: '/services/healingworkshop'
     },
 
@@ -135,19 +135,19 @@ const ServiceCard = () => {
                                 {services[currentIndex].description}
                             </p>
 
-                            <div className='w-full flex justify-between items-center'>
+                            <div className='w-full flex flex-col md:flex-row justify-normal lg:justify-between items-center gap-2 lg:gap-8'>
                                 <a
                                     href="https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-full lg:w-1/2 bg-[#044F86] rounded-md p-2 text-white mt-2 bg-gradient-to-r from-[#044F86] to-[#0A6EB5] transition-transform duration-300 ease-out hover:scale-105 items-center text-center"
+                                    className="w-full  bg-[#044F86] rounded-md p-2 text-white mt-2 bg-gradient-to-r from-[#044F86] to-[#0A6EB5] transition-transform duration-300 ease-out hover:scale-105 items-center text-center"
                                 >
                                     Book my session
                                 </a>
 
                                 <a
                                     href={services[currentIndex].route}
-                                    className='cursor-pointer text-[#044F86]'
+                                    className='w-full  bg-[#044F86] rounded-md p-2 text-white mt-2 bg-gradient-to-r from-[#044F86] to-[#0A6EB5] transition-transform duration-300 ease-out hover:scale-105 items-center text-center'
                                 >
                                     See more...
                                 </a>

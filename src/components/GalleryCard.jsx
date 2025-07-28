@@ -14,17 +14,6 @@ const GalleryCard = () => {
         '/Images/Gallery/Image3.jpg',
         '/Images/Gallery/Image4.jpg',
         '/Images/Gallery/Image5.jpg',
-        '/Images/Gallery/Meditation_Mindfulness/1.JPG',
-        '/Images/Gallery/Meditation_Mindfulness/2.JPG',
-        '/Images/Gallery/Meditation_Mindfulness/3.JPG',
-        '/Images/Gallery/Sound_Healing/4.JPG',
-        '/Images/Gallery/Sound_Healing/5.JPG',
-        '/Images/Gallery/Sound_Healing/6.JPG',
-        '/Images/Gallery/Sound_Healing/7.JPG',
-        '/Images/Gallery/Spiritual_Events/4.JPG',
-        '/Images/Gallery/Spiritual_Events/5.JPG',
-        '/Images/Gallery/Spiritual_Events/6.JPG',
-
     ];
 
     const imagesPerPage = 3;
