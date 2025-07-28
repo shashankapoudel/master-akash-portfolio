@@ -68,7 +68,6 @@ function App() {
 
 
 
-
           <Route path="/services/advsoundhealingcourse" element={<AdvSoundHealingCourse />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />

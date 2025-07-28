@@ -756,6 +756,7 @@ const Gallery = () => {
                             </button>
                         );
                     })}
+
                     <button
                         onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
                         disabled={currentPage === totalPages}
@@ -766,6 +767,7 @@ const Gallery = () => {
                     >
                         Next
                     </button>
+
                 </div>
             )}
 
