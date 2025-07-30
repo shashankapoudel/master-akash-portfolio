@@ -40,6 +40,11 @@ const services = [
         name: 'Healing and welness workshops',
         description: 'Join our transformative workshops designed to restore balance, reduce stress, and promote overall well-being.  '
     },
+    {
+        SN: <GiHealing />,
+        name: 'Spund Healing Therapy',
+        description: 'Join our session to experience sound healing with our skilled practitioners where they use a variety of sacred sound instruments.'
+    }
 ];
 
 const ServiceSegment = () => {

@@ -43,7 +43,7 @@ const services = [
         title: 'Yoga and Energy Awakening',
         description:
             'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
-        image: '/Images/Gallery/Yoga/1.jpg',
+        image: '/Images/yoga/7.jpg',
         route: '/services/yoga&energy'
     },
 
@@ -51,7 +51,7 @@ const services = [
         title: 'Spiritual Events and Retreat',
         description:
             'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
-        image: '/Images/Gallery/Yoga/1.jpg',
+        image: '/Images/Spiritual_Event_Retreats/11.JPG',
         route: '/services/spiritualevents'
     },
 
