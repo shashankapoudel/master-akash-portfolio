@@ -125,7 +125,7 @@ const Chatbot = () => {
 
                                 <div className="w-full px-6">
                                     <a
-                                        href="https://wa.me/+85251126782?text=Hello%20Himalayas%20Craft%20Nepal!"
+                                        href="https://wa.me/+85251126782?text=Hello%20Yogi%20Akash"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="w-full flex bg-white rounded-xl  text-[#666666] p-3  items-center justify-center outline-none gap-1"
