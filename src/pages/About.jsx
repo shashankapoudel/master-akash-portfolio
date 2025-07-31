@@ -45,9 +45,42 @@ const About = () => {
 
 
     return (
-        <div className='m-2 lg:m-4 tracking-wide'>
+        <div className='tracking-wide'>
+
+
+            <div className="lg:relative md:relative flex flex-col justify-center items-center gap-4">
+
+                <div className="lg:relative md:relative w-full">
+                    <img
+                        src="/Images/yogiabout.png"
+                        alt='testimonial image'
+                        className="object-cover w-full lg:h-[500px]  h-auto"
+                        loading='lazy'
+                    />
+
+                    <div className="lg:absolute md:absolute inset-0 flex flex-col justify-center items-center text-center   gap-4 lg:gap-8 p-2 ">
+
+                        <motion.div
+                            initial={{ y: 100, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 1, delay: 2 }}
+                            className=" text-center w-2/3 bg-[#a7594d] lg:bg-opacity-40 bg-opacity-50 p-5"
+                        // className=" text-center w-2/3"
+                        >
+
+                            <p className='text-[#FFFFFF] font-medium font-playfair-display text-2xl tracking-wider'>
+                                Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness.His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
+                            </p>
+
+                        </motion.div>
+                    </div>
+
+                </div>
+            </div>
+
 
             <div className='p-3 md:p-8 lg:p-10 flex flex-col gap-8 lg:gap-16 items-center'>
+
 
                 <div className='w-full'>
                     <h2 className="flex gap-1 items-center justify-center text-2xl lg:text-3xl font-bold text-[#022B4A] mb-2 text-center">

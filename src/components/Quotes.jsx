@@ -31,7 +31,19 @@ const Quotes = () => {
 
         {
             image: '/Images/Quotes/Quote3.jpg',
-            text: 'Open the portals of calmness and you will find the bright sun of joy within yourself.',
+            text: 'The body benefits from movement, and the mind benefits from stillness',
+        },
+        {
+            image: '/Images/Quotes/Quote3.jpg',
+            text: 'When breath control is correct, mind control is possible',
+        },
+        {
+            image: '/Images/Quotes/Quote3.jpg',
+            text: 'Yoga does not just change the way we see things, it transforms the person who sees',
+        },
+        {
+            image: '/Images/Quotes/Quote3.jpg',
+            text: 'When you find peace within yourself, you become the kind of person who can live at peace with others.',
         },
     ];
 

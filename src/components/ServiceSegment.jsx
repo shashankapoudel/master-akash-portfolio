@@ -13,7 +13,7 @@ const services = [
     {
         SN: <GiMeditation />,
         name: 'Meditation and Mindfulness',
-        description: 'Connect and explore the world of Meditation Connect and explore the world ofn'
+        description: 'Calm your mind and find peace through meditation techniques.'
     },
     // {
     //     SN: <PiUserSoundBold />,
@@ -23,22 +23,23 @@ const services = [
     {
         SN: <GiHiveMind />,
         name: 'Spiritual Events and Retreat',
-        description: 'Elevate your retreat with calming vibrations that enhance meditation and emotional well-being.'
+        description: 'Take a break from daily life to recharge and reconnect with yourself.'
     },
+
     {
         SN: <RiSoundModuleLine />,
         name: 'Sound Baths and Relaxation',
-        description: 'Immerse yourself in the soothing vibrations of a sound bath, a meditative experience that promotes deep relaxation, stress relief, and inner harmony. '
+        description: 'Enjoy soothing sounds that melt away stress and bring deep relaxation.'
     },
     {
         SN: <GrYoga />,
         name: 'Yoga and Energy Awakening',
-        description: 'Enhance your yoga practice and awaken your inner energy with powerful vibrational therapys'
+        description: 'Move, breathe, and connect with your inner energy through yoga.'
     },
     {
         SN: <GiHealing />,
-        name: 'Healing and welness workshops',
-        description: 'Join our transformative workshops designed to restore balance, reduce stress, and promote overall well-being.  '
+        name: 'Sound Healing Workshops',
+        description: 'Healing workshops that help you heal, grow, and feel better.'
     },
     {
         SN: <GiHealing />,
