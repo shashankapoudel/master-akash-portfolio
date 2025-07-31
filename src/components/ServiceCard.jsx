@@ -10,7 +10,8 @@ const services = [
     {
         title: 'Meditation and Mindfulness',
         description:
-            'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Through carefully designed techniques, including breath awareness, visualization, and mantra meditation, these sessions allow you to release stress, enhance focus, and develop emotional resilience. Whether you are a beginner or someone looking to deepen your practice, Yogi Akash provides expert support to help you integrate meditation into your daily life and unlock its profound benefits.',
+            'Meditation and Mindfulness offer pathways to cultivating inner peace and a deeper connection with the present moment. Its practice of training your attention and awareness to achieve mental clarity and emotional calm.We offer various types of meditation, including guided meditations to help you focus, breathing exercises(pranayama) to regulate your energy, and mindfulness practices that teach you to observe your thoughts and feelings without judgment.Engaging in regular meditation and mindfulness practices can bring numerous benefits.',
+
         image: '/Images/meditation_mindfulness.jpg',
         route: '/services/meditation&mindfulness'
     },
@@ -18,7 +19,7 @@ const services = [
     {
         title: 'Sound Healing Therapy',
         description:
-            'With years of experience in sound therapy and a deep understanding of vibrational healing, Yogi Akash brings a unique blend of ancient wisdom and modern insights to his classes. Whether you are a curious beginner or an experienced practitioner, these sessions use the soothing frequencies of singing bowls, gongs, and other sound instruments to guide you into deep relaxation. The vibrations help in reducing stress, releasing emotional blockages, and promoting a sense of harmony and well-being. Attendees often report feeling lighter, more centered, and deeply rejuvenated after each session, making it a powerful tool for relaxation and holistic healing.',
+            'Sound Healing Therapy is an ancient holistic practice that utilizes the power of sound vibrations to promote physical, mental, and emotional well-being. This therapeutic approach is based on the principle that everything in the universe, including our bodies, vibrates at a specific frequency. When we experience stress, illness, or imbalance, our vibrational frequency can become disrupted.During a sound healing session, our skilled practitioners use a variety of sacred sound instruments such as Tibetan singing bowls, gongs, tuning forks, chimes, and vocalizations. ',
         image: '/Images/sound_healing_therapy.jpg',
         route: '/services/soundhealing'
     },
@@ -26,15 +27,15 @@ const services = [
     {
         title: 'Sound Baths and Relaxation',
         description:
-            'Discover a uniquely personal journey of healing through sound. Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.Stepping away from group environments, a private session provides an unparalleled sanctuary for open expression, fostering deep energetic balance and a more profound inner connection.If you are looking to manage stress, gain clarity, or simply cultivate a deeper relationship with yourself, this session offers a gentle, supportive space for personalized healing on your terms.',
-        image: '/Images/sound_bath_relaxation.jpg',
+            'A Sound Bath and Relaxation session is a deeply immersive and restorative experience designed to help you unwind, de-stress, and enter a state of profound relaxation. Unlike a typical "bath," you remain fully clothed and comfortably lie down while being bathed in a symphony of resonant sounds.During a session, a practitioner plays a variety of therapeutic sound instruments like singing bowls, gongs, and chimes, creating a continuous wave of harmonious vibrations.These sounds are specifically chosen for their ability to slow down brainwave activity, transitioning you from a beta(awake, alert) to an alpha or even theta state(relaxed, meditative, dream- like). ',
+        image: '/Images/sound_bath_relaxation.jpg ',
         route: '/services/soundbaths'
     },
 
     {
         title: 'Sound Healing Workshops',
         description:
-            'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
+            'Our Sound Healing Workshops offer a unique opportunity to delve deeper into the transformative world of sound. These immersive workshops are designed for individuals seeking to learn about the principles of sound healing, understand its practical applications, and even discover how to use sound for personal well-being or to help others.Led by our experienced master, Akash, who brings a wealth of knowledge from traditional and Himalayan sound healing techniques, these workshops combine theoretical understanding with hands - on practice.',
         image: '/Images/sound_healing_workshop.jpg',
         route: '/services/healingworkshop'
     },
@@ -42,15 +43,15 @@ const services = [
     {
         title: 'Yoga and Energy Awakening',
         description:
-            'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
-        image: '/Images/yoga/7.jpg',
+            'Yoga and Energy Awakening is a holistic practice that integrates physical postures (asanas), breathing techniques (pranayama), and meditation to harmonize the body, mind, and spirit. Its a journey of self-discovery and a potent tool for unlocking your inner vitality and cultivating a profound sense of well-being.Our sessions focus on guiding you through a series of mindful movements and deliberate breathing exercises designed to stretch and strengthen the body, improve flexibility, and enhance circulation.',
+        image: '/Images/yoga_energy.jpg',
         route: '/services/yoga&energy'
     },
 
     {
         title: 'Spiritual Events and Retreat',
         description:
-            'Yoga is a holistic practice that extends beyond physical postures to awaken the body’s energy and unlock hidden potential. Yogi Akash’s sessions are designed to help practitioners cultivate strength, flexibility, and mindfulness through asanas, pranayama, and guided meditation. By incorporating energy awakening techniques, these sessions enhance vitality, improve mental clarity, and foster a deeper connection between mind, body, and spirit. Whether you are seeking to enhance your physical health, deepen your spiritual journey, or release stagnant energy, these sessions provide a transformative experience that aligns you with your inner power and true self.',
+            'In our increasingly busy lives, filled with constant demands and stresses, its easy to lose touch with our inner selves and the peace we crave.We often find ourselves overwhelmed, leading to a myriad of problems for our mind, body, and spirit.It is in these moments that we truly need to take a deliberate break, step away from the everyday grind, and dedicate time to healing and recharging our mind and body.Our Spiritual Retreats and Events offer a vital opportunity to do just that.These immersive experiences are carefully curated to provide a sanctuary where you can escape the noise of daily life and embark on a journey of self- discovery and rejuvenation. ',
         image: '/Images/Spiritual_Event_Retreats/11.JPG',
         route: '/services/spiritualevents'
     },

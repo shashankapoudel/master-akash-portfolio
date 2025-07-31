@@ -63,12 +63,12 @@ const About = () => {
                         <motion.div
                             initial={{ y: 100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 1, delay: 2 }}
-                            className=" text-center w-2/3 bg-[#a7594d] lg:bg-opacity-40 bg-opacity-50 p-5"
+                            transition={{ duration: 1, delay: 1 }}
+                            className=" text-center lg:w-2/3 bg-[#a7594d] lg:bg-opacity-40 bg-opacity-50 p-5"
                         // className=" text-center w-2/3"
                         >
 
-                            <p className='text-[#FFFFFF] font-medium font-playfair-display text-2xl tracking-wider'>
+                            <p className='text-[#FFFFFF] font-normal font-poppins text-xl tracking-wider'>
                                 Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness.His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
                             </p>
 
