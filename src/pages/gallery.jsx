@@ -762,7 +762,7 @@ const Gallery = () => {
                 </select>
             </div>
 
-            {/* Image Grid */}
+
             <div
                 onContextMenu={(e) => e.preventDefault()}
                 className="grid grid-cols-2  md:grid-cols-4 gap-2"
@@ -828,7 +828,7 @@ const Gallery = () => {
                 </div>
             )}
 
-            {/* Lightbox */}
+
             {selectedImage.image && (
                 <div className="flex fixed inset-0 items-center justify-between p-6 bg-black bg-opacity-70 z-50">
                     <button
@@ -866,7 +866,9 @@ const Gallery = () => {
                         }}
                         className="text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-70"
                     >
+
                         <GrFormNext className="text-2xl" />
+
                     </button>
                 </div>
             )}
