@@ -4,6 +4,7 @@ import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
 const Quotes = () => {
     const quotesData = [
+
         {
             image: '/Images/Quotes/Quote2.jpg',
             text: 'Meditation can be like a battle with yourself, your thoughts, your body',
@@ -33,25 +34,29 @@ const Quotes = () => {
             image: '/Images/Quotes/Quote3.jpg',
             text: 'The body benefits from movement, and the mind benefits from stillness',
         },
+
         {
             image: '/Images/Quotes/Quote3.jpg',
             text: 'When breath control is correct, mind control is possible',
         },
+
         {
             image: '/Images/Quotes/Quote3.jpg',
             text: 'Yoga does not just change the way we see things, it transforms the person who sees',
         },
+
         {
             image: '/Images/Quotes/Quote3.jpg',
             text: 'When you find peace within yourself, you become the kind of person who can live at peace with others.',
         },
+
     ];
 
     const [index, setIndex] = useState(0);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
     useEffect(() => {
-        // Handle automatic quote change
+
         const interval = setInterval(() => {
             setIndex(prevIndex => (prevIndex + 1) % quotesData.length);
         }, 6000);
@@ -61,7 +66,7 @@ const Quotes = () => {
     }, []);
 
     useEffect(() => {
-        // Track screen size to determine whether to show 1 or 2 quotes
+
         const handleResize = () => {
             setIsLargeScreen(window.innerWidth >= 1024);
         };

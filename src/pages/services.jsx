@@ -176,8 +176,9 @@ const ServicesPage = () => {
                         viewport={{ amount: 0.2 }}
                     >
 
-                        <div
-                            onClick={() => navigate('/services/meditation&mindfulness')}
+                        <a
+                            target="_blank" rel="noopener noreferrer"
+                            href='/services/meditation&mindfulness'
                             className='cursor-pointer'
                         >
                             <motion.div
@@ -187,9 +188,9 @@ const ServicesPage = () => {
                                 <h3 className="font-semibold text-base md:text-xl lg:text-xl text-center">Meditation and Mindfulness</h3>
                                 <p className="flex items-center justify-center text-center text-sm md:text-xl lg:text-sm">Calm your mind and find peace through meditation techniques.</p>
                             </motion.div>
-                        </div>
+                        </a>
 
-                        <a href='/services/soundhealing' target="_blank" rel="noopener noreferrer">
+                        <a href='/services/soundhealing' target="_blank" rel="noopener noreferrer"  >
                             <motion.div
                                 variants={itemVariants}
                                 className="lg:absolute bottom-32 left-10 flex flex-col items-center justify-center gap-2 bg-[#A7594D] text-white p-2 rounded-custom-2-sm lg:rounded-custom-2 shadow-md w-full lg:w-1/3 py-2 px-4 lg:py-2 lg:px-4 md:p-3"
@@ -199,8 +200,9 @@ const ServicesPage = () => {
                             </motion.div>
                         </a>
 
-                        <div
-                            onClick={() => navigate('/services/spiritualevents')}
+                        <a
+                            target="_blank" rel="noopener noreferrer"
+                            href='/services/spiritualevents'
                             className='cursor-pointer'
                         >
                             <motion.div
@@ -210,7 +212,7 @@ const ServicesPage = () => {
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Spiritual Events and Retreats</h3>
                                 <p className='text-center text-sm md:text-xl lg:text-sm'>Take a break from daily life to recharge and reconnect with yourself.</p>
                             </motion.div>
-                        </div>
+                        </a>
 
                         <div className="w-full flex justify-center items-center">
                             <img
@@ -221,9 +223,10 @@ const ServicesPage = () => {
                             />
                         </div>
 
-                        <div
+                        <a
+                            target="_blank" rel="noopener noreferrer"
                             className='cursor-pointer'
-                            onClick={() => navigate('/services/soundbaths')}
+                            href='/services/soundbaths'
                         >
                             <motion.div
                                 variants={item1Variants}
@@ -232,25 +235,26 @@ const ServicesPage = () => {
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Sound Baths and Relaxation</h3>
                                 <p className='flex justify-center items-center text-center text-sm md:text-xl lg:text-sm'>Enjoy soothing sounds that melt away stress and bring deep relaxation.</p>
                             </motion.div>
-                        </div>
+                        </a>
 
-                        <div
-                            onClick={() => navigate('/services/yoga&energy')}
+                        <a
+                            target="_blank" rel="noopener noreferrer"
+                            href='/services/yoga&energy'
                             className='cursor-pointer'
                         >
                             <motion.div
                                 variants={item1Variants}
-
                                 className="lg:absolute bottom-32 right-10 items-center justify-center flex flex-col gap-2 bg-[#A7594D] text-white p-2 rounded-custom-5-sm lg:rounded-custom-5 shadow-md w-full lg:w-1/3 py-2 px-4"
                             >
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Yoga and Energy Awakening</h3>
                                 <p className='text-center text-sm'>Move, breathe, and connect with your inner energy through yoga.</p>
                             </motion.div>
-                        </div>
+                        </a>
 
-                        <div
+                        <a
+                            target="_blank" rel="noopener noreferrer"
                             className='cursor-pointer'
-                            onClick={() => navigate('/services/healingworkshop')}
+                            href='/services/healingworkshop'
                         >
                             <motion.div
                                 variants={item1Variants}
@@ -259,7 +263,7 @@ const ServicesPage = () => {
                                 <h3 className="font-bold text-base md:text-xl lg:text-xl text-center">Sound Healing Workshops</h3>
                                 <p className='text-center text-sm'>Healing workshops that help you heal, grow, and feel better.</p>
                             </motion.div>
-                        </div>
+                        </a>
 
                     </motion.div>
 
