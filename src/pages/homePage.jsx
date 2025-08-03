@@ -181,7 +181,7 @@ const Home = () => {
 
                 <div className="lg:relative md:relative w-full">
                     <img
-                        src="/Images/homePhoto.jpg"
+                        src="/Images/home5.jpg"
                         alt='testimonial image'
                         className="object-cover w-full lg:h-[550px]  h-auto"
                         loading='lazy'
