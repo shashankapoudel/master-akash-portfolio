@@ -6,7 +6,7 @@ const Quotes = () => {
     const quotesData = [
 
         {
-            image: '/Images/Quotes/Quote2.jpg',
+            image: '/Images/Quotes/Quote1.jpg',
             text: 'Meditation can be like a battle with yourself, your thoughts, your body',
         },
 
@@ -16,37 +16,37 @@ const Quotes = () => {
         },
 
         {
-            image: '/Images/Quotes/Quote2.jpg',
+            image: '/Images/Quotes/Quote3.jpg',
             text: 'Meditation is silence, energising and fulfilling. Silent is the eloquent expression of the inexpressible.',
         },
 
         {
-            image: '/Images/Quotes/Quote2.jpg',
+            image: '/Images/Quotes/Quote4.jpg',
             text: 'Happiness comes, not by helplessly wishing for it, but by dreaming, thinking and living it in all circumstances.',
         },
 
         {
-            image: '/Images/Quotes/Quote3.jpg',
+            image: '/Images/Quotes/Quote5.jpg',
             text: 'Healing vibrations are the bridge between body, mind and spirit',
         },
 
         {
-            image: '/Images/Quotes/Quote3.jpg',
+            image: '/Images/Quotes/Quote6.jpg',
             text: 'The body benefits from movement, and the mind benefits from stillness',
         },
 
         {
-            image: '/Images/Quotes/Quote3.jpg',
+            image: '/Images/Quotes/Quote7.jpg',
             text: 'When breath control is correct, mind control is possible',
         },
 
         {
-            image: '/Images/Quotes/Quote3.jpg',
+            image: '/Images/Quotes/Quote8.jpg',
             text: 'Yoga does not just change the way we see things, it transforms the person who sees',
         },
 
         {
-            image: '/Images/Quotes/Quote3.jpg',
+            image: '/Images/Quotes/Quote9.jpg',
             text: 'When you find peace within yourself, you become the kind of person who can live at peace with others.',
         },
 

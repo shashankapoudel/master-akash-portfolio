@@ -132,8 +132,7 @@ import React, { useState, useEffect } from 'react';
 import ServiceCard from '../components/ServiceCard';
 import GalleryCard from '../components/GalleryCard';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GrFormPrevious } from "react-icons/gr";
-import { GrFormNext } from "react-icons/gr";
+import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { useNavigate } from 'react-router-dom';
 import SocialCard from '../components/socialCard';
 import StatsCounter from '../components/StatsCounter';
@@ -147,21 +146,30 @@ const Home = () => {
     ];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const [isHovered, setIsHovered] = useState(false)
+    const [isHovered, setIsHovered] = useState(false);
     const [direction, setDirection] = useState(1);
+    const [showText, setShowText] = useState(true);
 
     useEffect(() => {
         let interval;
         if (!isHovered) {
             interval = setInterval(() => {
-
                 setDirection(1);
                 setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-
             }, 4000);
         }
         return () => clearInterval(interval);
     }, [isHovered]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setShowText(scrollTop < 100);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const handleNext = () => {
         setDirection(1);
@@ -174,42 +182,57 @@ const Home = () => {
     };
 
     return (
-        <div className=''>
-
-
-            <div className="lg:relative md:relative flex flex-col gap-4">
-
-                <div className="lg:relative md:relative w-full">
-                    <img
-                        src="/Images/home5.jpg"
-                        alt='testimonial image'
-                        className="object-cover w-full lg:h-[550px]  h-auto"
-                        loading='lazy'
-                    />
-
-                    <div className="lg:absolute md:absolute inset-0 flex flex-col justify-center items-center text-center   gap-4 lg:gap-8 p-2 lg:top-32 ">
-
-                        <motion.div
-                            initial={{ y: 100, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 1, delay: 2 }}
-                            className=" text-center lg:w-2/3 bg-[#a7594d] lg:bg-opacity-40 bg-opacity-50 p-5"
-                        // className=" text-center w-2/3"
-                        >
-
-                            <p className='text-[#FFFFFF] font-normal font-poppins text-xl tracking-wider'>
-                                Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness.His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
-                            </p>
-
-                        </motion.div>
-                    </div>
-
+        <div>
+            {/* Mobile layout */}
+            <div className="flex flex-col lg:hidden">
+                <img
+                    src="/Images/home5.jpg"
+                    alt="mobile hero"
+                    className="object-cover w-full h-[250px]"
+                />
+                <div className="  p-6">
+                    <p className="text-[#666666] font-medium text-base  font-poppins text-justify max-w-4xl py-4">
+                        Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness. His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
+                    </p>
                 </div>
             </div>
 
 
-            <div className='p-2 md:p-5 lg:p-6'>
+            <div className="relative hidden lg:block">
+                <div className="w-full relative">
+                    <img
+                        src="/Images/home5.jpg"
+                        alt='testimonial image'
+                        className="object-cover w-full h-[550px]"
+                        loading='lazy'
+                    />
+                    <div className="absolute inset-0 flex flex-col justify-center items-center text-center gap-4 lg:gap-8 p-2 top-32">
+                        <AnimatePresence>
+                            {showText && (
+                                <motion.div
+                                    key="text"
+                                    initial={{ y: 100, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    exit={{ y: -100, opacity: 0 }}
+                                    transition={{ duration: 0.6 }}
+                                    className="text-center w-2/3 bg-[#a7594d] bg-opacity-40 p-5"
+                                >
+                                    <p className='text-white font-normal font-poppins text-xl tracking-wider'>
+                                        Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness. His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
+                                    </p>
 
+                                    <a
+                                        className='font-bold text-xl  text-[#ffffff]'
+                                        href='/about'>Read more...
+                                    </a>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+                </div>
+            </div>
+
+            <div className='p-2 md:p-5 lg:p-6'>
                 <div className='p-0 md:p-4 lg:p-8'>
                     <ServiceCard />
                 </div>
@@ -222,11 +245,10 @@ const Home = () => {
                     <StatsCounter />
                 </div>
 
-                <div className=' mt-4 mb-4'>
+                <div className='mt-4 mb-4'>
                     <SocialCard />
                 </div>
             </div>
-
         </div>
     );
 };
