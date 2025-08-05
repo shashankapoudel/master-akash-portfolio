@@ -562,7 +562,6 @@ const eventsData = [
             '/Images/yoga/2.jpg',
             '/Images/yoga/3.jpg',
             '/Images/yoga/4.jpg',
-            '/Images/yoga/5.jpg',
             '/Images/yoga/6.jpg',
             '/Images/yoga/7.jpg',
             '/Images/yoga/8.jpg',

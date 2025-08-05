@@ -129,7 +129,6 @@
 
 
 
-
 import React, { useState, useEffect } from 'react';
 import ServiceCard from '../components/ServiceCard';
 import GalleryCard from '../components/GalleryCard';
@@ -185,13 +184,15 @@ const Home = () => {
 
     return (
         <div>
-            {/* Mobile layout */}
+
             <div className="flex flex-col lg:hidden p-1">
+
                 <img
                     src="/Images/home5.jpg"
                     alt="mobile hero"
                     className="object-cover w-full h-[250px]"
                 />
+
                 <div className="  p-6">
                     <p className="text-[#666666] font-medium text-base  font-poppins text-justify max-w-4xl py-4">
                         Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness. His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
