@@ -128,6 +128,8 @@
 
 
 
+
+
 import React, { useState, useEffect } from 'react';
 import ServiceCard from '../components/ServiceCard';
 import GalleryCard from '../components/GalleryCard';
@@ -184,7 +186,7 @@ const Home = () => {
     return (
         <div>
             {/* Mobile layout */}
-            <div className="flex flex-col lg:hidden">
+            <div className="flex flex-col lg:hidden p-1">
                 <img
                     src="/Images/home5.jpg"
                     alt="mobile hero"
@@ -200,12 +202,14 @@ const Home = () => {
 
             <div className="relative hidden lg:block">
                 <div className="w-full relative">
+
                     <img
                         src="/Images/home5.jpg"
                         alt='testimonial image'
                         className="object-cover w-full h-[550px]"
                         loading='lazy'
                     />
+
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-center gap-4 lg:gap-8 p-2 top-32">
                         <AnimatePresence>
                             {showText && (
@@ -233,6 +237,7 @@ const Home = () => {
             </div>
 
             <div className='p-2 md:p-5 lg:p-6'>
+
                 <div className='p-0 md:p-4 lg:p-8'>
                     <ServiceCard />
                 </div>
@@ -248,6 +253,7 @@ const Home = () => {
                 <div className='mt-4 mb-4'>
                     <SocialCard />
                 </div>
+
             </div>
         </div>
     );

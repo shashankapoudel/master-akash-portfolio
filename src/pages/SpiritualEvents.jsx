@@ -27,27 +27,29 @@ const SpiritualEvents = () => {
 
 
     return (
-        <div className='min-h-screen p-8 flex items-center justify-center'>
+        <div className='min-h-screen p-8 flex flex-col items-center justify-center'>
 
+            <h1 className='font-bold text-2xl'>Spiritual Events and Retreats</h1>
             <div className='flex flex-col gap-8 items-center justify-center'>
 
-
                 <div className='flex flex-col-reverse xl:flex-row w-full'>
-                    <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-8 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
+                    <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-9 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
+
+
                         <p className=' tracking-wider'>
                             In our increasingly busy lives, filled with constant demands and stresses, it's easy to lose touch with our inner selves and the peace we crave. We often find ourselves overwhelmed, leading to a myriad of problems for our mind, body, and spirit. It is in these moments that we truly need to take a deliberate break, step away from the everyday grind, and dedicate time to healing and recharging our mind and body.
-                            <br />
+
                             <br />
                             Our Spiritual Retreats and Events offer a vital opportunity to do just that. These immersive experiences are carefully curated to provide a sanctuary where you can escape the noise of daily life and embark on a journey of self-discovery and rejuvenation. Whether it's a multi-day retreat or a focused event, each offering is designed to foster a deeper connection with your inner self, promote holistic well-being, and help you find clarity and purpose.<br />
-                            <br />
-                            Through a blend of guided meditations, sound healing sessions, yoga, mindfulness practices, and transformative workshops, our retreats and events provide a supportive environment for personal growth, emotional healing, and spiritual awakening. It's an invitation to pause, breathe, reconnect with your true essence, and return to your life feeling refreshed, revitalized, and deeply aligned.
 
+                            Through a blend of guided meditations, sound healing sessions, yoga, mindfulness practices, and transformative workshops, our retreats and events provide a supportive environment for personal growth, emotional healing, and spiritual awakening. It's an invitation to pause, breathe, reconnect with your true essence, and return to your life feeling refreshed, revitalized, and deeply aligned.
                         </p>
+
                     </div>
 
                     <div className='w-full xl:w-1/2 p-3 md:p-6 lg:p-8'>
                         <img
-                            src='/Images/sound_healing_workshop.jpg'
+                            src='/Images/spiritual.jpg'
                             className=' rounded-lg w-full'
                             loading='lazy'
                         />

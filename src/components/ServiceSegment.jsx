@@ -15,11 +15,7 @@ const services = [
         name: 'Meditation and Mindfulness',
         description: 'Calm your mind and find peace through meditation techniques.'
     },
-    // {
-    //     SN: <PiUserSoundBold />,
-    //     name: 'Sound Healing Therapy',
-    //     description: 'Immerse yourself in the soothing vibrations of singing bowls and ancient sound healing techniques.'
-    // },
+
     {
         SN: <GiHiveMind />,
         name: 'Spiritual Events and Retreat',
@@ -31,19 +27,22 @@ const services = [
         name: 'Sound Baths and Relaxation',
         description: 'Enjoy soothing sounds that melt away stress and bring deep relaxation.'
     },
+
     {
         SN: <GrYoga />,
         name: 'Yoga and Energy Awakening',
         description: 'Move, breathe, and connect with your inner energy through yoga.'
     },
+
     {
         SN: <GiHealing />,
         name: 'Sound Healing Workshops',
         description: 'Healing workshops that help you heal, grow, and feel better.'
     },
+
     {
         SN: <GiHealing />,
-        name: 'Spund Healing Therapy',
+        name: 'Sound Healing Therapy',
         description: 'Join our session to experience sound healing with our skilled practitioners where they use a variety of sacred sound instruments.'
     }
 ];
@@ -54,7 +53,6 @@ const ServiceSegment = () => {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     };
-
 
     const containerVariants = {
         hidden: { opacity: 0 },

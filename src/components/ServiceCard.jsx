@@ -52,7 +52,7 @@ const services = [
         title: 'Spiritual Events and Retreat',
         description:
             'In our increasingly busy lives, filled with constant demands and stresses, its easy to lose touch with our inner selves and the peace we crave.We often find ourselves overwhelmed, leading to a myriad of problems for our mind, body, and spirit.It is in these moments that we truly need to take a deliberate break, step away from the everyday grind, and dedicate time to healing and recharging our mind and body.Our Spiritual Retreats and Events offer a vital opportunity to do just that.These immersive experiences are carefully curated to provide a sanctuary where you can escape the noise of daily life and embark on a journey of self- discovery and rejuvenation. ',
-        image: '/Images/Spiritual_Event_Retreats/11.JPG',
+        image: '/Images/spiritual.jpg',
         route: '/services/spiritualevents'
     },
 
