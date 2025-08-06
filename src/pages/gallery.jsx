@@ -781,8 +781,7 @@ const Gallery = () => {
                     <p className="col-span-full text-center text-gray-500">No images found.</p>
                 )}
             </div>
-
-            {/* Pagination */}
+            
             {totalPages > 1 && (
                 <div className="flex justify-center mt-6 space-x-2 flex-wrap">
 

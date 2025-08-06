@@ -63,7 +63,6 @@ const AdminLayout = ({ setAdmin }) => {
                     </div>
                 </div>
 
-                {/* Main part */}
                 <div className="flex-1 m-4 bg-[#FFFFFF]">
                     <Outlet />
                 </div>

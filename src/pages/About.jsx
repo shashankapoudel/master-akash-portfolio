@@ -65,7 +65,7 @@ const About = () => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1 }}
                             className=" text-center lg:w-2/3 bg-[#a7594d] lg:bg-opacity-40 bg-opacity-50 p-5"
-                        // className=" text-center w-2/3"
+
                         >
 
                             <p className='text-[#FFFFFF] font-normal font-poppins text-xl tracking-wider'>

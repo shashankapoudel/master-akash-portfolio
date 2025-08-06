@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr';
 
@@ -93,7 +92,7 @@ const Quotes = () => {
 
                 <div className='grid grid-cols-1 lg:grid-cols-2 mt-3'>
                     {[0, isLargeScreen ? 1 : null].map((offset, i) => {
-                        if (offset === null) return null; // Only show one quote in smaller screens
+                        if (offset === null) return null; 
                         const quoteIndex = (index + offset) % quotesData.length;
                         const quote = quotesData[quoteIndex];
 

@@ -1,5 +1,3 @@
-
-
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/header';
 import Home from './pages/homePage';

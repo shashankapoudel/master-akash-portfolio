@@ -80,8 +80,6 @@ const ServiceSegment = () => {
                         key={service.SN}
                         variants={cardVariants}
                         className='font-poppins flex flex-col items-center justify-center'
-                    // className={`font-poppins flex flex-col items-center justify-center ${services.length % 3 !== 0 && index >= 3 ? "md:col-span-2 lg:col-span-1" : ""
-                    //     }`}
                     >
 
                         <h1 className='text-center text-[#022B4A] font-bold text-4xl'>
