@@ -56,12 +56,9 @@ const Quotes = () => {
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
 
     useEffect(() => {
-
         const interval = setInterval(() => {
             setIndex(prevIndex => (prevIndex + 1) % quotesData.length);
         }, 6000);
-
-
         return () => clearInterval(interval);
     }, []);
 
