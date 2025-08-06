@@ -699,10 +699,10 @@ const Gallery = () => {
         }
 
         setActiveImages(images);
-        setCurrentPage(1); // reset to first page
+        setCurrentPage(1);
     }, [selectedEvent]);
 
-    // Pagination calculations
+
     const indexOfLastImage = currentPage * imagesPerPage;
     const indexOfFirstImage = indexOfLastImage - imagesPerPage;
     const currentImages = activeImages.slice(indexOfFirstImage, indexOfLastImage);

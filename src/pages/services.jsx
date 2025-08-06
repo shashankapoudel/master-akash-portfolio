@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const services = [
 
     {
-        title: 'Meditation and Mindfulness',
+        title: 'Pain Relief Therapy',
         image: '/Images/homePhoto.jpg',
         description: 'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Whether you are new to meditation or an experienced practitioner, Yogi Akash’s step-by-step guidance is designed to deepen your practice. Learn powerful techniques such as mindful breathing, mantra repetition, and visualization to unlock your potential for self-awareness. Through Yogi Akash’s guidance, you will experience a profound shift in your mental and emotional well-being. From reducing stress to fostering emotional resilience, his teachings are a gateway to a healthier, happier you.',
 
@@ -24,7 +24,41 @@ const services = [
     },
 
     {
-        title: 'Sound Healing classes',
+        title: 'Relaxation therapy',
+        image: '/Images/homePhoto.jpg',
+        description: 'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Whether you are new to meditation or an experienced practitioner, Yogi Akash’s step-by-step guidance is designed to deepen your practice. Learn powerful techniques such as mindful breathing, mantra repetition, and visualization to unlock your potential for self-awareness. Through Yogi Akash’s guidance, you will experience a profound shift in your mental and emotional well-being. From reducing stress to fostering emotional resilience, his teachings are a gateway to a healthier, happier you.',
+
+        whatIncluded: [
+            'Guided meditation and breathing exercises',
+            'Sound healing session with singing bowls',
+            'Relaxation techniques to reduce stress'
+        ],
+
+        benefits: ['Enhanced focus', 'Stress relief', 'Emotional balance'],
+        duration: '45 mins',
+        location: 'Outdoor or private studio',
+        cta: 'Book my session!',
+    },
+
+    {
+        title: 'Prevention therapy',
+        image: '/Images/homePhoto.jpg',
+        description: 'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Whether you are new to meditation or an experienced practitioner, Yogi Akash’s step-by-step guidance is designed to deepen your practice. Learn powerful techniques such as mindful breathing, mantra repetition, and visualization to unlock your potential for self-awareness. Through Yogi Akash’s guidance, you will experience a profound shift in your mental and emotional well-being. From reducing stress to fostering emotional resilience, his teachings are a gateway to a healthier, happier you.',
+
+        whatIncluded: [
+            'Guided meditation and breathing exercises',
+            'Sound healing session with singing bowls',
+            'Relaxation techniques to reduce stress'
+        ],
+
+        benefits: ['Enhanced focus', 'Stress relief', 'Emotional balance'],
+        duration: '45 mins',
+        location: 'Outdoor or private studio',
+        cta: 'Book my session!',
+    },
+
+    {
+        title: 'Head Therapy',
         image: '/Images/homePhoto.jpg',
         description: 'Sound has the power to heal, uplift, and rejuvenate. Yogi Akash’s Sound Healing Classes are designed to harness the vibrational energy of sound to balance your body, mind, and spirit. Discover a profound sense of harmony through the ancient art of sound therapy. In these classes, you will explore the mystical vibrations of singing bowls, the grounding resonance of gongs, and the calming tones of Tingsha cymbals. Learn how these powerful tools can realign your energy, reduce stress, and promote deep relaxation.',
         whatIncluded: [
@@ -41,7 +75,7 @@ const services = [
 
 
     {
-        title: 'Retreat Centers',
+        title: 'Seven Chakra THerapy',
         image: '/Images/homePhoto.jpg',
         description: 'Enjoy serene retreat locations with meditation, yoga, and guided activities for total relaxation.',
         whatIncluded: [
@@ -57,7 +91,97 @@ const services = [
 
 
     {
-        title: 'Spiritual and Mental Growth Activities',
+        title: 'Natural Sound Therapy',
+        image: '/Images/homePhoto.jpg',
+        description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+        whatIncluded: [
+            'Workshops on mindfulness and personal growth',
+            'Interactive group sessions',
+            'Personalized coaching sessions'
+        ],
+        benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+        duration: '2 hours',
+        location: 'Local studio or virtual options',
+        cta: 'Join a session today!',
+    },
+
+    {
+        title: 'Water Sound Therapy',
+        image: '/Images/homePhoto.jpg',
+        description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+        whatIncluded: [
+            'Workshops on mindfulness and personal growth',
+            'Interactive group sessions',
+            'Personalized coaching sessions'
+        ],
+        benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+        duration: '2 hours',
+        location: 'Local studio or virtual options',
+        cta: 'Join a session today!',
+    },
+
+    {
+        title: 'Private Sound Bath',
+        image: '/Images/homePhoto.jpg',
+        description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+        whatIncluded: [
+            'Workshops on mindfulness and personal growth',
+            'Interactive group sessions',
+            'Personalized coaching sessions'
+        ],
+        benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+        duration: '2 hours',
+        location: 'Local studio or virtual options',
+        cta: 'Join a session today!',
+    },
+
+    {
+        title: 'Group Sound Bath',
+        image: '/Images/homePhoto.jpg',
+        description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+        whatIncluded: [
+            'Workshops on mindfulness and personal growth',
+            'Interactive group sessions',
+            'Personalized coaching sessions'
+        ],
+        benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+        duration: '2 hours',
+        location: 'Local studio or virtual options',
+        cta: 'Join a session today!',
+    },
+
+    {
+        title: 'Basic Sound Healer - Certificate Course ',
+        image: '/Images/homePhoto.jpg',
+        description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+        whatIncluded: [
+            'Workshops on mindfulness and personal growth',
+            'Interactive group sessions',
+            'Personalized coaching sessions'
+        ],
+        benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+        duration: '2 hours',
+        location: 'Local studio or virtual options',
+        cta: 'Join a session today!',
+    },
+
+    {
+        title: 'Advanced Sound Healer - Certificate Course',
+        image: '/Images/homePhoto.jpg',
+        description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+        whatIncluded: [
+            'Workshops on mindfulness and personal growth',
+            'Interactive group sessions',
+            'Personalized coaching sessions'
+        ],
+        benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
+        duration: '2 hours',
+        location: 'Local studio or virtual options',
+        cta: 'Join a session today!',
+    },
+
+    {
+        title: 'Nepal Yoga and Healing Retreat ',
         image: '/Images/homePhoto.jpg',
         description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
         whatIncluded: [
@@ -101,20 +225,20 @@ const item1Variants = {
 const ServiceCard = ({ service }) => {
 
     return (
-        <div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4">
+        <div className="bg-white shadow-md rounded-lg p-3 lg:p-6 space-y-4 flex flex-col gap-2">
             <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
 
             <img src={service.image}
                 alt={service.title}
-                className="w-full h-auto p-4 object-cover rounded-lg"
+                className="w-full h-auto p-2 object-cover rounded-lg"
                 loading='lazy'
             />
 
-            <p className="text-gray-600">{service.description}</p>
+            <p className="text-[#666666]">{service.description}</p>
 
             <div>
-                <h4 className="font-semibold text-gray-800">What's Included:</h4>
-                <ul className="list-disc list-inside text-gray-600">
+                <h4 className="font-semibold text-gray-600">What's Included:</h4>
+                <ul className="list-disc list-inside text-[#666666]">
                     {service.whatIncluded.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
@@ -122,8 +246,8 @@ const ServiceCard = ({ service }) => {
             </div>
 
             <div>
-                <h4 className="font-semibold text-gray-800">Benefits:</h4>
-                <ul className="list-disc list-inside text-gray-600">
+                <h4 className="font-semibold text-gray-600">Benefits:</h4>
+                <ul className="list-disc list-inside text-[#666666]">
                     {service.benefits.map((item, index) => (
                         <li key={index}>{item}</li>
                     ))}
@@ -142,7 +266,7 @@ const ServiceCard = ({ service }) => {
                 href='https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit'
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400 transition-transform duration-300 ease-out hover:scale-105">
+                className=" bg-gradient-to-r from-[#044F86] to-[#0A6EB5] text-white px-4 py-2 rounded hover:bg-blue-400 transition-transform duration-300 ease-out hover:scale-105 text-center ">
                 {service.cta}
             </a>
 
@@ -269,9 +393,9 @@ const ServicesPage = () => {
 
                 </div>
             ) : (
-                <div className="p-4 md:p-4 lg:p-8 items-center w-full mt-4">
+                <div className="flex p-4 items-center w-full mt-4">
 
-                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 ">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 ">
                         {services.map((service, index) => (
                             <ServiceCard
                                 className='w-full'

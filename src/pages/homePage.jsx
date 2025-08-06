@@ -211,7 +211,7 @@ const Home = () => {
                         loading='lazy'
                     />
 
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-center gap-4 lg:gap-8 p-2 top-32">
+                    <div className="absolute inset-0 flex flex-col justify-center items-center text-center gap-4 lg:gap-8 p-2 top-0">
                         <AnimatePresence>
                             {showText && (
                                 <motion.div
