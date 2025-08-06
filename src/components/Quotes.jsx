@@ -6,47 +6,47 @@ const Quotes = () => {
     const quotesData = [
 
         {
-            image: '/Images/Quotes/Quote1.jpg',
+            image: '/Images/Quotes/1.png',
             text: 'Meditation can be like a battle with yourself, your thoughts, your body',
         },
 
         {
-            image: '/Images/Quotes/Quote2.jpg',
+            image: '/Images/Quotes/2.png',
             text: 'Peace is the result of retraining your mind to process life as it is, rather than as you think it should be',
         },
 
         {
-            image: '/Images/Quotes/Quote3.jpg',
+            image: '/Images/Quotes/3.png',
             text: 'Meditation is silence, energising and fulfilling. Silent is the eloquent expression of the inexpressible.',
         },
 
         {
-            image: '/Images/Quotes/Quote4.jpg',
+            image: '/Images/Quotes/4.png',
             text: 'Happiness comes, not by helplessly wishing for it, but by dreaming, thinking and living it in all circumstances.',
         },
 
         {
-            image: '/Images/Quotes/Quote5.jpg',
+            image: '/Images/Quotes/5.png',
             text: 'Healing vibrations are the bridge between body, mind and spirit',
         },
 
         {
-            image: '/Images/Quotes/Quote6.jpg',
+            image: '/Images/Quotes/6.png',
             text: 'The body benefits from movement, and the mind benefits from stillness',
         },
 
         {
-            image: '/Images/Quotes/Quote7.jpg',
+            image: '/Images/Quotes/7.png',
             text: 'When breath control is correct, mind control is possible',
         },
 
         {
-            image: '/Images/Quotes/Quote8.jpg',
+            image: '/Images/Quotes/8.png',
             text: 'Yoga does not just change the way we see things, it transforms the person who sees',
         },
 
         {
-            image: '/Images/Quotes/Quote9.jpg',
+            image: '/Images/Quotes/9.png',
             text: 'When you find peace within yourself, you become the kind of person who can live at peace with others.',
         },
 

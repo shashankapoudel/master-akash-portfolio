@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
@@ -73,7 +72,6 @@ const services = [
         cta: 'Book a workshop now!',
     },
 
-
     {
         title: 'Seven Chakra THerapy',
         image: '/Images/homePhoto.jpg',
@@ -88,7 +86,6 @@ const services = [
         location: 'Various serene retreat locations',
         cta: 'Explore Retreats',
     },
-
 
     {
         title: 'Natural Sound Therapy',
