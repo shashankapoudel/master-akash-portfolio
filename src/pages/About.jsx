@@ -6,6 +6,9 @@ import ContactCard from '../components/ContactCard';
 import { motion } from 'framer-motion';
 import ServiceSegment from '../components/ServiceSegment';
 import PhotoModal from '../components/PhotoModal';
+import { Helmet } from 'react-helmet-async';
+
+
 
 const About = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
@@ -51,6 +54,19 @@ const About = () => {
 
     return (
         <div className='tracking-wide'>
+
+            <Helmet>
+                <title>About Yogi Akash (Akash Banjara) | Sound Healing Master from Nepal</title>
+                <meta
+                    name="description"
+                    content="Learn about Yogi Akash (Akash Banjara) — Nepalese sound healing master, yoga teacher, and meditation guide with 20+ years of experience in the Himalayan tradition."
+                />
+                <meta
+                    name="keywords"
+                    content="Yogi Akash, Akash Banjara, about Yogi Akash, sound healing Nepal, Himalayan yoga teacher, meditation master Nepal"
+                />
+                <link rel="canonical" href="https://www.yogiakash.com/about" />
+            </Helmet>
 
 
             <div className="lg:relative md:relative flex flex-col justify-center items-center gap-4">
