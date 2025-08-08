@@ -11,7 +11,8 @@ const Footer = () => {
                     className='lg:w-auto h-8 lg:h-16 md:h-16 w-44 transition-transform duration-300 hover:scale-105 mix-blend-multiply'
                     loading='lazy'
                     alt='footer-image'
-                    src='/Images/Logo_Footer.png' />
+                    src='/Images/Logo_Footer.png'
+                />
             </div>
 
             <div className='flex  text-white gap-3 md:gap-4 lg:gap-6 text-sm md:text-xl lg:text-xl'>
@@ -33,6 +34,7 @@ const Footer = () => {
                 >
                     Services
                 </NavLink>
+
                 <NavLink
                     to="/about"
                     className={({ isActive }) =>
@@ -41,6 +43,7 @@ const Footer = () => {
                 >
                     About
                 </NavLink>
+
                 <NavLink
                     to="/contact"
                     className={({ isActive }) =>
@@ -49,6 +52,7 @@ const Footer = () => {
                 >
                     Contact
                 </NavLink>
+
                 <NavLink
                     to="/gallery"
                     className={({ isActive }) =>
@@ -57,6 +61,7 @@ const Footer = () => {
                 >
                     Gallery
                 </NavLink>
+
                 <NavLink
                     to="/blogs"
                     className={({ isActive }) =>
@@ -74,6 +79,7 @@ const Footer = () => {
                 >
                     Faq
                 </NavLink>
+
             </div>
 
             <div className='flex gap-6 lg:gap-12 '>
@@ -83,7 +89,6 @@ const Footer = () => {
                         <FaFacebook className='text-xl md:text-2xl lg:text-2xl text-white hover:scale-125' />
                     </a>
                 </div>
-
 
                 <div>
                     <a href='https://www.instagram.com/soundhealing.hk/' target="_blank" rel="noopener noreferrer">

@@ -128,7 +128,6 @@
 
 
 
-
 import React, { useState, useEffect } from 'react';
 import ServiceCard from '../components/ServiceCard';
 import GalleryCard from '../components/GalleryCard';
@@ -137,6 +136,9 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { useNavigate } from 'react-router-dom';
 import SocialCard from '../components/socialCard';
 import StatsCounter from '../components/StatsCounter';
+import { Helmet } from "react-helmet-async";
+
+
 
 const Home = () => {
     const images = [
@@ -185,19 +187,32 @@ const Home = () => {
     return (
         <div>
 
+            <Helmet>
+                <title>Yogi Akash - Akash Banjara | Sound Healing & Yoga in Nepal</title>
+                <meta
+                    name="description"
+                    content="Official website of Yogi Akash (Akash Banjara) — sound healer, yoga teacher, and meditation guide from Nepal with over 20 years of experience."
+                />
+                <meta
+                    name="keywords"
+                    content="Yogi Akash, Akash Banjara, sound healing Nepal, yoga teacher Nepal, meditation guide"
+                />
+            </Helmet>
+
             <div className="flex flex-col lg:hidden p-1">
 
                 <img
                     src="/Images/home5.jpg"
-                    alt="mobile hero"
+                    alt="Yogi Akash - Akash Banjara sound healing and yoga in Nepal"
                     className="object-cover w-full h-[250px]"
                 />
 
                 <div className="  p-6">
-                    <p className="text-[#666666] font-medium text-base  font-poppins text-justify max-w-4xl py-4">
-                        Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness. His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
-                    </p>
+                    <h1 className="text-[#666666] font-medium text-base  font-poppins text-justify max-w-4xl py-4">
+                        Yogi Akash, also known as Akash Banjara, is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash Banjara inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness. The journey of Akash Banjara is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
+                    </h1>
                 </div>
+
             </div>
 
 
@@ -206,7 +221,7 @@ const Home = () => {
 
                     <img
                         src="/Images/home5.jpg"
-                        alt='testimonial image'
+                        alt="Yogi Akash - Akash Banjara sound healing and yoga in Nepal"
                         className="object-cover w-full h-[550px]"
                         loading='lazy'
                     />
@@ -222,14 +237,16 @@ const Home = () => {
                                     transition={{ duration: 0.6 }}
                                     className="text-center w-2/3 bg-[#a7594d] bg-opacity-40 p-5"
                                 >
+
                                     <p className='text-white font-normal font-poppins text-xl tracking-wider'>
                                         Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness. His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
                                     </p>
 
                                     <a
                                         className='font-bold text-xl  text-[#ffffff]'
-                                        href='/about'>Read more...
+                                        href='/about'>Read more about Akash Banjara...
                                     </a>
+
                                 </motion.div>
                             )}
                         </AnimatePresence>

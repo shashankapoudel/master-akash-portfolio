@@ -1,12 +1,9 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CompanyCard from '../components/CompanyCard';
 import Quotes from '../components/Quotes';
 import ContactCard from '../components/ContactCard';
 import { motion } from 'framer-motion';
-// import { FaUser, FaHistory, FaTrophy } from 'react-icons/fa';
-// import { FaHandsHelping } from 'react-icons/fa';
-// import { WiDirectionRight } from "react-icons/wi";
 import ServiceSegment from '../components/ServiceSegment';
 import PhotoModal from '../components/PhotoModal';
 
@@ -41,7 +38,15 @@ const About = () => {
         '/Images/Gallery/Image5.jpg',
     ];
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setShowText(scrollTop < 100);
+        };
 
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
 
     return (
@@ -65,7 +70,6 @@ const About = () => {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: 1 }}
                             className=" text-center lg:w-2/3 bg-[#a7594d] lg:bg-opacity-40 bg-opacity-50 p-5"
-
                         >
 
                             <p className='text-[#FFFFFF] font-normal font-poppins text-xl tracking-wider'>
@@ -161,7 +165,6 @@ const About = () => {
                     >
                         <div className=' w-full lg:w-1/2 h-full flex items-center mt-2 gap-2'>
 
-                            {/* <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div> */}
                             <div className='grid grid-cols-2 lg:grid-cols-4 justify-center w-full gap-2'>
                                 {
                                     Images.map((img, index) => (
@@ -176,6 +179,7 @@ const About = () => {
                                     ))
                                 }
                             </div>
+
                         </div>
                         {isModalOpen && (
                             <PhotoModal
@@ -186,6 +190,7 @@ const About = () => {
 
                         <div className='w-full lg:w-1/2 flex items-center'>
                             <p className="text-[#666666] leading-relaxed font-poppins text-sm lg:text-base md:text-lg tracking-wider  text-justify text-justify-last">
+
                                 With over a decade of experience in sound therapy and teaching, I have touched the lives of thousands of individuals worldwide. I have healed tens of thousands through my transformative sound therapy sessions and trained countless students in the art of natural healing. My work has been recognized by the Nepalese government, making me the first sound therapist to receive official qualifications in this field.
                                 <br />
                                 I founded the International School of Natural Sound Healing, which has established healing centers and branches in multiple countries. My teachings and techniques have reached a global audience, and I have been invited to share my wisdom in countries such as Germany, Vietnam, Taiwan, Malaysia, Thailand, and Italy.
@@ -193,6 +198,7 @@ const About = () => {
                                 In addition to my healing work, I am an accomplished musician and composer. I have produced and published my own music albums, blending therapeutic soundscapes with artistic expression. My collaborations with fellow sound therapy practitioners have further enriched my contributions to the field.
                                 <br />
                                 My greatest achievement lies in the countless individuals who have found peace, balance, and healing through my work. Their stories of transformation inspire me to continue my mission of spreading the healing power of sound to every corner of the world.
+
                             </p>
                         </div>
 
@@ -208,7 +214,6 @@ const About = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
                     <ServiceSegment />
-
                 </motion.div>
             </div >
 
@@ -242,9 +247,6 @@ const About = () => {
                     <ContactCard />
                 </motion.div>
             </div>
-
-
-
 
         </div >
     );
