@@ -235,16 +235,16 @@ const Home = () => {
                                     animate={{ y: 0, opacity: 1 }}
                                     exit={{ y: -100, opacity: 0 }}
                                     transition={{ duration: 0.6 }}
-                                    className="text-center w-2/3 bg-[#a7594d] bg-opacity-40 p-5"
+                                    className="lg:relative text-center w-2/3 bg-[#a7594d] bg-opacity-40 p-6 flex flex-col items-center gap-2"
                                 >
 
-                                    <p className='text-white font-normal font-poppins text-xl tracking-wider'>
+                                    <p className='text-white font-normal font-poppins text-xl tracking-wide cursor-pointer'>
                                         Akash Banjara is a visionary spiritual teacher, sound healer, and meditation guide with over 20 years of experience. Born into a musical family in Nepal, his journey is deeply rooted in the wisdom of Himalayan yogis and gurus. Blending ancient teachings with modern insights, Akash inspires individuals worldwide to find peace, clarity, and purpose through yoga, meditation, and transformative sound healing. Known for his humility, compassion, and profound connection to his heritage, he creates uplifting experiences that nurture inner harmony and holistic wellness. His journey is a testament to the profound impact of sound healing, meditation, and yoga in cultivating peace, happiness, and purpose.
                                     </p>
 
                                     <a
-                                        className='font-bold text-xl  text-[#ffffff]'
-                                        href='/about'>Read more about Akash Banjara...
+                                        className=' absolute right-2  bottom-1 font-bold text-lg w-full lg:w-1/4 text-[#ffffff] bg-gradient-to-r from-[#044F86] to-[#0A6EB5] p-1'
+                                        href='/about'>Read more...
                                     </a>
 
                                 </motion.div>
