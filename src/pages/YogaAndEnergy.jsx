@@ -21,7 +21,7 @@ const YogaAndEnergy = () => {
 
                 <div className='w-full xl:w-1/2 p-3 md:p-6 lg:p-10'>
                     <img
-                        src='/Images/sound_healing_workshop.jpg'
+                        src='/Images/yoga_energy.jpg'
                         className=' rounded-lg w-full'
                         loading='lazy'
                     />
