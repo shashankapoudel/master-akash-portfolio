@@ -243,7 +243,7 @@ const Home = () => {
                                     </p>
 
                                     <a
-                                        className=' absolute right-2  bottom-1 font-bold text-lg w-full lg:w-1/4 text-[#ffffff] bg-gradient-to-r from-[#044F86] to-[#0A6EB5] p-1'
+                                        className=' absolute right-2  bottom-1 font-bold text-lg w-full lg:w-1/5 text-[#ffffff] bg-gradient-to-r from-[#044F86] to-[#0A6EB5] p-1'
                                         href='/about'>Read more...
                                     </a>
 
