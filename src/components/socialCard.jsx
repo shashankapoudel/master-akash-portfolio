@@ -20,7 +20,7 @@ const SocialCard = () => {
                         <FaInstagram className='text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' />
                     </a>
 
-                    <a href='https://www.youtube.com/@Yogi_akash/featured' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.youtube.com/@Healingmaster_akash' target="_blank" rel="noopener noreferrer">
                         <FaYoutube className='text-xl md:text-2xl lg:text-3xl text-white transition-transform duration-300  ease-out  hover:scale-125' />
                     </a>
                 </div>

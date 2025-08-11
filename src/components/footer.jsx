@@ -97,7 +97,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <a href='https://www.youtube.com/@Gongmaster_Akash/videos' target="_blank" rel="noopener noreferrer">
+                    <a href='https://www.youtube.com/@Healingmaster_akash' target="_blank" rel="noopener noreferrer">
                         <FaYoutube className=' text-xl md:text-2xl lg:text-2xl text-white hover:scale-125' />
                     </a>
                 </div>
