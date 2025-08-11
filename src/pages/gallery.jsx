@@ -246,6 +246,7 @@ const Gallery = () => {
                     {[...Array(totalPages).keys()].map((_, i) => {
                         const page = i + 1;
                         return (
+
                             <button
                                 key={page}
                                 onClick={() => setCurrentPage(page)}
@@ -256,6 +257,7 @@ const Gallery = () => {
                             >
                                 {page}
                             </button>
+
                         );
                     })}
 
@@ -296,7 +298,7 @@ const Gallery = () => {
                                 draggable={false}
                             />
                             <button
-                                className="absolute top-4 right-4 text-white bg-black bg-opacity-50 p-2 rounded-xl hover:bg-opacity-70 text-4xl w-16"
+                                className="absolute top-4 right-4 text-white bg-black bg-opacity-50 p-1 rounded-xl hover:bg-opacity-70 text-2xl w-12"
                                 onClick={() => setSelectedImage({ image: null, index: -1, eventId: null })}
                             >
                                 &times;

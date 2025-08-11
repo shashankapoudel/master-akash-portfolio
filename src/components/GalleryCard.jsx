@@ -7,6 +7,7 @@ const GalleryCard = () => {
     const [isHovered, setIsHovered] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState('');
+    const navigate = useNavigate()
 
     const images = [
         '/Images/Gallery/Image1.jpg',
@@ -51,6 +52,12 @@ const GalleryCard = () => {
     };
 
     const handleImageClick = (index) => {
+
+        if (index === images.length - 1) {
+            navigate('/gallery');
+            return;
+        }
+
         const middleIndex = Math.floor(imagesPerPage / 2);
         const newCurrentIndex = index - middleIndex;
 
@@ -66,7 +73,7 @@ const GalleryCard = () => {
         }
     };
 
-    const navigate = useNavigate()
+
 
     return (
         <div className='p-4 relative'>
