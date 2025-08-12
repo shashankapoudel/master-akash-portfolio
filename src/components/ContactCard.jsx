@@ -29,7 +29,6 @@ const ContactCard = () => {
 
                     <div className='flex items-center justify-center mr-auto lg:text-lg md:text-lg text-sm gap-1'>
                         <CgMail className='text-[#03385F] text-base md:text-lg lgtext-lg font-semibold' />
-
                         <a
                             href="mailto:akashbanjara@gmail.com"
                             className='text-start mr-auto text-[#666666] '>
@@ -39,8 +38,6 @@ const ContactCard = () => {
                             </span>
                         </a>
                     </div>
-
-
 
                     <div className='flex items-center justify-center mr-auto gap-2'>
                         <FaPhoneAlt className=' text-[#03385F] text-base' />
@@ -56,7 +53,6 @@ const ContactCard = () => {
 
                     <div className='flex items-center justify-center mr-auto gap-2'>
                         <FaPhoneAlt className=' text-[#03385F]  text-base' />
-
                         <a
                             href="tel:+852 9416 9123"
                             className='text-left text-[#666666] text-sm md:text-lg lg:text-lg tracking-normal'><span className='font-semibold text-[#03385F] tracking-wider'>Hongkong:  </span>
@@ -64,7 +60,6 @@ const ContactCard = () => {
                                 +852 - 5112 6782
                             </span>
                         </a>
-
                     </div>
 
                     <button

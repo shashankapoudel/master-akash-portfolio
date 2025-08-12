@@ -47,10 +47,10 @@ const MeetingForm = () => {
     const onSubmit = (data) => {
         console.log(data);
         emailjs.send(
-            // '123456789',
+         
             import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
             import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
-            // 'template_lj947kw',
+          
             {
                 to_email: data.email,
                 to_name: data.name,
