@@ -457,7 +457,7 @@ const MeetingForm = () => {
             <Toaster position="top-center" reverseOrder={false} />
             <form onSubmit={handleSubmit(onSubmit)} className="lg:space-y-6 space-y-2 w-full lg:p-12 p-2">
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 p-4  text-sm md:text-lg lg:text-sm">
-                
+
                     <div>
                         <Controller
                             name="name"
@@ -477,7 +477,7 @@ const MeetingForm = () => {
                         />
                     </div>
 
-                  
+
                     <div>
                         <Controller
                             name="email"
@@ -497,7 +497,7 @@ const MeetingForm = () => {
                         />
                     </div>
 
-                   
+
                     <div>
                         <Controller
                             name="country"
@@ -522,7 +522,7 @@ const MeetingForm = () => {
                         />
                     </div>
 
-                  
+
                     <div className='flex lg:flex-row flex-col gap-3'>
                         <Controller
                             name="countryCode"
@@ -563,7 +563,7 @@ const MeetingForm = () => {
                         />
                     </div>
 
-              
+
                     <div>
                         <Controller
                             name="purpose"
@@ -590,7 +590,7 @@ const MeetingForm = () => {
                         />
                     </div>
 
-                  
+
                     <div className="lg:col-span-2">
                         <Controller
                             name="message"
@@ -609,7 +609,7 @@ const MeetingForm = () => {
                             )}
                         />
 
-                     
+
                         <div className="col-span-2 mt-4">
                             <Controller
                                 name="preferredPlatforms"
