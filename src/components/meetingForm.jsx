@@ -1,4 +1,378 @@
 
+// import React, { useEffect } from 'react';
+// import { Controller, useForm, useWatch } from "react-hook-form";
+// import { getCode, getNames } from 'country-list';
+// import { getCountryCallingCode } from "libphonenumber-js";
+// import emailjs from 'emailjs-com';
+// import toast, { Toaster } from 'react-hot-toast';
+
+// const MeetingForm = () => {
+//     const {
+//         control,
+//         setValue,
+//         handleSubmit,
+//         reset,
+//         formState: { errors },
+//     } = useForm({
+//         defaultValues: {
+//             name: "",
+//             email: "",
+//             country: "",
+//             countryCode: "",
+//             phoneNumber: "",
+//             purpose: "",
+//             message: "",
+//             preferredPlatforms: [],
+//         },
+//     });
+
+//     const selectedCountry = useWatch({ control, name: "country" });
+
+//     useEffect(() => {
+//         setValue("countryCode", getCountryCode(selectedCountry));
+//     }, [selectedCountry, setValue]);
+
+//     const getCountryCode = (country) => {
+//         const countryCode = getCode(country);
+//         return countryCode ? ` +${getCountryCallingCode(countryCode)}` : "";
+//     };
+
+//     const countries = getNames().map(name => ({
+//         code: getCode(name),
+//         name,
+//     }));
+
+//     const platforms = ["WhatsApp", "Zoom", "Google Meet", "Phone Call"];
+
+//     const onSubmit = (data) => {
+//         console.log(data);
+//         emailjs.send(
+
+//             import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+//             import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+
+//             {
+//                 to_email: data.email,
+//                 to_name: data.name,
+//                 from_name: "Yogi Akash",
+//                 message: "Welcome to Yogi Akash! We are excited to have you on board.",
+//             },
+//             // 'IlwIIMWZ-GKN6nZgT'
+//             import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
+//         )
+//             .then((response) => {
+//                 console.log('Welcome email sent successfully!', response.status, response.text);
+
+//                 toast.success('Email sent successfully!');
+//                 reset();
+//             })
+
+//             .catch((error) => {
+//                 console.error('Failed to send welcome email:', error);
+//                 alert('Failed to send the welcome email. Please try again.');
+//             });
+//     };
+
+//     return (
+//         <div className="p-2 gap-2 font-poppins">
+//             <Toaster position="top-center" reverseOrder={false} />
+//             <form onSubmit={handleSubmit(onSubmit)} className="lg:space-y-6 space-y-2 w-full lg:p-12 p-2">
+//                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 p-4  text-sm md:text-lg lg:text-sm">
+//                     <div>
+//                         <Controller
+//                             name="name"
+//                             control={control}
+//                             rules={{
+//                                 required: {
+//                                     value: true,
+//                                     message: "Name is required",
+//                                 },
+//                             }}
+//                             render={({ field }) => (
+//                                 <div className="flex flex-col">
+//                                     <label className=" text-sm md:text-lg lg:text-sm  text-[#a7594d] " htmlFor="name">
+//                                         Your name
+//                                     </label>
+//                                     <input
+//                                         {...field}
+//                                         type="text"
+//                                         id="name"
+//                                         placeholder="Enter your Name here"
+//                                         className={`py-2.5 rounded-lg px-4 border ${errors.name ? "border-red-500" : "border-gray-300"
+//                                             } focus:outline-none w-full`}
+//                                     />
+//                                     {errors.name && (
+//                                         <p className="text-red-500 mt-1">{errors.name.message}</p>
+//                                     )}
+//                                 </div>
+//                             )}
+//                         />
+//                     </div>
+
+//                     <div>
+//                         <Controller
+//                             name="email"
+//                             control={control}
+//                             rules={{
+//                                 required: {
+//                                     value: true,
+//                                     message: "Email is required",
+//                                 },
+//                             }}
+//                             render={({ field }) => (
+//                                 <div className="flex flex-col">
+//                                     <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="email">
+//                                         Email
+//                                     </label>
+//                                     <input
+//                                         {...field}
+//                                         type="email"
+//                                         id="email"
+//                                         placeholder="Enter your email here"
+//                                         className={`py-2.5 rounded-lg px-4 border ${errors.email ? "border-red-500" : "border-gray-300"
+//                                             } focus:outline-none w-full`}
+//                                     />
+//                                     {errors.email && (
+//                                         <p className="text-red-500 mt-1">{errors.email.message}</p>
+//                                     )}
+//                                 </div>
+//                             )}
+//                         />
+//                     </div>
+
+//                     <div>
+//                         <Controller
+//                             name="country"
+//                             control={control}
+//                             rules={{
+//                                 required: {
+//                                     value: true,
+//                                     message: "Country is required",
+//                                 },
+//                             }}
+//                             render={({ field }) => (
+//                                 <div className="flex flex-col">
+//                                     <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="country">
+//                                         Country
+//                                     </label>
+//                                     <select
+//                                         {...field}
+//                                         id="country"
+//                                         className={`text-sm py-2.5 rounded-lg px-4 border ${errors.country ? "border-red-500" : "border-gray-300"
+//                                             } focus:outline-none w-full`}
+//                                     >
+//                                         <option value="">Select your country</option>
+//                                         {countries.map((country) => (
+//                                             <option key={country.code} value={country.name}>
+//                                                 {country.name}
+//                                             </option>
+//                                         ))}
+//                                     </select>
+//                                     {errors.country && (
+//                                         <p className="text-red-500 mt-1">{errors.country.message}</p>
+//                                     )}
+//                                 </div>
+//                             )}
+//                         />
+//                     </div>
+
+//                     <div className='flex lg:flex-row flex-col gap-3'>
+//                         <Controller
+//                             name="countryCode"
+//                             control={control}
+//                             defaultValue={getCountryCode(selectedCountry)}
+//                             render={({ field }) => (
+//                                 <div className="flex flex-col">
+//                                     <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="countryCode">
+//                                         Country Code
+//                                     </label>
+//                                     <input
+//                                         {...field}
+//                                         type="text"
+//                                         id="countryCode"
+//                                         value={getCountryCode(selectedCountry)}
+//                                         readOnly
+//                                         className="py-2.5 rounded-lg px-2 border border-gray-300 bg-gray-100 focus:outline-none w-24"
+//                                     />
+//                                 </div>
+//                             )}
+//                         />
+
+//                         <Controller
+//                             name="phoneNumber"
+//                             control={control}
+//                             rules={{
+//                                 required: {
+//                                     value: true,
+//                                     message: "Phone number is required",
+//                                 },
+//                                 pattern: {
+//                                     value: /^[0-9]{7,15}$/,
+//                                     message: "Enter a valid phone number",
+//                                 },
+//                             }}
+//                             render={({ field }) => (
+//                                 <div className="flex flex-col flex-grow">
+//                                     <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="phoneNumber">
+//                                         Phone Number
+//                                     </label>
+//                                     <input
+//                                         {...field}
+//                                         type="text"
+//                                         id="phoneNumber"
+//                                         placeholder="Enter your phone number"
+//                                         className={`py-2.5 rounded-lg px-4 border ${errors.phoneNumber ? "border-red-500" : "border-gray-300"
+//                                             } focus:outline-none w-full`}
+//                                     />
+//                                     {errors.phoneNumber && (
+//                                         <p className="text-red-500 mt-1">
+//                                             {errors.phoneNumber.message}
+//                                         </p>
+//                                     )}
+//                                 </div>
+//                             )}
+//                         />
+//                     </div>
+
+//                     <div>
+//                         <Controller
+//                             name="purpose"
+//                             control={control}
+//                             rules={{
+//                                 required: {
+//                                     value: true,
+//                                     message: "Purpose is required",
+//                                 },
+//                             }}
+//                             render={({ field }) => (
+//                                 <div className="flex flex-col">
+//                                     <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="purpose">
+//                                         Purpose
+//                                     </label>
+//                                     <select
+//                                         {...field}
+//                                         id="purpose"
+//                                         className={`py-2.5  rounded-lg lg:px-4 px-1  text-sm border ${errors.purpose ? "border-red-500" : "border-gray-300"
+//                                             } focus:outline-none w-full`}
+//                                     >
+//                                         <option value="">Select your purpose for call</option>
+//                                         <option value="spiritual">Spiritual Questions</option>
+//                                         <option value="personal">Personal Talk</option>
+//                                         <option value="healing">Sound Healing session</option>
+//                                         <option value="package">About Retreat Package</option>
+//                                         <option value="others">Others</option>
+//                                     </select>
+//                                     {errors.purpose && (
+//                                         <p className="text-red-500 mt-1">{errors.purpose.message}</p>
+//                                     )}
+//                                 </div>
+//                             )}
+//                         />
+//                     </div>
+
+//                     <div className="lg:col-span-2">
+//                         <Controller
+//                             name="message"
+//                             control={control}
+//                             rules={{
+//                                 required: {
+//                                     message: "Message is required",
+//                                 },
+//                             }}
+//                             render={({ field }) => (
+//                                 <div className="flex flex-col">
+//                                     <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="message">
+//                                         Message
+//                                     </label>
+//                                     <textarea
+//                                         {...field}
+//                                         id="message"
+//                                         rows="5"
+//                                         placeholder="Write your message here..."
+//                                         className={`py-2.5 rounded-lg px-4 border ${errors.message ? "border-red-500" : "border-gray-300"
+//                                             } focus:outline-none w-full`}
+//                                     ></textarea>
+//                                     {errors.message && (
+//                                         <p className="text-red-500 mt-1">{errors.message.message}</p>
+//                                     )}
+//                                 </div>
+//                             )}
+//                         />
+
+//                         <div className="col-span-2 mt-4">
+//                             <Controller
+//                                 name="preferredPlatforms"
+//                                 control={control}
+//                                 rules={{
+//                                     validate: (value) =>
+//                                         value.length > 0 || "Please select at least one platform",
+//                                 }}
+//                                 render={({ field }) => (
+//                                     <div className="flex flex-col">
+//                                         <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] mb-2">
+//                                             Preferred Platform for Call
+//                                         </label>
+//                                         <div className="grid grid-cols-2 gap-2">
+//                                             {platforms.map((platform) => (
+//                                                 <label
+//                                                     key={platform}
+//                                                     className="flex items-center space-x-2"
+//                                                 >
+//                                                     <input
+//                                                         type="checkbox"
+//                                                         value={platform}
+//                                                         checked={field.value?.includes(platform)}
+//                                                         onChange={(e) => {
+//                                                             if (e.target.checked) {
+//                                                                 field.onChange([
+//                                                                     ...field.value,
+//                                                                     e.target.value,
+//                                                                 ]);
+//                                                             } else {
+//                                                                 field.onChange(
+//                                                                     field.value.filter(
+//                                                                         (item) => item !== e.target.value
+//                                                                     )
+//                                                                 );
+//                                                             }
+//                                                         }}
+//                                                         className="rounded border-gray-300"
+//                                                     />
+//                                                     <span className='text-sm'>{platform}</span>
+//                                                 </label>
+//                                             ))}
+//                                         </div>
+//                                         {errors.preferredPlatforms && (
+//                                             <p className="text-red-500 mt-1">
+//                                                 {errors.preferredPlatforms.message}
+//                                             </p>
+//                                         )}
+//                                     </div>
+//                                 )}
+//                             />
+//                         </div>
+//                     </div>
+//                 </div>
+
+//                 <div className="flex justify-end mt-4">
+//                     <button
+//                         type="submit"
+//                         className="px-6 py-2 bg-[#3c5551] text-white rounded-lg font-semibold"
+//                     >
+//                         Submit
+//                     </button>
+//                 </div>
+//             </form>
+//         </div>
+//     );
+// };
+
+// export default MeetingForm;
+
+
+
+
+
 import React, { useEffect } from 'react';
 import { Controller, useForm, useWatch } from "react-hook-form";
 import { getCode, getNames } from 'country-list';
@@ -34,7 +408,7 @@ const MeetingForm = () => {
 
     const getCountryCode = (country) => {
         const countryCode = getCode(country);
-        return countryCode ? ` +${getCountryCallingCode(countryCode)}` : "";
+        return countryCode ? `+${getCountryCallingCode(countryCode)}` : "";
     };
 
     const countries = getNames().map(name => ({
@@ -44,33 +418,38 @@ const MeetingForm = () => {
 
     const platforms = ["WhatsApp", "Zoom", "Google Meet", "Phone Call"];
 
-    const onSubmit = (data) => {
-        console.log(data);
-        emailjs.send(
-         
-            import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
-            import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
-          
-            {
-                to_email: data.email,
-                to_name: data.name,
-                from_name: "Yogi Akash",
-                message: "Welcome to Yogi Akash! We are excited to have you on board.",
-            },
-            // 'IlwIIMWZ-GKN6nZgT'
-            import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
-        )
-            .then((response) => {
-                console.log('Welcome email sent successfully!', response.status, response.text);
+    const onSubmit = async (data) => {
+        try {
 
-                toast.success('Email sent successfully!');
-                reset();
-            })
-
-            .catch((error) => {
-                console.error('Failed to send welcome email:', error);
-                alert('Failed to send the welcome email. Please try again.');
+            const response = await fetch("https://script.google.com/macros/s/AKfycbwzFIThgBIuYpjHIlQ2ezH4rM1VZ_38epnetqytBve3-t8VXFNjyUru9LN9CSOdSeQl/exec", {
+                method: "POST",
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
             });
+
+
+            await emailjs.send(
+                import.meta.env.VITE_EMAIL_JS_SERVICE_ID,
+                import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID,
+                {
+                    to_email: data.email,
+                    to_name: data.name,
+                    from_name: "Yogi Akash",
+                    message: "Welcome to Yogi Akash! We are excited to have you on board.",
+                },
+                import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY
+            );
+
+            toast.success("Form submitted and email sent!");
+            reset();
+
+        } catch (error) {
+            console.error("Error:", error);
+            toast.error("Something went wrong!");
+        }
     };
 
     return (
@@ -78,104 +457,72 @@ const MeetingForm = () => {
             <Toaster position="top-center" reverseOrder={false} />
             <form onSubmit={handleSubmit(onSubmit)} className="lg:space-y-6 space-y-2 w-full lg:p-12 p-2">
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 gap-2 p-4  text-sm md:text-lg lg:text-sm">
+                    {/* Name */}
                     <div>
                         <Controller
                             name="name"
                             control={control}
-                            rules={{
-                                required: {
-                                    value: true,
-                                    message: "Name is required",
-                                },
-                            }}
+                            rules={{ required: { value: true, message: "Name is required" } }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
                                     <label className=" text-sm md:text-lg lg:text-sm  text-[#a7594d] " htmlFor="name">
                                         Your name
                                     </label>
-                                    <input
-                                        {...field}
-                                        type="text"
-                                        id="name"
-                                        placeholder="Enter your Name here"
-                                        className={`py-2.5 rounded-lg px-4 border ${errors.name ? "border-red-500" : "border-gray-300"
-                                            } focus:outline-none w-full`}
+                                    <input {...field} type="text" id="name" placeholder="Enter your Name here"
+                                        className={`py-2.5 rounded-lg px-4 border ${errors.name ? "border-red-500" : "border-gray-300"} focus:outline-none w-full`}
                                     />
-                                    {errors.name && (
-                                        <p className="text-red-500 mt-1">{errors.name.message}</p>
-                                    )}
+                                    {errors.name && <p className="text-red-500 mt-1">{errors.name.message}</p>}
                                 </div>
                             )}
                         />
                     </div>
 
+                    {/* Email */}
                     <div>
                         <Controller
                             name="email"
                             control={control}
-                            rules={{
-                                required: {
-                                    value: true,
-                                    message: "Email is required",
-                                },
-                            }}
+                            rules={{ required: { value: true, message: "Email is required" } }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
                                     <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="email">
                                         Email
                                     </label>
-                                    <input
-                                        {...field}
-                                        type="email"
-                                        id="email"
-                                        placeholder="Enter your email here"
-                                        className={`py-2.5 rounded-lg px-4 border ${errors.email ? "border-red-500" : "border-gray-300"
-                                            } focus:outline-none w-full`}
+                                    <input {...field} type="email" id="email" placeholder="Enter your email here"
+                                        className={`py-2.5 rounded-lg px-4 border ${errors.email ? "border-red-500" : "border-gray-300"} focus:outline-none w-full`}
                                     />
-                                    {errors.email && (
-                                        <p className="text-red-500 mt-1">{errors.email.message}</p>
-                                    )}
+                                    {errors.email && <p className="text-red-500 mt-1">{errors.email.message}</p>}
                                 </div>
                             )}
                         />
                     </div>
 
+                    {/* Country */}
                     <div>
                         <Controller
                             name="country"
                             control={control}
-                            rules={{
-                                required: {
-                                    value: true,
-                                    message: "Country is required",
-                                },
-                            }}
+                            rules={{ required: { value: true, message: "Country is required" } }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
                                     <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="country">
                                         Country
                                     </label>
-                                    <select
-                                        {...field}
-                                        id="country"
-                                        className={`text-sm py-2.5 rounded-lg px-4 border ${errors.country ? "border-red-500" : "border-gray-300"
-                                            } focus:outline-none w-full`}
+                                    <select {...field} id="country"
+                                        className={`text-sm py-2.5 rounded-lg px-4 border ${errors.country ? "border-red-500" : "border-gray-300"} focus:outline-none w-full`}
                                     >
                                         <option value="">Select your country</option>
                                         {countries.map((country) => (
-                                            <option key={country.code} value={country.name}>
-                                                {country.name}
-                                            </option>
+                                            <option key={country.code} value={country.name}>{country.name}</option>
                                         ))}
                                     </select>
-                                    {errors.country && (
-                                        <p className="text-red-500 mt-1">{errors.country.message}</p>
-                                    )}
+                                    {errors.country && <p className="text-red-500 mt-1">{errors.country.message}</p>}
                                 </div>
                             )}
                         />
                     </div>
 
+                    {/* Country Code & Phone */}
                     <div className='flex lg:flex-row flex-col gap-3'>
                         <Controller
                             name="countryCode"
@@ -186,10 +533,7 @@ const MeetingForm = () => {
                                     <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="countryCode">
                                         Country Code
                                     </label>
-                                    <input
-                                        {...field}
-                                        type="text"
-                                        id="countryCode"
+                                    <input {...field} type="text" id="countryCode"
                                         value={getCountryCode(selectedCountry)}
                                         readOnly
                                         className="py-2.5 rounded-lg px-2 border border-gray-300 bg-gray-100 focus:outline-none w-24"
@@ -202,58 +546,36 @@ const MeetingForm = () => {
                             name="phoneNumber"
                             control={control}
                             rules={{
-                                required: {
-                                    value: true,
-                                    message: "Phone number is required",
-                                },
-                                pattern: {
-                                    value: /^[0-9]{7,15}$/,
-                                    message: "Enter a valid phone number",
-                                },
+                                required: { value: true, message: "Phone number is required" },
+                                pattern: { value: /^[0-9]{7,15}$/, message: "Enter a valid phone number" },
                             }}
                             render={({ field }) => (
                                 <div className="flex flex-col flex-grow">
                                     <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="phoneNumber">
                                         Phone Number
                                     </label>
-                                    <input
-                                        {...field}
-                                        type="text"
-                                        id="phoneNumber"
-                                        placeholder="Enter your phone number"
-                                        className={`py-2.5 rounded-lg px-4 border ${errors.phoneNumber ? "border-red-500" : "border-gray-300"
-                                            } focus:outline-none w-full`}
+                                    <input {...field} type="text" id="phoneNumber" placeholder="Enter your phone number"
+                                        className={`py-2.5 rounded-lg px-4 border ${errors.phoneNumber ? "border-red-500" : "border-gray-300"} focus:outline-none w-full`}
                                     />
-                                    {errors.phoneNumber && (
-                                        <p className="text-red-500 mt-1">
-                                            {errors.phoneNumber.message}
-                                        </p>
-                                    )}
+                                    {errors.phoneNumber && <p className="text-red-500 mt-1">{errors.phoneNumber.message}</p>}
                                 </div>
                             )}
                         />
                     </div>
 
+                    {/* Purpose */}
                     <div>
                         <Controller
                             name="purpose"
                             control={control}
-                            rules={{
-                                required: {
-                                    value: true,
-                                    message: "Purpose is required",
-                                },
-                            }}
+                            rules={{ required: { value: true, message: "Purpose is required" } }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
                                     <label className=" text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="purpose">
                                         Purpose
                                     </label>
-                                    <select
-                                        {...field}
-                                        id="purpose"
-                                        className={`py-2.5  rounded-lg lg:px-4 px-1  text-sm border ${errors.purpose ? "border-red-500" : "border-gray-300"
-                                            } focus:outline-none w-full`}
+                                    <select {...field} id="purpose"
+                                        className={`py-2.5 rounded-lg lg:px-4 px-1 text-sm border ${errors.purpose ? "border-red-500" : "border-gray-300"} focus:outline-none w-full`}
                                     >
                                         <option value="">Select your purpose for call</option>
                                         <option value="spiritual">Spiritual Questions</option>
@@ -262,51 +584,37 @@ const MeetingForm = () => {
                                         <option value="package">About Retreat Package</option>
                                         <option value="others">Others</option>
                                     </select>
-                                    {errors.purpose && (
-                                        <p className="text-red-500 mt-1">{errors.purpose.message}</p>
-                                    )}
+                                    {errors.purpose && <p className="text-red-500 mt-1">{errors.purpose.message}</p>}
                                 </div>
                             )}
                         />
                     </div>
 
+                    {/* Message */}
                     <div className="lg:col-span-2">
                         <Controller
                             name="message"
                             control={control}
-                            rules={{
-                                required: {
-                                    message: "Message is required",
-                                },
-                            }}
+                            rules={{ required: { message: "Message is required" } }}
                             render={({ field }) => (
                                 <div className="flex flex-col">
                                     <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] " htmlFor="message">
                                         Message
                                     </label>
-                                    <textarea
-                                        {...field}
-                                        id="message"
-                                        rows="5"
-                                        placeholder="Write your message here..."
-                                        className={`py-2.5 rounded-lg px-4 border ${errors.message ? "border-red-500" : "border-gray-300"
-                                            } focus:outline-none w-full`}
+                                    <textarea {...field} id="message" rows="5" placeholder="Write your message here..."
+                                        className={`py-2.5 rounded-lg px-4 border ${errors.message ? "border-red-500" : "border-gray-300"} focus:outline-none w-full`}
                                     ></textarea>
-                                    {errors.message && (
-                                        <p className="text-red-500 mt-1">{errors.message.message}</p>
-                                    )}
+                                    {errors.message && <p className="text-red-500 mt-1">{errors.message.message}</p>}
                                 </div>
                             )}
                         />
 
+                        {/* Preferred Platforms */}
                         <div className="col-span-2 mt-4">
                             <Controller
                                 name="preferredPlatforms"
                                 control={control}
-                                rules={{
-                                    validate: (value) =>
-                                        value.length > 0 || "Please select at least one platform",
-                                }}
+                                rules={{ validate: (value) => value.length > 0 || "Please select at least one platform" }}
                                 render={({ field }) => (
                                     <div className="flex flex-col">
                                         <label className="text-sm md:text-lg lg:text-sm text-[#a7594d] mb-2">
@@ -314,26 +622,16 @@ const MeetingForm = () => {
                                         </label>
                                         <div className="grid grid-cols-2 gap-2">
                                             {platforms.map((platform) => (
-                                                <label
-                                                    key={platform}
-                                                    className="flex items-center space-x-2"
-                                                >
+                                                <label key={platform} className="flex items-center space-x-2">
                                                     <input
                                                         type="checkbox"
                                                         value={platform}
                                                         checked={field.value?.includes(platform)}
                                                         onChange={(e) => {
                                                             if (e.target.checked) {
-                                                                field.onChange([
-                                                                    ...field.value,
-                                                                    e.target.value,
-                                                                ]);
+                                                                field.onChange([...field.value, e.target.value]);
                                                             } else {
-                                                                field.onChange(
-                                                                    field.value.filter(
-                                                                        (item) => item !== e.target.value
-                                                                    )
-                                                                );
+                                                                field.onChange(field.value.filter((item) => item !== e.target.value));
                                                             }
                                                         }}
                                                         className="rounded border-gray-300"
@@ -342,11 +640,7 @@ const MeetingForm = () => {
                                                 </label>
                                             ))}
                                         </div>
-                                        {errors.preferredPlatforms && (
-                                            <p className="text-red-500 mt-1">
-                                                {errors.preferredPlatforms.message}
-                                            </p>
-                                        )}
+                                        {errors.preferredPlatforms && <p className="text-red-500 mt-1">{errors.preferredPlatforms.message}</p>}
                                     </div>
                                 )}
                             />
@@ -355,10 +649,7 @@ const MeetingForm = () => {
                 </div>
 
                 <div className="flex justify-end mt-4">
-                    <button
-                        type="submit"
-                        className="px-6 py-2 bg-[#3c5551] text-white rounded-lg font-semibold"
-                    >
+                    <button type="submit" className="px-6 py-2 bg-[#3c5551] text-white rounded-lg font-semibold">
                         Submit
                     </button>
                 </div>
@@ -368,5 +659,4 @@ const MeetingForm = () => {
 };
 
 export default MeetingForm;
-
 
