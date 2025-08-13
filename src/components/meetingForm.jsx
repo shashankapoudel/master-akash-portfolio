@@ -372,7 +372,6 @@
 
 
 
-
 import React, { useEffect } from 'react';
 import { Controller, useForm, useWatch } from "react-hook-form";
 import { getCode, getNames } from 'country-list';
@@ -420,7 +419,6 @@ const MeetingForm = () => {
 
     const onSubmit = async (data) => {
         try {
-
             const response = await fetch("https://script.google.com/macros/s/AKfycbwzFIThgBIuYpjHIlQ2ezH4rM1VZ_38epnetqytBve3-t8VXFNjyUru9LN9CSOdSeQl/exec", {
                 method: "POST",
                 mode: "no-cors",
@@ -450,6 +448,7 @@ const MeetingForm = () => {
             console.error("Error:", error);
             toast.error("Something went wrong!");
         }
+
     };
 
     return (
@@ -521,7 +520,6 @@ const MeetingForm = () => {
                             )}
                         />
                     </div>
-
 
                     <div className='flex lg:flex-row flex-col gap-3'>
                         <Controller
