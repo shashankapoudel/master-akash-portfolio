@@ -27,7 +27,7 @@ const Blogtable = ({ onEdit, blogs, setRefresh, refresh }) => {
         const confirm = window.confirm('Are you sure you want to delete this FAQ?')
         if (!confirm) return
 
-        const res = await fetch(`${BASE_URL}/blog/delete-blog/${blog._id}`, {
+        const res = await fetch(`${BASE_URL}/blogs/delete-blog/${blog._id}`, {
             method: 'DELETE'
         })
         if (res.ok) {

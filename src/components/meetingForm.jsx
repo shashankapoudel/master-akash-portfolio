@@ -561,7 +561,6 @@ const MeetingForm = () => {
                         />
                     </div>
 
-
                     <div>
                         <Controller
                             name="purpose"
@@ -651,6 +650,7 @@ const MeetingForm = () => {
                         Submit
                     </button>
                 </div>
+
             </form>
         </div>
     );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import BASE_URL from '../../config/api';
 // import BASE_URL from '../../config/api'
 
 const AdminLogin = ({ setAdmin }) => {
@@ -9,7 +10,7 @@ const AdminLogin = ({ setAdmin }) => {
 
     const handleLogin = async () => {
 
-        // const res = await fetch(`${BASE_URL}/users/adminlogin`, {
+        // const res = await fetch(`${BASE_URL}/users/admin-login`, {
         //     method: 'POST',
         //     headers: {
         //         'Content-Type': 'application/json',
