@@ -7,8 +7,6 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import BASE_URL from '../../config/api';
 
-
-
 const BlogModal = ({ isOpen, onClose, existingData }) => {
     console.log(existingData)
 

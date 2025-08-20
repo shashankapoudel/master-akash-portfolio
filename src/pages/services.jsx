@@ -2,13 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
-
+import { Helmet } from 'react-helmet-async';
 const services = [
 
     {
         title: 'Pain Relief Therapy',
         image: '/Images/homePhoto.jpg',
-        description: 'In a world filled with distractions, finding inner peace can feel like a distant dream. Yogi Akash offers personalized meditation guidance to help you reconnect with your inner self, achieve mental clarity, and cultivate lasting tranquility. Whether you are new to meditation or an experienced practitioner, Yogi Akash’s step-by-step guidance is designed to deepen your practice. Learn powerful techniques such as mindful breathing, mantra repetition, and visualization to unlock your potential for self-awareness. Through Yogi Akash’s guidance, you will experience a profound shift in your mental and emotional well-being. From reducing stress to fostering emotional resilience, his teachings are a gateway to a healthier, happier you.',
+        description: "Our Pain Relief Therapy is a gentle, yet powerful, way to soothe your body's aches and discomforts. It uses the deep, targeted vibrations of singing bowls placed directly on or near the areas where you feel pain. As the bowls are played, their gentle resonance travels through your tissues, helping to release stubborn tension and break up energetic blockages. This process not only eases physical pain but also improves circulation, allowing your body to naturally begin its healing journey.",
 
         whatIncluded: [
             'Guided meditation and breathing exercises',
@@ -223,6 +223,19 @@ const ServiceCard = ({ service }) => {
 
     return (
         <div className="bg-white shadow-md rounded-lg p-3 lg:p-6 space-y-4 flex flex-col gap-2">
+
+            <Helmet>
+                <title>Sound Healing & Yoga Services | Yogi Akash (Akash Banjara) from Nepal</title>
+                <meta
+                    name="description"
+                    content="Explore sound healing, yoga, and meditation services by Yogi Akash (Akash Banjara) — a Nepalese master with 20+ years of experience in the Himalayan tradition."
+                />
+                <meta
+                    name="keywords"
+                    content="Yogi Akash services, sound healing Nepal, yoga classes Nepal, meditation guidance Nepal, Akash Banjara services, Himalayan healing practices"
+                />
+                <link rel="canonical" href="https://www.yogiakash.com/services" />
+            </Helmet>
             <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
 
             <img src={service.image}
@@ -285,6 +298,20 @@ const ServicesPage = () => {
 
     return (
         <div className="flex flex-col p-4 lg:p-8 tracking-normal w-full gap-10 border mt-4">
+
+            <Helmet>
+                <title>Sound Healing & Yoga Services | Yogi Akash (Akash Banjara) from Nepal</title>
+                <meta
+                    name="description"
+                    content="Explore sound healing, yoga, and meditation services by Yogi Akash (Akash Banjara) — a Nepalese master with 20+ years of experience in the Himalayan tradition."
+                />
+                <meta
+                    name="keywords"
+                    content="Yogi Akash services, sound healing Nepal, yoga classes Nepal, meditation guidance Nepal, Akash Banjara services, Himalayan healing practices Calm your mind "
+                />
+                <link rel="canonical" href="https://www.yogiakash.com/services" />
+            </Helmet>
+
 
             {!showNewContent ? (
                 <div className="p-4 md:p-4 lg:p-8 items-center w-full mt-4">

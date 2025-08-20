@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import CompanyCard from '../components/CompanyCard';
 import Quotes from '../components/Quotes';
@@ -7,8 +6,6 @@ import { motion } from 'framer-motion';
 import ServiceSegment from '../components/ServiceSegment';
 import PhotoModal from '../components/PhotoModal';
 import { Helmet } from 'react-helmet-async';
-
-
 
 const About = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
