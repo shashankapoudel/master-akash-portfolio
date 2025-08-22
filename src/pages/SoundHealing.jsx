@@ -162,9 +162,7 @@ const SoundHealing = () => {
                             <div>
                                 <h4 className="font-semibold text-gray-800">How it works?:</h4>
                                 <ul className="list-disc list-inside text-gray-600">
-
                                     <div>{service.whatIncluded}</div>
-
                                 </ul>
                             </div>
 
@@ -172,6 +170,7 @@ const SoundHealing = () => {
                                 <h4 className="font-semibold text-gray-800">Benefits:</h4>
                                 <ul className="list-disc list-inside text-gray-600">
                                     {service.benefits.map((item, index) => (
+
                                         <li key={index}>{item}</li>
                                     ))}
                                 </ul>
