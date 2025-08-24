@@ -4,7 +4,6 @@ const SoundHealing = () => {
 
     const Services =
         [
-
             {
                 title: ' Pain Relief Therapy',
                 image: '/Images/homePhoto.jpg',
@@ -18,7 +17,9 @@ const SoundHealing = () => {
                     "It's a peaceful and gentle approach to managing pain without the need for conventional treatments or medication"
                 ],
                 duration: 'A typical session lasts between one and one and a half hours, offering a peaceful and calming experience that can leave you feeling more at ease in your own body',
+
                 location: 'Local studio or virtual options',
+
                 cta: 'Join a session today!',
             },
 
@@ -32,8 +33,11 @@ const SoundHealing = () => {
                 whatIncluded: "As the bowls are played, their vibrations resonate through the skull, delivering a calming effect directly to the mind. This process is believed to help quiet mental chatter, allowing for a state of deep tranquility. By stimulating the Crown and Third Eye chakras, the therapy aims to enhance intuition and promote a sense of inner peace and clarity. This direct application of sound to the head can be a powerful way to awaken and balance the mind.This therapy is particularly suited for individuals who experience mental fatigue, overthinking, or a lack of focus. It's also a valuable practice for those on a spiritual journey, as it can help them connect more deeply with their inner wisdom and enhance their intuition.",
 
                 benefits: ['It helps to clear the mind and improve concentration', 'The vibrations work to calm the constant stream of thoughts, providing a sense of mental quiet.', 'By stimulating the Third Eye chakra, the therapy can improve intuition and insight.', 'It creates a profound sense of calm and mental relaxation, helping you achieve a state of inner peace.', 'Creates a profound sense of calm and mental relaxation.'],
+
                 duration: 'A typical session lasts between one and one and a half hours, offering a dedicated period for mental and spiritual rejuvenation.',
+
                 location: 'Local studio or virtual options',
+
                 cta: 'Book a session today!',
             },
 
@@ -55,6 +59,7 @@ const SoundHealing = () => {
 
             {
                 title: 'Natural Sound Therapy ',
+
                 image: '/Images/homePhoto.jpg',
 
                 description: 'Natural Sound Therapy combines the soothing sounds of nature with healing instruments like singing bowls and chimes. The sounds of birds, flowing water, and gentle wind are blended with the vibrations of instruments to create a truly immersive and restorative experience. This therapy helps to ground you in the present moment, connecting your inner being with the peace and harmony of the natural world. It allows your mind, body, and soul to be transformed, leaving you feeling refreshed and renewed.',
