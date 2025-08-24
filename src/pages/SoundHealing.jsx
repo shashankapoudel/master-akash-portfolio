@@ -45,14 +45,18 @@ const SoundHealing = () => {
                 whatIncluded: "This therapy uses a specialized set of singing bowls, each tuned to the note of a specific chakra, to restore balance and harmony within the body. The Root Chakra is connected to grounding and stability, the Sacral Chakra to creativity and emotions, the Solar Plexus Chakra to personal power and digestion, the Heart Chakra to love and compassion, the Throat Chakra to communication and expression, the Third Eye Chakra to intuition and insight, and the Crown Chakra to spiritual connection. By playing the bowls in a specific sequence along the body, the therapy activates, cleanses, and balances each chakra, allowing energy to flow freely throughout the body and promoting physical health, emotional well-being, and spiritual harmony.",
 
                 benefits: ["It restores the natural flow of energy through the body's chakras.", 'It helps to release blocked emotions and promotes emotional healing', 'It strengthens the connection between the body, mind, and spirit.', 'It improves overall physical, mental, and spiritual health.'],
+
                 duration: 'A typical session lasts between one and one and a half hours, providing a comprehensive and deeply restorative experience for the entire body.',
+
                 location: 'Local studio or virtual options',
+
                 cta: 'Book a session today!',
             },
 
             {
                 title: 'Natural Sound Therapy ',
                 image: '/Images/homePhoto.jpg',
+
                 description: 'Natural Sound Therapy combines the soothing sounds of nature with healing instruments like singing bowls and chimes. The sounds of birds, flowing water, and gentle wind are blended with the vibrations of instruments to create a truly immersive and restorative experience. This therapy helps to ground you in the present moment, connecting your inner being with the peace and harmony of the natural world. It allows your mind, body, and soul to be transformed, leaving you feeling refreshed and renewed.',
 
                 whatIncluded: "This therapy aims to ground you in the present moment by harmonizing your inner being with the peace and tranquility of the natural world. The combined sounds help to soothe the nervous system, reduce stress, and promote a profound state of mind-body-soul relaxation. This process allows for a sense of transformation and renewal, leaving you feeling refreshed and revitalized.This therapy is particularly well-suited for individuals who feel disconnected from nature or who are looking to escape the hustle and stress of urban life. It provides a tranquil sanctuary for the mind, offering a unique and powerful way to relax and find inner peace."
@@ -60,13 +64,17 @@ const SoundHealing = () => {
                 benefits: ["It helps you connect with the calming and stabilizing energy of nature.", 'It promotes a deep state of peace and harmony.', 'The blended sounds work to soothe the nervous system, helping to alleviate stress.', 'It leaves you feeling revitalized and at one with the world.'],
 
                 duration: 'A typical session lasts between one and one and a half hours, providing a comprehensive and deeply restorative experience for the entire body.',
+
                 location: 'Local studio or virtual options',
+
                 cta: 'Book a session today!',
             },
 
             {
                 title: 'Relaxation Therapy ',
+
                 image: '/Images/homePhoto.jpg',
+
                 description: 'Relaxation Therapy is a dedicated session designed to help you achieve a profound state of rest for your mind, body, and soul. Using a variety of healing instruments, this therapy guides you into a state similar to Savasana, the final resting pose in yoga. As you lie down in a comfortable position, the gentle, flowing sounds and vibrations wash over you, encouraging every part of your being to release tension. This allows you to experience a state of complete calm, where you can let go of all physical and mental stress',
 
                 whatIncluded: "During the session, you will lie in a comfortable position, similar to Savasana, the final resting pose in yoga. The gentle, flowing sounds and vibrations from the healing instruments will wash over you, encouraging every part of your being to let go of stress. This process helps you achieve a state of complete calm, allowing you to 'turn off' your mind and enter a state of deep peace.This therapy is ideal for anyone dealing with stress, anxiety, or insomnia. If you find it difficult to unwind at the end of the day, this session provides a perfect environment for deep relaxation. It serves as a powerful tool for self-care, helping you restore your energy and find a peaceful center amidst the chaos of daily life.",
@@ -74,7 +82,9 @@ const SoundHealing = () => {
                 benefits: ["It guides the body and mind into a state of deep rest, helping you to de-stress completely.", 'It helps to release physical and mental tension that has built up over time.', 'By promoting a state of calm, it can lead to better, more restorative sleep.', 'It allows your body to recharge and find a state of balance.'],
 
                 duration: 'A typical session lasts between one and one and a half hours, offering a dedicated period for you to let go and find inner peace.',
+
                 location: 'Local studio or virtual options',
+
                 cta: 'Book a session today!',
             },
 
@@ -119,6 +129,7 @@ const SoundHealing = () => {
 
 
                 <div className='flex flex-col-reverse xl:flex-row w-full'>
+
                     <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-10 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
                         <p className=' tracking-wider'>
                             Sound Healing Therapy is an ancient holistic practice that utilizes the power of sound vibrations to promote physical, mental, and emotional well-being. This therapeutic approach is based on the principle that everything in the universe, including our bodies, vibrates at a specific frequency. When we experience stress, illness, or imbalance, our vibrational frequency can become disrupted.<br />
@@ -127,9 +138,6 @@ const SoundHealing = () => {
                             <br />
                             <br />
                             The benefits of sound healing therapy are profound, including stress reduction, improved sleep, pain relief, emotional release, enhanced mental clarity, and a deeper sense of inner peace and harmony. It's a unique and immersive experience that allows you to unwind, recalibrate, and rejuvenate your entire being.
-
-
-
                         </p>
                     </div>
 
@@ -140,6 +148,7 @@ const SoundHealing = () => {
                             loading='lazy'
                         />
                     </div>
+
                 </div>
 
 
