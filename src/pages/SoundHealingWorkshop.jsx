@@ -39,16 +39,15 @@ const SoundHealingWorkshop = () => {
 
         ]
 
-
     return (
-        <div className='min-h-screen p-4 lg:p-8'>
+        <div className='min-h-screen p-4 lg:p-8 text-[#666666]'>
 
             <div className='flex flex-col gap-8'>
 
                 <div className='flex flex-col-reverse xl:flex-row w-full'>
                     <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-10 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
                         <p className=' tracking-wider'>
-                            Our Sound Healing Workshops offer a unique opportunity to delve deeper into the transformative world of sound. These immersive workshops are designed for individuals seeking to learn about the principles of sound healing, understand its practical applications, and even discover how to use sound for personal well-being or to help others.<br />
+                            Our <strong>Sound Healing Workshops</strong> offer a unique opportunity to delve deeper into the transformative world of sound. These immersive workshops are designed for individuals seeking to learn about the principles of sound healing, understand its practical applications, and even discover how to use sound for personal well-being or to help others.<br />
                             <br />
                             Led by our experienced master, Akash, who brings a wealth of knowledge from traditional and Himalayan sound healing techniques, these workshops combine theoretical understanding with hands-on practice. You'll learn about the science behind sound healing, explore different sound instruments, understand how vibrations affect the body and mind, and develop practical skills for conducting sound healing sessions for yourself or others.
                             <br />

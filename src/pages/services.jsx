@@ -157,7 +157,7 @@ const item1Variants = {
 const ServiceCard = ({ service }) => {
 
     return (
-        <div className="bg-white shadow-md rounded-lg p-3 lg:p-6 space-y-4 flex flex-col gap-2">
+        <div className="bg-white shadow-md rounded-lg p-3 lg:p-12 space-y-4 flex flex-col gap-2">
 
             <Helmet>
                 <title>Sound Healing & Yoga Services | Yogi Akash (Akash Banjara) from Nepal</title>
@@ -353,9 +353,9 @@ const ServicesPage = () => {
 
                 </div>
             ) : (
-                <div className="flex p-4 items-center w-full mt-4">
+                <div className="flex p-8 items-center w-full mt-4">
 
-                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 ">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 ">
                         {services.map((service, index) => (
                             <ServiceCard
                                 className='w-full'

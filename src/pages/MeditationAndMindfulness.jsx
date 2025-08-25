@@ -8,7 +8,8 @@ const MeditationAndMindfulness = () => {
 
                 <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-10 text-base md:text-lg mt-2'>
                     <p className=' tracking-wider'>
-                        Meditation and Mindfulness offer pathways to cultivating inner peace and a deeper connection with the present moment. It's a practice of training your attention and awareness to achieve mental clarity and emotional calm.<br />
+                        <strong>Meditation and Mindfulness</strong> offer pathways to cultivating inner peace and a deeper connection with the present moment. It's a practice of training your attention and awareness to achieve mental clarity and emotional calm.<br />
+
                         <br />
                         We offer various types of meditation, including guided meditations to help you focus, breathing exercises (pranayama) to regulate your energy, and mindfulness practices that teach you to observe your thoughts and feelings without judgment.
                         <br />
