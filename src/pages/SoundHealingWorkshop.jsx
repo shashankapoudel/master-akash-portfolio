@@ -110,6 +110,7 @@ const SoundHealingWorkshop = () => {
                             </p>
 
                             <div className='w-full flex flex-col md:flex-row justify-normal lg:justify-between items-center gap-2 lg:gap-8'>
+
                                 <a
                                     href='https://docs.google.com/forms/d/1qxY65pySNKGWH8xoxSKBMtolXi20s39wciC3KiNs21o/edit'
                                     target="_blank"
@@ -124,8 +125,8 @@ const SoundHealingWorkshop = () => {
                                 >
                                     Read more..
                                 </a>
-                            </div>
 
+                            </div>
                         </div>
                     ))
                     }
