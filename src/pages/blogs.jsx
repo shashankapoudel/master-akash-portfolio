@@ -26,6 +26,7 @@ const BlogPage = () => {
     console.log(blogs)
 
     useEffect(() => {
+
         getBlogs()
     }, [])
 

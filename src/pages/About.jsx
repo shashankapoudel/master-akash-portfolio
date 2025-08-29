@@ -33,9 +33,9 @@ const About = () => {
         '/Images/Gallery/Image3.jpg',
         '/Images/Gallery/Image4.jpg',
         '/Images/Gallery/Image5.jpg',
-        '/Images/Gallery/Image3.jpg',
-        '/Images/Gallery/Image4.jpg',
-        '/Images/Gallery/Image5.jpg',
+        '/Images/Gallery/Image6.jpg',
+        '/Images/Gallery/Image7.jpg',
+        '/Images/Gallery/Image8.jpg',
     ];
 
     useEffect(() => {
@@ -154,7 +154,7 @@ const About = () => {
                         <div className='relative w-full lg:w-1/2 h-full flex items-center'>
                             <div className="absolute top-2 left-2 w-full h-full bg-[#a7594d] rounded-lg -rotate-1"></div>
                             <img
-                                src='/Images/homePhoto.jpg'
+                                src='/Images/My_background.jpg'
                                 alt='About Me'
                                 className='relative rounded-lg shadow-lg w-full h-auto object-cover'
                                 loading='lazy'

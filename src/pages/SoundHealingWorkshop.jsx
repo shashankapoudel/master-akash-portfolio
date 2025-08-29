@@ -21,6 +21,10 @@ const SoundHealingWorkshop = () => {
             },
 
 
+
+
+            
+
             {
                 title: 'Advanced Sound Healer - Certificate Course',
                 image: '/Images/homePhoto.jpg',
