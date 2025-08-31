@@ -23,7 +23,7 @@ const SoundHealingWorkshop = () => {
 
 
 
-            
+
 
             {
                 title: 'Advanced Sound Healer - Certificate Course',
@@ -44,8 +44,9 @@ const SoundHealingWorkshop = () => {
         ]
 
     return (
-        <div className='min-h-screen p-4 lg:p-8 text-[#666666]'>
+        <div className='p-4 lg:p-8 text-[#666666] min-h-screen  flex flex-col items-center justify-center'>
 
+            <h1 className='font-bold text-2xl text-center'>Sound Healing Workshop</h1>
             <div className='flex flex-col gap-8'>
 
                 <div className='flex flex-col-reverse xl:flex-row w-full'>

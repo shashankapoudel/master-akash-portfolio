@@ -128,8 +128,9 @@ const SoundHealing = () => {
 
 
     return (
-        <div className='min-h-screen p-8'>
+        <div className='min-h-screen p-8 text-[#666666]'>
 
+            <h1 className='font-bold text-2xl text-center'>Sound Healing Therapy</h1>
             <div className='flex flex-col gap-12'>
 
 
@@ -137,7 +138,7 @@ const SoundHealing = () => {
 
                     <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-10 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
                         <p className=' tracking-wider'>
-                            Sound Healing Therapy is an ancient holistic practice that utilizes the power of sound vibrations to promote physical, mental, and emotional well-being. This therapeutic approach is based on the principle that everything in the universe, including our bodies, vibrates at a specific frequency. When we experience stress, illness, or imbalance, our vibrational frequency can become disrupted.<br />
+                            <strong>Sound Healing Therapy</strong> is an ancient holistic practice that utilizes the power of sound vibrations to promote physical, mental, and emotional well-being. This therapeutic approach is based on the principle that everything in the universe, including our bodies, vibrates at a specific frequency. When we experience stress, illness, or imbalance, our vibrational frequency can become disrupted.<br />
                             <br />
                             During a sound healing session, our skilled practitioners use a variety of sacred sound instruments such as Tibetan singing bowls, gongs, tuning forks, chimes, and vocalizations. These instruments produce resonant frequencies that help to restore the body's natural vibrational balance. The gentle yet powerful vibrations can release tension, clear energy blockages, calm the nervous system, and induce deep states of relaxation.
                             <br />

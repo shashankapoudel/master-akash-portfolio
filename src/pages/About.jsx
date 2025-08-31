@@ -29,10 +29,10 @@ const About = () => {
 
     const Images = [
         '/Images/Gallery/Image1.jpg',
-        '/Images/Gallery/Image2.jpg',
+        '/Images/Gallery/Image5.jpg',
         '/Images/Gallery/Image3.jpg',
         '/Images/Gallery/Image4.jpg',
-        '/Images/Gallery/Image5.jpg',
+        '/Images/Gallery/Image2.jpg',
         '/Images/Gallery/Image6.jpg',
         '/Images/Gallery/Image7.jpg',
         '/Images/Gallery/Image8.jpg',
@@ -47,7 +47,6 @@ const About = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
 
     return (
         <div className='tracking-wide'>

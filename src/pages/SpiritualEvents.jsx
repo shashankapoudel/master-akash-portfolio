@@ -23,7 +23,7 @@ const SpiritualEvents = () => {
 
 
     return (
-        <div className='min-h-screen p-8 flex flex-col items-center justify-center'>
+        <div className='min-h-screen p-8 flex flex-col items-center justify-center text-[#666666]'>
 
             <h1 className='font-bold text-2xl'>Spiritual Events and Retreats</h1>
             <div className='flex flex-col gap-8 items-center justify-center'>
@@ -35,7 +35,7 @@ const SpiritualEvents = () => {
 
                             In our increasingly busy lives, filled with constant demands and stresses, it's easy to lose touch with our inner selves and the peace we crave. We often find ourselves overwhelmed, leading to a myriad of problems for our mind, body, and spirit. It is in these moments that we truly need to take a deliberate break, step away from the everyday grind, and dedicate time to healing and recharging our mind and body.
                             <br />
-                            Our Spiritual Retreats and Events offer a vital opportunity to do just that. These immersive experiences are carefully curated to provide a sanctuary where you can escape the noise of daily life and embark on a journey of self-discovery and rejuvenation. Whether it's a multi-day retreat or a focused event, each offering is designed to foster a deeper connection with your inner self, promote holistic well-being, and help you find clarity and purpose.
+                            Our <strong>Spiritual Retreats and Events</strong> offer a vital opportunity to do just that. These immersive experiences are carefully curated to provide a sanctuary where you can escape the noise of daily life and embark on a journey of self-discovery and rejuvenation. Whether it's a multi-day retreat or a focused event, each offering is designed to foster a deeper connection with your inner self, promote holistic well-being, and help you find clarity and purpose.
                             <br />
                             Through a blend of guided meditations, sound healing sessions, yoga, mindfulness practices, and transformative workshops, our retreats and events provide a supportive environment for personal growth, emotional healing, and spiritual awakening. It's an invitation to pause, breathe, reconnect with your true essence, and return to your life feeling refreshed, revitalized, and deeply aligned.
 
