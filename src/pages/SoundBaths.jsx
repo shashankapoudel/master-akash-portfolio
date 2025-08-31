@@ -44,13 +44,13 @@ const SoundBaths = () => {
     return (
         <div className='min-h-screen p-4 lg:p-8'>
 
-            <h1 className='font-bold text-2xl text-center text-[#666666]'>Sound Bath and Relaxation</h1>
+            <h1 className='font-bold text-2xl text-center'>Sound Bath and Relaxation</h1>
 
             <div className='flex flex-col gap-8'>
 
                 <div className='flex flex-col-reverse xl:flex-row w-full'>
                     <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-8 text-base md:text-lg lg:text-base mt-5  font-poppins text-justify max-w-4xl '>
-                        <p className=' tracking-wider'>
+                        <p className=' tracking-wider text-[#666666]'>
                             A <strong>Sound Bath and Relaxation</strong> session is a deeply immersive and restorative experience designed to help you unwind, de-stress, and enter a state of profound relaxation. Unlike a typical "bath," you remain fully clothed and comfortably lie down while being bathed in a symphony of resonant sounds.<br />
                             <br />
                             During a session, a practitioner plays a variety of therapeutic sound instruments like singing bowls, gongs, and chimes, creating a continuous wave of harmonious vibrations. These sounds are specifically chosen for their ability to slow down brainwave activity, transitioning you from a beta (awake, alert) to an alpha or even theta state (relaxed, meditative, dream-like). This gentle shift in brain activity helps to calm the nervous system, release tension, and promote deep cellular relaxation.<br />

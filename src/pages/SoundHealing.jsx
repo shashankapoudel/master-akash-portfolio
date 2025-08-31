@@ -6,7 +6,7 @@ const SoundHealing = () => {
         [
             {
                 title: ' Pain Relief Therapy',
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Sound_Healing_Therapy/Pain Relief_1.jpg',
                 description: "Our Pain Relief Therapy is a gentle, yet powerful, way to soothe your body's aches and discomforts. It uses the deep, targeted vibrations of singing bowls placed directly on or near the areas where you feel pain. As the bowls are played, their gentle resonance travels through your tissues, helping to release stubborn tension and break up energetic blockages. This process not only eases physical pain but also improves circulation, allowing your body to naturally begin its healing journey.",
                 whatIncluded: [
                     "The gentle resonance of the singing bowls travels through the body's tissues. This process is believed to help release stubborn tension and break up energetic blockages that may be contributing to pain. By applying these vibrations, the therapy can soothe physical aches and discomfort, and it's particularly helpful for those dealing with chronic pain, muscle aches, or physical tension from stress or old injuries.This therapy doesn't just mask symptoms. It works with your body's own energy to promote natural healing. The vibrations can help improve circulation, allowing for better blood flow and assisting your body in its recovery process.Additionally, the gentle nature of the therapy means there are no harsh side effects."
@@ -26,7 +26,7 @@ const SoundHealing = () => {
 
             {
                 title: 'Head Therapy ',
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Sound_Healing_Therapy/Head Therapy_1.jpg',
 
                 description: ' Head therapy is a specialized treatment that focuses on the mind and consciousness. It involves placing singing bowls directly on the head, particularly near the Crown and Third Eye chakras. As the bowls are played, their vibrations resonate through the skull, calming the mind and stimulating these key energy centers. This helps to quiet mental chatter, enhance intuition, and promote a sense of inner peace and clarity.',
 
@@ -43,8 +43,8 @@ const SoundHealing = () => {
 
             {
                 title: 'Seven Chakra Therapy ',
-                image: '/Images/homePhoto.jpg',
-                description: ' The body has seven major energy centers, or chakras, each with its own unique vibrational frequency and purpose. Seven Chakra Therapy uses a specific set of singing bowls, each tuned to the corresponding note of a chakra (Root, Sacral, Solar Plexus, Heart, Throat, Third Eye, and Crown). By playing the bowls in a sequence along the body, this therapy helps to activate, cleanse, and balance each chakra. This process ensures that energy flows freely throughout the body, improving physical health, emotional well-being, and spiritual harmony.',
+                image: '/Images/Sound_Healing_Therapy/Seven_chakra_Therapy.jpg',
+                description: ' The body has seven major energy centers, or chakras, each with its own unique vibrational frequency and purpose. Seven Chakra Therapy uses a specific set of singing bowls, each tuned to the corresponding note of a chakra (Root, Sacral, Solar Plexus, Heart, Throat, Third Eye, and Crown). By playing the bowls in a sequence along the body, this therapy helps to activate, cleanse, and balance each chakra. ',
 
                 whatIncluded: "This therapy uses a specialized set of singing bowls, each tuned to the note of a specific chakra, to restore balance and harmony within the body. The Root Chakra is connected to grounding and stability, the Sacral Chakra to creativity and emotions, the Solar Plexus Chakra to personal power and digestion, the Heart Chakra to love and compassion, the Throat Chakra to communication and expression, the Third Eye Chakra to intuition and insight, and the Crown Chakra to spiritual connection. By playing the bowls in a specific sequence along the body, the therapy activates, cleanses, and balances each chakra, allowing energy to flow freely throughout the body and promoting physical health, emotional well-being, and spiritual harmony.",
 
@@ -60,7 +60,7 @@ const SoundHealing = () => {
             {
                 title: 'Natural Sound Therapy ',
 
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Sound_Healing_Therapy/Natural Therapy.jpg',
 
                 description: 'Natural Sound Therapy combines the soothing sounds of nature with healing instruments like singing bowls and chimes. The sounds of birds, flowing water, and gentle wind are blended with the vibrations of instruments to create a truly immersive and restorative experience. This therapy helps to ground you in the present moment, connecting your inner being with the peace and harmony of the natural world. It allows your mind, body, and soul to be transformed, leaving you feeling refreshed and renewed.',
 
@@ -78,7 +78,7 @@ const SoundHealing = () => {
             {
                 title: 'Relaxation Therapy ',
 
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Sound_Healing_Therapy/Relaxation_therapy.jpg',
 
                 description: 'Relaxation Therapy is a dedicated session designed to help you achieve a profound state of rest for your mind, body, and soul. Using a variety of healing instruments, this therapy guides you into a state similar to Savasana, the final resting pose in yoga. As you lie down in a comfortable position, the gentle, flowing sounds and vibrations wash over you, encouraging every part of your being to release tension. This allows you to experience a state of complete calm, where you can let go of all physical and mental stress',
 
@@ -95,7 +95,7 @@ const SoundHealing = () => {
 
             {
                 title: 'Energy Balancing Therapy ',
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Sound_Healing_Therapy/Energy balancing.jpg',
                 description: "Our bodies contain a complex network of energetic systems, including Auras and Kundalini energy. Imbalances in these systems can manifest as physical and emotional problems. Energy Balancing Therapy uses the powerful frequencies of sound healing instruments to clear blockages and restore the natural flow of energy. The vibrations work to harmonize your body's subtle energies, bringing them into alignment and creating a feeling of stability and well- being.This therapy helps you feel centered and in control of your own energy.",
 
                 whatIncluded: "This therapy uses the powerful frequencies of sound healing instruments to clear blockages and realign the body's subtle energies. The vibrations from the instruments work to harmonize these energies, creating a feeling of stability and well-being. By bringing these systems into alignment, the therapy helps you feel centered and in control of your own energy.This therapy is particularly beneficial for those who feel their energy is erratic, whether it's too high or too low. It can help individuals who experience unexplained mood swings, persistent fatigue, or a general feeling of being 'off'. It is also an excellent choice for people who work in high-stress environments and need to clear out stagnant or negative energy to restore their internal balance.",
@@ -162,7 +162,7 @@ const SoundHealing = () => {
 
                     {Services.map((service) => (
 
-                        < div className="bg-white shadow-md rounded-lg p-3 lg:p-8 space-y-4">
+                        < div className="bg-white shadow-md rounded-lg p-3 lg:p-10 space-y-4">
 
                             <h3 className="text-xl font-bold text-gray-800 text-center">{service.title}</h3>
 

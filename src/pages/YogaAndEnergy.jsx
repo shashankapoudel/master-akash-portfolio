@@ -4,11 +4,11 @@ const YogaAndEnergy = () => {
     return (
         <div className='min-h-screen p-4 lg:p-8 '>
 
-            <h1 className='font-bold text-2xl text-center text-[#666666]'>Yoga and Energy Awakening</h1>
+            <h1 className='font-bold text-2xl text-center'>Yoga and Energy Awakening</h1>
 
             <div className='flex flex-col-reverse xl:flex-row w-full'>
                 <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-8 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
-                    <p className=' tracking-wider'>
+                    <p className=' tracking-wider text-[#666666]'>
                         <strong>Yoga and Energy Awakening</strong> is a holistic practice that integrates physical postures (asanas), breathing techniques (pranayama), and meditation to harmonize the body, mind, and spirit. It's a journey of self-discovery and a potent tool for unlocking your inner vitality and cultivating a profound sense of well-being.
                         <br />
                         <br />

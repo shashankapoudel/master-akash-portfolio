@@ -4,11 +4,11 @@ const MeditationAndMindfulness = () => {
     return (
         <div className='min-h-screen p-4 lg:p-8 '>
 
-            <h1 className='font-bold text-2xl text-center text-[#666666]'>Meditation and Mindfulness</h1>
+            <h1 className='font-bold text-2xl text-center '>Meditation and Mindfulness</h1>
             <div className='flex flex-col-reverse xl:flex-row w-full'>
 
                 <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-10 text-base md:text-lg lg:text-base   font-poppins text-justify max-w-4xl'>
-                    <p className=' tracking-wider'>
+                    <p className=' tracking-wider text-[#666666]  '>
                         <strong>Meditation and Mindfulness</strong> offer pathways to cultivating inner peace and a deeper connection with the present moment. It's a practice of training your attention and awareness to achieve mental clarity and emotional calm.<br />
 
                         <br />
