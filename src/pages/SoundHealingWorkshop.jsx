@@ -46,11 +46,11 @@ const SoundHealingWorkshop = () => {
     return (
         <div className='p-4 lg:p-8  min-h-screen  flex flex-col items-center justify-center'>
 
-            <h1 className='font-bold text-2xl text-center'>Sound Healing Workshop</h1>
+            <h1 className='font-bold text-2xl text-center text-[#666666]'>Sound Healing Workshop</h1>
             <div className='flex flex-col gap-8'>
 
                 <div className='flex flex-col-reverse xl:flex-row w-full'>
-                    <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-10 text-base md:text-lg lg:text-base mt-2  font-poppins text-justify max-w-4xl'>
+                    <div className='w-full xl:w-1/2 p-3 md:p-6 xl:p-8 text-base md:text-lg lg:text-base mt-5  font-poppins text-justify max-w-4xl'>
                         <p className=' tracking-wider'>
                             Our <strong>Sound Healing Workshops</strong> offer a unique opportunity to delve deeper into the transformative world of sound. These immersive workshops are designed for individuals seeking to learn about the principles of sound healing, understand its practical applications, and even discover how to use sound for personal well-being or to help others.<br />
                             <br />
@@ -63,7 +63,7 @@ const SoundHealingWorkshop = () => {
                         </p>
                     </div>
 
-                    <div className='w-full xl:w-1/2 p-3 md:p-6 lg:p-6'>
+                    <div className='w-full xl:w-1/2 p-3 md:p-6 lg:p-12'>
                         <img
                             src='/Images/sound_healing_workshop.jpg'
                             className=' rounded-lg w-full'
