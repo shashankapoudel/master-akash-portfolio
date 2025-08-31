@@ -2,7 +2,7 @@ import React from 'react'
 
 const YogaAndEnergy = () => {
     return (
-        <div className='min-h-screen p-4 lg:p-8 text-[#666666]'>
+        <div className='min-h-screen p-4 lg:p-8 '>
 
             <h1 className='font-bold text-2xl text-center'>Sound Healing Therapy</h1>
 

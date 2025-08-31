@@ -23,7 +23,7 @@ const SpiritualEvents = () => {
 
 
     return (
-        <div className='min-h-screen p-8 flex flex-col items-center justify-center text-[#666666]'>
+        <div className='min-h-screen p-8 flex flex-col items-center justify-center '>
 
             <h1 className='font-bold text-2xl'>Spiritual Events and Retreats</h1>
             <div className='flex flex-col gap-8 items-center justify-center'>

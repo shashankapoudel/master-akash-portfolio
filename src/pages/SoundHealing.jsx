@@ -128,7 +128,7 @@ const SoundHealing = () => {
 
 
     return (
-        <div className='min-h-screen p-8 text-[#666666]'>
+        <div className='min-h-screen p-8'>
 
             <h1 className='font-bold text-2xl text-center'>Sound Healing Therapy</h1>
             <div className='flex flex-col gap-12'>
