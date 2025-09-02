@@ -8,14 +8,16 @@ const SoundBaths = () => {
             {
                 title: ' Private Sound Healing - One-to-One Sound Healing Experience',
                 image: '/Images/homePhoto.jpg',
-                description: ' Discover a uniquely personal journey of healing through sound.Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.',
+                description: "Discover a uniquely personal journey of healing through sound. Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.Stepping away from group environments, a private session provides an unparalleled sanctuary for open expression,fostering deep energetic balance and a more profound inner connection.If you're looking to manage stress, gain clarity, orsimplycultivate a deeper relationship with yourself, this session offers a gentle, supportive space for personalized healing on your terms.",
                 whatIncluded: [
-                    'Focused conversation to understand your current emotional, mental, or physical state',
-                    'Explore how the unique vibrations of crystal and Tibetan bowls, chimes, gongs, and other healing instruments',
-                    'Personalized coaching sessions'
+                    'Step into a tranquil environment bathed in soft, calming lighting, infused with soothing aromatherapy, and filled with sacred, resonant sounds.',
+                    "We'll begin with guided intention- setting or calming breathwork to help you ease into a state of deep receptivity.",
+                    "Experience a comprehensive sound bath where an array of healing instruments are thoughtfully positioned around you, creating a cocoon of harmonious vibrations.",
+                    "Moments of peaceful reflection are woven in, allowing for deep integration of your experience.",
+                    "Conclude your session in a warm, supportive space where you can share insights and feel truly centered before gently re-engaging with the world",
                 ],
-                benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
-                duration: '2 hours',
+                benefits: ['Each session begins with a focused conversation to understand your current emotional, mental, or physical state.', 'Directly experience how sound can shift your energy, soothe your nervous system, and facilitate deep emotional release.', 'Instruments are carefully selected and played based on your specific intentions and energy field.', 'Your sound journey is uniquely designed for your individual needs, whether you seek grounding, cleansing, emotional opening, or deep rest.'],
+                duration: '60 or 90 minutes',
                 location: 'Local studio or virtual options',
                 cta: 'Join a session today!',
                 link: '/services/private-session'
@@ -90,7 +92,7 @@ const SoundBaths = () => {
 
                             <div>
                                 <h4 className="font-semibold text-gray-800">
-                                    What's Included:
+                                    What to expect:
                                 </h4>
                                 <ul className="list-disc list-inside text-gray-600">
                                     {service.whatIncluded.map((item, index) => (
