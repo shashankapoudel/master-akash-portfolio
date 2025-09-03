@@ -72,8 +72,6 @@ const SoundBaths = () => {
                 </div>
 
 
-
-
                 <div className='flex flex-col lg:flex-row gap-12 '>
 
                     {Services.map((service) => (
@@ -109,6 +107,7 @@ const SoundBaths = () => {
                                     ))}
                                 </ul>
                             </div>
+
 
                             <p className="text-gray-600">
                                 <strong>Duration:</strong> {service.duration}
