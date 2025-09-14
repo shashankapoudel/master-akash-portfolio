@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const SoundBaths = () => {
 
@@ -27,17 +28,19 @@ const SoundBaths = () => {
             {
                 title: 'Group Sound Bath and Healing',
                 image: '/Images/homePhoto.jpg',
-                description: 'Explore a variety of activities aimed at improving your mental clarity, emotional intelligence, and spiritual growth.',
+                description: 'Step into the power of collective healing through sound. Our group sound healing sessions (5–10 participants) are designed to bring people together in a shared field of vibration and resonance. While each individual experiences their own unique journey, the collective energy of the group creates a deeply enriching and uplifting atmosphere.Much like a private session, group sound healing offers relaxation, emotional release, and energetic balance.The difference lies in the shared space, where the presence of others enhances the vibrations, amplifies intentions, and fosters a sense of connection and belonging.Whether with friends, family, colleagues, or fellow seekers, a group sound bath is a beautiful way to heal together.',
                 whatIncluded: [
-                    'Workshops on mindfulness and personal growth',
-                    'Interactive group sessions',
-                    'Personalized coaching sessions'
+                    'A serene environment with calming lights, soothing scents, and resonant healing sounds.',
+                    'Guided breathwork or meditation to align the group’s intentions.',
+                    'A full sound bath where instruments are played in ways that envelop the group in harmonious vibrations.',
+                    'Quiet moments of integration, allowing everyone to absorb and reflect on their experience.',
+                    'Closing circle for optional sharing, leaving participants connected, grounded, and uplifted',
                 ],
-                benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
-                duration: '2 hours',
+                benefits: ['Begin with a short collective check-in or guided intention-setting to harmonize the group’s energy.', 'Experience the healing vibrations of crystal and Tibetan bowls, gongs, chimes, and other instruments that resonate throughout the shared space.', 'The group energy often enhances relaxation, grounding, and emotional release, while creating a sense of unity.', 'Perfect for those who wish to journey together—sharing peace, joy, and transformation in a community setting.'],
+                duration: '60 or 90 minutes',
                 location: 'Local studio or virtual options',
                 cta: 'Book a session today!',
-                link: '/services/privatesession'
+                link: '/services/group-session'
             },
 
         ]
@@ -45,6 +48,19 @@ const SoundBaths = () => {
 
     return (
         <div className='min-h-screen p-4 lg:p-8'>
+
+            <Helmet>
+                <title>Sound Bath</title>
+                <meta
+                    name="description"
+                    content="Explore sound bath by Yogi Akash (Akash Banjara) -a Nepalese master with 20+ years of experience in the Himalayan tradition."
+                />
+                <meta
+                    name="keywords"
+                    content="Yogi Akash services, Sound Healing Nepal, Sound Healing Workshop, Akash Banjara services,"
+                />
+                <link rel="canonical" href="https://www.yogiakash.com/services/healingworkshop" />
+            </Helmet>
 
             <h1 className='font-bold text-2xl text-center'>Sound Bath and Relaxation</h1>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const SoundHealingWorkshop = () => {
 
@@ -45,6 +46,19 @@ const SoundHealingWorkshop = () => {
 
     return (
         <div className='p-4 lg:p-8  min-h-screen  flex flex-col items-center justify-center'>
+
+            <Helmet>
+                <title>Sound Healing Workshop</title>
+                <meta
+                    name="description"
+                    content="Explore sound healing workshop by Yogi Akash (Akash Banjara) -a Nepalese master with 20+ years of experience in the Himalayan tradition."
+                />
+                <meta
+                    name="keywords"
+                    content="Yogi Akash services, Sound Healing Nepal, Sound Healing Workshop, Akash Banjara services,"
+                />
+                <link rel="canonical" href="https://www.yogiakash.com/services/healingworkshop" />
+            </Helmet>
 
             <h1 className='font-bold text-2xl text-center '>Sound Healing Workshop</h1>
             <div className='flex flex-col gap-8'>

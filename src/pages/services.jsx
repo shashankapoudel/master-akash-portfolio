@@ -288,6 +288,7 @@ const ServicesPage = () => {
                             target="_blank" rel="noopener noreferrer"
                             href='/services/spiritualevents'
                             className='cursor-pointer'
+                            
                         >
                             <motion.div
                                 variants={itemVariants}

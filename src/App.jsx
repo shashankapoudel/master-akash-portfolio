@@ -27,6 +27,7 @@ import { useState } from 'react';
 import AdminLogin from './pages/admin/AdminLogin';
 import AdminLayout from './layouts/AdminLayout';
 import BlogsAdmin from './pages/admin/BlogsAdmin';
+import GroupSession from './pages/groupsession';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
 
           <Route path="/services/soundbaths" element={<SoundBaths />} />
           <Route path="/services/private-session" element={<PrivateSession />} />
+          <Route path="/services/group-session" element={<GroupSession />} />
 
           <Route path="/services/healingworkshop" element={<SoundHealingWorkshop />} />
 
