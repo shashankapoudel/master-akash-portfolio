@@ -9,20 +9,31 @@ const SoundHealingWorkshop = () => {
             {
                 title: 'Basic Sound Healer - Certificate Course ',
                 image: '/Images/homePhoto.jpg',
-                description: ' Discover a uniquely personal journey of healing through sound.Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.',
+                description: 'Are you willing to express the transformational power of sound? Our Teacher Training Course is the pioneer course, aimed at providing you with the experience, knowledge, and skills to qualify as a certified sound healing teacher.This course is an all- around adventure that will enable you to lead people and help them find their way to healing and spiritual development.You will study and train strategies of balancing emotional, mental, and physical health, all in the process of enriching your spiritual experience.It is divided into a step - by - step program, which ensures that you acquire the confidence and skills to run classes of your own.You will explore all issues through facilitated learning and practice, both the principles and their applications to the highest level.',
                 whatIncluded: [
-                    'Focused conversation to understand your current emotional, mental, or physical state',
-                    'Explore how the unique vibrations of crystal and Tibetan bowls, chimes, gongs, and other healing instruments',
-                    'Personalized coaching sessions'
+
+                    'An in-depth program with all elements of sound healing.',
+                    'An in-depth program with all elements of sound healing.',
+                    'By the end of it, you will be an accredited teacher of sound healing.',
+                    'Master to assist others to achieve balance in their emotional, physiological, and mental well-being.',
+                    'Master to assist others to achieve balance in their emotional, physiological, and mental well-being.',
+                    'This course is not only a teaching course, but it is also a great spiritual course to you.',
                 ],
-                benefits: ['Improved clarity', 'Stronger emotional intelligence', 'Growth mindset'],
-                duration: '2 hours',
+                benefits: [
+                    'Certification: Professionally certify as a sound healing teacher.',
+                    'Thorough expertise: Learn the basic and higher principles of sound healing.',
+                    'Mastery of Expertise: Learn to design, format, and facilitate your own classes and workshops.',
+                    'Holistic Knowledge: Have a profound insight into the way in which sound influences emotional, mental, and physical health.',
+                    'Professional Growth/Personal Growth: Change your passion into a professional career, and also enhance your personal spiritual growth.',
+                    'Mentorship: Be coached and assisted by instructors with experience.',
+                    'Community: Network with the community of other students and practitioners.'
+                ],
+                duration: 'The time taken depends on the level of training. Details are in the course form.',
                 location: 'Local studio or virtual options',
                 cta: 'Join a session today!',
+                price: 'The course form will have information on the price',
+                link: '/services/basicsoundhealingcourse'
             },
-
-
-
 
 
 

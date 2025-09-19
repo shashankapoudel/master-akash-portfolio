@@ -28,6 +28,7 @@ import AdminLogin from './pages/admin/AdminLogin';
 import AdminLayout from './layouts/AdminLayout';
 import BlogsAdmin from './pages/admin/BlogsAdmin';
 import GroupSession from './pages/groupsession';
+import BasicSoundHealing from './pages/BasicSoundHealing';
 
 function App() {
 
@@ -69,6 +70,8 @@ function App() {
 
 
           <Route path="/services/advsoundhealingcourse" element={<AdvSoundHealingCourse />} />
+          <Route path="/services/basicsoundhealingcourse" element={<BasicSoundHealing />} />
+
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
@@ -76,8 +79,6 @@ function App() {
           <Route path="/blogs" element={<BlogPage />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact/schedule-meeting" element={<SchedueleMeeting />} />
-
-
 
           <Route path="/admin" element={admin ? <AdminLayout setAdmin={setAdmin} /> : <AdminLogin setAdmin={setAdmin} />}>
 
