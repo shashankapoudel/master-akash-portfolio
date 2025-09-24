@@ -61,13 +61,13 @@ function App() {
           <Route path="/services/private-session" element={<PrivateSession />} />
           <Route path="/services/group-session" element={<GroupSession />} />
 
+
+
           <Route path="/services/healingworkshop" element={<SoundHealingWorkshop />} />
 
           <Route path="/services/yoga&energy" element={<YogaAndEnergy />} />
 
           <Route path="/services/spiritualevents" element={<SpiritualEvents />} />
-
-
 
           <Route path="/services/advsoundhealingcourse" element={<AdvSoundHealingCourse />} />
           <Route path="/services/basicsoundhealingcourse" element={<BasicSoundHealing />} />

@@ -11,7 +11,6 @@ const AdvSoundHealingCourse = () => {
                 This Master Level Sound Healing course is designed to provide students with a comprehensive understanding of sound healing principles, techniques, and practices. Through a combination of theoretical knowledge and hands-on experience, students will learn to use various sound healing instruments, understand the impact of sound on the physical, emotional, mental, and spiritual levels, and develop the skills to become master sound healers. By the end of the course, students will be equipped to facilitate healing for themselves and others, while also deepening their connection to their higher self and the universal energy.
                 <br />
 
-
                 <br />
                 <strong>Week 1: Introduction to Master Level Sound Healing</strong>
                 <br />
@@ -40,6 +39,7 @@ const AdvSoundHealingCourse = () => {
                 <br />
 
                 <strong>Week 3: Finding and Removing Negative Energies.</strong>
+
                 <br />
                 - Identifying Negative Energies.<br />
                 - Recognizing signs of negative energy in the body and environment.<br />
@@ -49,23 +49,28 @@ const AdvSoundHealingCourse = () => {
                 - Creating protective soundscapes to shield against negativity.<br />
                 - Creating a Positive Environment.<br />
                 - Using sound vibrations to cleanse and uplift spaces.<br />
-
                 <br />
 
                 <strong>Week 4: Cleansing the Physical Body</strong>
+
                 <br />
                 - Detoxifying the Body with Sound Vibrations.<br />
                 - Techniques Healing the root chakra (Muladhara) involves practices that promote grounding, stability, and security. Here are some effective methods:<br />
                 <br />
+
                 <strong>1. Meditation:</strong>
+
                 <br />
                 - Focus on the base of your spine, visualizing a red, glowing energy center.<br />
                 - Use affirmations like "I am safe," "I am grounded," or "I trust in the process of life."<br />
                 <br />
+
                 <strong> 2. Grounding Exercises:</strong> <br />
+
                 - Walk barefoot on grass or earth.<br />
                 - Practice mindfulness by focusing on your connection to the ground.<br />
                 <br />
+                
                 <strong>3. Yoga Poses:</strong><br />
                 - Mountain Pose (Tadasana)<br />
                 - Child’s Pose (Balasana)<br />
@@ -95,7 +100,6 @@ const AdvSoundHealingCourse = () => {
                 - If needed, work with a therapist, energy healer, or spiritual guide to address deeper emotional or psychological blocks.<br />
                 <br />
                 Consistency is key—regular practice will help restore balance to your root chakra over time. Master Level Sound Healing Course: A Journey into Yogic Science and Self-Healing.<br />
-
 
             </div>
 
