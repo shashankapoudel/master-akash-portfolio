@@ -110,7 +110,7 @@ const SoundHealing = () => {
 
             {
                 title: 'Aura Cleansing Therapy ',
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Aura_Cleansing.jpg',
 
                 description: "Your aura is an energy field that surrounds your body, and it can collect negative or stagnant energy from your environment and daily interactions. Aura Cleansing Therapy uses singing bowls and other healing instruments to clear this field. The sounds and vibrations act as a gentle energetic broom, sweeping away any unwanted energy and leaving your aura feeling clean, bright, and protected. This process not only purifies your energy but also strengthens your own protective shield.",
 

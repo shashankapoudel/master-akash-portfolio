@@ -7,7 +7,7 @@ const SpiritualEvents = () => {
         [
             {
                 title: 'Nepal Yoga and Healing Retreat ',
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Retreat.jpg',
                 description: ' Discover a uniquely personal journey of healing through sound.Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.',
                 whatIncluded: [
                     'Focused conversation to understand your current emotional, mental, or physical state',

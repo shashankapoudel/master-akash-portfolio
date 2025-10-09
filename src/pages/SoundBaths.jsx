@@ -27,7 +27,7 @@ const SoundBaths = () => {
 
             {
                 title: 'Group Sound Bath and Healing',
-                image: '/Images/homePhoto.jpg',
+                image: '/Images/Group_Soundbath.jpg',
                 description: 'Step into the power of collective healing through sound. Our group sound healing sessions (5–10 participants) are designed to bring people together in a shared field of vibration and resonance. While each individual experiences their own unique journey, the collective energy of the group creates a deeply enriching and uplifting atmosphere.Much like a private session, group sound healing offers relaxation, emotional release, and energetic balance.The difference lies in the shared space, where the presence of others enhances the vibrations, amplifies intentions, and fosters a sense of connection and belonging.Whether with friends, family, colleagues, or fellow seekers, a group sound bath is a beautiful way to heal together.',
                 whatIncluded: [
                     'A serene environment with calming lights, soothing scents, and resonant healing sounds.',

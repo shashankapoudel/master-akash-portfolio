@@ -88,8 +88,9 @@ const BasicSoundHealing = () => {
                 -The course teaches how to choose and cleanse quality singing bowls; students who already own bowls will learn maintenance and selection criteria.<br />
 
 
-
             </div>
+
+
 
         </div>
     )
