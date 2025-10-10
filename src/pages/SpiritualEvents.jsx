@@ -18,6 +18,7 @@ const SpiritualEvents = () => {
                 duration: '2 hours',
                 location: 'Local studio or virtual options',
                 cta: 'Join a session today!',
+                link: '/services/spiritualevents/nepal-retreat'
             },
         ]
 

@@ -29,6 +29,7 @@ import AdminLayout from './layouts/AdminLayout';
 import BlogsAdmin from './pages/admin/BlogsAdmin';
 import GroupSession from './pages/groupsession';
 import BasicSoundHealing from './pages/BasicSoundHealing';
+import NepalRetreat from './pages/Nepalretreat';
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
           <Route path="/services/yoga&energy" element={<YogaAndEnergy />} />
 
           <Route path="/services/spiritualevents" element={<SpiritualEvents />} />
+          <Route path="/services/spiritualevents/nepal-retreat" element={<NepalRetreat />} />
 
           <Route path="/services/advsoundhealingcourse" element={<AdvSoundHealingCourse />} />
           <Route path="/services/basicsoundhealingcourse" element={<BasicSoundHealing />} />
