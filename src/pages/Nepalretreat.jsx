@@ -118,7 +118,6 @@ const NepalRetreat = () => {
                                     <th className='border border-gray-400 text-left w-24 px-4 py-2'>DAY</th>
                                     <th className='border border-gray-400 text-left w-24 px-4 py-2'>DESTINATION</th>
                                     <th className='border border-gray-400 text-left w-24 px-4 py-2'>KEY ACTIVITIES</th>
-
                                 </tr>
                             </thead>
 
@@ -137,7 +136,6 @@ const NepalRetreat = () => {
                                             </td>
 
                                         </tr>
-
                                     ))
                                 }
                             </tbody>
@@ -172,8 +170,6 @@ const NepalRetreat = () => {
                     </div>
 
                 </div>
-
-
 
             </div>
         </div>
