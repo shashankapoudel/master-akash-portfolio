@@ -132,9 +132,13 @@ const BasicSoundHealing = () => {
                 <br />
 
                 <strong>Practical details & what to bring:</strong><br />
+
                 -Comfortable clothing, a towel (small/medium/large), mattress/pillow for practice, sandalwood/incense if desired. A peaceful, dimly lit space is ideal for sessions.<br />
 
                 -The course teaches how to choose and cleanse quality singing bowls; students who already own bowls will learn maintenance and selection criteria.<br />
+
+
+
 
 
             </div>
