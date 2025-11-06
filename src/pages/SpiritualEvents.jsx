@@ -24,9 +24,9 @@ const SpiritualEvents = () => {
 
 
     return (
-        <div className='min-h-screen p-8 flex flex-col items-center justify-center '>
+        <div className='min-h-screen p-4 lg:p-8 flex flex-col items-center justify-center '>
 
-            <h1 className='font-bold text-2xl '>Spiritual Events and Retreats</h1>
+            <h1 className='font-bold text-xl lg:text-2xl text-center'>Spiritual Events and Retreats</h1>
             <div className='flex flex-col gap-8 items-center justify-center'>
 
                 <div className='flex flex-col-reverse xl:flex-row w-full'>

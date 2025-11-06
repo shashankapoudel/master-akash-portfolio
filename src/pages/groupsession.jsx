@@ -2,9 +2,9 @@ import React from 'react'
 
 const GroupSession = () => {
     return (
-        <div className='min-h-screen p-8 flex items-center justify-center w-full text-[#111111]'>
+        <div className='min-h-screen p-4 lg:p-8 flex items-center justify-center w-full text-[#111111]'>
 
-            <div className='w-1/2'>
+            <div className='w-full lg:w-1/2 p-2'>
                 Group Sound Healing - group Sound Healing Experience
                 Step into the power of collective healing through sound. Our group sound healing sessions (5–10 participants) are designed to bring people together in a shared field of vibration and resonance. While each individual experiences their own unique journey, the collective energy of the group creates a deeply enriching and uplifting atmosphere.
                 Much like a private session, group sound healing offers relaxation, emotional release, and energetic balance. The difference lies in the shared space, where the presence of others enhances the vibrations, amplifies intentions, and fosters a sense of connection and belonging. Whether with friends, family, colleagues, or fellow seekers, a group sound bath is a beautiful way to heal together.

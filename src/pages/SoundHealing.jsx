@@ -128,7 +128,7 @@ const SoundHealing = () => {
 
 
     return (
-        <div className='min-h-screen p-8'>
+        <div className='min-h-screen p-4 lg:p-8'>
 
             <h1 className='font-bold text-2xl text-center'>Sound Healing Therapy</h1>
             <div className='flex flex-col gap-12'>
@@ -158,7 +158,7 @@ const SoundHealing = () => {
                 </div>
 
 
-                <div className='p-8 grid grid-cols-2 gap-8 items-center justify-center '>
+                <div className='p-2 lg:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center justify-center '>
 
                     {Services.map((service) => (
 

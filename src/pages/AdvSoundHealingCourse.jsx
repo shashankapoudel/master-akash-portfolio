@@ -25,9 +25,9 @@ const AdvSoundHealingCourse = () => {
     ]
 
     return (
-        <div className='w-full flex items-center justify-center p-8'>
+        <div className='w-full  flex items-center justify-center p-8'>
 
-            <div className='text-[#11111] w-1/2'>
+            <div className='text-[#11111] w-full lg:w-1/2'>
 
                 <strong className='text-center'>Advanced Sound Healing Certified Course</strong>
 

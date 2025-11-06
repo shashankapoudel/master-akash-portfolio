@@ -2,9 +2,9 @@ import React from 'react'
 
 const PrivateSession = () => {
     return (
-        <div className='min-h-screen p-8 flex items-center justify-center w-full text-[#111111]'>
+        <div className='min-h-screen p-5 lg:p-8 flex items-center justify-center w-full text-[#111111]'>
 
-            <div className='w-1/2'>
+            <div className='w-full lg:w-1/2 p-2'>
                 Private Sound Healing - One-to-One Sound Healing Experience
                 Discover a uniquely personal journey of healing through sound. Our private sound healing sessions are meticulously crafted to resonate with your individual needs, focusing on your specific feelings and energetic landscape.
                 Stepping away from group environments, a private session provides an unparalleled sanctuary for open expression, fostering deep energetic balance and a more profound inner connection. If you're looking to manage stress, gain clarity, or simply cultivate a deeper relationship with yourself, this session offers a gentle, supportive space for personalized healing on your terms. <br />

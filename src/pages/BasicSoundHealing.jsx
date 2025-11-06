@@ -20,9 +20,9 @@ const BasicSoundHealing = () => {
 
 
     return (
-        <div className='w-full flex items-center justify-center p-8'>
+        <div className='w-full flex items-center justify-center p-4 lg:p-8'>
 
-            <div className='text-[#11111] w-1/2'>
+            <div className='text-[#11111] w-full lg:w-1/2 p-1'>
 
                 <strong> The journey of sound healing:</strong>
                 <hr />

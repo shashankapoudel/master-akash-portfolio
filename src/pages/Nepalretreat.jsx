@@ -54,19 +54,20 @@ const itinerary = [
 
 const NepalRetreat = () => {
     return (
-        <div className='min-h-screen p-8 '>
-            <h1 className='font-bold text-3xl text-center'>Body, Mind and Soul Rejuvenation Retreat</h1>
+        <div className='min-h-screen p-3 lg:p-8'>
+
+            <h1 className='font-bold text-2xl lg:text-3xl text-center'>Body, Mind and Soul Rejuvenation Retreat</h1>
 
             <div className='flex items-center justify-center w-full mt-4'>
                 <img
                     src='/Images/Retreat.jpg'
-                    className='w-3/4 object-cover h-[450px]'
+                    className='w-full lg:w-3/4 object-cover h-full lg:h-[450px]'
                 />
             </div>
 
-            <div className='w-full p-4 flex flex-col items-center justify-center mt-4'>
+            <div className='w-full p-2 lg:p-4 flex flex-col items-center justify-center mt-4'>
 
-                <div className='w-3/4 flex flex-col items-start justify-center gap-4'>
+                <div className='w-full lg:w-3/4 flex flex-col items-start justify-center gap-4'>
 
                     <div className=''>
                         <h1 className='font-bold text-lg'>What is 'Retreat'?</h1>
@@ -109,15 +110,15 @@ const NepalRetreat = () => {
                 </div>
 
 
-                <div className='w-3/4 p-6'>
+                <div className='w-full lg:w-3/4 p-0 lg:p-6'>
                     <h2 className='text-lg font-semibold mb-4'>Short internary review:</h2>
                     <div>
                         <table className='min-w-full'>
                             <thead className=' text-gray-800'>
                                 <tr>
-                                    <th className='border border-gray-400 text-left w-24 px-4 py-2'>DAY</th>
-                                    <th className='border border-gray-400 text-left w-24 px-4 py-2'>DESTINATION</th>
-                                    <th className='border border-gray-400 text-left w-24 px-4 py-2'>KEY ACTIVITIES</th>
+                                    <th className='border border-gray-400 text-left w-20 lg:w-24 px-1 lg:px-4 py-2'>DAY</th>
+                                    <th className='border border-gray-400 text-left w-20 lg:w-24 px-1 lg:px-4 py-2'>DESTINATION</th>
+                                    <th className='border border-gray-400 text-left w-20 lg:w-24 px-1 lg:px-4 py-2'>KEY ACTIVITIES</th>
                                 </tr>
                             </thead>
 
@@ -125,13 +126,13 @@ const NepalRetreat = () => {
                                 {
                                     itinerary.map((i, index) => (
                                         <tr key={index}>
-                                            <td className='border border-gray-400 text-gray px-4 py-2 font-medium'>
+                                            <td className='border border-gray-400 text-gray px-1 lg:px-4 py-2 font-medium'>
                                                 {i.day}
                                             </td>
-                                            <td className='border border-gray-400 text-gray px-4 py-2 font-medium'>
+                                            <td className='border border-gray-400 text-gray px-1 lg:px-4 py-2 font-medium'>
                                                 {i.destination}
                                             </td>
-                                            <td className='border border-gray-400 text-gray px-4 py-2 font-medium'>
+                                            <td className='border border-gray-400 text-gray px-1 lg:px-4 py-2 font-medium'>
                                                 {i.activities}
                                             </td>
 
@@ -145,10 +146,10 @@ const NepalRetreat = () => {
                 </div>
 
 
-                <div className='w-2/3 flex flex-col items-start justify-center gap-4'>
+                <div className='w-full lg:w-2/3 flex flex-col items-start justify-center gap-4 mt-4'>
 
                     <div>
-                        <h1 className="font-bold text-xl mb-4">Trip Inclusions:</h1>
+                        <h1 className="font-bold text-xl mb-2">Trip Inclusions:</h1>
                         <ul className="space-y-2 text-[#666666] list-disc list-inside leading-relaxed">
                             <li>Accommodation: Standard twin-sharing stays in 4-star equivalent hotels (Kathmandu, Pokhara, Nagarkot, Chitwan) and a cozy lodge in Ghandruk.</li>
                             <li>Transportation: All airport transfers, ground transport by private A/C vehicles, and flights between Kathmandu, Pokhara, and Chitwan.</li>

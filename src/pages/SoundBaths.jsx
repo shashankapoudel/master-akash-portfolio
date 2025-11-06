@@ -47,7 +47,7 @@ const SoundBaths = () => {
 
 
     return (
-        <div className='min-h-screen p-4 lg:p-8'>
+        <div className='min-h-screen p-3 lg:p-8'>
 
             <Helmet>
                 <title>Sound Bath</title>
