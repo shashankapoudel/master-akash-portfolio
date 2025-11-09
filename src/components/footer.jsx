@@ -27,15 +27,6 @@ const Footer = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/services"
-                    className={({ isActive }) =>
-                        isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
-                    }
-                >
-                    Services
-                </NavLink>
-
-                <NavLink
                     to="/about"
                     className={({ isActive }) =>
                         isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
@@ -45,12 +36,21 @@ const Footer = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/contact"
+                    to="/services"
                     className={({ isActive }) =>
                         isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
                     }
                 >
-                    Contact
+                    Services
+                </NavLink>
+
+                <NavLink
+                    to="/blogs"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Blogs
                 </NavLink>
 
                 <NavLink
@@ -63,12 +63,12 @@ const Footer = () => {
                 </NavLink>
 
                 <NavLink
-                    to="/blogs"
+                    to="/contact"
                     className={({ isActive }) =>
-                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                        isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
                     }
                 >
-                    Blogs
+                    Contact
                 </NavLink>
 
                 <NavLink
