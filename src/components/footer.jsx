@@ -54,6 +54,15 @@ const Footer = () => {
                 </NavLink>
 
                 <NavLink
+                    to="/faq"
+                    className={({ isActive }) =>
+                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
+                    }
+                >
+                    Faq
+                </NavLink>
+
+                <NavLink
                     to="/gallery"
                     className={({ isActive }) =>
                         isActive ? 'text-[#28282E]' : 'hover:text-[#3c5551]'
@@ -71,14 +80,7 @@ const Footer = () => {
                     Contact
                 </NavLink>
 
-                <NavLink
-                    to="/faq"
-                    className={({ isActive }) =>
-                        isActive ? 'text-[#3c5551]' : 'hover:text-[#3c5551]'
-                    }
-                >
-                    Faq
-                </NavLink>
+
 
             </div>
 
