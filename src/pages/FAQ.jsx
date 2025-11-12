@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const FAQ = () => {
+
+    const [isOpen, setIsOpen] = useState(null)
 
     const Faqs = [
         {
@@ -22,12 +24,11 @@ const FAQ = () => {
             answer: "Master Akash, a Himalayas-rooted healer from Nepal, brings over 18 years of expertise in ancient sound healing techniques. His sessions feature Hong Kong’s largest gong for deep vibrational therapy, promoting relaxation and inner balance.\n\nKey Benefits:\n- The powerful gong vibrations induce a meditative state, reducing stress and anxiety.\n- Sound baths help release trapped emotions, fostering inner peace and emotional balance.\n- Ancient techniques clear blockages, enhancing the flow of prana.\n- The resonant sounds improve focus, mindfulness, and mental stillness.\n- Vibrational therapy supports cellular healing and overall well-being."
         }
 
-
-
-
     ]
 
-
+    const ToggleFaq = (index) => {
+        setIsOpen(isOpen === index ? null : index)
+    }
 
     return (
         <div className='min-h-screen text-[#111111] p-12 font-poppins'>
@@ -35,12 +36,24 @@ const FAQ = () => {
             <div className='flex flex-col items-center justify-center gap-4'>
 
                 {
-                    Faqs.map((faq) => (
-                        <div className='border-4 p-4 leading-relaxed tracking-wide flex flex-col gap-4'>
-                            <p className='font-bold'>{faq.question}</p>
-                            <p
-                                style={{ whiteSpace: 'pre-line' }}
-                            >{faq.answer}</p>
+                    Faqs.map((faq, index) => (
+                        <div className='border-4 p-4 leading-relaxed tracking-wide flex flex-col gap-4 w-full'>
+                            <div className='w-full flex items-center justify-between'>
+                                <p className='font-bold'>{faq.question}</p>
+                                <button
+                                    onClick={() => ToggleFaq(index)}
+                                    className='font-bold text-xl'>
+                                    {isOpen === index ? '-' : '+'}
+                                </button>
+                            </div>
+
+
+                            {isOpen === index &&
+                                <p
+                                    style={{ whiteSpace: 'pre-line' }}
+                                >{Faqs[index].answer}
+                                </p>
+                            }
                         </div>
                     ))
                 }
